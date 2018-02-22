@@ -33,8 +33,51 @@
     <div class="container-fluid">
         <div class="container">
             <h1>ORM</h1>
+            
+            <h2 style="margin-top:50px;">Abstracts</h2>
             <p>
-                This page is under construction.
+                Object Relational Mapping (ORM) within this framework is the funcionality that
+                maps the database table columns, represented by the <code>Fields</code> property
+                of a <a href="./data-services.html">data service</a> object to data properties
+                of a <a href="./models.html">domain object model</a> object.
+            </p>
+
+            <h2 style="margin-top:50px;">Configuring mappings</h2>
+            <p>
+                The mapping is configured by setting the property <code>ColumnPropertyMappings</code>
+                of the model object to an instance of 
+                <code>Inetdev.Data.ColumnPropertyMappings</code> class or a class that inherits 
+                from it.
+            </p>
+
+            <h2 style="margin-top:50px;">Configuring using the application context</h2>
+            <p>
+                The application context that provides object factory and IoC, can be 
+                configured to provide this mappings in XML configuration files as in the
+                following example:
+            </p>
+
+            <pre class="bg-light">
+                <code>
+  &lt;!-- Object: GroupMappings --&gt;
+  &lt;object name="GroupMappings" singleton="true"
+          type="Inetdev.Data.ColumnPropertyMappings, Inetdev.Data, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=856a2402e38a9992"&gt;
+    &lt;property name="Item"&gt;
+      &lt;map&gt;
+        &lt;entry key="ID" value="Id"/&gt;
+        &lt;entry key="PARTITION_KEY" value="PartitionKey"/&gt;
+        &lt;entry key="NAME" value="Name"/&gt;
+        &lt;entry key="TYPE" value="Type"/&gt;
+        &lt;entry key="AUTHORITY" value="Authority"/&gt;
+      &lt;/map&gt;
+    &lt;/property&gt;
+  &lt;/object&gt;
+                </code>
+            </pre>
+
+            <p>
+                Each &lt;entry /&gt; in the map contains the Field key and the value
+                corresponds to the name of the data property in the data model object.
             </p>
 
         </div>
