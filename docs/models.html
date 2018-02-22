@@ -33,8 +33,72 @@
     <div class="container-fluid">
         <div class="container">
             <h1>Domain object models</h1>
+            
+            <h2 style="margin-top:50px;">Abstracts</h2>
             <p>
-                This page is under construction.
+                A domain object model is an object that represent application data as
+                a user, an employee, a product, etc.
+            </p>
+            <p>
+                Within this framework a domain object model (or simple a model) is a
+                class that implement <code>Inetdev.Data.IDataModel</code> or that inherits
+                from <code>Inetdev.Data.DataModel</code> (recommended), for example:
+            </p>
+
+            <pre class="bg-light">
+                <code>
+    public class Audit : DataModel
+    {
+        //...   
+    }
+                </code>
+            </pre>
+
+            <div class="alert alert-info">
+                A complete sample of a data model class can be found 
+                <a href="https://github.com/KpokPatagon/InetdevFx/blob/master/samples/Audit.cs">here</a>.
+            </div>
+
+            <h2 style="margin-top:50px;">Defining data properties</h2>
+            <p>
+                A data property is a property that represents application data that will be
+                ultimately stored in a database.
+            </p>
+            <p>
+                A data property is defined as a normal C# property and it is decorated
+                with an attribute that inherits from <code>Inetdev.Data.IDataProperty</code>,
+                for example:
+            </p>
+
+            <pre class="bg-light">
+                <code>
+    public class Audit : DataModel
+    {
+        string _id;
+
+        [TextDataProperty("Id", DbType.Text, MinLength = 0, MaxLength = 50, FieldName = "_id", PrimaryKey = 1, AutomaticType = AutomaticType.Identity, Caption = "AuditIdCaption", ResourceType = typeof(ModelLabels))]
+        public string Id
+        {
+            get { return _id; }
+            set
+            {
+                _id = value;
+                NotifyPropertyChanged(_id);
+            }
+        }
+    }
+                </code>
+            </pre>
+
+            <h2 style="margin-top:50px;">Creating, modifying and deleting</h2>
+            <p>
+                Data models are created, modified and deleted through the used of
+                the methods <code>Save()</code> or <code>SaveAsync()</code> for 
+                creation and modification and <code>Erase()</code> or <code>EraseAsync()</code>
+                for deletion.
+            </p>
+            <p>
+                Execution this methods will execute the appropiated commands againts the database.
             </p>
 
         </div>
