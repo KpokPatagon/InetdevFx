@@ -1,26 +1,26 @@
 namespace Inetdev.Multitenancy.DataModels
 {
     using System.Linq;
-	using System.Threading.Tasks;
-	using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using System.Collections.Generic;
 
-	using Inetdev.Data;
-	using Inetdev.Data.Query;
+    using Inetdev.Data;
+    using Inetdev.Data.Query;
 
     /// <summary>
     /// <see cref="TenantDataServices"/> implements the data services
     /// for the TenantStore.TENANT table.
     /// </summary>
     public class TenantDataServices : DataServices
-	{
-		/// <summary>
-		/// Creates a new instance of <see cref="TenantDataServices"/>.
-		/// </summary>
-		public TenantDataServices()
-		{
-			Schema = "TenantStore";
-			SequenceName = null;
-		}
+    {
+        /// <summary>
+        /// Creates a new instance of <see cref="TenantDataServices"/>.
+        /// </summary>
+        public TenantDataServices()
+        {
+            Schema = "TenantStore";
+            SequenceName = null;
+        }
 
 
         string _alias;
@@ -54,18 +54,18 @@ namespace Inetdev.Multitenancy.DataModels
         }
 
         IDictionary<string, Field> _fields;
-		/// <summary>
-		/// A dictionary of field configuration for the underlaying table.
-		/// </summary>
-		public override IDictionary<string, Field> Fields
-		{
-			get 
-			{
-				if (_fields == null) 
-				{
-					_fields = new Dictionary<string, Field>()
-					{
-						["ID"] = new Field("ID", DbType.Integer, 1, AutomaticType.Numerator),
+        /// <summary>
+        /// A dictionary of field configuration for the underlaying table.
+        /// </summary>
+        public override IDictionary<string, Field> Fields
+        {
+            get 
+            {
+                if (_fields == null) 
+                {
+                    _fields = new Dictionary<string, Field>()
+                    {
+                        ["ID"] = new Field("ID", DbType.Integer, 1, AutomaticType.Numerator),
                         ["NAME"] = new Field("NAME", DbType.Text, 0, AutomaticType.None),
                         ["DISPLAYNAME"] = new Field("DISPLAYNAME", DbType.NText, 0, AutomaticType.None),
                         ["EMAIL"] = new Field("EMAIL", DbType.NText, 0, AutomaticType.None),
@@ -82,19 +82,19 @@ namespace Inetdev.Multitenancy.DataModels
                         ["TSTARTEDUTC"] = new Field("TSTARTEDUTC", DbType.DateTime, 0, AutomaticType.None),
                         ["TENDSUTC"] = new Field("TENDSUTC", DbType.DateTime, 0, AutomaticType.None)
                     };
-				}
-				return _fields; 
-			}
-			set { _fields = value; }
-		}
+                }
+                return _fields; 
+            }
+            set { _fields = value; }
+        }
 
 
         /// <summary>
-		/// Filter tenants.
-		/// </summary>
-		/// <param name="request">Optional filtering information.</param>
-		/// <param name="take">Maximum tenants to return.</param>
-		public async Task<IEnumerable<Tenant>> FilterAsync(FilterRequest request, int take)
+        /// Filter tenants.
+        /// </summary>
+        /// <param name="request">Optional filtering information.</param>
+        /// <param name="take">Maximum tenants to return.</param>
+        public async Task<IEnumerable<Tenant>> FilterAsync(FilterRequest request, int take)
         {
             EnsureObjectState();
 
@@ -138,7 +138,7 @@ namespace Inetdev.Multitenancy.DataModels
         /// </summary>
         /// <param name="name">Tenant name to look for.</param>
         /// <returns>A provisioned tenant or <see langword="null"/> if the tenant does not exists or it is not provisioned.</returns>
-		public Tenant GetProvisionedTenantByNameCaseInsensitive(string name)
+        public Tenant GetProvisionedTenantByNameCaseInsensitive(string name)
         {
             EnsureObjectState();
 
@@ -158,11 +158,11 @@ namespace Inetdev.Multitenancy.DataModels
         }
 
         /// <summary>
-		/// Gets the tenant looking by it's ID.
-		/// </summary>
-		/// <param name="tenantId">Tenant Id to look for.</param>
-		/// <returns>The tenant for the specified Id.</returns>
-		public Tenant GetTenantById(int tenantId)
+        /// Gets the tenant looking by it's ID.
+        /// </summary>
+        /// <param name="tenantId">Tenant Id to look for.</param>
+        /// <returns>The tenant for the specified Id.</returns>
+        public Tenant GetTenantById(int tenantId)
         {
             EnsureObjectState();
 
@@ -175,11 +175,11 @@ namespace Inetdev.Multitenancy.DataModels
         }
 
         /// <summary>
-		/// Gets the tenant looking by it's name without considering the case.
-		/// </summary>
-		/// <param name="name"></param>
-		/// <returns></returns>
-		public Tenant GetTenantByNameCaseInsensitive(string name)
+        /// Gets the tenant looking by it's name without considering the case.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public Tenant GetTenantByNameCaseInsensitive(string name)
         {
             EnsureObjectState();
 
