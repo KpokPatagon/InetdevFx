@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <title>Factories - InetdevFx</title>
+</head>
+
+<body>
+    <nav id="top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <!-- Image and text -->
+        <nav class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">
+                Inetdev Framework Std
+            </a>
+        </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="container">
+            <h1>Factories</h1>
+
+            <h2 style="margin-top:50px;">Abstracts</h2>
+            <p>
+                The namespace <code>Inetdev.Context</code> provides what we called the 
+                Application Context which is an object factory that implements the Inversion
+                Of Control (IoC) pattern.
+            </p>
+            <p>
+                This factory is based on the <strong>Spring Framework</strong> for 
+                <strong>Java</strong> and implements a property based IoC container.
+            </p>
+
+            <h2 style="margin-top:50px;">Objects configuration</h2>
+            <p>
+                The object factories are configured through XML files with two specific
+                extensions: <code>*.xcntx</code> files allows the configuration of objects
+                that the application context will provide and <code>*.xpckg</code> files, that
+                allows the configuration of packages to be scanned for context files (*.xcntx).
+            </p>
+
+            <div class="alert alert-info">
+                A complete sample of an object factory can be found 
+                <a href="https://github.com/KpokPatagon/InetdevFx/blob/master/samples/factory.xcntx">here</a>.
+            </div>
+            <div class="alert alert-info">
+                A complete sample of a package file can be found
+                <a href="https://github.com/KpokPatagon/InetdevFx/blob/master/samples/package.xpckg">here</a>.
+            </div>
+
+            <p>
+                Factory configurations files must conform and are validated against XSD schemas.
+            </p>
+            <ul>
+                <li><a href="https://github.com/KpokPatagon/InetdevFx/blob/master/schemas/context/package.xsd">Schema</a> for package files.</li>
+                <li><a href="https://github.com/KpokPatagon/InetdevFx/blob/master/schemas/context/appcntx.xsd">Schema</a> for object factory files.</li>
+            </ul>
+            
+
+            <h5 style="margin-top:50px;">Object configuration sample</h5>
+            <p>A configured object looks like this:</p>
+
+            <pre class="bg-light">
+                <code>
+  &lt;!-- Object: GroupMappings --&gt;
+  &lt;object name="GroupMappings" singleton="true"
+          type="Inetdev.Data.ColumnPropertyMappings, Inetdev.Data, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=856a2402e38a9992"&gt;
+    &lt;property name="Item"&gt;
+      &lt;map&gt;
+        &lt;entry key="ID" value="Id"/&gt;
+        &lt;entry key="PARTITION_KEY" value="PartitionKey"/&gt;
+        &lt;entry key="NAME" value="Name"/&gt;
+        &lt;entry key="TYPE" value="Type"/&gt;
+        &lt;entry key="AUTHORITY" value="Authority"/&gt;
+      &lt;/map&gt;
+    &lt;/property&gt;
+  &lt;/object&gt;
+                </code>
+            </pre>
+
+            <h2 style="margin-top:50px;">External configuration</h2>
+            <p>
+                You can configure the application context using external configuration files
+                that will be stored in a directory accesible for the application. This 
+                directory is configured in the application settings files as documented in
+                <a href="./configuration.html#application-context">configuration</a>.
+            </p>
+            <p>
+                This directory will contains <strong>*.xpckg</strong> files and 
+                <strong>*.xcntx</strong> files.
+            </p>
+            <p>
+                The application context is built by reading the packages files, then the
+                specified assemblies are scanned for <strong>*.xcntx</strong> files to build
+                the object factories. After the package files are processed, the 
+                <strong>*.xcntx</strong> files are read and the objects are added to the
+                application context.
+            </p>
+
+            <h4 style="margin-top:50px;">Storing object files within libraries</h4>
+            <p>
+                <strong>*.xcntx</strong> files can be embedded within class libraries and 
+                will be loaded by the application context. For this to happen the files
+                properties must be set correctly as shown in the following image.
+            </p>
+
+            <img src="./assets/cntxprops.png" alt="Context properties" class="img-thumbnail"/>
+
+
+
+            <h2 style="margin-top:50px;">Internal configuration</h2>
+            <p>
+                Packages can be configured internally to tell the application context 
+                which assemplies must be scanned to build the context. Packaged files 
+                (<strong>*.xpckg</strong>) are not read from libraries, instead you must
+                implements a class or classes thet inherits from 
+                <code>Inetdev.Context.ApplicationContextRegistration</code> as in the
+                following example:
+            </p>
+
+            <pre class="bg-light">
+                <code>
+    namespace Security.SecOps
+    {
+        using Inetdev.Context;
+
+        public class ContextRegistration : ApplicationContextRegistration
+        {
+            public override void Register(ApplicationContext context)
+            {
+                context.RegisterPackage(new Package("Security.Env, Version=1.0.0.0"));
+                context.RegisterPackage(new Package("Security.Core, Version=1.0.0.0"));
+            }
+        }
+    }
+                </code>
+            </pre>
+
+            <p>
+                The application context will scan assemblies for this classes and build the
+                object factories from the specified assemblies.
+            </p>
+
+        </div>
+    </div>
+    <div class="text-light bg-dark">
+        <div style="text-align:right;">
+            <a href="#top" class="text-light" style="margin:0 20px;display:block;">Back to top</a>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

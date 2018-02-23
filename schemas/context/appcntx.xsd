@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:element name="appcntx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="object" type="objectType" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="factoryName" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:complexType name="objectType">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="delegate" type="delegateType"/>
+      <xs:element name="property" type="propertyType"/>
+    </xs:choice>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="type" type="xs:string" use="required"/>
+    <xs:attribute name="singleton" type="xs:boolean" use="optional" default="false"/>
+  </xs:complexType>
+
+  <xs:complexType name="delegateType">
+    <xs:attribute name="event" type="xs:string" use="required"/>
+    <xs:attribute name="object" type="xs:string" use="required"/>
+    <xs:attribute name="method" type="xs:string" use="required"/>
+  </xs:complexType>
+  
+  <xs:complexType name="propertyType">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:element name="map" type="mapType"/>
+      <xs:element name="null" type="nullType"/>
+      <xs:element name="ref" type="refType"/>
+      <xs:element name="runtime" type="runtimeType"/>
+      <xs:element name="value" type="valueType"/>
+    </xs:choice>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="mapType">
+    <xs:sequence>
+      <xs:element name="entry" minOccurs="1" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:attribute name="key" type="xs:string" use="required"/>
+          <xs:attribute name="value" type="xs:string" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="nullType"/>
+
+  <xs:complexType name="refType">
+    <xs:attribute name="object" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="runtimeType">
+    <xs:sequence>
+      <xs:element name="data" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="arg" minOccurs="1" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:attribute name="key" type="xs:string" use="required"/>
+                <xs:attribute name="value" type="xs:string" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="object" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="valueType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+              
+</xs:schema>

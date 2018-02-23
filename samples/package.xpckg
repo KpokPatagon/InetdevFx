@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+
+  <package name="Framework.Test"
+           assembly="Framework.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=20023a1581075652"/>
+  
+</packages>

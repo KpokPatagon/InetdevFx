@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appcntx factoryName="Security.Core.DataModels">
+
+  <!-- Object: AccountDataServices -->
+  <object name="AccountDataServices" singleton="true"
+          type="Security.Core.AccountDataServices, Security.Core, Version=1.0.0.0">
+    <property name="CommandBuilder">
+      <ref object="SecurityCommandBuilder"/>
+    </property>
+    <property name="DataAccessAPI">
+      <ref object="SecurityDataAccessAPI"/>
+    </property>
+    <property name="DataModelCmdBuilder">
+      <ref object="SecurityDataModelCmdBuilder"/>
+    </property>
+    <property name="DataModelAuditor">
+      <ref object="DefaultDataModelAuditor"/>
+    </property>
+  </object>
+
+  <!-- Object: Group -->
+  <object name="Group"
+          type="Security.Core.Group, Security.Core, Version=1.0.0.0">
+    <property name="ColumnPropertyMappings">
+      <ref object="GroupMappings"/>
+    </property>
+    <property name="DataServices">
+      <ref object="AccountDataServices"/>
+    </property>
+    <property name="Identity">
+      <ref object="TextGuidIdentity"/>
+    </property>
+  </object>
+
+  <!-- Object: GroupMappings -->
+  <object name="GroupMappings" singleton="true"
+          type="Inetdev.Data.ColumnPropertyMappings, Inetdev.Data, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=856a2402e38a9992">
+    <property name="Item">
+      <map>
+        <entry key="ID" value="Id"/>
+        <entry key="PARTITION_KEY" value="PartitionKey"/>
+        <entry key="NAME" value="Name"/>
+        <entry key="TYPE" value="Type"/>
+        <entry key="AUTHORITY" value="Authority"/>
+      </map>
+    </property>
+  </object>
+
+  <!-- Object: User -->
+  <object name="User"
+          type="Security.Core.User, Security.Core, Version=1.0.0.0">
+    <property name="ColumnPropertyMappings">
+      <ref object="UserMappings"/>
+    </property>
+    <property name="DataServices">
+      <ref object="AccountDataServices"/>
+    </property>
+    <property name="Identity">
+      <ref object="TextGuidIdentity"/>
+    </property>
+  </object>
+
+  <!-- Object: UserMappings -->
+  <object name="UserMappings" singleton="true"
+          type="Inetdev.Data.ColumnPropertyMappings, Inetdev.Data, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=856a2402e38a9992">
+    <property name="Item">
+      <map>
+        <entry key="ID" value="Id"/>
+        <entry key="PARTITION_KEY" value="PartitionKey"/>
+        <entry key="NAME" value="Name"/>
+        <entry key="TYPE" value="Type"/>
+        <entry key="AUTHORITY" value="Authority"/>
+        <entry key="MAIL" value="Mail"/>
+        <entry key="MAIL_CONF" value="MailConfirmed"/>
+        <entry key="PHONE" value="Phone"/>
+        <entry key="PHONE_CONF" value="PhoneConfirmed"/>
+        <entry key="FAILED_PWD_CNT" value="FailedPasswordCount"/>
+        <entry key="LAST_LOGON_UTC" value="LastLogonUtc"/>
+        <entry key="TWO_FACTOR_ENABLED" value="TwoFactorEnabled"/>
+        <entry key="LOCKOUT_ENABLED" value="LockoutEnabled"/>
+        <entry key="LOCKOUT_END_UTC" value="LockoutEndUtc"/>
+        <entry key="SECURITY_STAMP" value="SecurityStamp"/>
+        <entry key="PWD" value="Password"/>
+        <entry key="PWD_LAST_CHNG_UTC" value="PasswordLastChangedUtc"/>
+        <entry key="PWD_FORCE" value="PasswordForce"/>
+        <entry key="PWD_EXPIRES" value="PasswordExpires"/>
+        <entry key="PWD_CAN_CHANGE" value="PasswordCanChange"/>
+        <entry key="DISPLAY_NAME" value="DisplayName"/>
+        <entry key="PHOTO" value="Photo"/>
+      </map>
+    </property>
+  </object>
+
+</appcntx>
