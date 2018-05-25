@@ -52,6 +52,7 @@
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_inetdev_1_1_security_1_1_cryptography_1_1_hash_cryptographer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Inetdev.Security.Cryptography.HashCryptographer Class Reference</div>  </div>
@@ -98,6 +99,15 @@ Properties</h2></td></tr>
 <tr class="memitem:a9732afa2e3ebcd11d791b8389c9b3837"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_hash_cryptographer.html#a9732afa2e3ebcd11d791b8389c9b3837">AlgorithmType</a><code> [get]</code></td></tr>
 <tr class="memdesc:a9732afa2e3ebcd11d791b8389c9b3837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the HashAlgorithm type.  <a href="#a9732afa2e3ebcd11d791b8389c9b3837">More...</a><br /></td></tr>
 <tr class="separator:a9732afa2e3ebcd11d791b8389c9b3837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a56eaeb2921b013b748eddac893fd6c88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_hash_cryptographer.html#a56eaeb2921b013b748eddac893fd6c88">AddSaltToHash</a> (byte[] salt, ref byte[] hash)</td></tr>
+<tr class="memdesc:a56eaeb2921b013b748eddac893fd6c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combines the hash value with the salt.  <a href="#a56eaeb2921b013b748eddac893fd6c88">More...</a><br /></td></tr>
+<tr class="separator:a56eaeb2921b013b748eddac893fd6c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac403121a95934e40a95f6b88e4cbe377"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_hash_cryptographer.html#ac403121a95934e40a95f6b88e4cbe377">AddSaltToPlainText</a> (ref byte[] salt, ref byte[] plaintext)</td></tr>
+<tr class="memdesc:ac403121a95934e40a95f6b88e4cbe377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combines the hash value with the salt, if salt is null this method will create a new salt value.  <a href="#ac403121a95934e40a95f6b88e4cbe377">More...</a><br /></td></tr>
+<tr class="separator:ac403121a95934e40a95f6b88e4cbe377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A hash provider for any hash algorithm which derives from HashAlgorithm. </p>
@@ -169,6 +179,92 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a56eaeb2921b013b748eddac893fd6c88"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Security.Cryptography.HashCryptographer.AddSaltToHash </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>salt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref byte[]&#160;</td>
+          <td class="paramname"><em>hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Combines the hash value with the salt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">salt</td><td>The salt value to append.</td></tr>
+    <tr><td class="paramname">hash</td><td>The hash value to append the salt to.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac403121a95934e40a95f6b88e4cbe377"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Security.Cryptography.HashCryptographer.AddSaltToPlainText </td>
+          <td>(</td>
+          <td class="paramtype">ref byte[]&#160;</td>
+          <td class="paramname"><em>salt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref byte[]&#160;</td>
+          <td class="paramname"><em>plaintext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Combines the hash value with the salt, if salt is null this method will create a new salt value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">salt</td><td>The salt value to append.</td></tr>
+    <tr><td class="paramname">plaintext</td><td>The plain text to append the the salt to.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="aa4afa70161d81b7b32508c9915c85731"></a>
 <div class="memitem">
 <div class="memproto">

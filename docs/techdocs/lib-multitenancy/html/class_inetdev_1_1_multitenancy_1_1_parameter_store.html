@@ -49,6 +49,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_inetdev_1_1_multitenancy_1_1_parameter_store-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Inetdev.Multitenancy.ParameterStore Class Reference</div>  </div>
@@ -68,6 +69,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a028f20a679f13243780d36a4f2f56bac"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_parameter_store.html#a028f20a679f13243780d36a4f2f56bac">SaveValueAsync</a> (string name, string value)</td></tr>
 <tr class="memdesc:a028f20a679f13243780d36a4f2f56bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the value to the parameter table.  <a href="#a028f20a679f13243780d36a4f2f56bac">More...</a><br /></td></tr>
 <tr class="separator:a028f20a679f13243780d36a4f2f56bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a39c4587cd98056b3bbac6478d6123bf0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39c4587cd98056b3bbac6478d6123bf0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_parameter_store.html#a39c4587cd98056b3bbac6478d6123bf0">GetPartitionKey</a> ()</td></tr>
+<tr class="memdesc:a39c4587cd98056b3bbac6478d6123bf0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_no_tenant_in_context_exception.html" title="Thrown when the tenant information is not found within the application context. ">NoTenantInContextException</a></td><td>Thrown when the tenant cannot be found within the application context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<br /></td></tr>
+<tr class="separator:a39c4587cd98056b3bbac6478d6123bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements an IParameterStore that uses a Parameter domain object model to save and retrieve parameter values. </p>
