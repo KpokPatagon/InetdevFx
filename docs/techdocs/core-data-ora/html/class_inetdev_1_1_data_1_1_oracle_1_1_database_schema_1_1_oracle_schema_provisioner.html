@@ -63,6 +63,9 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a79d53de3c6588a823d32d3c9985bd385"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a79d53de3c6588a823d32d3c9985bd385">AddColumnsAsync</a> (Table table)</td></tr>
+<tr class="memdesc:a79d53de3c6588a823d32d3c9985bd385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds to <em>table</em>  the columns listed in it's columns collection.  <a href="#a79d53de3c6588a823d32d3c9985bd385">More...</a><br /></td></tr>
+<tr class="separator:a79d53de3c6588a823d32d3c9985bd385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bf2478953e43296602f7924f6232e9a"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a3bf2478953e43296602f7924f6232e9a">AddForeignKeyAsync</a> (ForeignKey foreignKey)</td></tr>
 <tr class="memdesc:a3bf2478953e43296602f7924f6232e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a foreign key to the specified table.  <a href="#a3bf2478953e43296602f7924f6232e9a">More...</a><br /></td></tr>
 <tr class="separator:a3bf2478953e43296602f7924f6232e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -78,6 +81,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f51c82ae055138d884a3ab128a34dd4"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a1f51c82ae055138d884a3ab128a34dd4">CreateViewAsync</a> (View view)</td></tr>
 <tr class="memdesc:a1f51c82ae055138d884a3ab128a34dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a view.  <a href="#a1f51c82ae055138d884a3ab128a34dd4">More...</a><br /></td></tr>
 <tr class="separator:a1f51c82ae055138d884a3ab128a34dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf68c45a89f6664d09888d005efba697"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#aaf68c45a89f6664d09888d005efba697">DropColumnsAsync</a> (Table table)</td></tr>
+<tr class="memdesc:aaf68c45a89f6664d09888d005efba697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops from <em>table</em>  the columns listed in it's columns collection.  <a href="#aaf68c45a89f6664d09888d005efba697">More...</a><br /></td></tr>
+<tr class="separator:aaf68c45a89f6664d09888d005efba697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e789b84e723267dca6700a872d8a16"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a52e789b84e723267dca6700a872d8a16">DropForeignKeyAsync</a> (ForeignKey foreignKey)</td></tr>
 <tr class="memdesc:a52e789b84e723267dca6700a872d8a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a foreign key.  <a href="#a52e789b84e723267dca6700a872d8a16">More...</a><br /></td></tr>
 <tr class="separator:a52e789b84e723267dca6700a872d8a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +115,39 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements an ISchemaProvisioner for <a class="el" href="namespace_inetdev_1_1_data_1_1_oracle.html">Oracle</a> databases. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a79d53de3c6588a823d32d3c9985bd385"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AddColumnsAsync </td>
+          <td>(</td>
+          <td class="paramtype">Table&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds to <em>table</em>  the columns listed in it's columns collection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td>The information of the table and columns to be added.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>table</em>  is .</td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>Thrown when the database connection is opened.</td></tr>
+    <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the table configuration is not valid for schema manipulation.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a3bf2478953e43296602f7924f6232e9a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -261,6 +300,39 @@ Properties</h2></td></tr>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>view</em>  is .</td></tr>
+    <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the table configuration is not valid for schema manipulation.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaf68c45a89f6664d09888d005efba697"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropColumnsAsync </td>
+          <td>(</td>
+          <td class="paramtype">Table&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drops from <em>table</em>  the columns listed in it's columns collection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td>The information of the table and columns to be added.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>table</em>  is .</td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>Thrown when the database connection is opened.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
     <tr><td class="paramname">ValidationException</td><td>Thrown when the table configuration is not valid for schema manipulation.</td></tr>
   </table>

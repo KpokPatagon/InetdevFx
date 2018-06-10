@@ -63,6 +63,9 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a676f3447d5eaac27bc71dc28a4ef48b0"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_sql_server_1_1_database_schema_1_1_sql_server_schema_provisioner.html#a676f3447d5eaac27bc71dc28a4ef48b0">AddColumnsAsync</a> (Table table)</td></tr>
+<tr class="memdesc:a676f3447d5eaac27bc71dc28a4ef48b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds to <em>table</em>  the columns listed in it's columns collection.  <a href="#a676f3447d5eaac27bc71dc28a4ef48b0">More...</a><br /></td></tr>
+<tr class="separator:a676f3447d5eaac27bc71dc28a4ef48b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8621165556d9734f2162a5835975f156"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_sql_server_1_1_database_schema_1_1_sql_server_schema_provisioner.html#a8621165556d9734f2162a5835975f156">AddForeignKeyAsync</a> (ForeignKey foreignKey)</td></tr>
 <tr class="memdesc:a8621165556d9734f2162a5835975f156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a foreign key to the specified table.  <a href="#a8621165556d9734f2162a5835975f156">More...</a><br /></td></tr>
 <tr class="separator:a8621165556d9734f2162a5835975f156"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -78,6 +81,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb486c2e417b7be4b4d1e9fde8601ce2"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_sql_server_1_1_database_schema_1_1_sql_server_schema_provisioner.html#adb486c2e417b7be4b4d1e9fde8601ce2">CreateViewAsync</a> (View view)</td></tr>
 <tr class="memdesc:adb486c2e417b7be4b4d1e9fde8601ce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a view.  <a href="#adb486c2e417b7be4b4d1e9fde8601ce2">More...</a><br /></td></tr>
 <tr class="separator:adb486c2e417b7be4b4d1e9fde8601ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3887846e672065b262d96791c72c0ae5"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_sql_server_1_1_database_schema_1_1_sql_server_schema_provisioner.html#a3887846e672065b262d96791c72c0ae5">DropColumnsAsync</a> (Table table)</td></tr>
+<tr class="memdesc:a3887846e672065b262d96791c72c0ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops from <em>table</em>  the columns listed in it's columns collection.  <a href="#a3887846e672065b262d96791c72c0ae5">More...</a><br /></td></tr>
+<tr class="separator:a3887846e672065b262d96791c72c0ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb8a991d3da6f63c9b602c2dd189d61b"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_sql_server_1_1_database_schema_1_1_sql_server_schema_provisioner.html#afb8a991d3da6f63c9b602c2dd189d61b">DropForeignKeyAsync</a> (ForeignKey foreignKey)</td></tr>
 <tr class="memdesc:afb8a991d3da6f63c9b602c2dd189d61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a foreign key.  <a href="#afb8a991d3da6f63c9b602c2dd189d61b">More...</a><br /></td></tr>
 <tr class="separator:afb8a991d3da6f63c9b602c2dd189d61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +115,39 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements an ISchemaProvisioner for Microsoft SQL server. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a676f3447d5eaac27bc71dc28a4ef48b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.AddColumnsAsync </td>
+          <td>(</td>
+          <td class="paramtype">Table&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds to <em>table</em>  the columns listed in it's columns collection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td>The information of the table and columns to be added.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>table</em>  is .</td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>Thrown when the database connection is opened.</td></tr>
+    <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the table configuration is not valid for schema manipulation.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a8621165556d9734f2162a5835975f156"></a>
 <div class="memitem">
 <div class="memproto">
@@ -265,6 +304,39 @@ Properties</h2></td></tr>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>view</em>  is .</td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>Thrown when the database connection is opened.</td></tr>
+    <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the table configuration is not valid for schema manipulation.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3887846e672065b262d96791c72c0ae5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropColumnsAsync </td>
+          <td>(</td>
+          <td class="paramtype">Table&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drops from <em>table</em>  the columns listed in it's columns collection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td>The information of the table and columns to be added.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>table</em>  is .</td></tr>
     <tr><td class="paramname">InvalidOperationException</td><td>Thrown when the database connection is opened.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
     <tr><td class="paramname">ValidationException</td><td>Thrown when the table configuration is not valid for schema manipulation.</td></tr>
