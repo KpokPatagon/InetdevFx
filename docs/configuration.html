@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -33,7 +33,7 @@
     <div class="container-fluid">
         <div class="container">
             <h1>Configuration</h1>
-            
+
             <h2 style="margin-top:50px;">Abstracts</h2>
             <p>
                 Applications based on this frameworks requires to be configured
@@ -54,12 +54,12 @@
             </ul>
 
             <p>
-                 This file should contains all the different secciones following the rules 
-                 of a json syntax as in the following example.
-            </p> 
-            
+                This file should contains all the different secciones following the rules
+                of a json syntax as in the following example.
+            </p>
+
             <pre class="bg-light">
-                <code>
+            <code>
     {
         "ConnectionStrings": { ... },
         "ApplicationContext": { ... },
@@ -70,7 +70,7 @@
 
             <h3 id="connection-strings" style="margin-top:32px;">Connection strings</h3>
             <p>
-                 Connection strings are configured as the standard .NET Core configuration.
+                Connection strings are configured as the standard .NET Core configuration.
             </p>
             <p>
                 The connection string names (AuditDataAccessAPI and SecurityDataAccessAPI in
@@ -79,7 +79,7 @@
             </p>
 
             <pre class="bg-light">
-                <code>
+            <code>
     { 
         "ConnectionStrings": { 
             "AuditDataAccessAPI": "Data Source=&lt;server-name-or-ip&gt;;Initial Catalog= &lt;catalog-name&gt;;Integrated Security=True;Persist Security Info=false", 
@@ -90,7 +90,7 @@
 
             <h3 id="application-context" style="margin-top:32px;">Application context</h3>
             <p>
-                The application context section configures the Inetdev Framework Application Context by 
+                The application context section configures the Inetdev Framework Application Context by
                 pointing the application to the folder where the context configuration files are stored.
             </p>
             <p>
@@ -99,7 +99,7 @@
             </p>
 
             <pre class="bg-light">
-                <code>
+            <code>
     { 
         "ApplicationContext": { 
             "Path": "&lt;path-to-a-folder-with-context-config-files&gt;" 
@@ -109,12 +109,12 @@
 
             <h3 id="cryptography" style="margin-top:32px;">Cryptography</h3>
             <p>
-                The cryptography sections allows to configured the cryptography functionality 
+                The cryptography sections allows to configured the cryptography functionality
                 from <code>Inetdev.Security.Cryptography</code>.
             </p>
 
             <pre class="bg-light">
-                <code>
+            <code>
     { 
         "Cryptography": { 
             "HashAlgorithmType": "", 
@@ -126,7 +126,7 @@
             </pre>
 
             <blockquote>
-                This configures the cryptography sub-system to use: <code>SHA1Manage</code> as a hash algorithm 
+                This configures the cryptography sub-system to use: <code>SHA1Manage</code> as a hash algorithm
                 for hashing and <code>RijndaelManaged</code> as a symmetric algorithm for encryption.
             </blockquote>
 
@@ -135,7 +135,7 @@
             <p>This section configures the <code>Inetdev.Diagnostics</code> sub-system.</p>
 
             <pre class="bg-light">
-                <code>
+            <code>
     {
         "Diagnostics": {
             "MinimumLevel": "None",
@@ -186,13 +186,13 @@
             ]
         }
     }</code>
-            </pre>  
+            </pre>
 
-            <h4 style="margin-top:32px;">Diagnostics configuration options</h4> 
+            <h4 style="margin-top:32px;">Diagnostics configuration options</h4>
 
-            <h5>MinimumLevel</h5> 
+            <h5>MinimumLevel</h5>
             <p>
-                Configures the minimum level of log entries that are written to the log file. 
+                Configures the minimum level of log entries that are written to the log file.
                 <strong>MinimumLevel</strong> options are:
             </p>
             <ul>
@@ -204,10 +204,10 @@
                 <li>Critical</li>
                 <li>None (completely disables logging)</li>
             </ul>
-            
+
             <h5>DefaultCategory</h5>
-            <p>The default category assigned to log entries that does not has a category.</p> 
-            
+            <p>The default category assigned to log entries that does not has a category.</p>
+
             <h5>LogWriterProviderType</h5>
             <p>
                 The type of a class that inherits from <code>Inetdev.Diagnostics.LogWriterProvider</code>
@@ -220,7 +220,7 @@
             </p>
 
             <p>
-                The code sample shows the configuration of the formatter provided by the Framework, the 
+                The code sample shows the configuration of the formatter provided by the Framework, the
                 template option can contain this placeholders:
             </p>
             <ul>
@@ -249,12 +249,49 @@
 
             <h5>LogTargets</h5>
             <p>
-                An array of <strong>LogTargets</strong> that configures to which <strong>TraceTargets</strong> are 
+                An array of <strong>LogTargets</strong> that configures to which <strong>TraceTargets</strong> are
                 the log entries written to, based on their categories.
             </p>
 
+            <h2 style="margin-top:50px;">Startup code</h2>
+            <p>
+                At application startup configuration for <code>Application Context</code>, <code>Diagnostics</code>
+                and <code>Cryptography</code> must be loaded and assigned to the corresponding objects as shown in
+                the following code.
+            </p>
+
+            <pre class="bg-light">
+                <code>
+    using Microsoft.Extensions.Configuration;
+    using Inetdev.Context;
+    using Inetdev.Diagnostics;
+    using Inetdev.Security.Cryptography;
+
+    namespace Inetdev.Tests
+    {
+        static class Startup
+        {
+            public static void Configure()
+            {
+                var configuration = new ConfigurationBuilder()
+                    .SetBasePath(@"drive:\path")
+                    .AddJsonFile(@"settings.json", optional: false, reloadOnChange: true)
+                    .Build();
+
+                    Logger.Configuration = configuration;
+                    Cryptographer.Configuration = configuration;
+                    ApplicationContext.Configuration = configuration;
+            }
+        }
+    }</code>
+            </pre>
+
         </div>
     </div>
+
+    
+
+
     <div class="text-light bg-dark">
         <div style="text-align:right;">
             <a href="#top" class="text-light" style="margin:0 20px;display:block;">Back to top</a>
