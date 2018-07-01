@@ -133,6 +133,15 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:ae300ceca360ad3d70221af2609bb1884"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#ae300ceca360ad3d70221af2609bb1884">Catalog</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae300ceca360ad3d70221af2609bb1884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Database SID or ServiceName.  <a href="#ae300ceca360ad3d70221af2609bb1884">More...</a><br /></td></tr>
+<tr class="separator:ae300ceca360ad3d70221af2609bb1884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1456ee71ef360f3030fcedcb7994e327"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#a1456ee71ef360f3030fcedcb7994e327">Sid</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a1456ee71ef360f3030fcedcb7994e327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Database SID. This property sets Catalog = "SID:value" only if Catalog is empty.  <a href="#a1456ee71ef360f3030fcedcb7994e327">More...</a><br /></td></tr>
+<tr class="separator:a1456ee71ef360f3030fcedcb7994e327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f69bc745db41546040d157a3058138"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#ab6f69bc745db41546040d157a3058138">ServiceName</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab6f69bc745db41546040d157a3058138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Database ServiceName. This property sets Catalog = "ServiceName:value" only if Catalog is empty.  <a href="#ab6f69bc745db41546040d157a3058138">More...</a><br /></td></tr>
+<tr class="separator:ab6f69bc745db41546040d157a3058138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd6b60091e453bd50e7d421ae6027ad"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#a3fd6b60091e453bd50e7d421ae6027ad">UserName</a><code> [set]</code></td></tr>
 <tr class="memdesc:a3fd6b60091e453bd50e7d421ae6027ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">User name to connecto to the database.  <a href="#a3fd6b60091e453bd50e7d421ae6027ad">More...</a><br /></td></tr>
 <tr class="separator:a3fd6b60091e453bd50e7d421ae6027ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -771,6 +780,33 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="ae300ceca360ad3d70221af2609bb1884"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string Inetdev.Data.Oracle.OracleDbAccess.Catalog</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Database SID or ServiceName. </p>
+<p>Catalog can be specified as:</p><ul>
+<li>SID:DatabaseSid</li>
+<li>ServiceName:DatabaseServiceName</li>
+<li>DatabaseSid (If no prefix, SID is used) </li>
+</ul>
+
+</div>
+</div>
 <a class="anchor" id="a58da67d017ce01739d075d682d512437"></a>
 <div class="memitem">
 <div class="memproto">
@@ -834,6 +870,50 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Password of the user used to connect to the database. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab6f69bc745db41546040d157a3058138"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual string Inetdev.Data.Oracle.OracleDbAccess.ServiceName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Database ServiceName. This property sets Catalog = "ServiceName:value" only if Catalog is empty. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1456ee71ef360f3030fcedcb7994e327"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual string Inetdev.Data.Oracle.OracleDbAccess.Sid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Database SID. This property sets Catalog = "SID:value" only if Catalog is empty. </p>
 
 </div>
 </div>
