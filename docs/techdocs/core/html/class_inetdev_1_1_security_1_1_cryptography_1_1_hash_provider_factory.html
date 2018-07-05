@@ -61,7 +61,7 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a83e5ca9bd1ce5ca5a4ebc4c071c5b7b3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html">IHashProvider</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_hash_provider_factory.html#a83e5ca9bd1ce5ca5a4ebc4c071c5b7b3">Create</a> ()</td></tr>
-<tr class="memdesc:a83e5ca9bd1ce5ca5a4ebc4c071c5b7b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of an <a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html" title="A contract for any provider for hash implementations. ">IHashProvider</a> using the SHA1Managed algorithm with salt addition disabled.  <a href="#a83e5ca9bd1ce5ca5a4ebc4c071c5b7b3">More...</a><br /></td></tr>
+<tr class="memdesc:a83e5ca9bd1ce5ca5a4ebc4c071c5b7b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of an <a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html" title="A contract for any provider for hash implementations. ">IHashProvider</a> using the SHA512Managed algorithm with salt addition disabled.  <a href="#a83e5ca9bd1ce5ca5a4ebc4c071c5b7b3">More...</a><br /></td></tr>
 <tr class="separator:a83e5ca9bd1ce5ca5a4ebc4c071c5b7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab74025df5ce7b48ad8ed531e19ef63e9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html">IHashProvider</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_hash_provider_factory.html#ab74025df5ce7b48ad8ed531e19ef63e9">Create</a> (<a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_configuration_1_1_cryptography_options.html">CryptographyOptions</a> options)</td></tr>
 <tr class="memdesc:ab74025df5ce7b48ad8ed531e19ef63e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of an <a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html" title="A contract for any provider for hash implementations. ">IHashProvider</a>.  <a href="#ab74025df5ce7b48ad8ed531e19ef63e9">More...</a><br /></td></tr>
@@ -94,7 +94,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new instance of an <a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html" title="A contract for any provider for hash implementations. ">IHashProvider</a> using the SHA1Managed algorithm with salt addition disabled. </p>
+<p>Creates a new instance of an <a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html" title="A contract for any provider for hash implementations. ">IHashProvider</a> using the SHA512Managed algorithm with salt addition disabled. </p>
 
 </div>
 </div>
@@ -123,11 +123,11 @@ Static Public Member Functions</h2></td></tr>
 <p>Creates a new instance of an <a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html" title="A contract for any provider for hash implementations. ">IHashProvider</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">options</td><td></td></tr>
+    <tr><td class="paramname">options</td><td><a class="el" href="namespace_inetdev_1_1_security_1_1_cryptography_1_1_configuration.html">Configuration</a> options.</td></tr>
   </table>
   </dd>
 </dl>
-<p>If not configured, a SHA1Managed algorithm with salt addition disabled is returned. </p>
+<p>If not configured, a SHA512Managed algorithm with salt addition <b>disabled</b> is returned. </p>
 
 </div>
 </div>
@@ -166,12 +166,12 @@ Static Public Member Functions</h2></td></tr>
 <p>Creates a new instance of a <a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html" title="A contract for any provider for hash implementations. ">IHashProvider</a> based on the HashAlgorithm of type <em>algorithmType</em> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">algorithmType</td><td></td></tr>
-    <tr><td class="paramname">saltEnabled</td><td></td></tr>
+    <tr><td class="paramname">algorithmType</td><td>Type of the hash algorithm.</td></tr>
+    <tr><td class="paramname">saltEnabled</td><td>if salt addition should be enebled.</td></tr>
   </table>
   </dd>
 </dl>
-<p>If <em>algorithmType</em>  is , a default SHA1Managed hash algorithm will be returned. </p>
+<p>If <em>algorithmType</em>  is , a default SHA512Managed hash algorithm will be returned. </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ArgumentException</td><td>Thrown when <em>algorithmType</em>  is not a HashAlgorithm.</td></tr>
