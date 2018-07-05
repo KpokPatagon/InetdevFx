@@ -68,6 +68,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0f18a092dc0f18cbad15dea998a43e49"><td class="memItemLeft" align="right" valign="top">byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html#a0f18a092dc0f18cbad15dea998a43e49">ComputeHash</a> (byte[] plaintext)</td></tr>
 <tr class="memdesc:a0f18a092dc0f18cbad15dea998a43e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the hash value for <em>plaintext</em> .  <a href="#a0f18a092dc0f18cbad15dea998a43e49">More...</a><br /></td></tr>
 <tr class="separator:a0f18a092dc0f18cbad15dea998a43e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e13c640b84def18a772bf6fb73ebe6"><td class="memItemLeft" align="right" valign="top">byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html#a82e13c640b84def18a772bf6fb73ebe6">ComputeHash</a> (Stream stream)</td></tr>
+<tr class="memdesc:a82e13c640b84def18a772bf6fb73ebe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the hash value for <em>stream</em> .  <a href="#a82e13c640b84def18a772bf6fb73ebe6">More...</a><br /></td></tr>
+<tr class="separator:a82e13c640b84def18a772bf6fb73ebe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A contract for any provider for hash implementations. </p>
@@ -134,6 +137,33 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The computed hash code.</dd></dl>
 
 <p>Implemented in <a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_hash_cryptographer.html#a5b25afc33f7003115b0167c0ca7b7b80">Inetdev.Security.Cryptography.HashCryptographer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a82e13c640b84def18a772bf6fb73ebe6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte [] Inetdev.Security.Cryptography.IHashProvider.ComputeHash </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the hash value for <em>stream</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>The input Stream for wich to compute the hash.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The computed hash code.</dd></dl>
+
+<p>Implemented in <a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_hash_cryptographer.html#a751857e439f2144ac4171fc0b6e65518">Inetdev.Security.Cryptography.HashCryptographer</a>.</p>
 
 </div>
 </div>

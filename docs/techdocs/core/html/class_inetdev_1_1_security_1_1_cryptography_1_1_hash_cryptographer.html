@@ -78,6 +78,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b25afc33f7003115b0167c0ca7b7b80"><td class="memItemLeft" align="right" valign="top">byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_hash_cryptographer.html#a5b25afc33f7003115b0167c0ca7b7b80">ComputeHash</a> (byte[] plaintext)</td></tr>
 <tr class="memdesc:a5b25afc33f7003115b0167c0ca7b7b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the hash value of plain text.  <a href="#a5b25afc33f7003115b0167c0ca7b7b80">More...</a><br /></td></tr>
 <tr class="separator:a5b25afc33f7003115b0167c0ca7b7b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751857e439f2144ac4171fc0b6e65518"><td class="memItemLeft" align="right" valign="top">byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_hash_cryptographer.html#a751857e439f2144ac4171fc0b6e65518">ComputeHash</a> (Stream stream)</td></tr>
+<tr class="memdesc:a751857e439f2144ac4171fc0b6e65518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the hash value for <em>stream</em> . If <em>stream</em>  is empty  is returned.  <a href="#a751857e439f2144ac4171fc0b6e65518">More...</a><br /></td></tr>
+<tr class="separator:a751857e439f2144ac4171fc0b6e65518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -96,7 +99,7 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a9732afa2e3ebcd11d791b8389c9b3837"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_hash_cryptographer.html#a9732afa2e3ebcd11d791b8389c9b3837">AlgorithmType</a><code> [get]</code></td></tr>
+<tr class="memitem:a9732afa2e3ebcd11d791b8389c9b3837"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_hash_cryptographer.html#a9732afa2e3ebcd11d791b8389c9b3837">AlgorithmType</a><code> [get, private set]</code></td></tr>
 <tr class="memdesc:a9732afa2e3ebcd11d791b8389c9b3837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the HashAlgorithm type.  <a href="#a9732afa2e3ebcd11d791b8389c9b3837">More...</a><br /></td></tr>
 <tr class="separator:a9732afa2e3ebcd11d791b8389c9b3837"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -337,6 +340,40 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a751857e439f2144ac4171fc0b6e65518"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte [] Inetdev.Security.Cryptography.HashCryptographer.ComputeHash </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the hash value for <em>stream</em> . If <em>stream</em>  is empty  is returned. </p>
+<p>Even if configured, Salt is not used by this method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>The input Stream for wich to compute the hash.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The computed hash code.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>stream</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html#a82e13c640b84def18a772bf6fb73ebe6">Inetdev.Security.Cryptography.IHashProvider</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ae1095ac8f9f6f7f4ca8162a2b5832de7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -449,7 +486,7 @@ Private Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

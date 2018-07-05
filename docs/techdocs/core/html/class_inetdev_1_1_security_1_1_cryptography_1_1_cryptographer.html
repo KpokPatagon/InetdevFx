@@ -79,11 +79,17 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d40d6497de6b51eb23bd7e3f8c88cb2"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_cryptographer.html#a5d40d6497de6b51eb23bd7e3f8c88cb2">ComputeHash</a> (<a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html">IHashProvider</a> provider, byte[] plaintext)</td></tr>
 <tr class="memdesc:a5d40d6497de6b51eb23bd7e3f8c88cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the hash value of plain text.  <a href="#a5d40d6497de6b51eb23bd7e3f8c88cb2">More...</a><br /></td></tr>
 <tr class="separator:a5d40d6497de6b51eb23bd7e3f8c88cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb1fa35a691a70ba0f4b10b02c5bb225"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_cryptographer.html#acb1fa35a691a70ba0f4b10b02c5bb225">ComputeHash</a> (<a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html">IHashProvider</a> provider, Stream stream)</td></tr>
+<tr class="memdesc:acb1fa35a691a70ba0f4b10b02c5bb225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the hash for the specified stream.  <a href="#acb1fa35a691a70ba0f4b10b02c5bb225">More...</a><br /></td></tr>
+<tr class="separator:acb1fa35a691a70ba0f4b10b02c5bb225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8574d259e903263e5aaf2647747f00a7"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_cryptographer.html#a8574d259e903263e5aaf2647747f00a7">ComputeHash</a> (<a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html">IHashProvider</a> provider, string plaintext)</td></tr>
 <tr class="memdesc:a8574d259e903263e5aaf2647747f00a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the hash value of plain text.  <a href="#a8574d259e903263e5aaf2647747f00a7">More...</a><br /></td></tr>
 <tr class="separator:a8574d259e903263e5aaf2647747f00a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c3574449999c9a4cc85056d46ead0d"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_cryptographer.html#ab6c3574449999c9a4cc85056d46ead0d">ComputeHash</a> (Stream stream)</td></tr>
+<tr class="memdesc:ab6c3574449999c9a4cc85056d46ead0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the hash for the specified <em>stream</em> .  <a href="#ab6c3574449999c9a4cc85056d46ead0d">More...</a><br /></td></tr>
+<tr class="separator:ab6c3574449999c9a4cc85056d46ead0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01c9297f2d6c6d5e3ddb409740d35fa5"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_cryptographer.html#a01c9297f2d6c6d5e3ddb409740d35fa5">ComputeHash</a> (string plaintext)</td></tr>
-<tr class="memdesc:a01c9297f2d6c6d5e3ddb409740d35fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the hash value of plain text.  <a href="#a01c9297f2d6c6d5e3ddb409740d35fa5">More...</a><br /></td></tr>
+<tr class="memdesc:a01c9297f2d6c6d5e3ddb409740d35fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the hash value of plain text.  <a href="#a01c9297f2d6c6d5e3ddb409740d35fa5">More...</a><br /></td></tr>
 <tr class="separator:a01c9297f2d6c6d5e3ddb409740d35fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb017a3ac69d0d70d9e3712763a6ad4"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_cryptographer.html#a5cb017a3ac69d0d70d9e3712763a6ad4">Decrypt</a> (byte[] ciphertext)</td></tr>
 <tr class="memdesc:a5cb017a3ac69d0d70d9e3712763a6ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypts a ciphered text using a SymmetricAlgorithm.  <a href="#a5cb017a3ac69d0d70d9e3712763a6ad4">More...</a><br /></td></tr>
@@ -173,11 +179,11 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">plaintext</td><td>The input to compare with the hash.</td></tr>
-    <tr><td class="paramname">hashedtext</td><td>The hash value to compare with the input value.</td></tr>
+    <tr><td class="paramname">hashedtext</td><td>The hash value to compare the input value. to</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>if the hash matches, otherwhise .</dd></dl>
 
 </div>
 </div>
@@ -228,6 +234,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>if the hash matches, otherwhise .</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>provider</em>  is .</td></tr>
@@ -284,6 +291,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>if the hash matches, otherwhise .</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>provider</em>  is .</td></tr>
@@ -333,6 +341,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>if the hash matches, otherwhise .</dd></dl>
 
 </div>
 </div>
@@ -365,6 +374,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The computed hash value.</dd></dl>
 
 </div>
 </div>
@@ -408,6 +418,57 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The computed hash value.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>provider</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acb1fa35a691a70ba0f4b10b02c5bb225"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static byte [] Inetdev.Security.Cryptography.Cryptographer.ComputeHash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html">IHashProvider</a>&#160;</td>
+          <td class="paramname"><em>provider</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>stream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the hash for the specified stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">provider</td><td>An <a class="el" href="interface_inetdev_1_1_security_1_1_cryptography_1_1_i_hash_provider.html" title="A contract for any provider for hash implementations. ">IHashProvider</a>.</td></tr>
+    <tr><td class="paramname">stream</td><td>The stream to be hashed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A hash code for the specified <em>stream</em> .</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>provider</em>  is .</td></tr>
@@ -457,12 +518,46 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The computed hash value.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>provider</em>  is .</td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="ab6c3574449999c9a4cc85056d46ead0d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static byte [] Inetdev.Security.Cryptography.Cryptographer.ComputeHash </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the hash for the specified <em>stream</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>A Stream to compute it's hash.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The computed hash value.</dd></dl>
 
 </div>
 </div>
@@ -488,13 +583,14 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compute the hash value of plain text. </p>
+<p>Computes the hash value of plain text. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">plaintext</td><td>The input to compute the hash for.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The computed hash value.</dd></dl>
 
 </div>
 </div>
