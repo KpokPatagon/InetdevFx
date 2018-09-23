@@ -129,10 +129,10 @@ Properties</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the catalog configuration is not valid for schema manipulation.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>catalog</em>  is .</td></tr>
     <tr><td class="paramname">InvalidOperationException</td><td>Thrown when a connection with the database is opened.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">ValidationException</td><td>Thrown when the catalog configuration is not valid for schema manipulation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -162,10 +162,10 @@ Properties</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the login configuration is not valid for schema manipulation.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>login</em>  is .</td></tr>
     <tr><td class="paramname">InvalidOperationException</td><td>Thrown when a connection with the database is opened.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">ValidationException</td><td>Thrown when the login configuration is not valid for schema manipulation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -195,10 +195,10 @@ Properties</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the user configuration is not valid for schema manipulation.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>user</em>  is .</td></tr>
     <tr><td class="paramname">InvalidOperationException</td><td>Thrown when a connection with the database is opened.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">ValidationException</td><td>Thrown when the user configuration is not valid for schema manipulation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -228,10 +228,10 @@ Properties</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the catalog configuration is not valid for schema manipulation.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>catalog</em>  is .</td></tr>
     <tr><td class="paramname">InvalidOperationException</td><td>Thrown when a connection with the database is opened.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">ValidationException</td><td>Thrown when the catalog configuration is not valid for schema manipulation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -255,16 +255,16 @@ Properties</h2></td></tr>
 <p>Drops the specified login. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">login</td><td>Te login to be dropped.</td></tr>
+    <tr><td class="paramname">login</td><td>The login to be dropped.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the login configuration is not valid for schema manipulation.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>login</em>  is .</td></tr>
     <tr><td class="paramname">InvalidOperationException</td><td>Thrown when a connection with the database is opened.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">ValidationException</td><td>Thrown when the login configuration is not valid for schema manipulation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -294,10 +294,10 @@ Properties</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the user configuration is not valid for schema manipulation.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>user</em>  is .</td></tr>
     <tr><td class="paramname">InvalidOperationException</td><td>Thrown when a connection with the database is opened.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">ValidationException</td><td>Thrown when the user configuration is not valid for schema manipulation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -328,11 +328,11 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>if the catalog exists.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the catalog configuration is not valid for checking existence.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>catalog</em>  is .</td></tr>
     <tr><td class="paramname">InvalidOperationException</td><td>Thrown when the database connection is opened.</td></tr>
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">ValidationException</td><td>Thrown when the catalog configuration is not valid for checking existence.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when a required database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -363,11 +363,11 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>if the login exists.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the login configuration is not valid for checking existence.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>login</em>  is .</td></tr>
     <tr><td class="paramname">InvalidOperationException</td><td>Thrown when the database connection is opened.</td></tr>
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">ValidationException</td><td>Thrown when the login configuration is not valid for checking existence.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -398,11 +398,11 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>if the user exists.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the user configuration is not valid for checking existence.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>user</em>  is .</td></tr>
     <tr><td class="paramname">InvalidOperationException</td><td>Thrown when the database connection is opened.</td></tr>
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">ValidationException</td><td>Thrown when the user configuration is not valid for checking existence.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -433,8 +433,8 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>User server roles.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DataAccessException</td><td>Thrown when an error occurs while accessing the database.</td></tr>
   </table>
   </dd>
 </dl>

@@ -79,7 +79,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac88cff9f4c19648bb1cc894ff539e821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a view exists within the catalog configured on the <b>DataAccessAPI</b>.  <a href="#ac88cff9f4c19648bb1cc894ff539e821">More...</a><br /></td></tr>
 <tr class="separator:ac88cff9f4c19648bb1cc894ff539e821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12569cdb9bf541134dc61888d831d3de"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; Catalog &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#a12569cdb9bf541134dc61888d831d3de">GetCatalogs</a> ()</td></tr>
-<tr class="memdesc:a12569cdb9bf541134dc61888d831d3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of catalogs. This method just returns the catalog from the <b>DataAccessAPI</b>.  <a href="#a12569cdb9bf541134dc61888d831d3de">More...</a><br /></td></tr>
+<tr class="memdesc:a12569cdb9bf541134dc61888d831d3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method just returns the catalog from the <b>DataAccessAPI</b>.  <a href="#a12569cdb9bf541134dc61888d831d3de">More...</a><br /></td></tr>
 <tr class="separator:a12569cdb9bf541134dc61888d831d3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac58d25c6cd4e73513df4e18b047cf1b1"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; Schema &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#ac58d25c6cd4e73513df4e18b047cf1b1">GetSchemas</a> ()</td></tr>
 <tr class="memdesc:ac58d25c6cd4e73513df4e18b047cf1b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of user created schemas from the catalog configured on the <b>DataAccessAPI</b>.  <a href="#ac58d25c6cd4e73513df4e18b047cf1b1">More...</a><br /></td></tr>
@@ -145,10 +145,10 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>if the schema exists.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>schema</em>  is .</td></tr>
-    <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
     <tr><td class="paramname">ValidationException</td><td>Thrown when the schema configuration is not valid for checking existence.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>schema</em>  is .</td></tr>
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
+    <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
   </table>
   </dd>
 </dl>
@@ -190,10 +190,10 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>is the table exists.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
     <tr><td class="paramname">ArgumentNullOrEmptyException</td><td>Thrown when <em>schema</em>  is  or empty.</td></tr>
     <tr><td class="paramname">ArgumentNullOrEmptyException</td><td>Thrown when <em>tableName</em>  is  or empty.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -225,8 +225,10 @@ Properties</h2></td></tr>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>table</em>  is .</td></tr>
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
+    <tr><td class="paramname">ArgumentNullOrEmptyException</td><td>Thrown when <em>table.Schema</em>  is  or empty.</td></tr>
+    <tr><td class="paramname">ArgumentNullOrEmptyException</td><td>Thrown when <em>table.Name</em>  is  or empty.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -268,10 +270,10 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>if the view exists.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
     <tr><td class="paramname">ArgumentNullOrEmptyException</td><td>Thrown when <em>schema</em>  is  or empty.</td></tr>
     <tr><td class="paramname">ArgumentNullOrEmptyException</td><td>Thrown when <em>viewName</em>  is  or empty.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -303,8 +305,10 @@ Properties</h2></td></tr>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>view</em>  is .</td></tr>
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
+    <tr><td class="paramname">ArgumentNullOrEmptyException</td><td>Thrown when <em>view.Schema</em>  is  or empty.</td></tr>
+    <tr><td class="paramname">ArgumentNullOrEmptyException</td><td>Thrown when <em>view.Name</em>  is  or empty.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -324,8 +328,14 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get a list of catalogs. This method just returns the catalog from the <b>DataAccessAPI</b>. </p>
+<p>This method just returns the catalog from the <b>DataAccessAPI</b>. </p>
 <dl class="section return"><dt>Returns</dt><dd>A list of user catalogs.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -346,8 +356,8 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A list of user schemas.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -389,9 +399,10 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A table definition.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
+    <tr><td class="paramname">TableOrViewNotFoundException</td><td>Thrown when the specified table does not exists.</td></tr>
     <tr><td class="paramname">ArgumentNullOrEmptyException</td><td>Thrown when <em>schema</em>  or <em>tableName</em>  are  or empty.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -423,8 +434,10 @@ Properties</h2></td></tr>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>tableName</em>  is .</td></tr>
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
+    <tr><td class="paramname">TableOrViewNotFoundException</td><td>Thrown when the specified table does not exists.</td></tr>
+    <tr><td class="paramname">ArgumentNullOrEmptyException</td><td>Thrown when <em>tableName.Schema</em>  or <em>tableName.Name</em>  are  or empty.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -448,8 +461,8 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A list of table names.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -473,8 +486,8 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A collection of tables.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -516,9 +529,10 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A definition for the specified view.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
     <tr><td class="paramname">ArgumentNullOrEmptyException</td><td>Thrown when <em>schema</em>  or <em>viewName</em>  are  or empty.</td></tr>
+    <tr><td class="paramname">TableOrViewNotFoundException</td><td>Thrown when the spacified view does not exists.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -550,8 +564,10 @@ Properties</h2></td></tr>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>viewName</em>  is .</td></tr>
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
+    <tr><td class="paramname">ArgumentNullOrEmptyException</td><td>Thrown when <em>viewName.Schema</em>  or <em>viewName.Name</em>  are  or empty.</td></tr>
+    <tr><td class="paramname">TableOrViewNotFoundException</td><td>Thrown when the spacified view does not exists.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -575,8 +591,8 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A list of view names.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -600,8 +616,8 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A collection of views.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
-    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Thrown when the requires database objects does not exists.</td></tr>
   </table>
   </dd>
 </dl>

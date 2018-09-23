@@ -134,6 +134,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_name.html">TableName</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Models the name of a table or view.  <a href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_name.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_or_view_not_found_exception.html">TableOrViewNotFoundException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thrown when a table or view is not found.  <a href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_or_view_not_found_exception.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_user.html">User</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Models a user of a database.  <a href="class_inetdev_1_1_data_1_1_database_schema_1_1_user.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,10 +166,14 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a52e4f3456ac0e67b471783a3603eb75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">IndexType defines index types.  <a href="namespace_inetdev_1_1_data_1_1_database_schema.html#a52e4f3456ac0e67b471783a3603eb75f">More...</a><br /></td></tr>
 <tr class="separator:a52e4f3456ac0e67b471783a3603eb75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58a13d94efb7a9364f49eaadb0967a3d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_inetdev_1_1_data_1_1_database_schema.html#a58a13d94efb7a9364f49eaadb0967a3d">Permission</a> { <a class="el" href="namespace_inetdev_1_1_data_1_1_database_schema.html#a58a13d94efb7a9364f49eaadb0967a3daf2a6c498fb90ee345d997f888fce3b18">Permission.Delete</a> = 1, 
+<tr class="memitem:a58a13d94efb7a9364f49eaadb0967a3d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_inetdev_1_1_data_1_1_database_schema.html#a58a13d94efb7a9364f49eaadb0967a3d">Permission</a> { <br />
+&#160;&#160;<a class="el" href="namespace_inetdev_1_1_data_1_1_database_schema.html#a58a13d94efb7a9364f49eaadb0967a3daf2a6c498fb90ee345d997f888fce3b18">Permission.Delete</a> = 1, 
 <a class="el" href="namespace_inetdev_1_1_data_1_1_database_schema.html#a58a13d94efb7a9364f49eaadb0967a3daa458be0f08b7e4ff3c0f633c100176c0">Permission.Insert</a> = 2, 
 <a class="el" href="namespace_inetdev_1_1_data_1_1_database_schema.html#a58a13d94efb7a9364f49eaadb0967a3dae0626222614bdee31951d84c64e5e9ff">Permission.Select</a> = 4, 
-<a class="el" href="namespace_inetdev_1_1_data_1_1_database_schema.html#a58a13d94efb7a9364f49eaadb0967a3da06933067aafd48425d67bcb01bba5cb6">Permission.Update</a> = 8
+<a class="el" href="namespace_inetdev_1_1_data_1_1_database_schema.html#a58a13d94efb7a9364f49eaadb0967a3da06933067aafd48425d67bcb01bba5cb6">Permission.Update</a> = 8, 
+<br />
+&#160;&#160;<a class="el" href="namespace_inetdev_1_1_data_1_1_database_schema.html#a58a13d94efb7a9364f49eaadb0967a3da40cd014b7b6251e3a22e6a45a73a64e1">Permission.Execute</a> = 16
+<br />
  }</td></tr>
 <tr class="memdesc:a58a13d94efb7a9364f49eaadb0967a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permissions that can be granted to database objects.  <a href="namespace_inetdev_1_1_data_1_1_database_schema.html#a58a13d94efb7a9364f49eaadb0967a3d">More...</a><br /></td></tr>
 <tr class="separator:a58a13d94efb7a9364f49eaadb0967a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,6 +297,9 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a58a13d94efb7a9364f49eaadb0967a3da06933067aafd48425d67bcb01bba5cb6"></a>Update&#160;</td><td class="fielddoc">
 <p>Permission to update records. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a58a13d94efb7a9364f49eaadb0967a3da40cd014b7b6251e3a22e6a45a73a64e1"></a>Execute&#160;</td><td class="fielddoc">
+<p>Permission to execute code (as functions or stored procedures). </p>
 </td></tr>
 </table>
 
