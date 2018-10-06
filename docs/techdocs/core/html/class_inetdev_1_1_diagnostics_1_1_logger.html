@@ -48,7 +48,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_inetdev_1_1_diagnostics_1_1_logger-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -58,84 +58,103 @@
 
 <p>Facade for writing a log entry to one or more trace targets.  
  <a href="class_inetdev_1_1_diagnostics_1_1_logger.html#details">More...</a></p>
+
+<p>Inherits <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html">Inetdev.Diagnostics.ILogger</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2a553ef2bf8c7cdbd20b20c5f59f2cc6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a2a553ef2bf8c7cdbd20b20c5f59f2cc6">Write</a> (<a class="el" href="class_inetdev_1_1_diagnostics_1_1_log_entry.html">LogEntry</a> entry)</td></tr>
-<tr class="memdesc:a2a553ef2bf8c7cdbd20b20c5f59f2cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes <em>entry</em>  to all configured targets.  <a href="#a2a553ef2bf8c7cdbd20b20c5f59f2cc6">More...</a><br /></td></tr>
-<tr class="separator:a2a553ef2bf8c7cdbd20b20c5f59f2cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b2210147ed05c06dc9a74427d10c05"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a74b2210147ed05c06dc9a74427d10c05">Write</a> (object message, <a class="el" href="namespace_inetdev_1_1_diagnostics.html#a7ba4d59d4a58db2b2d9ef95ff3af93a3">LogLevel</a> level, string category, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
-<tr class="memdesc:a74b2210147ed05c06dc9a74427d10c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a new log entry.  <a href="#a74b2210147ed05c06dc9a74427d10c05">More...</a><br /></td></tr>
-<tr class="separator:a74b2210147ed05c06dc9a74427d10c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a59a933f9b9d1bcfce1790c205949c0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a2a59a933f9b9d1bcfce1790c205949c0">WriteCritical</a> (object message)</td></tr>
-<tr class="memdesc:a2a59a933f9b9d1bcfce1790c205949c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a critical level message to the error trace.  <a href="#a2a59a933f9b9d1bcfce1790c205949c0">More...</a><br /></td></tr>
-<tr class="separator:a2a59a933f9b9d1bcfce1790c205949c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add2d1fe7b4b0f8e369cffe90982f97ac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#add2d1fe7b4b0f8e369cffe90982f97ac">WriteCritical</a> (object message, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
-<tr class="memdesc:add2d1fe7b4b0f8e369cffe90982f97ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a critical level message to the error trace.  <a href="#add2d1fe7b4b0f8e369cffe90982f97ac">More...</a><br /></td></tr>
-<tr class="separator:add2d1fe7b4b0f8e369cffe90982f97ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1e4e09b53d6ee1c20ecda635b135f14"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#aa1e4e09b53d6ee1c20ecda635b135f14">WriteDebug</a> (object message)</td></tr>
-<tr class="memdesc:aa1e4e09b53d6ee1c20ecda635b135f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a debug level message to the debug trace.  <a href="#aa1e4e09b53d6ee1c20ecda635b135f14">More...</a><br /></td></tr>
-<tr class="separator:aa1e4e09b53d6ee1c20ecda635b135f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6660762e9dea2d275befb98a39c83805"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a6660762e9dea2d275befb98a39c83805">WriteDebug</a> (object message, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
-<tr class="memdesc:a6660762e9dea2d275befb98a39c83805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a debug level message to the debug trace.  <a href="#a6660762e9dea2d275befb98a39c83805">More...</a><br /></td></tr>
-<tr class="separator:a6660762e9dea2d275befb98a39c83805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a270221cbaa089ee76fae94e7dc90e6c1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a270221cbaa089ee76fae94e7dc90e6c1">WriteError</a> (object message)</td></tr>
-<tr class="memdesc:a270221cbaa089ee76fae94e7dc90e6c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an error level message to the error trace.  <a href="#a270221cbaa089ee76fae94e7dc90e6c1">More...</a><br /></td></tr>
-<tr class="separator:a270221cbaa089ee76fae94e7dc90e6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accac34a7689892e007b197a5ded0527d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#accac34a7689892e007b197a5ded0527d">WriteError</a> (object message, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
-<tr class="memdesc:accac34a7689892e007b197a5ded0527d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an error level message to the error trace.  <a href="#accac34a7689892e007b197a5ded0527d">More...</a><br /></td></tr>
-<tr class="separator:accac34a7689892e007b197a5ded0527d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd487bb68702a4a1a6087802d4552776"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#afd487bb68702a4a1a6087802d4552776">WriteInformation</a> (object message)</td></tr>
-<tr class="memdesc:afd487bb68702a4a1a6087802d4552776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an information level message to the basic trace.  <a href="#afd487bb68702a4a1a6087802d4552776">More...</a><br /></td></tr>
-<tr class="separator:afd487bb68702a4a1a6087802d4552776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a6504fd75fa8003ae415ccd556eb7e8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a1a6504fd75fa8003ae415ccd556eb7e8">WriteInformation</a> (object message, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
-<tr class="memdesc:a1a6504fd75fa8003ae415ccd556eb7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an information level message to the basic trace.  <a href="#a1a6504fd75fa8003ae415ccd556eb7e8">More...</a><br /></td></tr>
-<tr class="separator:a1a6504fd75fa8003ae415ccd556eb7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac09ceb5cb900a884fd1aacff91682547"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#ac09ceb5cb900a884fd1aacff91682547">WriteVerbose</a> (object message)</td></tr>
-<tr class="memdesc:ac09ceb5cb900a884fd1aacff91682547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a verbose level message to the process trace.  <a href="#ac09ceb5cb900a884fd1aacff91682547">More...</a><br /></td></tr>
-<tr class="separator:ac09ceb5cb900a884fd1aacff91682547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06f76c2dbcf6ca0a9c1a0839e79c87b0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a06f76c2dbcf6ca0a9c1a0839e79c87b0">WriteVerbose</a> (object message, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
-<tr class="memdesc:a06f76c2dbcf6ca0a9c1a0839e79c87b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a verbose level message to the process trace.  <a href="#a06f76c2dbcf6ca0a9c1a0839e79c87b0">More...</a><br /></td></tr>
-<tr class="separator:a06f76c2dbcf6ca0a9c1a0839e79c87b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac19fd2f31c464ebbced583b5dc5a8ecc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#ac19fd2f31c464ebbced583b5dc5a8ecc">WriteWarning</a> (object message)</td></tr>
-<tr class="memdesc:ac19fd2f31c464ebbced583b5dc5a8ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a warning level message to the warning trace.  <a href="#ac19fd2f31c464ebbced583b5dc5a8ecc">More...</a><br /></td></tr>
-<tr class="separator:ac19fd2f31c464ebbced583b5dc5a8ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fef37b556c56a7382c00b9e25442701"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a6fef37b556c56a7382c00b9e25442701">WriteWarning</a> (object message, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
-<tr class="memdesc:a6fef37b556c56a7382c00b9e25442701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a warning level message to the warning trace.  <a href="#a6fef37b556c56a7382c00b9e25442701">More...</a><br /></td></tr>
-<tr class="separator:a6fef37b556c56a7382c00b9e25442701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a95add23808577d2ed04066d46efc6d14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a95add23808577d2ed04066d46efc6d14">Logger</a> ()</td></tr>
+<tr class="memdesc:a95add23808577d2ed04066d46efc6d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of <a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html" title="Facade for writing a log entry to one or more trace targets. ">Logger</a>.  <a href="#a95add23808577d2ed04066d46efc6d14">More...</a><br /></td></tr>
+<tr class="separator:a95add23808577d2ed04066d46efc6d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aaf4b61078776478fce6a2310bb7d10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a4aaf4b61078776478fce6a2310bb7d10">Write</a> (<a class="el" href="class_inetdev_1_1_diagnostics_1_1_log_entry.html">LogEntry</a> entry)</td></tr>
+<tr class="memdesc:a4aaf4b61078776478fce6a2310bb7d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes <em>entry</em>  to all configured targets.  <a href="#a4aaf4b61078776478fce6a2310bb7d10">More...</a><br /></td></tr>
+<tr class="separator:a4aaf4b61078776478fce6a2310bb7d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8322297193e72e3d06d7b914f6f4038"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#ab8322297193e72e3d06d7b914f6f4038">Write</a> (object message, <a class="el" href="namespace_inetdev_1_1_diagnostics.html#a7ba4d59d4a58db2b2d9ef95ff3af93a3">LogLevel</a> level, string category, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
+<tr class="memdesc:ab8322297193e72e3d06d7b914f6f4038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a new log entry.  <a href="#ab8322297193e72e3d06d7b914f6f4038">More...</a><br /></td></tr>
+<tr class="separator:ab8322297193e72e3d06d7b914f6f4038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60fca414254a2f21b46577af6ea20aa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a60fca414254a2f21b46577af6ea20aa7">WriteCritical</a> (object message)</td></tr>
+<tr class="memdesc:a60fca414254a2f21b46577af6ea20aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a critical level message to the error trace.  <a href="#a60fca414254a2f21b46577af6ea20aa7">More...</a><br /></td></tr>
+<tr class="separator:a60fca414254a2f21b46577af6ea20aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8a4f06f381dd46eb12e7a29e73cf505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#ab8a4f06f381dd46eb12e7a29e73cf505">WriteCritical</a> (object message, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
+<tr class="memdesc:ab8a4f06f381dd46eb12e7a29e73cf505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a critical level message to the error trace.  <a href="#ab8a4f06f381dd46eb12e7a29e73cf505">More...</a><br /></td></tr>
+<tr class="separator:ab8a4f06f381dd46eb12e7a29e73cf505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15fa9804e5504304a466c1e1cb0b3455"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a15fa9804e5504304a466c1e1cb0b3455">WriteDebug</a> (object message)</td></tr>
+<tr class="memdesc:a15fa9804e5504304a466c1e1cb0b3455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a debug level message to the debug trace.  <a href="#a15fa9804e5504304a466c1e1cb0b3455">More...</a><br /></td></tr>
+<tr class="separator:a15fa9804e5504304a466c1e1cb0b3455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28acd8c68a462d49718445aa5954e114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a28acd8c68a462d49718445aa5954e114">WriteDebug</a> (object message, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
+<tr class="memdesc:a28acd8c68a462d49718445aa5954e114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a debug level message to the debug trace.  <a href="#a28acd8c68a462d49718445aa5954e114">More...</a><br /></td></tr>
+<tr class="separator:a28acd8c68a462d49718445aa5954e114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01879a367c3af5419fe9a46b3f696fe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a01879a367c3af5419fe9a46b3f696fe2">WriteError</a> (object message)</td></tr>
+<tr class="memdesc:a01879a367c3af5419fe9a46b3f696fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an error level message to the error trace.  <a href="#a01879a367c3af5419fe9a46b3f696fe2">More...</a><br /></td></tr>
+<tr class="separator:a01879a367c3af5419fe9a46b3f696fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74ced6d6b133b38e7fb5f49548ca6d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#ad74ced6d6b133b38e7fb5f49548ca6d6">WriteError</a> (object message, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
+<tr class="memdesc:ad74ced6d6b133b38e7fb5f49548ca6d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an error level message to the error trace.  <a href="#ad74ced6d6b133b38e7fb5f49548ca6d6">More...</a><br /></td></tr>
+<tr class="separator:ad74ced6d6b133b38e7fb5f49548ca6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7517778364d5adbe2eb8bcc9b1e7cf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#ac7517778364d5adbe2eb8bcc9b1e7cf1">WriteInformation</a> (object message)</td></tr>
+<tr class="memdesc:ac7517778364d5adbe2eb8bcc9b1e7cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an information level message to the basic trace.  <a href="#ac7517778364d5adbe2eb8bcc9b1e7cf1">More...</a><br /></td></tr>
+<tr class="separator:ac7517778364d5adbe2eb8bcc9b1e7cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95609c0fffc362f6d45d01ee16e0ae45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a95609c0fffc362f6d45d01ee16e0ae45">WriteInformation</a> (object message, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
+<tr class="memdesc:a95609c0fffc362f6d45d01ee16e0ae45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an information level message to the basic trace.  <a href="#a95609c0fffc362f6d45d01ee16e0ae45">More...</a><br /></td></tr>
+<tr class="separator:a95609c0fffc362f6d45d01ee16e0ae45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a652b7369e95f35192350a91d862746"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a0a652b7369e95f35192350a91d862746">WriteVerbose</a> (object message)</td></tr>
+<tr class="memdesc:a0a652b7369e95f35192350a91d862746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a verbose level message to the process trace.  <a href="#a0a652b7369e95f35192350a91d862746">More...</a><br /></td></tr>
+<tr class="separator:a0a652b7369e95f35192350a91d862746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd818fd2217f87dd793f4b4095c52213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#abd818fd2217f87dd793f4b4095c52213">WriteVerbose</a> (object message, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
+<tr class="memdesc:abd818fd2217f87dd793f4b4095c52213"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a verbose level message to the process trace.  <a href="#abd818fd2217f87dd793f4b4095c52213">More...</a><br /></td></tr>
+<tr class="separator:abd818fd2217f87dd793f4b4095c52213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5e3399f799aeea7a801f62438805ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#aaa5e3399f799aeea7a801f62438805ec">WriteWarning</a> (object message)</td></tr>
+<tr class="memdesc:aaa5e3399f799aeea7a801f62438805ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a warning level message to the warning trace.  <a href="#aaa5e3399f799aeea7a801f62438805ec">More...</a><br /></td></tr>
+<tr class="separator:aaa5e3399f799aeea7a801f62438805ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e11b77463261ce851f10259fcb7cb0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a3e11b77463261ce851f10259fcb7cb0d">WriteWarning</a> (object message, <a class="el" href="class_inetdev_1_1_diagnostics_1_1_event_id.html">EventId</a> eventid)</td></tr>
+<tr class="memdesc:a3e11b77463261ce851f10259fcb7cb0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a warning level message to the warning trace.  <a href="#a3e11b77463261ce851f10259fcb7cb0d">More...</a><br /></td></tr>
+<tr class="separator:a3e11b77463261ce851f10259fcb7cb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a31aa3cd32ac2d1555235f7d2c023e9e7"><td class="memItemLeft" align="right" valign="top">static IConfiguration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a31aa3cd32ac2d1555235f7d2c023e9e7">Configuration</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a31aa3cd32ac2d1555235f7d2c023e9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow access to configuration.  <a href="#a31aa3cd32ac2d1555235f7d2c023e9e7">More...</a><br /></td></tr>
 <tr class="separator:a31aa3cd32ac2d1555235f7d2c023e9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a431ef930ff54ba3349f6fbd87fcf052d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_inetdev_1_1_diagnostics_1_1_log_writer.html">LogWriter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a431ef930ff54ba3349f6fbd87fcf052d">Writer</a><code> [get]</code></td></tr>
+<tr class="memitem:a431ef930ff54ba3349f6fbd87fcf052d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_log_writer.html">LogWriter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html#a431ef930ff54ba3349f6fbd87fcf052d">Writer</a><code> [get]</code></td></tr>
 <tr class="memdesc:a431ef930ff54ba3349f6fbd87fcf052d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the instance of the <a class="el" href="class_inetdev_1_1_diagnostics_1_1_log_writer.html" title="This class routes log messages to LogTargets based on categories. ">LogWriter</a> used by this facade.  <a href="#a431ef930ff54ba3349f6fbd87fcf052d">More...</a><br /></td></tr>
 <tr class="separator:a431ef930ff54ba3349f6fbd87fcf052d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_inetdev_1_1_diagnostics_1_1_i_logger"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_inetdev_1_1_diagnostics_1_1_i_logger')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html">Inetdev.Diagnostics.ILogger</a></td></tr>
+<tr class="memitem:a44ba1e86554398c284d23b8f204d91da inherit properties_interface_inetdev_1_1_diagnostics_1_1_i_logger"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_log_writer.html">LogWriter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#a44ba1e86554398c284d23b8f204d91da">Writer</a><code> [get]</code></td></tr>
+<tr class="memdesc:a44ba1e86554398c284d23b8f204d91da inherit properties_interface_inetdev_1_1_diagnostics_1_1_i_logger"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_inetdev_1_1_diagnostics_1_1_log_writer.html" title="This class routes log messages to LogTargets based on categories. ">LogWriter</a> that this instance uses to write logging information.  <a href="#a44ba1e86554398c284d23b8f204d91da">More...</a><br /></td></tr>
+<tr class="separator:a44ba1e86554398c284d23b8f204d91da inherit properties_interface_inetdev_1_1_diagnostics_1_1_i_logger"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Facade for writing a log entry to one or more trace targets. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2a553ef2bf8c7cdbd20b20c5f59f2cc6"></a>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a95add23808577d2ed04066d46efc6d14"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.Write </td>
+          <td class="memname">Inetdev.Diagnostics.Logger.Logger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new instance of <a class="el" href="class_inetdev_1_1_diagnostics_1_1_logger.html" title="Facade for writing a log entry to one or more trace targets. ">Logger</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4aaf4b61078776478fce6a2310bb7d10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Diagnostics.Logger.Write </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_inetdev_1_1_diagnostics_1_1_log_entry.html">LogEntry</a>&#160;</td>
           <td class="paramname"><em>entry</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes <em>entry</em>  to all configured targets. </p>
@@ -146,17 +165,16 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#aa83100c110b65d418b006aac33fd6154">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a74b2210147ed05c06dc9a74427d10c05"></a>
+<a class="anchor" id="ab8322297193e72e3d06d7b914f6f4038"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.Write </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.Write </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em>, </td>
@@ -185,11 +203,6 @@ Properties</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes a new log entry. </p>
@@ -203,28 +216,22 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#a3d6062c96b4f94223f5eccaa761faff8">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a2a59a933f9b9d1bcfce1790c205949c0"></a>
+<a class="anchor" id="a60fca414254a2f21b46577af6ea20aa7"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.WriteCritical </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.WriteCritical </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes a critical level message to the error trace. </p>
@@ -235,17 +242,16 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#abd028676935eb2977f9fa695660a0027">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="add2d1fe7b4b0f8e369cffe90982f97ac"></a>
+<a class="anchor" id="ab8a4f06f381dd46eb12e7a29e73cf505"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.WriteCritical </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.WriteCritical </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em>, </td>
@@ -262,11 +268,6 @@ Properties</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes a critical level message to the error trace. </p>
@@ -278,28 +279,22 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#aebca374cc5eac0dd66bdbfad6cd1bad9">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="aa1e4e09b53d6ee1c20ecda635b135f14"></a>
+<a class="anchor" id="a15fa9804e5504304a466c1e1cb0b3455"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.WriteDebug </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.WriteDebug </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes a debug level message to the debug trace. </p>
@@ -310,17 +305,16 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#afbe5809afdaa64794aaebf53776f3e41">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a6660762e9dea2d275befb98a39c83805"></a>
+<a class="anchor" id="a28acd8c68a462d49718445aa5954e114"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.WriteDebug </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.WriteDebug </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em>, </td>
@@ -337,11 +331,6 @@ Properties</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes a debug level message to the debug trace. </p>
@@ -353,28 +342,22 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#a018f94e8c9ed5076c1b65bcadef6323d">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a270221cbaa089ee76fae94e7dc90e6c1"></a>
+<a class="anchor" id="a01879a367c3af5419fe9a46b3f696fe2"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.WriteError </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.WriteError </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes an error level message to the error trace. </p>
@@ -385,17 +368,16 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#a3f2b4a446ea94b657cf8795aff7dbd97">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="accac34a7689892e007b197a5ded0527d"></a>
+<a class="anchor" id="ad74ced6d6b133b38e7fb5f49548ca6d6"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.WriteError </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.WriteError </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em>, </td>
@@ -412,11 +394,6 @@ Properties</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes an error level message to the error trace. </p>
@@ -428,28 +405,22 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#a358fb6dab9726203aa0827bd1d9918d2">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="afd487bb68702a4a1a6087802d4552776"></a>
+<a class="anchor" id="ac7517778364d5adbe2eb8bcc9b1e7cf1"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.WriteInformation </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.WriteInformation </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes an information level message to the basic trace. </p>
@@ -460,17 +431,16 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#a26d4cda6fe8a809e1682c1fe7ca51dd1">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a1a6504fd75fa8003ae415ccd556eb7e8"></a>
+<a class="anchor" id="a95609c0fffc362f6d45d01ee16e0ae45"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.WriteInformation </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.WriteInformation </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em>, </td>
@@ -487,11 +457,6 @@ Properties</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes an information level message to the basic trace. </p>
@@ -503,28 +468,22 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#a37f9d5cc5e8e2bbe4f1ca324d2aa88c4">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="ac09ceb5cb900a884fd1aacff91682547"></a>
+<a class="anchor" id="a0a652b7369e95f35192350a91d862746"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.WriteVerbose </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.WriteVerbose </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes a verbose level message to the process trace. </p>
@@ -535,17 +494,16 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#a8f8825265195bc6c8a6ff6f4719f0e53">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a06f76c2dbcf6ca0a9c1a0839e79c87b0"></a>
+<a class="anchor" id="abd818fd2217f87dd793f4b4095c52213"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.WriteVerbose </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.WriteVerbose </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em>, </td>
@@ -562,11 +520,6 @@ Properties</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes a verbose level message to the process trace. </p>
@@ -578,28 +531,22 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#aa00a44c57943b1b23f2249ff9ce2ff03">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="ac19fd2f31c464ebbced583b5dc5a8ecc"></a>
+<a class="anchor" id="aaa5e3399f799aeea7a801f62438805ec"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.WriteWarning </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.WriteWarning </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes a warning level message to the warning trace. </p>
@@ -610,17 +557,16 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#ad025150c7d1bcc726b8cc6ce36bb8db7">Inetdev.Diagnostics.ILogger</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a6fef37b556c56a7382c00b9e25442701"></a>
+<a class="anchor" id="a3e11b77463261ce851f10259fcb7cb0d"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Inetdev.Diagnostics.Logger.WriteWarning </td>
+          <td class="memname">void Inetdev.Diagnostics.Logger.WriteWarning </td>
           <td>(</td>
           <td class="paramtype">object&#160;</td>
           <td class="paramname"><em>message</em>, </td>
@@ -637,11 +583,6 @@ Properties</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes a warning level message to the warning trace. </p>
@@ -652,6 +593,8 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Implements <a class="el" href="interface_inetdev_1_1_diagnostics_1_1_i_logger.html#a9099bc8cd8eaaf9a5940ff15291b05cd">Inetdev.Diagnostics.ILogger</a>.</p>
 
 </div>
 </div>
@@ -691,7 +634,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

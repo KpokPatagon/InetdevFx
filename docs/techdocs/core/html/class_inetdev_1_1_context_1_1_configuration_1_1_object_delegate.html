@@ -61,9 +61,9 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e60310f88b9167c9d9a247a59e07792"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_context_1_1_configuration_1_1_object_delegate.html#a1e60310f88b9167c9d9a247a59e07792">ObjectDelegate</a> (string eventName, string objectName, string methodName)</td></tr>
-<tr class="memdesc:a1e60310f88b9167c9d9a247a59e07792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of <a class="el" href="class_inetdev_1_1_context_1_1_configuration_1_1_object_delegate.html" title="Configuration of an object delegate (Event). ">ObjectDelegate</a>.  <a href="#a1e60310f88b9167c9d9a247a59e07792">More...</a><br /></td></tr>
-<tr class="separator:a1e60310f88b9167c9d9a247a59e07792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cccfc1c54c59fbdd5ee72763f3e1af4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_context_1_1_configuration_1_1_object_delegate.html#a2cccfc1c54c59fbdd5ee72763f3e1af4">ObjectDelegate</a> (string eventName, string objectName, string methodName, bool optional)</td></tr>
+<tr class="memdesc:a2cccfc1c54c59fbdd5ee72763f3e1af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of <a class="el" href="class_inetdev_1_1_context_1_1_configuration_1_1_object_delegate.html" title="Configuration of an object delegate (Event). ">ObjectDelegate</a>.  <a href="#a2cccfc1c54c59fbdd5ee72763f3e1af4">More...</a><br /></td></tr>
+<tr class="separator:a2cccfc1c54c59fbdd5ee72763f3e1af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aada26d292d25c88ee42344b221e471bb"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_context_1_1_configuration_1_1_object_delegate.html#aada26d292d25c88ee42344b221e471bb">ToString</a> ()</td></tr>
 <tr class="memdesc:aada26d292d25c88ee42344b221e471bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a textual representation of the object delegate configuration.  <a href="#aada26d292d25c88ee42344b221e471bb">More...</a><br /></td></tr>
 <tr class="separator:aada26d292d25c88ee42344b221e471bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -79,11 +79,14 @@ Properties</h2></td></tr>
 <tr class="memitem:a9e646d40536bcc335638e60d1aabbcd8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_context_1_1_configuration_1_1_object_delegate.html#a9e646d40536bcc335638e60d1aabbcd8">Method</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a9e646d40536bcc335638e60d1aabbcd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method name that implement the event handler.  <a href="#a9e646d40536bcc335638e60d1aabbcd8">More...</a><br /></td></tr>
 <tr class="separator:a9e646d40536bcc335638e60d1aabbcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49af7c8da5c56a8c93317079d37be0fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_context_1_1_configuration_1_1_object_delegate.html#a49af7c8da5c56a8c93317079d37be0fa">Optional</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a49af7c8da5c56a8c93317079d37be0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the event is considered optional.  <a href="#a49af7c8da5c56a8c93317079d37be0fa">More...</a><br /></td></tr>
+<tr class="separator:a49af7c8da5c56a8c93317079d37be0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="namespace_inetdev_1_1_context_1_1_configuration.html">Configuration</a> of an object delegate (Event). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1e60310f88b9167c9d9a247a59e07792"></a>
+<a class="anchor" id="a2cccfc1c54c59fbdd5ee72763f3e1af4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -103,7 +106,13 @@ Properties</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>methodName</em>&#160;</td>
+          <td class="paramname"><em>methodName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>optional</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -119,6 +128,7 @@ Properties</h2></td></tr>
     <tr><td class="paramname">eventName</td><td>The name of the event to hook the method to.</td></tr>
     <tr><td class="paramname">objectName</td><td>Name of the object that contains the delegate method.</td></tr>
     <tr><td class="paramname">methodName</td><td>The method name that implement the event handler.</td></tr>
+    <tr><td class="paramname">optional</td><td>Whether the event is considered optional.</td></tr>
   </table>
   </dd>
 </dl>
@@ -214,6 +224,28 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Name of the object that contains the delegate method. </p>
+
+</div>
+</div>
+<a class="anchor" id="a49af7c8da5c56a8c93317079d37be0fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Inetdev.Context.Configuration.ObjectDelegate.Optional</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the event is considered optional. </p>
 
 </div>
 </div>
