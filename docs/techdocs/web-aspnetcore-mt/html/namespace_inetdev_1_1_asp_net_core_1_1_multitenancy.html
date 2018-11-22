@@ -37,6 +37,7 @@
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="namespaces.html"><span>Packages</span></a></li>
+      <li><a href="namespacemembers.html"><span>Package&#160;Functions</span></a></li>
     </ul>
   </div>
 <div id="nav-path" class="navpath">
@@ -47,7 +48,8 @@
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Package Inetdev.AspNetCore.Multitenancy</div>  </div>
 </div><!--header-->
@@ -63,6 +65,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_multitenancy_1_1_tenant_data_access_api_runtime_dependency_injector.html">TenantDataAccessApiRuntimeDependencyInjector</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures and inject IDbAccess objects for multi-tenant applications.  <a href="class_inetdev_1_1_asp_net_core_1_1_multitenancy_1_1_tenant_data_access_api_runtime_dependency_injector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_multitenancy_1_1_tenant_name_url_rewriter_rule.html">TenantNameUrlRewriterRule</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rewrite the Url by removing the tenant name from the begining of the path.  <a href="class_inetdev_1_1_asp_net_core_1_1_multitenancy_1_1_tenant_name_url_rewriter_rule.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_multitenancy_1_1_tenant_resolver_middleware.html">TenantResolverMiddleware</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A middleaware that resolves tenant of <em>TTenant</em>  base on the request.  <a href="class_inetdev_1_1_asp_net_core_1_1_multitenancy_1_1_tenant_resolver_middleware.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -75,7 +80,38 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_multitenancy_1_1_tenant_resolver_options.html">TenantResolverOptions</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for a tenant resolver middleware.  <a href="class_inetdev_1_1_asp_net_core_1_1_multitenancy_1_1_tenant_resolver_options.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aead810da73c019e3b6ceb447b70672eb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_inetdev_1_1_asp_net_core_1_1_multitenancy.html#aead810da73c019e3b6ceb447b70672eb">TenantNameLocation</a> { <a class="el" href="namespace_inetdev_1_1_asp_net_core_1_1_multitenancy.html#aead810da73c019e3b6ceb447b70672ebac2ca16d048ec66e04bca283eab048ec2">TenantNameLocation.Host</a>, 
+<a class="el" href="namespace_inetdev_1_1_asp_net_core_1_1_multitenancy.html#aead810da73c019e3b6ceb447b70672ebaac70412e939d72a9234cdebb1af5867b">TenantNameLocation.Path</a>
+ }</td></tr>
+<tr class="memdesc:aead810da73c019e3b6ceb447b70672eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies where the tenant name is located.  <a href="namespace_inetdev_1_1_asp_net_core_1_1_multitenancy.html#aead810da73c019e3b6ceb447b70672eb">More...</a><br /></td></tr>
+<tr class="separator:aead810da73c019e3b6ceb447b70672eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="aead810da73c019e3b6ceb447b70672eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_inetdev_1_1_asp_net_core_1_1_multitenancy.html#aead810da73c019e3b6ceb447b70672eb">Inetdev.AspNetCore.Multitenancy.TenantNameLocation</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies where the tenant name is located. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aead810da73c019e3b6ceb447b70672ebac2ca16d048ec66e04bca283eab048ec2"></a>Host&#160;</td><td class="fielddoc">
+<p>Tenant name is in the first segment of the host. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aead810da73c019e3b6ceb447b70672ebaac70412e939d72a9234cdebb1af5867b"></a>Path&#160;</td><td class="fielddoc">
+<p>Tenant name is in the first segment of the path. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

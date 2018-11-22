@@ -62,10 +62,59 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae98f305c0abd1506b36c4cbccf1257d5"><td class="memItemLeft" align="right" valign="top">static IApplicationBuilder&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_multitenancy_1_1_tenant_resolver_middleware_extensions.html#ae98f305c0abd1506b36c4cbccf1257d5">UseTenantResolver&lt; TTenant &gt;</a> (this IApplicationBuilder builder, <a class="el" href="class_inetdev_1_1_asp_net_core_1_1_multitenancy_1_1_tenant_resolver_options.html">TenantResolverOptions</a>&lt; TTenant &gt; options)</td></tr>
 <tr class="memdesc:ae98f305c0abd1506b36c4cbccf1257d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a tenant resolver middleware to the pipeline.  <a href="#ae98f305c0abd1506b36c4cbccf1257d5">More...</a><br /></td></tr>
 <tr class="separator:ae98f305c0abd1506b36c4cbccf1257d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86743570bc6f1ddbd3b5579be4f985bd"><td class="memItemLeft" align="right" valign="top">static IApplicationBuilder&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_multitenancy_1_1_tenant_resolver_middleware_extensions.html#a86743570bc6f1ddbd3b5579be4f985bd">UseTenantNameUrlRewriter&lt; TTenant &gt;</a> (this IApplicationBuilder builder)</td></tr>
+<tr class="memdesc:a86743570bc6f1ddbd3b5579be4f985bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a rewriter middleware that strip the tenant name from the Path.  <a href="#a86743570bc6f1ddbd3b5579be4f985bd">More...</a><br /></td></tr>
+<tr class="separator:a86743570bc6f1ddbd3b5579be4f985bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Extensions related to TenantResolverMiddleware&lt;TTenant&gt;. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a86743570bc6f1ddbd3b5579be4f985bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static IApplicationBuilder Inetdev.AspNetCore.Multitenancy.TenantResolverMiddlewareExtensions.UseTenantNameUrlRewriter&lt; TTenant &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this IApplicationBuilder&#160;</td>
+          <td class="paramname"><em>builder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a rewriter middleware that strip the tenant name from the Path. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TTenant</td><td>Type of the tenant object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">builder</td><td>Application builder.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The application builder.</dd></dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>TTenant</em></td><td>&#160;:</td><td valign="top"><em>ITenant</em></td><td>&#160;</td></tr>
+</table>
+</dl>
+</div>
+
+</div>
+</div>
 <a class="anchor" id="ae98f305c0abd1506b36c4cbccf1257d5"></a>
 <div class="memitem">
 <div class="memproto">
