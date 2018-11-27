@@ -1,0 +1,376 @@
+﻿{
+  "Schema": "TenantStore",
+  "Name": "TENANT",
+  "Release": "",
+  "Caption": "Tenant",
+  "Description": "The TENANT table contains tenants.",
+  "FileGroup": null,
+  "Kindom": "Application",
+  "PrimaryKey": {
+    "Name": "PK_TENANT",
+    "Type": "NonClustered",
+    "IsUnique": true,
+    "Description": "A tenant is identified by it's Id.",
+    "FileGroup": null,
+    "Columns": [
+      {
+        "Name": "ID",
+        "Position": 1,
+        "Direction": "Ascending"
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "Name": "ID",
+      "DataType": "Integer",
+      "Caption": "Id",
+      "Description": "Tenant Id",
+      "Position": 1,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "NAME",
+      "DataType": "Text",
+      "Caption": "Name",
+      "Description": "Tenant name.",
+      "Position": 2,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "DISPLAYNAME",
+      "DataType": "NText",
+      "Caption": "Display name",
+      "Description": "Tenant display name.",
+      "Position": 3,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "260",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "EMAIL",
+      "DataType": "NText",
+      "Caption": "Mail",
+      "Description": "Tenant mail",
+      "Position": 4,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "260",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "CULTURE",
+      "DataType": "Text",
+      "Caption": "Culture",
+      "Description": "Culture identifier for localization.",
+      "Position": 5,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "10",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "MAILSERVER_ID",
+      "DataType": "Text",
+      "Caption": "Mail server Id",
+      "Description": "Id of the mail server used to send e-mail on behalf of the tenant.",
+      "Position": 6,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "50",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "MAIL_FROM_ADDRESS",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 7,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "256",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "MAIL_FROM_NAME",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 8,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "256",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "DBSERVER_ID",
+      "DataType": "Text",
+      "Caption": "Database server Id",
+      "Description": "Id of the database server used to store tenant data.",
+      "Position": 9,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "50",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "DATABASENAME",
+      "DataType": "Text",
+      "Caption": "Database Name",
+      "Description": "Name of the database where tenant data is stored.",
+      "Position": 10,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "MAX",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "DATABASEUSER",
+      "DataType": "Text",
+      "Caption": "Database user",
+      "Description": "User name to connect to the database.",
+      "Position": 11,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "MAX",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "DATABASEPASS",
+      "DataType": "Text",
+      "Caption": "Password",
+      "Description": "Password to connect to the database.",
+      "Position": 12,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "MAX",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "PSTATE",
+      "DataType": "Text",
+      "Caption": "Provision state",
+      "Description": "Provision state for this tenant",
+      "Position": 13,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "20",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": "CK_TENANT_PSTATE",
+      "CheckConstraintExpression": "PSTATE IN ('Pending', 'Provisioning', 'Failed', 'Provisioned')"
+    },
+    {
+      "Name": "SSTATE",
+      "DataType": "Text",
+      "Caption": "Subscription state",
+      "Description": "Subscription state",
+      "Position": 14,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "10",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": "CK_TENANT_SSTATE",
+      "CheckConstraintExpression": "SSTATE IN ('Active', 'Inactive', 'Trial')"
+    },
+    {
+      "Name": "SSTATECOMMENT",
+      "DataType": "Clob",
+      "Caption": "Subscription state comment",
+      "Description": "A comment related to the suscription state.",
+      "Position": 15,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "TDURATIONDAYS",
+      "DataType": "Integer",
+      "Caption": "Trial duration",
+      "Description": "Trial duration in days.",
+      "Position": 16,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "TSTARTEDUTC",
+      "DataType": "DateTime",
+      "Caption": "Trial started",
+      "Description": "Date and time when the trial has started in UTC.",
+      "Position": 17,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "TENDSUTC",
+      "DataType": "DateTime",
+      "Caption": "Trial end",
+      "Description": "Date and time when the trial period expires in UTC.",
+      "Position": 18,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    }
+  ],
+  "Indexes": [
+    {
+      "Name": "IX_TENANT_1",
+      "Type": "NonClustered",
+      "IsUnique": true,
+      "Description": "A tenant name is unique because this is how we find tenants.",
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "NAME",
+          "Position": 1,
+          "Direction": "Ascending"
+        }
+      ]
+    },
+    {
+      "Name": "IX_TENANT_2",
+      "Type": "NonClustered",
+      "IsUnique": true,
+      "Description": "Tenants will be looked by display name in the UI.",
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "DISPLAYNAME",
+          "Position": 1,
+          "Direction": "Ascending"
+        }
+      ]
+    }
+  ],
+  "ForeignKeys": [
+    {
+      "Name": "FK_TENANT_1",
+      "Description": "A tenant references the mail server it uses.",
+      "OnDelete": "NoAction",
+      "OnUpdate": "NoAction",
+      "ReferencedTableName": "MAILSERVER",
+      "ReferencedTableSchema": "TenantStore",
+      "Columns": [
+        {
+          "ColumnName": "MAILSERVER_ID",
+          "ReferencedColumnName": "ID"
+        }
+      ]
+    },
+    {
+      "Name": "FK_TENANT_2",
+      "Description": "A tenant references the database server it uses.",
+      "OnDelete": "NoAction",
+      "OnUpdate": "NoAction",
+      "ReferencedTableName": "DBSERVER",
+      "ReferencedTableSchema": "TenantStore",
+      "Columns": [
+        {
+          "ColumnName": "DBSERVER_ID",
+          "ReferencedColumnName": "ID"
+        }
+      ]
+    }
+  ],
+  "DesignerTemplate": "",
+  "ResourceFileName": null,
+  "ExtendedProperties": []
+}

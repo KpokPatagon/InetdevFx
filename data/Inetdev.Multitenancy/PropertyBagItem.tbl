@@ -1,0 +1,124 @@
+﻿{
+  "Schema": "dbo",
+  "Name": "T_PROPERTY_BAG",
+  "Release": null,
+  "Caption": "Propiedades relacionadas",
+  "Description": "A property bag table for multi-tenant application.",
+  "FileGroup": null,
+  "Kindom": "Application",
+  "PrimaryKey": {
+    "Name": "PK_PROPERTY_BAG",
+    "Type": "NonClustered",
+    "IsUnique": true,
+    "Description": "A property of a bag is identified by it's name and bag key.",
+    "FileGroup": null,
+    "Columns": [
+      {
+        "Name": "TENANT_ID",
+        "Position": 1,
+        "Direction": "Ascending"
+      },
+      {
+        "Name": "BAG_KEY",
+        "Position": 2,
+        "Direction": "Ascending"
+      },
+      {
+        "Name": "PROPERTY_NAME",
+        "Position": 3,
+        "Direction": "Ascending"
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "Name": "TENANT_ID",
+      "DataType": "Integer",
+      "Caption": "Suscriptor",
+      "Description": "Tenant Id",
+      "Position": 1,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "BAG_KEY",
+      "DataType": "Text",
+      "Caption": "Clave de grupo",
+      "Description": "Property bag key",
+      "Position": 2,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "50",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "PROPERTY_NAME",
+      "DataType": "Text",
+      "Caption": "Propiedad",
+      "Description": "Property name",
+      "Position": 3,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "PROPERTY_VALUE",
+      "DataType": "NText",
+      "Caption": "Valor",
+      "Description": "Property value",
+      "Position": 4,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "1024",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    }
+  ],
+  "Indexes": [
+    {
+      "Name": "IX_PROPERTY_BAG_1",
+      "Type": "NonClustered",
+      "IsUnique": false,
+      "Description": "Properties are retrived by it's bag key and tenant id.",
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "TENANT_ID",
+          "Position": 1,
+          "Direction": "Ascending"
+        },
+        {
+          "Name": "BAG_KEY",
+          "Position": 2,
+          "Direction": "Ascending"
+        }
+      ]
+    }
+  ],
+  "ForeignKeys": [],
+  "DesignerTemplate": null,
+  "ResourceFileName": null,
+  "ExtendedProperties": []
+}

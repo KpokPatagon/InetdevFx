@@ -1,0 +1,189 @@
+﻿{
+  "Schema": "TenantStore",
+  "Name": "MAILSERVER",
+  "Release": "",
+  "Caption": "Mail server",
+  "Description": "The MAILSERVER table contains mail servers.",
+  "FileGroup": null,
+  "Kindom": "Application",
+  "PrimaryKey": {
+    "Name": "PK_MAILSERVER",
+    "Type": "NonClustered",
+    "IsUnique": true,
+    "Description": "A mail server is identified by it's Id.",
+    "FileGroup": null,
+    "Columns": [
+      {
+        "Name": "ID",
+        "Position": 1,
+        "Direction": "Ascending"
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "Name": "ID",
+      "DataType": "Text",
+      "Caption": "Id",
+      "Description": "Mail server Id",
+      "Position": 1,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "50",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "NAME",
+      "DataType": "NText",
+      "Caption": "Name",
+      "Description": "Server name",
+      "Position": 2,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "FROM_ADDR",
+      "DataType": "NText",
+      "Caption": "From",
+      "Description": "From address",
+      "Position": 3,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "256",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "FROM_NAME",
+      "DataType": "NText",
+      "Caption": "From name",
+      "Description": "From name",
+      "Position": 4,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "50",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "PORT",
+      "DataType": "Integer",
+      "Caption": "Port",
+      "Description": "Port number",
+      "Position": 5,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": "DF_MAILSERVER_PORT",
+      "DefaultConstraintExpression": "0",
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "REQUIRES_SSL",
+      "DataType": "Boolean",
+      "Caption": "Requires SSL",
+      "Description": "Whether the mail server requires a SSL connection",
+      "Position": 6,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": "DF_MAILSERVER_SSL_OFF",
+      "DefaultConstraintExpression": "0",
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "USE_AUTH",
+      "DataType": "Boolean",
+      "Caption": "Use Authentication",
+      "Description": "Whether the mail server uses authentication",
+      "Position": 7,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": "DF_MAILSERVER_AUTH_OFF",
+      "DefaultConstraintExpression": "0",
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "USERNAME",
+      "DataType": "Text",
+      "Caption": "User name",
+      "Description": "User name for a server that requires authentication",
+      "Position": 8,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "MAX",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "USERPASS",
+      "DataType": "Text",
+      "Caption": "Password",
+      "Description": "Password for a server that requires authentication.",
+      "Position": 9,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "MAX",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    }
+  ],
+  "Indexes": [
+    {
+      "Name": "IX_MAILSERVER_1",
+      "Type": "NonClustered",
+      "IsUnique": true,
+      "Description": "A mail server is looked by name so it must be unique and indexed.",
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "NAME",
+          "Position": 1,
+          "Direction": "Ascending"
+        }
+      ]
+    }
+  ],
+  "ForeignKeys": [],
+  "DesignerTemplate": "",
+  "ResourceFileName": null,
+  "ExtendedProperties": []
+}

@@ -1,0 +1,62 @@
+﻿{
+  "Schema": "dbo",
+  "Name": "NUMERATOR",
+  "Release": null,
+  "Caption": "Numerador",
+  "Description": "A numerator table for non multi-tenant application.",
+  "FileGroup": null,
+  "Kindom": "Application",
+  "PrimaryKey": {
+    "Name": "PK_NUMERATOR",
+    "Type": "NonClustered",
+    "IsUnique": true,
+    "Description": "A numerator is identified by it's id.",
+    "FileGroup": null,
+    "Columns": [
+      {
+        "Name": "ID",
+        "Position": 1,
+        "Direction": "Ascending"
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "Name": "ID",
+      "DataType": "Text",
+      "Caption": "Identificación",
+      "Description": "Identification",
+      "Position": 1,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "50",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "LAST_VALUE",
+      "DataType": "BigInt",
+      "Caption": "Ultimo valor",
+      "Description": "Last used value.",
+      "Position": 2,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    }
+  ],
+  "Indexes": [],
+  "ForeignKeys": [],
+  "DesignerTemplate": null,
+  "ResourceFileName": null,
+  "ExtendedProperties": []
+}

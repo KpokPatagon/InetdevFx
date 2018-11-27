@@ -1,0 +1,83 @@
+﻿{
+  "Schema": "dbo",
+  "Name": "T_PARAMETER",
+  "Release": null,
+  "Caption": "Parámetros",
+  "Description": "A parameter table for multi-tenant applications",
+  "FileGroup": null,
+  "Kindom": "Application",
+  "PrimaryKey": {
+    "Name": "PK_PARAMETER",
+    "Type": "NonClustered",
+    "IsUnique": true,
+    "Description": "A parameter is identified by it's id and tenant id.",
+    "FileGroup": null,
+    "Columns": [
+      {
+        "Name": "TENANT_ID",
+        "Position": 1,
+        "Direction": "Ascending"
+      },
+      {
+        "Name": "ID",
+        "Position": 2,
+        "Direction": "Ascending"
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "Name": "TENANT_ID",
+      "DataType": "Integer",
+      "Caption": "Suscriptor",
+      "Description": "Tenant id",
+      "Position": 1,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "ID",
+      "DataType": "Text",
+      "Caption": "Identificación",
+      "Description": "Identification",
+      "Position": 2,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "VALUE",
+      "DataType": "NText",
+      "Caption": "Valor",
+      "Description": "Parameter value",
+      "Position": 3,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "1024",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    }
+  ],
+  "Indexes": [],
+  "ForeignKeys": [],
+  "DesignerTemplate": null,
+  "ResourceFileName": null,
+  "ExtendedProperties": []
+}

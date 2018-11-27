@@ -1,0 +1,125 @@
+﻿{
+  "Schema": "TenantStore",
+  "Name": "DBSERVER",
+  "Release": "",
+  "Caption": "Servidor de base de datos",
+  "Description": "The DBSERVER table contains database servers.",
+  "FileGroup": null,
+  "Kindom": "Application",
+  "PrimaryKey": {
+    "Name": "PK_DBSERVER",
+    "Type": "NonClustered",
+    "IsUnique": true,
+    "Description": "A database server is identified by it's Id.",
+    "FileGroup": null,
+    "Columns": [
+      {
+        "Name": "ID",
+        "Position": 1,
+        "Direction": "Ascending"
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "Name": "ID",
+      "DataType": "Text",
+      "Caption": "Id",
+      "Description": "Server Id",
+      "Position": 1,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "50",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "NAME",
+      "DataType": "NText",
+      "Caption": "Name",
+      "Description": "Server name",
+      "Position": 2,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "BKUPUSERNAME",
+      "DataType": "Text",
+      "Caption": "Backup user name",
+      "Description": "The name of the user that runs backups on databases",
+      "Position": 3,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "MAX",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "MNGRUSERNAME",
+      "DataType": "Text",
+      "Caption": "Manager user name",
+      "Description": "Name of the user that manages the database server",
+      "Position": 4,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "MAX",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "MNGRUSERPASS",
+      "DataType": "Text",
+      "Caption": "Manager user password",
+      "Description": "Password of the manager user",
+      "Position": 5,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "MAX",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    }
+  ],
+  "Indexes": [
+    {
+      "Name": "IX_DBSERVER_1",
+      "Type": "NonClustered",
+      "IsUnique": true,
+      "Description": "A database server is looked by name so it must be unique and indexed.",
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "NAME",
+          "Position": 1,
+          "Direction": "Ascending"
+        }
+      ]
+    }
+  ],
+  "ForeignKeys": [],
+  "DesignerTemplate": "",
+  "ResourceFileName": null,
+  "ExtendedProperties": []
+}

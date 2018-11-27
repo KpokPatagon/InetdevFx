@@ -1,0 +1,62 @@
+﻿{
+  "Schema": "dbo",
+  "Name": "PARAMETER",
+  "Release": null,
+  "Caption": "Parámetros",
+  "Description": "A parameter table for non multi-tenant applications",
+  "FileGroup": null,
+  "Kindom": "Application",
+  "PrimaryKey": {
+    "Name": "PK_PARAMETER",
+    "Type": "NonClustered",
+    "IsUnique": true,
+    "Description": "A parameter is identified by it's id.",
+    "FileGroup": null,
+    "Columns": [
+      {
+        "Name": "ID",
+        "Position": 1,
+        "Direction": "Ascending"
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "Name": "ID",
+      "DataType": "Text",
+      "Caption": "Identificación",
+      "Description": "Identification",
+      "Position": 1,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "VALUE",
+      "DataType": "NText",
+      "Caption": "Valor",
+      "Description": "Parameter value",
+      "Position": 2,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "1024",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    }
+  ],
+  "Indexes": [],
+  "ForeignKeys": [],
+  "DesignerTemplate": null,
+  "ResourceFileName": null,
+  "ExtendedProperties": []
+}
