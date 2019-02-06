@@ -66,6 +66,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b8fd011698a3e5e2387beaa4741fb4d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_cryptography_utility.html#a2b8fd011698a3e5e2387beaa4741fb4d">CompareBytes</a> (byte[] byte1, byte[] byte2)</td></tr>
 <tr class="memdesc:a2b8fd011698a3e5e2387beaa4741fb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if two byte arrays are equal.  <a href="#a2b8fd011698a3e5e2387beaa4741fb4d">More...</a><br /></td></tr>
 <tr class="separator:a2b8fd011698a3e5e2387beaa4741fb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406ae8fcc149131cfe1565d51e6e9730"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_cryptography_utility.html#a406ae8fcc149131cfe1565d51e6e9730">CreateUniqueId</a> (int length=16)</td></tr>
+<tr class="memdesc:a406ae8fcc149131cfe1565d51e6e9730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a unique ID from random bytes and converter it to an hexadecimal string. The resulting string is twice the size of the asked id size.  <a href="#a406ae8fcc149131cfe1565d51e6e9730">More...</a><br /></td></tr>
+<tr class="separator:a406ae8fcc149131cfe1565d51e6e9730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8c79386046689483d973f3e0bbad94b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_security_1_1_cryptography_1_1_cryptography_utility.html#ac8c79386046689483d973f3e0bbad94b">GetRandomAlphanumericBytes</a> (byte[] bytes)</td></tr>
 <tr class="memdesc:ac8c79386046689483d973f3e0bbad94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills a byte array with a random set of aplhanumeric bytes.  <a href="#ac8c79386046689483d973f3e0bbad94b">More...</a><br /></td></tr>
 <tr class="separator:ac8c79386046689483d973f3e0bbad94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,6 +185,39 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>if the two byte array are equal; otherwise .</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a406ae8fcc149131cfe1565d51e6e9730"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string Inetdev.Security.Cryptography.CryptographyUtility.CreateUniqueId </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em> = <code>16</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a unique ID from random bytes and converter it to an hexadecimal string. The resulting string is twice the size of the asked id size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">length</td><td>Length of the key to generate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A randomly generated unique id.</dd></dl>
 
 </div>
 </div>
