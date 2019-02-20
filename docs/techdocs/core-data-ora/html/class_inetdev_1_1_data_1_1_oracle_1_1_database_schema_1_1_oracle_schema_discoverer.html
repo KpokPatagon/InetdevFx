@@ -81,6 +81,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a12569cdb9bf541134dc61888d831d3de"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; Catalog &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#a12569cdb9bf541134dc61888d831d3de">GetCatalogs</a> ()</td></tr>
 <tr class="memdesc:a12569cdb9bf541134dc61888d831d3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method just returns the catalog from the <b>DataAccessAPI</b>.  <a href="#a12569cdb9bf541134dc61888d831d3de">More...</a><br /></td></tr>
 <tr class="separator:a12569cdb9bf541134dc61888d831d3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880781d0982ffa20b810a2e13fe848b7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#a880781d0982ffa20b810a2e13fe848b7">GetServerVersion</a> ()</td></tr>
+<tr class="memdesc:a880781d0982ffa20b810a2e13fe848b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the server version.  <a href="#a880781d0982ffa20b810a2e13fe848b7">More...</a><br /></td></tr>
+<tr class="separator:a880781d0982ffa20b810a2e13fe848b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac58d25c6cd4e73513df4e18b047cf1b1"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; Schema &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#ac58d25c6cd4e73513df4e18b047cf1b1">GetSchemas</a> ()</td></tr>
 <tr class="memdesc:ac58d25c6cd4e73513df4e18b047cf1b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of user created schemas from the catalog configured on the <b>DataAccessAPI</b>.  <a href="#ac58d25c6cd4e73513df4e18b047cf1b1">More...</a><br /></td></tr>
 <tr class="separator:ac58d25c6cd4e73513df4e18b047cf1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,6 +357,31 @@ Properties</h2></td></tr>
 
 <p>Gets a list of user created schemas from the catalog configured on the <b>DataAccessAPI</b>. </p>
 <dl class="section return"><dt>Returns</dt><dd>A list of user schemas.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>
+    <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a880781d0982ffa20b810a2e13fe848b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaDiscoverer.GetServerVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the server version. </p>
+<dl class="section return"><dt>Returns</dt><dd>The server version.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">SchemaManipulationException</td><td>Thrown when there is an error accesing schema data.</td></tr>

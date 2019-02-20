@@ -49,6 +49,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_inetdev_1_1_data_1_1_query_1_1_select_statement-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -104,6 +105,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ace31dcedfc68db18b1facdc573b45413 inherit pub_methods_class_inetdev_1_1_data_1_1_query_1_1_statement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a textual representation of the <b><a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_statement.html" title="Statement is an abstract base class for all statement classes. ">Statement</a></b>.  <a href="#ace31dcedfc68db18b1facdc573b45413">More...</a><br /></td></tr>
 <tr class="separator:ace31dcedfc68db18b1facdc573b45413 inherit pub_methods_class_inetdev_1_1_data_1_1_query_1_1_statement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a385f60105507890b6378c0e9be96289f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_select_statement.html#a385f60105507890b6378c0e9be96289f">IsPagingRequested</a> =&gt; <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_select_statement.html#aa646a525caec3d0c81eff1f485dee047">Page</a> &gt; 0 &amp;&amp; <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_select_statement.html#a3448d60412b908c44ad525692012a303">PageLength</a> &gt; 0</td></tr>
+<tr class="memdesc:a385f60105507890b6378c0e9be96289f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether paging is requested.  <a href="#a385f60105507890b6378c0e9be96289f">More...</a><br /></td></tr>
+<tr class="separator:a385f60105507890b6378c0e9be96289f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a1ed993104c00f566d12e48656c979ec9"><td class="memItemLeft" align="right" valign="top">IList&lt; <a class="el" href="interface_inetdev_1_1_data_1_1_query_1_1_i_column.html">IColumn</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_select_statement.html#a1ed993104c00f566d12e48656c979ec9">Columns</a><code> [get]</code></td></tr>
@@ -124,6 +131,12 @@ Properties</h2></td></tr>
 <tr class="memitem:ad4d398d37ec11c4f08fff2a29b709392"><td class="memItemLeft" align="right" valign="top">IList&lt; <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_order_column.html">OrderColumn</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_select_statement.html#ad4d398d37ec11c4f08fff2a29b709392">OrderColumns</a><code> [get]</code></td></tr>
 <tr class="memdesc:ad4d398d37ec11c4f08fff2a29b709392"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_order_column.html" title="Represents a column for the ORDER BY clause. ">OrderColumn</a>s for the ORDER BY clause.  <a href="#ad4d398d37ec11c4f08fff2a29b709392">More...</a><br /></td></tr>
 <tr class="separator:ad4d398d37ec11c4f08fff2a29b709392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa646a525caec3d0c81eff1f485dee047"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_select_statement.html#aa646a525caec3d0c81eff1f485dee047">Page</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aa646a525caec3d0c81eff1f485dee047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of the page of data to select. Default is zero which means no paging.  <a href="#aa646a525caec3d0c81eff1f485dee047">More...</a><br /></td></tr>
+<tr class="separator:aa646a525caec3d0c81eff1f485dee047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3448d60412b908c44ad525692012a303"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_select_statement.html#a3448d60412b908c44ad525692012a303">PageLength</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3448d60412b908c44ad525692012a303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Page length for building a SELECT that returns a page of data. Default is zero which means no paging.  <a href="#a3448d60412b908c44ad525692012a303">More...</a><br /></td></tr>
+<tr class="separator:a3448d60412b908c44ad525692012a303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_inetdev_1_1_data_1_1_query_1_1_statement"><td colspan="2" onclick="javascript:toggleInherit('properties_class_inetdev_1_1_data_1_1_query_1_1_statement')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_statement.html">Inetdev.Data.Query.Statement</a></td></tr>
 <tr class="memitem:a7aa0c8c370c28259f111c590a4e19a04 inherit properties_class_inetdev_1_1_data_1_1_query_1_1_statement"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_statement.html#a7aa0c8c370c28259f111c590a4e19a04">Name</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a7aa0c8c370c28259f111c590a4e19a04 inherit properties_class_inetdev_1_1_data_1_1_query_1_1_statement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the <b><a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_statement.html" title="Statement is an abstract base class for all statement classes. ">Statement</a></b>.  <a href="#a7aa0c8c370c28259f111c590a4e19a04">More...</a><br /></td></tr>
@@ -363,6 +376,21 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a385f60105507890b6378c0e9be96289f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Inetdev.Data.Query.SelectStatement.IsPagingRequested =&gt; <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_select_statement.html#aa646a525caec3d0c81eff1f485dee047">Page</a> &gt; 0 &amp;&amp; <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_select_statement.html#a3448d60412b908c44ad525692012a303">PageLength</a> &gt; 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether paging is requested. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="a1ed993104c00f566d12e48656c979ec9"></a>
 <div class="memitem">
@@ -471,6 +499,50 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>List of <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_order_column.html" title="Represents a column for the ORDER BY clause. ">OrderColumn</a>s for the ORDER BY clause. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa646a525caec3d0c81eff1f485dee047"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Inetdev.Data.Query.SelectStatement.Page</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of the page of data to select. Default is zero which means no paging. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3448d60412b908c44ad525692012a303"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Inetdev.Data.Query.SelectStatement.PageLength</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Page length for building a SELECT that returns a page of data. Default is zero which means no paging. </p>
 
 </div>
 </div>
