@@ -378,6 +378,17 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the server version. </p>
+<p>This method returns the compatibility level of the database configured in the DataAccessAPI property as: <br />
+When 65 then SQL Server 6.5 <br />
+When 70 then SQL Server 7.0 <br />
+When 80 then SQL Server 2000 <br />
+When 90 then SQL Server 2005 <br />
+When 100 then SQL Server 2008/2008R2 <br />
+When 110 then SQL Server 2012 <br />
+When 120 then SQL Server 2014 <br />
+When 130 then SQL Server 2016 <br />
+When 140 then SQL Server 2017 <br />
+Else new unknown. </p>
 <dl class="section return"><dt>Returns</dt><dd>The server version.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
