@@ -62,9 +62,9 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac7e60acb31e876ebdf2234c8c8040114"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_authorization_1_1_auth_mvc_role_requirement_filter.html#ac7e60acb31e876ebdf2234c8c8040114">AuthMvcRoleRequirementFilter</a> (<a class="el" href="class_inetdev_1_1_asp_net_core_1_1_authorization_1_1_auth_mvc_attribute.html">AuthMvcAttribute</a> auth, string[] requiredRoles, Role[] roles)</td></tr>
-<tr class="memdesc:ac7e60acb31e876ebdf2234c8c8040114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of <a class="el" href="class_inetdev_1_1_asp_net_core_1_1_authorization_1_1_auth_mvc_role_requirement_filter.html" title="An AuthorizationFilter that sets a ViewResult when the user is not authorized. ">AuthMvcRoleRequirementFilter</a>.  <a href="#ac7e60acb31e876ebdf2234c8c8040114">More...</a><br /></td></tr>
-<tr class="separator:ac7e60acb31e876ebdf2234c8c8040114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50dcc3fc86919c8feb68e32cda50b07c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_authorization_1_1_auth_mvc_role_requirement_filter.html#a50dcc3fc86919c8feb68e32cda50b07c">AuthMvcRoleRequirementFilter</a> (<a class="el" href="class_inetdev_1_1_asp_net_core_1_1_authorization_1_1_auth_mvc_attribute.html">AuthMvcAttribute</a> auth, string[] requiredRoles, IRoleProvider roleProvider)</td></tr>
+<tr class="memdesc:a50dcc3fc86919c8feb68e32cda50b07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of <a class="el" href="class_inetdev_1_1_asp_net_core_1_1_authorization_1_1_auth_mvc_role_requirement_filter.html" title="An AuthorizationFilter that sets a ViewResult when the user is not authorized. ">AuthMvcRoleRequirementFilter</a>.  <a href="#a50dcc3fc86919c8feb68e32cda50b07c">More...</a><br /></td></tr>
+<tr class="separator:a50dcc3fc86919c8feb68e32cda50b07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0612b4c08e148daaac053e6b49563a58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_authorization_1_1_auth_mvc_role_requirement_filter.html#a0612b4c08e148daaac053e6b49563a58">OnAuthorization</a> (AuthorizationFilterContext context)</td></tr>
 <tr class="memdesc:a0612b4c08e148daaac053e6b49563a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the authorization logic.  <a href="#a0612b4c08e148daaac053e6b49563a58">More...</a><br /></td></tr>
 <tr class="separator:a0612b4c08e148daaac053e6b49563a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -74,17 +74,17 @@ Properties</h2></td></tr>
 <tr class="memitem:a5b8cd2ab6579580a339789b1c30e98fc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_authorization_1_1_auth_mvc_role_requirement_filter.html#a5b8cd2ab6579580a339789b1c30e98fc">ForbiddenViewName</a><code> [get]</code></td></tr>
 <tr class="memdesc:a5b8cd2ab6579580a339789b1c30e98fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the view to return if the user is not authorized.  <a href="#a5b8cd2ab6579580a339789b1c30e98fc">More...</a><br /></td></tr>
 <tr class="separator:a5b8cd2ab6579580a339789b1c30e98fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c635153147c27a1764be44ee2bcf21"><td class="memItemLeft" align="right" valign="top">IRoleProvider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_authorization_1_1_auth_mvc_role_requirement_filter.html#a65c635153147c27a1764be44ee2bcf21">RoleProvider</a><code> [get]</code></td></tr>
+<tr class="memdesc:a65c635153147c27a1764be44ee2bcf21"><td class="mdescLeft">&#160;</td><td class="mdescRight">An IRoleProvider that provides application Roles.  <a href="#a65c635153147c27a1764be44ee2bcf21">More...</a><br /></td></tr>
+<tr class="separator:a65c635153147c27a1764be44ee2bcf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da48035aa1ff2841b4db60e68a0cce7"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_authorization_1_1_auth_mvc_role_requirement_filter.html#a5da48035aa1ff2841b4db60e68a0cce7">RequiredRoles</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a5da48035aa1ff2841b4db60e68a0cce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of roles required to access the controller or action.  <a href="#a5da48035aa1ff2841b4db60e68a0cce7">More...</a><br /></td></tr>
 <tr class="separator:a5da48035aa1ff2841b4db60e68a0cce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3980a3a6525dcb506b525f202a87e4a9"><td class="memItemLeft" align="right" valign="top">Role[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_asp_net_core_1_1_authorization_1_1_auth_mvc_role_requirement_filter.html#a3980a3a6525dcb506b525f202a87e4a9">Roles</a><code> [get]</code></td></tr>
-<tr class="memdesc:a3980a3a6525dcb506b525f202a87e4a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of application roles.  <a href="#a3980a3a6525dcb506b525f202a87e4a9">More...</a><br /></td></tr>
-<tr class="separator:a3980a3a6525dcb506b525f202a87e4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An <b>AuthorizationFilter</b> that sets a ViewResult when the user is not authorized. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac7e60acb31e876ebdf2234c8c8040114"></a>
+<a class="anchor" id="a50dcc3fc86919c8feb68e32cda50b07c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -103,8 +103,8 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Role[]&#160;</td>
-          <td class="paramname"><em>roles</em>&#160;</td>
+          <td class="paramtype">IRoleProvider&#160;</td>
+          <td class="paramname"><em>roleProvider</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -119,7 +119,13 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">auth</td><td>The <a class="el" href="class_inetdev_1_1_asp_net_core_1_1_authorization_1_1_auth_mvc_attribute.html" title="Configures the roles required to access a controller or action. ">AuthMvcAttribute</a> that initializes this filter.</td></tr>
     <tr><td class="paramname">requiredRoles</td><td>A collection of roles required to access the controller of action.</td></tr>
-    <tr><td class="paramname">roles</td><td>A collection of application Roles.</td></tr>
+    <tr><td class="paramname">roleProvider</td><td>An IRoleProvider that provides application Roles.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>roleProvider</em>  is .</td></tr>
   </table>
   </dd>
 </dl>
@@ -196,7 +202,7 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3980a3a6525dcb506b525f202a87e4a9"></a>
+<a class="anchor" id="a65c635153147c27a1764be44ee2bcf21"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -204,7 +210,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Role [] Inetdev.AspNetCore.Authorization.AuthMvcRoleRequirementFilter.Roles</td>
+          <td class="memname">IRoleProvider Inetdev.AspNetCore.Authorization.AuthMvcRoleRequirementFilter.RoleProvider</td>
         </tr>
       </table>
   </td>
@@ -214,7 +220,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A collection of application roles. </p>
+<p>An IRoleProvider that provides application Roles. </p>
 
 </div>
 </div>
