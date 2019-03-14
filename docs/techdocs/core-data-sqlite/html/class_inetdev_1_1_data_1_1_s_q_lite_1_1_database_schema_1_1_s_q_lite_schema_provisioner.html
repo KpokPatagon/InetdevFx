@@ -62,45 +62,102 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0ad72e007782bf5b8ef7739753a45a74"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a0ad72e007782bf5b8ef7739753a45a74">AddColumnsAsync</a> (Table table)</td></tr>
-<tr class="memdesc:a0ad72e007782bf5b8ef7739753a45a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds columns to a table.  <a href="#a0ad72e007782bf5b8ef7739753a45a74">More...</a><br /></td></tr>
-<tr class="separator:a0ad72e007782bf5b8ef7739753a45a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad87c83994109fd1bf8cc3ae6f3ee077d"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#ad87c83994109fd1bf8cc3ae6f3ee077d">AddColumnAsync</a> (TableColumn column)</td></tr>
+<tr class="memdesc:ad87c83994109fd1bf8cc3ae6f3ee077d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a column to a table.  <a href="#ad87c83994109fd1bf8cc3ae6f3ee077d">More...</a><br /></td></tr>
+<tr class="separator:ad87c83994109fd1bf8cc3ae6f3ee077d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630ffefaca2a6a58076d202bbc1043f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a630ffefaca2a6a58076d202bbc1043f1">ValidateTableColumnForAdd</a> (TableColumn column)</td></tr>
+<tr class="memdesc:a630ffefaca2a6a58076d202bbc1043f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a TableColumn is valid for an add column command.  <a href="#a630ffefaca2a6a58076d202bbc1043f1">More...</a><br /></td></tr>
+<tr class="separator:a630ffefaca2a6a58076d202bbc1043f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1288b54eca1a821ceb7a5f5fdbfca8"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#afa1288b54eca1a821ceb7a5f5fdbfca8">AddColumnConstraintAsync</a> (ColumnConstraint constraint)</td></tr>
+<tr class="memdesc:afa1288b54eca1a821ceb7a5f5fdbfca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This operation is not supported on <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException.  <a href="#afa1288b54eca1a821ceb7a5f5fdbfca8">More...</a><br /></td></tr>
+<tr class="separator:afa1288b54eca1a821ceb7a5f5fdbfca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770bfee013feefaf33db145387edb500"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a770bfee013feefaf33db145387edb500">ValidateColumnConstraintForAdd</a> (ColumnConstraint constraint)</td></tr>
+<tr class="memdesc:a770bfee013feefaf33db145387edb500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>constraint</em>  is valid for add.  <a href="#a770bfee013feefaf33db145387edb500">More...</a><br /></td></tr>
+<tr class="separator:a770bfee013feefaf33db145387edb500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ed87557409bb74eed900701e71a3045"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a0ed87557409bb74eed900701e71a3045">AddForeignKeyAsync</a> (ForeignKey foreignKey)</td></tr>
 <tr class="memdesc:a0ed87557409bb74eed900701e71a3045"><td class="mdescLeft">&#160;</td><td class="mdescRight">This operation is not supported for <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException.  <a href="#a0ed87557409bb74eed900701e71a3045">More...</a><br /></td></tr>
 <tr class="separator:a0ed87557409bb74eed900701e71a3045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaafe94b3cc1489e6419db4e3be49a4f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#aaafe94b3cc1489e6419db4e3be49a4f2">ValidateForeignKeyForAdd</a> (ForeignKey foreignKey)</td></tr>
+<tr class="memdesc:aaafe94b3cc1489e6419db4e3be49a4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>foreignKey</em>  is valid for add.  <a href="#aaafe94b3cc1489e6419db4e3be49a4f2">More...</a><br /></td></tr>
+<tr class="separator:aaafe94b3cc1489e6419db4e3be49a4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f80822298259177d819c56b0fe12dae"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a7f80822298259177d819c56b0fe12dae">CreateIndexAsync</a> (Index index)</td></tr>
 <tr class="memdesc:a7f80822298259177d819c56b0fe12dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an index.  <a href="#a7f80822298259177d819c56b0fe12dae">More...</a><br /></td></tr>
 <tr class="separator:a7f80822298259177d819c56b0fe12dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b95365c6d1659d5f374b054c864f57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a96b95365c6d1659d5f374b054c864f57">ValidateIndexForCreate</a> (Index index)</td></tr>
+<tr class="memdesc:a96b95365c6d1659d5f374b054c864f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>index</em>  is valid for creation.  <a href="#a96b95365c6d1659d5f374b054c864f57">More...</a><br /></td></tr>
+<tr class="separator:a96b95365c6d1659d5f374b054c864f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b2f5b1d7e5aa08e97d2b72f3e64cc0"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#ab5b2f5b1d7e5aa08e97d2b72f3e64cc0">CreatePrimaryKeyAsync</a> (Index primaryKey)</td></tr>
+<tr class="memdesc:ab5b2f5b1d7e5aa08e97d2b72f3e64cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This operation is not supported for <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException.  <a href="#ab5b2f5b1d7e5aa08e97d2b72f3e64cc0">More...</a><br /></td></tr>
+<tr class="separator:ab5b2f5b1d7e5aa08e97d2b72f3e64cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41a8a267b92d8d66324575078a7a20bc"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a41a8a267b92d8d66324575078a7a20bc">CreateSchemaAsync</a> (Schema schema)</td></tr>
 <tr class="memdesc:a41a8a267b92d8d66324575078a7a20bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the specified <em>schema</em> .  <a href="#a41a8a267b92d8d66324575078a7a20bc">More...</a><br /></td></tr>
 <tr class="separator:a41a8a267b92d8d66324575078a7a20bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eab944758a91e83fd64ecd70dc02f86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a0eab944758a91e83fd64ecd70dc02f86">ValidateSchemaForCreate</a> (Schema schema)</td></tr>
+<tr class="memdesc:a0eab944758a91e83fd64ecd70dc02f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if <em>schema</em>  is valid for create.  <a href="#a0eab944758a91e83fd64ecd70dc02f86">More...</a><br /></td></tr>
+<tr class="separator:a0eab944758a91e83fd64ecd70dc02f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dd7937b26141196693c00bc5b116e4a"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a0dd7937b26141196693c00bc5b116e4a">CreateTableAsync</a> (Table table)</td></tr>
 <tr class="memdesc:a0dd7937b26141196693c00bc5b116e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a tabla.  <a href="#a0dd7937b26141196693c00bc5b116e4a">More...</a><br /></td></tr>
 <tr class="separator:a0dd7937b26141196693c00bc5b116e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3d043c90ec1f2370f4ed818e692970"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#aae3d043c90ec1f2370f4ed818e692970">ValidateTableForCreate</a> (Table table)</td></tr>
+<tr class="memdesc:aae3d043c90ec1f2370f4ed818e692970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>table</em>  is valid for creation.  <a href="#aae3d043c90ec1f2370f4ed818e692970">More...</a><br /></td></tr>
+<tr class="separator:aae3d043c90ec1f2370f4ed818e692970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37ab68b21b3a53c0a8d4ab3f99ccd423"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a37ab68b21b3a53c0a8d4ab3f99ccd423">CreateViewAsync</a> (View view)</td></tr>
-<tr class="memdesc:a37ab68b21b3a53c0a8d4ab3f99ccd423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a viee.  <a href="#a37ab68b21b3a53c0a8d4ab3f99ccd423">More...</a><br /></td></tr>
+<tr class="memdesc:a37ab68b21b3a53c0a8d4ab3f99ccd423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a view.  <a href="#a37ab68b21b3a53c0a8d4ab3f99ccd423">More...</a><br /></td></tr>
 <tr class="separator:a37ab68b21b3a53c0a8d4ab3f99ccd423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95508e52bb7ea84419cdec2a4704cf9f"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a95508e52bb7ea84419cdec2a4704cf9f">DropColumnsAsync</a> (Table table)</td></tr>
-<tr class="memdesc:a95508e52bb7ea84419cdec2a4704cf9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This operation is not supported for <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException.  <a href="#a95508e52bb7ea84419cdec2a4704cf9f">More...</a><br /></td></tr>
-<tr class="separator:a95508e52bb7ea84419cdec2a4704cf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a570c516f2d96979f56e12c63b9b072c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a570c516f2d96979f56e12c63b9b072c4">ValidateViewForCreate</a> (View view)</td></tr>
+<tr class="memdesc:a570c516f2d96979f56e12c63b9b072c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks is <em>view</em>  is valid for creation.  <a href="#a570c516f2d96979f56e12c63b9b072c4">More...</a><br /></td></tr>
+<tr class="separator:a570c516f2d96979f56e12c63b9b072c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d210efbd201ce9d75f01cdc03b2418f"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a5d210efbd201ce9d75f01cdc03b2418f">DropColumnAsync</a> (TableColumn column)</td></tr>
+<tr class="memdesc:a5d210efbd201ce9d75f01cdc03b2418f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This operation is not supported for <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException.  <a href="#a5d210efbd201ce9d75f01cdc03b2418f">More...</a><br /></td></tr>
+<tr class="separator:a5d210efbd201ce9d75f01cdc03b2418f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590e063af47d920a56d5d2de22249ca6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a590e063af47d920a56d5d2de22249ca6">ValidateTableColumnForDrop</a> (TableColumn column)</td></tr>
+<tr class="memdesc:a590e063af47d920a56d5d2de22249ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a TableColumn is valid for a drop column command.  <a href="#a590e063af47d920a56d5d2de22249ca6">More...</a><br /></td></tr>
+<tr class="separator:a590e063af47d920a56d5d2de22249ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8028e6f826270903d965ab31fb0b46d7"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a8028e6f826270903d965ab31fb0b46d7">DropColumnConstraintAsync</a> (ColumnConstraint constraint)</td></tr>
+<tr class="memdesc:a8028e6f826270903d965ab31fb0b46d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This operation is not supported on <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException.  <a href="#a8028e6f826270903d965ab31fb0b46d7">More...</a><br /></td></tr>
+<tr class="separator:a8028e6f826270903d965ab31fb0b46d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029980d6662d5b9c34d502131086b52c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a029980d6662d5b9c34d502131086b52c">ValidateColumnConstraintForDrop</a> (ColumnConstraint constraint)</td></tr>
+<tr class="memdesc:a029980d6662d5b9c34d502131086b52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the <em>constraint</em>  is valid for drop.  <a href="#a029980d6662d5b9c34d502131086b52c">More...</a><br /></td></tr>
+<tr class="separator:a029980d6662d5b9c34d502131086b52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f601ca4ec7e1d7be173fb8b2fb63def"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a3f601ca4ec7e1d7be173fb8b2fb63def">DropForeignKeyAsync</a> (ForeignKey foreignKey)</td></tr>
 <tr class="memdesc:a3f601ca4ec7e1d7be173fb8b2fb63def"><td class="mdescLeft">&#160;</td><td class="mdescRight">This operation is not supported on <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException.  <a href="#a3f601ca4ec7e1d7be173fb8b2fb63def">More...</a><br /></td></tr>
 <tr class="separator:a3f601ca4ec7e1d7be173fb8b2fb63def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5bae5a0fda9275f47e5cf28fa282b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a4c5bae5a0fda9275f47e5cf28fa282b6">ValidateForeignKeyForDrop</a> (ForeignKey foreignKey)</td></tr>
+<tr class="memdesc:a4c5bae5a0fda9275f47e5cf28fa282b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>foreignKey</em>  is valid for drop.  <a href="#a4c5bae5a0fda9275f47e5cf28fa282b6">More...</a><br /></td></tr>
+<tr class="separator:a4c5bae5a0fda9275f47e5cf28fa282b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6376b3a97f0f856f80b7350c1d42c52e"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a6376b3a97f0f856f80b7350c1d42c52e">DropIndexAsync</a> (Index index)</td></tr>
 <tr class="memdesc:a6376b3a97f0f856f80b7350c1d42c52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops the specified <em>index</em> .  <a href="#a6376b3a97f0f856f80b7350c1d42c52e">More...</a><br /></td></tr>
 <tr class="separator:a6376b3a97f0f856f80b7350c1d42c52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72d5891397fcdd8b15ddef62edc96a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#af72d5891397fcdd8b15ddef62edc96a2">ValidateIndexForDrop</a> (Index index)</td></tr>
+<tr class="memdesc:af72d5891397fcdd8b15ddef62edc96a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>index</em>  is valid for drop.  <a href="#af72d5891397fcdd8b15ddef62edc96a2">More...</a><br /></td></tr>
+<tr class="separator:af72d5891397fcdd8b15ddef62edc96a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f096d142355732e2f4f94506b2a7dbe"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a9f096d142355732e2f4f94506b2a7dbe">DropPrimaryKeyAsync</a> (Index primaryKey)</td></tr>
+<tr class="memdesc:a9f096d142355732e2f4f94506b2a7dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This operation is not supported on <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException.  <a href="#a9f096d142355732e2f4f94506b2a7dbe">More...</a><br /></td></tr>
+<tr class="separator:a9f096d142355732e2f4f94506b2a7dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d277003776341442f6dfa46be6d1c37"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a2d277003776341442f6dfa46be6d1c37">DropSchemaAsync</a> (Schema schema)</td></tr>
 <tr class="memdesc:a2d277003776341442f6dfa46be6d1c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach the specified <em>schema</em> .  <a href="#a2d277003776341442f6dfa46be6d1c37">More...</a><br /></td></tr>
 <tr class="separator:a2d277003776341442f6dfa46be6d1c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2d73e7e30edc1821b21911187e28bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a2f2d73e7e30edc1821b21911187e28bc">ValidateSchemaForDrop</a> (Schema schema)</td></tr>
+<tr class="memdesc:a2f2d73e7e30edc1821b21911187e28bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if <em>schema</em>  is valid for drop.  <a href="#a2f2d73e7e30edc1821b21911187e28bc">More...</a><br /></td></tr>
+<tr class="separator:a2f2d73e7e30edc1821b21911187e28bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc45faacb72722a6ad75531af6ceece3"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#afc45faacb72722a6ad75531af6ceece3">DropTableAsync</a> (Table table)</td></tr>
 <tr class="memdesc:afc45faacb72722a6ad75531af6ceece3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops the specified <em>table</em> .  <a href="#afc45faacb72722a6ad75531af6ceece3">More...</a><br /></td></tr>
 <tr class="separator:afc45faacb72722a6ad75531af6ceece3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8328e80b57c52964cebebe4f5de303"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a3e8328e80b57c52964cebebe4f5de303">ValidateTableForDrop</a> (Table table)</td></tr>
+<tr class="memdesc:a3e8328e80b57c52964cebebe4f5de303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>table</em>  is valid for drop.  <a href="#a3e8328e80b57c52964cebebe4f5de303">More...</a><br /></td></tr>
+<tr class="separator:a3e8328e80b57c52964cebebe4f5de303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92ba9d67f0660d2e7687db21e2acdb96"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a92ba9d67f0660d2e7687db21e2acdb96">DropViewAsync</a> (View view)</td></tr>
 <tr class="memdesc:a92ba9d67f0660d2e7687db21e2acdb96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops the specified <em>view</em> .  <a href="#a92ba9d67f0660d2e7687db21e2acdb96">More...</a><br /></td></tr>
 <tr class="separator:a92ba9d67f0660d2e7687db21e2acdb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b336e1f7fe8710407a5af49da93e0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a57b336e1f7fe8710407a5af49da93e0f">ValidateViewForDrop</a> (View view)</td></tr>
+<tr class="memdesc:a57b336e1f7fe8710407a5af49da93e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>view</em>  is valid for drop.  <a href="#a57b336e1f7fe8710407a5af49da93e0f">More...</a><br /></td></tr>
+<tr class="separator:a57b336e1f7fe8710407a5af49da93e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a882eaa469bb0494523782c0ea194c898"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#a882eaa469bb0494523782c0ea194c898">GrantPermissionsAsync</a> (Grant grant)</td></tr>
 <tr class="memdesc:a882eaa469bb0494523782c0ea194c898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grants permission to a grantee to access a database object.  <a href="#a882eaa469bb0494523782c0ea194c898">More...</a><br /></td></tr>
 <tr class="separator:a882eaa469bb0494523782c0ea194c898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a3297572cfc81ffaa774f9a37b0c24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_s_q_lite_1_1_database_schema_1_1_s_q_lite_schema_provisioner.html#ac3a3297572cfc81ffaa774f9a37b0c24">ValidateGrantForGrant</a> (Grant grant)</td></tr>
+<tr class="memdesc:ac3a3297572cfc81ffaa774f9a37b0c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>grant</em>  is valid for grant.  <a href="#ac3a3297572cfc81ffaa774f9a37b0c24">More...</a><br /></td></tr>
+<tr class="separator:ac3a3297572cfc81ffaa774f9a37b0c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -114,32 +171,56 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements an ISchemaProvisioner for <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0ad72e007782bf5b8ef7739753a45a74"></a>
+<a class="anchor" id="ad87c83994109fd1bf8cc3ae6f3ee077d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Task Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.AddColumnsAsync </td>
+          <td class="memname">Task Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.AddColumnAsync </td>
           <td>(</td>
-          <td class="paramtype">Table&#160;</td>
-          <td class="paramname"><em>table</em></td><td>)</td>
+          <td class="paramtype">TableColumn&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds columns to a table. </p>
+<p>Adds a column to a table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">table</td><td>Table configuration specifying the columns to add.</td></tr>
+    <tr><td class="paramname">column</td><td>Column to be added.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">ValidationException</td><td>Thrown when the schema configuration is not valid for schema manipulation.</td></tr>
-    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>table</em>  is .</td></tr>
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid for schema manipulation.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>column</em>  is .</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afa1288b54eca1a821ceb7a5f5fdbfca8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.AddColumnConstraintAsync </td>
+          <td>(</td>
+          <td class="paramtype">ColumnConstraint&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This operation is not supported on <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Always thrown.</td></tr>
   </table>
   </dd>
 </dl>
@@ -196,6 +277,30 @@ Properties</h2></td></tr>
     <tr><td class="paramname">ValidationException</td><td>Thrown when the schema configuration is not valid for schema manipulation.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>index</em>  is .</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab5b2f5b1d7e5aa08e97d2b72f3e64cc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.CreatePrimaryKeyAsync </td>
+          <td>(</td>
+          <td class="paramtype">Index&#160;</td>
+          <td class="paramname"><em>primaryKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This operation is not supported for <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Always thrown.</td></tr>
   </table>
   </dd>
 </dl>
@@ -281,7 +386,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a viee. </p>
+<p>Creates a view. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">view</td><td>View configuration.</td></tr>
@@ -299,21 +404,45 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a95508e52bb7ea84419cdec2a4704cf9f"></a>
+<a class="anchor" id="a5d210efbd201ce9d75f01cdc03b2418f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Task Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.DropColumnsAsync </td>
+          <td class="memname">Task Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.DropColumnAsync </td>
           <td>(</td>
-          <td class="paramtype">Table&#160;</td>
-          <td class="paramname"><em>table</em></td><td>)</td>
+          <td class="paramtype">TableColumn&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>This operation is not supported for <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Always thrown.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8028e6f826270903d965ab31fb0b46d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.DropColumnConstraintAsync </td>
+          <td>(</td>
+          <td class="paramtype">ColumnConstraint&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This operation is not supported on <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException. </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Always thrown.</td></tr>
@@ -373,6 +502,30 @@ Properties</h2></td></tr>
     <tr><td class="paramname">ValidationException</td><td>Thrown when the schema configuration is not valid for schema manipulation.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>index</em>  is .</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9f096d142355732e2f4f94506b2a7dbe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.DropPrimaryKeyAsync </td>
+          <td>(</td>
+          <td class="paramtype">Index&#160;</td>
+          <td class="paramname"><em>primaryKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This operation is not supported on <a class="el" href="namespace_inetdev_1_1_data_1_1_s_q_lite.html">SQLite</a> databases, this method always throws DatabaseOperationNotSupportedException. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">DatabaseOperationNotSupportedException</td><td>Always thrown.</td></tr>
   </table>
   </dd>
 </dl>
@@ -495,6 +648,430 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">grant</td><td>Grant configuration.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a770bfee013feefaf33db145387edb500"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateColumnConstraintForAdd </td>
+          <td>(</td>
+          <td class="paramtype">ColumnConstraint&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>constraint</em>  is valid for add. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constraint</td><td>ColumnConstraint to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a029980d6662d5b9c34d502131086b52c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateColumnConstraintForDrop </td>
+          <td>(</td>
+          <td class="paramtype">ColumnConstraint&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if the <em>constraint</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constraint</td><td>ColumnConstraint to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaafe94b3cc1489e6419db4e3be49a4f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateForeignKeyForAdd </td>
+          <td>(</td>
+          <td class="paramtype">ForeignKey&#160;</td>
+          <td class="paramname"><em>foreignKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>foreignKey</em>  is valid for add. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">foreignKey</td><td>ForeignKey to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c5bae5a0fda9275f47e5cf28fa282b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateForeignKeyForDrop </td>
+          <td>(</td>
+          <td class="paramtype">ForeignKey&#160;</td>
+          <td class="paramname"><em>foreignKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>foreignKey</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">foreignKey</td><td>ForeignKey to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac3a3297572cfc81ffaa774f9a37b0c24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateGrantForGrant </td>
+          <td>(</td>
+          <td class="paramtype">Grant&#160;</td>
+          <td class="paramname"><em>grant</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>grant</em>  is valid for grant. </p>
+<p>This method does nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grant</td><td>Grant to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a96b95365c6d1659d5f374b054c864f57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateIndexForCreate </td>
+          <td>(</td>
+          <td class="paramtype">Index&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>index</em>  is valid for creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Index to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thown when <em>index</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af72d5891397fcdd8b15ddef62edc96a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateIndexForDrop </td>
+          <td>(</td>
+          <td class="paramtype">Index&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>index</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Index to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>index</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0eab944758a91e83fd64ecd70dc02f86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateSchemaForCreate </td>
+          <td>(</td>
+          <td class="paramtype">Schema&#160;</td>
+          <td class="paramname"><em>schema</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if <em>schema</em>  is valid for create. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">schema</td><td>Schema to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>schema</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2f2d73e7e30edc1821b21911187e28bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateSchemaForDrop </td>
+          <td>(</td>
+          <td class="paramtype">Schema&#160;</td>
+          <td class="paramname"><em>schema</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if <em>schema</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">schema</td><td>Schema to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>schema</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a630ffefaca2a6a58076d202bbc1043f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateTableColumnForAdd </td>
+          <td>(</td>
+          <td class="paramtype">TableColumn&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a TableColumn is valid for an add column command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">column</td><td>TableColumn to verify.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>column</em>  is .</td></tr>
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is invalid.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a590e063af47d920a56d5d2de22249ca6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateTableColumnForDrop </td>
+          <td>(</td>
+          <td class="paramtype">TableColumn&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a TableColumn is valid for a drop column command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">column</td><td>TableColumn to verify.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aae3d043c90ec1f2370f4ed818e692970"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateTableForCreate </td>
+          <td>(</td>
+          <td class="paramtype">Table&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>table</em>  is valid for creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td>Table to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>table</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3e8328e80b57c52964cebebe4f5de303"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateTableForDrop </td>
+          <td>(</td>
+          <td class="paramtype">Table&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>table</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td>Table to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>table</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a570c516f2d96979f56e12c63b9b072c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateViewForCreate </td>
+          <td>(</td>
+          <td class="paramtype">View&#160;</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks is <em>view</em>  is valid for creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>View to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>view</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a57b336e1f7fe8710407a5af49da93e0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SQLite.DatabaseSchema.SQLiteSchemaProvisioner.ValidateViewForDrop </td>
+          <td>(</td>
+          <td class="paramtype">View&#160;</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>view</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>View to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>view</em>  is </td></tr>
   </table>
   </dd>
 </dl>

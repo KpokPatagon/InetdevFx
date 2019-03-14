@@ -63,45 +63,102 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a79d53de3c6588a823d32d3c9985bd385"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a79d53de3c6588a823d32d3c9985bd385">AddColumnsAsync</a> (Table table)</td></tr>
-<tr class="memdesc:a79d53de3c6588a823d32d3c9985bd385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds to <em>table</em>  the columns listed in it's columns collection.  <a href="#a79d53de3c6588a823d32d3c9985bd385">More...</a><br /></td></tr>
-<tr class="separator:a79d53de3c6588a823d32d3c9985bd385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7eed2a8b6a7e0259a3bd27e44ea95c2"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#ab7eed2a8b6a7e0259a3bd27e44ea95c2">AddColumnAsync</a> (TableColumn column)</td></tr>
+<tr class="memdesc:ab7eed2a8b6a7e0259a3bd27e44ea95c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a column to a table.  <a href="#ab7eed2a8b6a7e0259a3bd27e44ea95c2">More...</a><br /></td></tr>
+<tr class="separator:ab7eed2a8b6a7e0259a3bd27e44ea95c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eeab42af74d0a9ea895d4ce1a4deb53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a0eeab42af74d0a9ea895d4ce1a4deb53">ValidateTableColumnForAdd</a> (TableColumn column)</td></tr>
+<tr class="memdesc:a0eeab42af74d0a9ea895d4ce1a4deb53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a TableColumn is valid for an add column command.  <a href="#a0eeab42af74d0a9ea895d4ce1a4deb53">More...</a><br /></td></tr>
+<tr class="separator:a0eeab42af74d0a9ea895d4ce1a4deb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e468cfb391b8c50121ba4c27f8c964"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a37e468cfb391b8c50121ba4c27f8c964">AddColumnConstraintAsync</a> (ColumnConstraint constraint)</td></tr>
+<tr class="memdesc:a37e468cfb391b8c50121ba4c27f8c964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a column contraint.  <a href="#a37e468cfb391b8c50121ba4c27f8c964">More...</a><br /></td></tr>
+<tr class="separator:a37e468cfb391b8c50121ba4c27f8c964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31dbaa511449e9b89d37e44d289f8541"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a31dbaa511449e9b89d37e44d289f8541">ValidateColumnConstraintForAdd</a> (ColumnConstraint constraint)</td></tr>
+<tr class="memdesc:a31dbaa511449e9b89d37e44d289f8541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>constraint</em>  is valid for add.  <a href="#a31dbaa511449e9b89d37e44d289f8541">More...</a><br /></td></tr>
+<tr class="separator:a31dbaa511449e9b89d37e44d289f8541"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bf2478953e43296602f7924f6232e9a"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a3bf2478953e43296602f7924f6232e9a">AddForeignKeyAsync</a> (ForeignKey foreignKey)</td></tr>
 <tr class="memdesc:a3bf2478953e43296602f7924f6232e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a foreign key to the specified table.  <a href="#a3bf2478953e43296602f7924f6232e9a">More...</a><br /></td></tr>
 <tr class="separator:a3bf2478953e43296602f7924f6232e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0922ca624deabaf93ce151daaf62f43a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a0922ca624deabaf93ce151daaf62f43a">ValidateForeignKeyForAdd</a> (ForeignKey foreignKey)</td></tr>
+<tr class="memdesc:a0922ca624deabaf93ce151daaf62f43a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>foreignKey</em>  is valid for add.  <a href="#a0922ca624deabaf93ce151daaf62f43a">More...</a><br /></td></tr>
+<tr class="separator:a0922ca624deabaf93ce151daaf62f43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae427b8e16ff2f9352cc7261eb0746750"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#ae427b8e16ff2f9352cc7261eb0746750">CreateIndexAsync</a> (Index index)</td></tr>
 <tr class="memdesc:ae427b8e16ff2f9352cc7261eb0746750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an index.  <a href="#ae427b8e16ff2f9352cc7261eb0746750">More...</a><br /></td></tr>
 <tr class="separator:ae427b8e16ff2f9352cc7261eb0746750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7436c29d31f7ae31bff7d0badafe18ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a7436c29d31f7ae31bff7d0badafe18ba">ValidateIndexForCreate</a> (Index index)</td></tr>
+<tr class="memdesc:a7436c29d31f7ae31bff7d0badafe18ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>index</em>  is valid for creation.  <a href="#a7436c29d31f7ae31bff7d0badafe18ba">More...</a><br /></td></tr>
+<tr class="separator:a7436c29d31f7ae31bff7d0badafe18ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e68777ef95169567f8ff93012b6774"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a64e68777ef95169567f8ff93012b6774">CreatePrimaryKeyAsync</a> (Index primaryKey)</td></tr>
+<tr class="memdesc:a64e68777ef95169567f8ff93012b6774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a primary key.  <a href="#a64e68777ef95169567f8ff93012b6774">More...</a><br /></td></tr>
+<tr class="separator:a64e68777ef95169567f8ff93012b6774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20a6ab4d3d9a19459f336a8b188365b6"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a20a6ab4d3d9a19459f336a8b188365b6">CreateSchemaAsync</a> (Schema schema)</td></tr>
 <tr class="memdesc:a20a6ab4d3d9a19459f336a8b188365b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a schema.  <a href="#a20a6ab4d3d9a19459f336a8b188365b6">More...</a><br /></td></tr>
 <tr class="separator:a20a6ab4d3d9a19459f336a8b188365b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc65d3d77d1002968785835c074ec23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a9dc65d3d77d1002968785835c074ec23">ValidateSchemaForCreate</a> (Schema schema)</td></tr>
+<tr class="memdesc:a9dc65d3d77d1002968785835c074ec23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if <em>schema</em>  is valid for create.  <a href="#a9dc65d3d77d1002968785835c074ec23">More...</a><br /></td></tr>
+<tr class="separator:a9dc65d3d77d1002968785835c074ec23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94004274be112ec7494463ee8caf39ae"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a94004274be112ec7494463ee8caf39ae">CreateTableAsync</a> (Table table)</td></tr>
 <tr class="memdesc:a94004274be112ec7494463ee8caf39ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a table.  <a href="#a94004274be112ec7494463ee8caf39ae">More...</a><br /></td></tr>
 <tr class="separator:a94004274be112ec7494463ee8caf39ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99f19405ff6e6a90fd2da659e9fe46f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#af99f19405ff6e6a90fd2da659e9fe46f">ValidateTableForCreate</a> (Table table)</td></tr>
+<tr class="memdesc:af99f19405ff6e6a90fd2da659e9fe46f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>table</em>  is valid for creation.  <a href="#af99f19405ff6e6a90fd2da659e9fe46f">More...</a><br /></td></tr>
+<tr class="separator:af99f19405ff6e6a90fd2da659e9fe46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f51c82ae055138d884a3ab128a34dd4"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a1f51c82ae055138d884a3ab128a34dd4">CreateViewAsync</a> (View view)</td></tr>
 <tr class="memdesc:a1f51c82ae055138d884a3ab128a34dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a view.  <a href="#a1f51c82ae055138d884a3ab128a34dd4">More...</a><br /></td></tr>
 <tr class="separator:a1f51c82ae055138d884a3ab128a34dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf68c45a89f6664d09888d005efba697"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#aaf68c45a89f6664d09888d005efba697">DropColumnsAsync</a> (Table table)</td></tr>
-<tr class="memdesc:aaf68c45a89f6664d09888d005efba697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops from <em>table</em>  the columns listed in it's columns collection.  <a href="#aaf68c45a89f6664d09888d005efba697">More...</a><br /></td></tr>
-<tr class="separator:aaf68c45a89f6664d09888d005efba697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c6cc9c0b6d8bfdb52e50c28ebff9a5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a7c6cc9c0b6d8bfdb52e50c28ebff9a5d">ValidateViewForCreate</a> (View view)</td></tr>
+<tr class="memdesc:a7c6cc9c0b6d8bfdb52e50c28ebff9a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks is <em>view</em>  is valid for creation.  <a href="#a7c6cc9c0b6d8bfdb52e50c28ebff9a5d">More...</a><br /></td></tr>
+<tr class="separator:a7c6cc9c0b6d8bfdb52e50c28ebff9a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46cee55281f8cc1c4e276c174bd22aae"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a46cee55281f8cc1c4e276c174bd22aae">DropColumnAsync</a> (TableColumn column)</td></tr>
+<tr class="memdesc:a46cee55281f8cc1c4e276c174bd22aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a column from the table it belongs to.  <a href="#a46cee55281f8cc1c4e276c174bd22aae">More...</a><br /></td></tr>
+<tr class="separator:a46cee55281f8cc1c4e276c174bd22aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c2ecceb8b03f14798c435a8c302fff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#ac7c2ecceb8b03f14798c435a8c302fff">ValidateTableColumnForDrop</a> (TableColumn column)</td></tr>
+<tr class="memdesc:ac7c2ecceb8b03f14798c435a8c302fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a TableColumn is valid for a drop column command.  <a href="#ac7c2ecceb8b03f14798c435a8c302fff">More...</a><br /></td></tr>
+<tr class="separator:ac7c2ecceb8b03f14798c435a8c302fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2532f0e1b2d03c5a2402e99cce124d9"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#af2532f0e1b2d03c5a2402e99cce124d9">DropColumnConstraintAsync</a> (ColumnConstraint constraint)</td></tr>
+<tr class="memdesc:af2532f0e1b2d03c5a2402e99cce124d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a column constraint.  <a href="#af2532f0e1b2d03c5a2402e99cce124d9">More...</a><br /></td></tr>
+<tr class="separator:af2532f0e1b2d03c5a2402e99cce124d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12975e3e866777b3f40e3b6894c1bb70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a12975e3e866777b3f40e3b6894c1bb70">ValidateColumnConstraintForDrop</a> (ColumnConstraint constraint)</td></tr>
+<tr class="memdesc:a12975e3e866777b3f40e3b6894c1bb70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the <em>constraint</em>  is valid for drop.  <a href="#a12975e3e866777b3f40e3b6894c1bb70">More...</a><br /></td></tr>
+<tr class="separator:a12975e3e866777b3f40e3b6894c1bb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e789b84e723267dca6700a872d8a16"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a52e789b84e723267dca6700a872d8a16">DropForeignKeyAsync</a> (ForeignKey foreignKey)</td></tr>
 <tr class="memdesc:a52e789b84e723267dca6700a872d8a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a foreign key.  <a href="#a52e789b84e723267dca6700a872d8a16">More...</a><br /></td></tr>
 <tr class="separator:a52e789b84e723267dca6700a872d8a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a1492d6628487383134eef395fd215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#ae7a1492d6628487383134eef395fd215">ValidateForeignKeyForDrop</a> (ForeignKey foreignKey)</td></tr>
+<tr class="memdesc:ae7a1492d6628487383134eef395fd215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>foreignKey</em>  is valid for drop.  <a href="#ae7a1492d6628487383134eef395fd215">More...</a><br /></td></tr>
+<tr class="separator:ae7a1492d6628487383134eef395fd215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af93820e5c59aca3bbf07d37918532a2c"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#af93820e5c59aca3bbf07d37918532a2c">DropIndexAsync</a> (Index index)</td></tr>
 <tr class="memdesc:af93820e5c59aca3bbf07d37918532a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops an index.  <a href="#af93820e5c59aca3bbf07d37918532a2c">More...</a><br /></td></tr>
 <tr class="separator:af93820e5c59aca3bbf07d37918532a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7bddf21c15e6ac43b8ebb4a7cae9150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#ab7bddf21c15e6ac43b8ebb4a7cae9150">ValidateIndexForDrop</a> (Index index)</td></tr>
+<tr class="memdesc:ab7bddf21c15e6ac43b8ebb4a7cae9150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>index</em>  is valid for drop.  <a href="#ab7bddf21c15e6ac43b8ebb4a7cae9150">More...</a><br /></td></tr>
+<tr class="separator:ab7bddf21c15e6ac43b8ebb4a7cae9150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a1fd22cd6e8a5ecd62584f7bc33bd6b"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a6a1fd22cd6e8a5ecd62584f7bc33bd6b">DropPrimaryKeyAsync</a> (Index primaryKey)</td></tr>
+<tr class="memdesc:a6a1fd22cd6e8a5ecd62584f7bc33bd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a primary key index.  <a href="#a6a1fd22cd6e8a5ecd62584f7bc33bd6b">More...</a><br /></td></tr>
+<tr class="separator:a6a1fd22cd6e8a5ecd62584f7bc33bd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f5125efdb05e5bdce870679fb883ff5"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a6f5125efdb05e5bdce870679fb883ff5">DropSchemaAsync</a> (Schema schema)</td></tr>
 <tr class="memdesc:a6f5125efdb05e5bdce870679fb883ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a schema.  <a href="#a6f5125efdb05e5bdce870679fb883ff5">More...</a><br /></td></tr>
 <tr class="separator:a6f5125efdb05e5bdce870679fb883ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca7f495163875e1054bb08fc6109a7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#adca7f495163875e1054bb08fc6109a7b">ValidateSchemaForDrop</a> (Schema schema)</td></tr>
+<tr class="memdesc:adca7f495163875e1054bb08fc6109a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if <em>schema</em>  is valid for drop.  <a href="#adca7f495163875e1054bb08fc6109a7b">More...</a><br /></td></tr>
+<tr class="separator:adca7f495163875e1054bb08fc6109a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3d7c14130d7059af97db1785f14ec02"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#af3d7c14130d7059af97db1785f14ec02">DropTableAsync</a> (Table table)</td></tr>
 <tr class="memdesc:af3d7c14130d7059af97db1785f14ec02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a table or view.  <a href="#af3d7c14130d7059af97db1785f14ec02">More...</a><br /></td></tr>
 <tr class="separator:af3d7c14130d7059af97db1785f14ec02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3cc7499ce039f305ac27a4eabc613c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a9a3cc7499ce039f305ac27a4eabc613c">ValidateTableForDrop</a> (Table table)</td></tr>
+<tr class="memdesc:a9a3cc7499ce039f305ac27a4eabc613c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>table</em>  is valid for drop.  <a href="#a9a3cc7499ce039f305ac27a4eabc613c">More...</a><br /></td></tr>
+<tr class="separator:a9a3cc7499ce039f305ac27a4eabc613c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6ec5006f5274eca9b9b407039f23aa6"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#aa6ec5006f5274eca9b9b407039f23aa6">DropViewAsync</a> (View view)</td></tr>
 <tr class="memdesc:aa6ec5006f5274eca9b9b407039f23aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a view.  <a href="#aa6ec5006f5274eca9b9b407039f23aa6">More...</a><br /></td></tr>
 <tr class="separator:aa6ec5006f5274eca9b9b407039f23aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e961f1fee3850ed1ad1b20c472d1f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a89e961f1fee3850ed1ad1b20c472d1f4">ValidateViewForDrop</a> (View view)</td></tr>
+<tr class="memdesc:a89e961f1fee3850ed1ad1b20c472d1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>view</em>  is valid for drop.  <a href="#a89e961f1fee3850ed1ad1b20c472d1f4">More...</a><br /></td></tr>
+<tr class="separator:a89e961f1fee3850ed1ad1b20c472d1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09e72a27a5f58fdc6ff3deee3fdbb06e"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a09e72a27a5f58fdc6ff3deee3fdbb06e">GrantPermissionsAsync</a> (Grant grant)</td></tr>
 <tr class="memdesc:a09e72a27a5f58fdc6ff3deee3fdbb06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grants permission to a grantee to access a database object.  <a href="#a09e72a27a5f58fdc6ff3deee3fdbb06e">More...</a><br /></td></tr>
 <tr class="separator:a09e72a27a5f58fdc6ff3deee3fdbb06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afa42b9d381f2a9e0a6938d447d4552"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a3afa42b9d381f2a9e0a6938d447d4552">ValidateGrantForGrant</a> (Grant grant)</td></tr>
+<tr class="memdesc:a3afa42b9d381f2a9e0a6938d447d4552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>grant</em>  is valid for grant.  <a href="#a3afa42b9d381f2a9e0a6938d447d4552">More...</a><br /></td></tr>
+<tr class="separator:a3afa42b9d381f2a9e0a6938d447d4552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -115,31 +172,63 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements an ISchemaProvisioner for <a class="el" href="namespace_inetdev_1_1_data_1_1_oracle.html">Oracle</a> databases. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a79d53de3c6588a823d32d3c9985bd385"></a>
+<a class="anchor" id="ab7eed2a8b6a7e0259a3bd27e44ea95c2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Task Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AddColumnsAsync </td>
+          <td class="memname">Task Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AddColumnAsync </td>
           <td>(</td>
-          <td class="paramtype">Table&#160;</td>
-          <td class="paramname"><em>table</em></td><td>)</td>
+          <td class="paramtype">TableColumn&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds to <em>table</em>  the columns listed in it's columns collection. </p>
+<p>Adds a column to a table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">table</td><td>The information of the table and columns to be added.</td></tr>
+    <tr><td class="paramname">column</td><td>Column to be added.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">ValidationException</td><td>Thrown when the table configuration is not valid for schema manipulation.</td></tr>
-    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>table</em>  is .</td></tr>
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid for schema manipulation.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>column</em>  is .</td></tr>
+    <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a37e468cfb391b8c50121ba4c27f8c964"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AddColumnConstraintAsync </td>
+          <td>(</td>
+          <td class="paramtype">ColumnConstraint&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a column contraint. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constraint</td><td>Contraint to be added.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid for schema manipulation.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>constraint</em>  is .</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
   </table>
   </dd>
@@ -204,6 +293,38 @@ Properties</h2></td></tr>
   <table class="exception">
     <tr><td class="paramname">ValidationException</td><td>Thrown when the index configuration is not valid for schema manipulation.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>index</em>  is .</td></tr>
+    <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a64e68777ef95169567f8ff93012b6774"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.CreatePrimaryKeyAsync </td>
+          <td>(</td>
+          <td class="paramtype">Index&#160;</td>
+          <td class="paramname"><em>primaryKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a primary key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">primaryKey</td><td>Primary key configuration.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid for schema manipulation.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>primaryKey</em>  is .</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
   </table>
   </dd>
@@ -307,31 +428,63 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aaf68c45a89f6664d09888d005efba697"></a>
+<a class="anchor" id="a46cee55281f8cc1c4e276c174bd22aae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Task Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropColumnsAsync </td>
+          <td class="memname">async Task Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropColumnAsync </td>
           <td>(</td>
-          <td class="paramtype">Table&#160;</td>
-          <td class="paramname"><em>table</em></td><td>)</td>
+          <td class="paramtype">TableColumn&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Drops from <em>table</em>  the columns listed in it's columns collection. </p>
+<p>Drops a column from the table it belongs to. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">table</td><td>The information of the table and columns to be added.</td></tr>
+    <tr><td class="paramname">column</td><td>Column to be dropped.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">ValidationException</td><td>Thrown when the table configuration is not valid for schema manipulation.</td></tr>
-    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>table</em>  is .</td></tr>
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid for schema manipulation.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>column</em>  is .</td></tr>
+    <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af2532f0e1b2d03c5a2402e99cce124d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropColumnConstraintAsync </td>
+          <td>(</td>
+          <td class="paramtype">ColumnConstraint&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drops a column constraint. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constraint</td><td>The contraint to be dropped.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid for schema manipulation.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>constraint</em>  is .</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
   </table>
   </dd>
@@ -396,6 +549,38 @@ Properties</h2></td></tr>
   <table class="exception">
     <tr><td class="paramname">ValidationException</td><td>Thrown when the index configuration is not valid for schema manipulation.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>index</em>  is .</td></tr>
+    <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6a1fd22cd6e8a5ecd62584f7bc33bd6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropPrimaryKeyAsync </td>
+          <td>(</td>
+          <td class="paramtype">Index&#160;</td>
+          <td class="paramname"><em>primaryKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drops a primary key index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">primaryKey</td><td>The primary key to be dropped.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid for schema manipulation.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>primaryKey</em>  is .</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
   </table>
   </dd>
@@ -525,6 +710,471 @@ Properties</h2></td></tr>
     <tr><td class="paramname">ValidationException</td><td>Thrown when the view configuration is not valid for schema manipulation.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>grant</em>  is .</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a31dbaa511449e9b89d37e44d289f8541"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateColumnConstraintForAdd </td>
+          <td>(</td>
+          <td class="paramtype">ColumnConstraint&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>constraint</em>  is valid for add. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constraint</td><td>ColumnConstraint to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>constraint</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a12975e3e866777b3f40e3b6894c1bb70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateColumnConstraintForDrop </td>
+          <td>(</td>
+          <td class="paramtype">ColumnConstraint&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if the <em>constraint</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constraint</td><td>ColumnConstraint to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>constraint</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0922ca624deabaf93ce151daaf62f43a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateForeignKeyForAdd </td>
+          <td>(</td>
+          <td class="paramtype">ForeignKey&#160;</td>
+          <td class="paramname"><em>foreignKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>foreignKey</em>  is valid for add. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">foreignKey</td><td>ForeignKey to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>foreignKey</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae7a1492d6628487383134eef395fd215"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateForeignKeyForDrop </td>
+          <td>(</td>
+          <td class="paramtype">ForeignKey&#160;</td>
+          <td class="paramname"><em>foreignKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>foreignKey</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">foreignKey</td><td>ForeignKey to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>foreignKey</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3afa42b9d381f2a9e0a6938d447d4552"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateGrantForGrant </td>
+          <td>(</td>
+          <td class="paramtype">Grant&#160;</td>
+          <td class="paramname"><em>grant</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>grant</em>  is valid for grant. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grant</td><td>Grant to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>grant</em>  is </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7436c29d31f7ae31bff7d0badafe18ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateIndexForCreate </td>
+          <td>(</td>
+          <td class="paramtype">Index&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>index</em>  is valid for creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Index to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thown when <em>index</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab7bddf21c15e6ac43b8ebb4a7cae9150"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateIndexForDrop </td>
+          <td>(</td>
+          <td class="paramtype">Index&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>index</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Index to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>index</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9dc65d3d77d1002968785835c074ec23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateSchemaForCreate </td>
+          <td>(</td>
+          <td class="paramtype">Schema&#160;</td>
+          <td class="paramname"><em>schema</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if <em>schema</em>  is valid for create. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">schema</td><td>Schema to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>schema</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adca7f495163875e1054bb08fc6109a7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateSchemaForDrop </td>
+          <td>(</td>
+          <td class="paramtype">Schema&#160;</td>
+          <td class="paramname"><em>schema</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if <em>schema</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">schema</td><td>Schema to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>schema</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0eeab42af74d0a9ea895d4ce1a4deb53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateTableColumnForAdd </td>
+          <td>(</td>
+          <td class="paramtype">TableColumn&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a TableColumn is valid for an add column command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">column</td><td>TableColumn to verify.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>column</em>  is .</td></tr>
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is invalid.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac7c2ecceb8b03f14798c435a8c302fff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateTableColumnForDrop </td>
+          <td>(</td>
+          <td class="paramtype">TableColumn&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a TableColumn is valid for a drop column command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">column</td><td>TableColumn to verify.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>column</em>  is .</td></tr>
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is invalid.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af99f19405ff6e6a90fd2da659e9fe46f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateTableForCreate </td>
+          <td>(</td>
+          <td class="paramtype">Table&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>table</em>  is valid for creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td>Table to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>table</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a3cc7499ce039f305ac27a4eabc613c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateTableForDrop </td>
+          <td>(</td>
+          <td class="paramtype">Table&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>table</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td>Table to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>table</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c6cc9c0b6d8bfdb52e50c28ebff9a5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateViewForCreate </td>
+          <td>(</td>
+          <td class="paramtype">View&#160;</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks is <em>view</em>  is valid for creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>View to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>view</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a89e961f1fee3850ed1ad1b20c472d1f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.ValidateViewForDrop </td>
+          <td>(</td>
+          <td class="paramtype">View&#160;</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>view</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>View to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>view</em>  is </td></tr>
   </table>
   </dd>
 </dl>

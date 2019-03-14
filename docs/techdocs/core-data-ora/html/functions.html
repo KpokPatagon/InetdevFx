@@ -61,10 +61,10 @@
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
-      <li><a href="#index_q"><span>q</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
-      <li class="current"><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+      <li class="current"><a href="#index_v"><span>v</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -82,8 +82,11 @@
 
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
-<li>AddColumnsAsync()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a79d53de3c6588a823d32d3c9985bd385">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+<li>AddColumnAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#ab7eed2a8b6a7e0259a3bd27e44ea95c2">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>AddColumnConstraintAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a37e468cfb391b8c50121ba4c27f8c964">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
 </li>
 <li>AddForeignKeyAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a3bf2478953e43296602f7924f6232e9a">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
@@ -111,7 +114,7 @@
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_data_model_cmd_builder.html#a0daab347ca57cddcc274920871a11f55">Inetdev.Data.Oracle.OracleDataModelCmdBuilder</a>
 </li>
 <li>BuildPredicate()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_cmd_builder.html#a26c0218aad8f4340c5d319a143340a3b">Inetdev.Data.Oracle.OracleCmdBuilder</a>
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_cmd_builder.html#ab8a1de44012b8f399a8138dedb70530d">Inetdev.Data.Oracle.OracleCmdBuilder</a>
 </li>
 <li>BuildSearchCondition()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_cmd_builder.html#aba84168b2184b92e69f01a5adc1a88aa">Inetdev.Data.Oracle.OracleCmdBuilder</a>
@@ -119,15 +122,15 @@
 <li>BuildUpdate()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_data_model_cmd_builder.html#adf1940c36a0c9375b9243d799b7105d7">Inetdev.Data.Oracle.OracleDataModelCmdBuilder</a>
 </li>
+<li>BuildViewText()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_view_builder.html#ac3fde7628d20e0ab1cefb1b969909946">Inetdev.Data.Oracle.DatabaseSchema.OracleViewBuilder</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>Catalog
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#ae300ceca360ad3d70221af2609bb1884">Inetdev.Data.Oracle.OracleDbAccess</a>
-</li>
-<li>CatalogSeparator
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_formatter.html#af7236251b9d7c9d609443a47f36e632a">Inetdev.Data.Oracle.OracleDbFormatter</a>
 </li>
 <li>CloseConnection()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#af2d75001793ab7b08ff0b37cbfcd771e">Inetdev.Data.Oracle.OracleDbAccess</a>
@@ -144,6 +147,9 @@
 </li>
 <li>CreateIndexAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#ae427b8e16ff2f9352cc7261eb0746750">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>CreatePrimaryKeyAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a64e68777ef95169567f8ff93012b6774">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
 </li>
 <li>CreateSchemaAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a20a6ab4d3d9a19459f336a8b188365b6">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
@@ -162,17 +168,32 @@
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#a38fa2a1010a244e7380459a77ca1bbcb">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaDiscoverer</a>
 , <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a65ab37abda903d91f7cb6842ddd24073">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
 </li>
+<li>DefaultIndexSpace
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#a289c595fd36ffb1ae1d052ed8e67a9a8">Inetdev.Data.Oracle.OracleDbAccess</a>
+</li>
+<li>DefaultRole
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#abafece8af6a902508d02c94a75271c50">Inetdev.Data.Oracle.OracleDbAccess</a>
+</li>
+<li>DefaultTableSpace
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#aab6e66c736bf37d79ee01c48596caa72">Inetdev.Data.Oracle.OracleDbAccess</a>
+</li>
 <li>Dispose()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#ac4a662dc52af7533cf8e440db3a8b36d">Inetdev.Data.Oracle.OracleDbAccess</a>
 </li>
-<li>DropColumnsAsync()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#aaf68c45a89f6664d09888d005efba697">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+<li>DropColumnAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a46cee55281f8cc1c4e276c174bd22aae">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>DropColumnConstraintAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#af2532f0e1b2d03c5a2402e99cce124d9">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
 </li>
 <li>DropForeignKeyAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a52e789b84e723267dca6700a872d8a16">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
 </li>
 <li>DropIndexAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#af93820e5c59aca3bbf07d37918532a2c">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>DropPrimaryKeyAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a6a1fd22cd6e8a5ecd62584f7bc33bd6b">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
 </li>
 <li>DropSchemaAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a6f5125efdb05e5bdce870679fb883ff5">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
@@ -221,12 +242,6 @@
 <li>GetCatalogs()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#a12569cdb9bf541134dc61888d831d3de">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaDiscoverer</a>
 </li>
-<li>GetDbDateTimeString()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_formatter.html#ad2ddcc5a71c5ab6b7446a50d03555587">Inetdev.Data.Oracle.OracleDbFormatter</a>
-</li>
-<li>GetDbType()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_formatter.html#a750ab92c5d6a9fbb871310ce42db26fb">Inetdev.Data.Oracle.OracleDbFormatter</a>
-</li>
 <li>GetFullSequenceName()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_name_qualifier.html#a64568979038e149827ea8c7d27b21ba6">Inetdev.Data.Oracle.OracleDbNameQualifier</a>
 </li>
@@ -234,7 +249,7 @@
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_name_qualifier.html#afd8c48f2e658c493e51bc222b9f314a9">Inetdev.Data.Oracle.OracleDbNameQualifier</a>
 </li>
 <li>GetSchema()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#a77be283eed15d847573506f757cf1dd5">Inetdev.Data.Oracle.OracleDbAccess</a>
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#af79535691608fceb60a583efa0f14ea6">Inetdev.Data.Oracle.OracleDbAccess</a>
 </li>
 <li>GetSchemas()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#ac58d25c6cd4e73513df4e18b047cf1b1">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaDiscoverer</a>
@@ -296,22 +311,6 @@
 </ul>
 
 
-<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
-<li>QuoteIdentifierPrefix
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_formatter.html#a0992c74d6c4b4ee990245b9792dab403">Inetdev.Data.Oracle.OracleDbFormatter</a>
-</li>
-<li>QuoteIdentifierSuffix
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_formatter.html#a2973c0408e41b58b40493b82e632bce3">Inetdev.Data.Oracle.OracleDbFormatter</a>
-</li>
-<li>QuoteParamPrefix
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_formatter.html#a3bb7eb4b7d95370a0bb420ff9f1d1e30">Inetdev.Data.Oracle.OracleDbFormatter</a>
-</li>
-<li>QuoteParamSuffix
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_formatter.html#accc4b12eed8be1f7abacd5f6d8d82ac6">Inetdev.Data.Oracle.OracleDbFormatter</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
 <li>RollbackTransaction()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#abf4a149aaf01f0d33ce49397fd88ab6b">Inetdev.Data.Oracle.OracleDbAccess</a>
@@ -320,14 +319,11 @@
 
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
-<li>SchemaSeparator
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_formatter.html#a058ffb43ab1fc89b5bc0a447a1863d10">Inetdev.Data.Oracle.OracleDbFormatter</a>
-</li>
 <li>ServiceName
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#ab6f69bc745db41546040d157a3058138">Inetdev.Data.Oracle.OracleDbAccess</a>
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#a559bd18f436c693b15156fecb11174d7">Inetdev.Data.Oracle.OracleDbAccess</a>
 </li>
 <li>Sid
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#a1456ee71ef360f3030fcedcb7994e327">Inetdev.Data.Oracle.OracleDbAccess</a>
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#a74c07773afa48f8bf85cb71f3d2732ee">Inetdev.Data.Oracle.OracleDbAccess</a>
 </li>
 </ul>
 
@@ -335,6 +331,55 @@
 <h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
 <li>UserName
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#a3fd6b60091e453bd50e7d421ae6027ad">Inetdev.Data.Oracle.OracleDbAccess</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>ValidateColumnConstraintForAdd()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a31dbaa511449e9b89d37e44d289f8541">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateColumnConstraintForDrop()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a12975e3e866777b3f40e3b6894c1bb70">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateForeignKeyForAdd()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a0922ca624deabaf93ce151daaf62f43a">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateForeignKeyForDrop()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#ae7a1492d6628487383134eef395fd215">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateGrantForGrant()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a3afa42b9d381f2a9e0a6938d447d4552">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateIndexForCreate()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a7436c29d31f7ae31bff7d0badafe18ba">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateIndexForDrop()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#ab7bddf21c15e6ac43b8ebb4a7cae9150">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateSchemaForCreate()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a9dc65d3d77d1002968785835c074ec23">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateSchemaForDrop()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#adca7f495163875e1054bb08fc6109a7b">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateTableColumnForAdd()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a0eeab42af74d0a9ea895d4ce1a4deb53">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateTableColumnForDrop()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#ac7c2ecceb8b03f14798c435a8c302fff">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateTableForCreate()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#af99f19405ff6e6a90fd2da659e9fe46f">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateTableForDrop()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a9a3cc7499ce039f305ac27a4eabc613c">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateViewForCreate()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a7c6cc9c0b6d8bfdb52e50c28ebff9a5d">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>ValidateViewForDrop()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a89e961f1fee3850ed1ad1b20c472d1f4">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
 </li>
 </ul>
 </div><!-- contents -->

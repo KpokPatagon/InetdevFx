@@ -84,9 +84,11 @@
 <li>DataAccessAPI
 : <a class="el" href="class_inetdev_1_1_data_1_1_abstract_db_cmd_builder.html#ae8d64770ee86e96c38161edbba0e5476">Inetdev.Data.AbstractDbCmdBuilder</a>
 , <a class="el" href="class_inetdev_1_1_data_1_1_abstract_db_name_qualifier.html#aaa0f16f5e440d44b140de12c06c81361">Inetdev.Data.AbstractDbNameQualifier</a>
+, <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_abstract_view_builder.html#a65757f99539ad0f6d6b43f264686f137">Inetdev.Data.DatabaseSchema.AbstractViewBuilder</a>
 , <a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_database_provisioner.html#ae73a71ad4f87763b5c9eaf5234c3f1d7">Inetdev.Data.DatabaseSchema.IDatabaseProvisioner</a>
 , <a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_discoverer.html#a3f5e86010b6770485b9b5fc88bd92fbb">Inetdev.Data.DatabaseSchema.ISchemaDiscoverer</a>
 , <a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#acb9250dd6131ecbcd2c0d2816dab9245">Inetdev.Data.DatabaseSchema.ISchemaProvisioner</a>
+, <a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_view_builder.html#ad4138ec401c0f5059edb3d68d084de3a">Inetdev.Data.DatabaseSchema.IViewBuilder</a>
 , <a class="el" href="class_inetdev_1_1_data_1_1_data_model_cmd_builder.html#a6694f2f881574f3516bd312f9003a6c0">Inetdev.Data.DataModelCmdBuilder</a>
 , <a class="el" href="class_inetdev_1_1_data_1_1_data_services.html#a2b5f0e2ad17085d399742e118aeef32e">Inetdev.Data.DataServices</a>
 , <a class="el" href="interface_inetdev_1_1_data_1_1_i_data_model_cmd_builder.html#a4755401d65d7aa660584853d23b2bd71">Inetdev.Data.IDataModelCmdBuilder</a>
@@ -96,7 +98,7 @@
 , <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_base_cmd_builder.html#a7bb054e6e9c5c7f2ec9e5a0164ab35d8">Inetdev.Data.Query.BaseCmdBuilder</a>
 </li>
 <li>DataAccessException()
-: <a class="el" href="class_inetdev_1_1_data_1_1_data_access_exception.html#aa0178734c6d013c298fa1ae45d3e07c7">Inetdev.Data.DataAccessException</a>
+: <a class="el" href="class_inetdev_1_1_data_1_1_data_access_exception.html#a9b07104bbe884933bde1bc5e07e3ce4d">Inetdev.Data.DataAccessException</a>
 </li>
 <li>DatabaseObjectDuplicatedException()
 : <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_database_object_duplicated_exception.html#a57c68e3d4f76307bb5930bb3bf08de1e">Inetdev.Data.DatabaseSchema.DatabaseObjectDuplicatedException</a>
@@ -148,7 +150,7 @@
 : <a class="el" href="class_inetdev_1_1_data_1_1_decimal_data_property.html#a395a34449c4d0260d0849c0e8fe6116f">Inetdev.Data.DecimalDataProperty</a>
 </li>
 <li>DecoratedColumn()
-: <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_decorated_column.html#a1bc220a389abfd609794ffaf356c7b4e">Inetdev.Data.Query.DecoratedColumn</a>
+: <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_decorated_column.html#a74c0af8548fbd853e4edfc72d45fd07c">Inetdev.Data.Query.DecoratedColumn</a>
 </li>
 <li>Decoration
 : <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_decorated_column.html#a07eeeea3a8e2d446a8b7aa756fdd9488">Inetdev.Data.Query.DecoratedColumn</a>
@@ -173,7 +175,7 @@
 , <a class="el" href="interface_inetdev_1_1_data_1_1_i_data_services.html#a01176740d2d74f5c96a72852c70cbd6b">Inetdev.Data.IDataServices</a>
 </li>
 <li>DeleteStatement()
-: <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_delete_statement.html#a4d1ba472fef60156c17e45804bb00a44">Inetdev.Data.Query.DeleteStatement</a>
+: <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_delete_statement.html#a564dea3ef99ec0c16a3cdfea381df78a">Inetdev.Data.Query.DeleteStatement</a>
 </li>
 <li>Description
 : <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html#a337659fb0830e4a44ef3bdc5605ea003">Inetdev.Data.DatabaseSchema.Table</a>
@@ -197,8 +199,11 @@
 <li>DropCatalogAsync()
 : <a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_database_provisioner.html#a3ee0f3c1be1e212c634e4f87e599230e">Inetdev.Data.DatabaseSchema.IDatabaseProvisioner</a>
 </li>
-<li>DropColumnsAsync()
-: <a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a9e3b4fb288f6da25be992b63bd5eb961">Inetdev.Data.DatabaseSchema.ISchemaProvisioner</a>
+<li>DropColumnAsync()
+: <a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#afa043c41cc910975cf4bbd6d291d41a7">Inetdev.Data.DatabaseSchema.ISchemaProvisioner</a>
+</li>
+<li>DropColumnConstraintAsync()
+: <a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#aba85538724f40e98a29cc0ff010a2c4c">Inetdev.Data.DatabaseSchema.ISchemaProvisioner</a>
 </li>
 <li>DropForeignKeyAsync()
 : <a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#aaee5e4a7c0a6bb2849051c843f8c4ffc">Inetdev.Data.DatabaseSchema.ISchemaProvisioner</a>
@@ -208,6 +213,9 @@
 </li>
 <li>DropLoginAsync()
 : <a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_database_provisioner.html#ace1e1030c035916161148f0b23c3e3d4">Inetdev.Data.DatabaseSchema.IDatabaseProvisioner</a>
+</li>
+<li>DropPrimaryKeyAsync()
+: <a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a53a0b267349ae3666f8524294be00924">Inetdev.Data.DatabaseSchema.ISchemaProvisioner</a>
 </li>
 <li>DropSchemaAsync()
 : <a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a7fa45761a0885250dda811498a2a51fb">Inetdev.Data.DatabaseSchema.ISchemaProvisioner</a>
