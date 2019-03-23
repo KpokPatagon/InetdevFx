@@ -281,6 +281,14 @@
                     Logger.Configuration = configuration;
                     Cryptographer.Configuration = configuration;
                     ApplicationContext.Configuration = configuration;
+
+                var rt = configuration.GetReloadToken();
+                rt.RegisterChangeCallback(cnfg =>
+                {
+                    Logger.Configuration = cnfg as IConfiguration;
+                    Cryptographer.Configuration = cnfg as IConfiguration;
+
+                }, configuration);
             }
         }
     }</code>
