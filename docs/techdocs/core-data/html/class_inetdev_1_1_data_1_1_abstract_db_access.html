@@ -104,6 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f6cef545527db4cf85cc5026e03fe76"><td class="memItemLeft" align="right" valign="top">abstract Task&lt; object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_abstract_db_access.html#a5f6cef545527db4cf85cc5026e03fe76">ExecuteScalarAsync</a> (IDbCommand command)</td></tr>
 <tr class="memdesc:a5f6cef545527db4cf85cc5026e03fe76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the specified command againts the database asyncronously and returns the first field of the first record retrieved.  <a href="#a5f6cef545527db4cf85cc5026e03fe76">More...</a><br /></td></tr>
 <tr class="separator:a5f6cef545527db4cf85cc5026e03fe76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f5e4954842639f384d04f0a57645243"><td class="memItemLeft" align="right" valign="top">abstract string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_abstract_db_access.html#a2f5e4954842639f384d04f0a57645243">GetServerVersion</a> ()</td></tr>
+<tr class="memdesc:a2f5e4954842639f384d04f0a57645243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the server version.  <a href="#a2f5e4954842639f384d04f0a57645243">More...</a><br /></td></tr>
+<tr class="separator:a2f5e4954842639f384d04f0a57645243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a5553561a38f48ed5940b2a61d55906"><td class="memItemLeft" align="right" valign="top">abstract DataTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_abstract_db_access.html#a7a5553561a38f48ed5940b2a61d55906">GetSchema</a> ()</td></tr>
 <tr class="memdesc:a7a5553561a38f48ed5940b2a61d55906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ejecutes the underlaying connection <a class="el" href="class_inetdev_1_1_data_1_1_abstract_db_access.html#a7a5553561a38f48ed5940b2a61d55906" title="Ejecutes the underlaying connection GetSchema() method. ">GetSchema()</a> method.  <a href="#a7a5553561a38f48ed5940b2a61d55906">More...</a><br /></td></tr>
 <tr class="separator:a7a5553561a38f48ed5940b2a61d55906"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -916,6 +919,34 @@ Events</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A DataTable as obtained from the <a class="el" href="class_inetdev_1_1_data_1_1_abstract_db_access.html#a7a5553561a38f48ed5940b2a61d55906" title="Ejecutes the underlaying connection GetSchema() method. ">GetSchema()</a> method.</dd></dl>
 
 <p>Implements <a class="el" href="interface_inetdev_1_1_data_1_1_i_db_access.html#a5d0e1b9fd29fb83d6a5c9a24b3dc3d34">Inetdev.Data.IDbAccess</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f5e4954842639f384d04f0a57645243"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract string Inetdev.Data.AbstractDbAccess.GetServerVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the server version. </p>
+<dl class="section return"><dt>Returns</dt><dd>The server version.</dd></dl>
+
+<p>Implements <a class="el" href="interface_inetdev_1_1_data_1_1_i_db_access.html#ac8a5fe3d8604f932fa172edce0ef52aa">Inetdev.Data.IDbAccess</a>.</p>
 
 </div>
 </div>

@@ -61,45 +61,108 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aef2bce353822d5609995bac354c26f58"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#aef2bce353822d5609995bac354c26f58">AddColumnsAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html">Table</a> table)</td></tr>
-<tr class="memdesc:aef2bce353822d5609995bac354c26f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds to <em>table</em>  the columns listed in it's columns collection.  <a href="#aef2bce353822d5609995bac354c26f58">More...</a><br /></td></tr>
-<tr class="separator:aef2bce353822d5609995bac354c26f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ea715b0aa32ed61352ec90af8523cc"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a61ea715b0aa32ed61352ec90af8523cc">AddColumnAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a> column)</td></tr>
+<tr class="memdesc:a61ea715b0aa32ed61352ec90af8523cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a column to a table.  <a href="#a61ea715b0aa32ed61352ec90af8523cc">More...</a><br /></td></tr>
+<tr class="separator:a61ea715b0aa32ed61352ec90af8523cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5908e4daf74ee2bf2e030bc23206a672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a5908e4daf74ee2bf2e030bc23206a672">ValidateTableColumnForAdd</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a> column)</td></tr>
+<tr class="memdesc:a5908e4daf74ee2bf2e030bc23206a672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html" title="Models the information of a table column. ">TableColumn</a> is valid for an add column command.  <a href="#a5908e4daf74ee2bf2e030bc23206a672">More...</a><br /></td></tr>
+<tr class="separator:a5908e4daf74ee2bf2e030bc23206a672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb881a6fabed062a117931448271223"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#aaeb881a6fabed062a117931448271223">AddColumnConstraintAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_column_constraint.html">ColumnConstraint</a> constraint)</td></tr>
+<tr class="memdesc:aaeb881a6fabed062a117931448271223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a column contraint.  <a href="#aaeb881a6fabed062a117931448271223">More...</a><br /></td></tr>
+<tr class="separator:aaeb881a6fabed062a117931448271223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c71ec9eacc51415cb53acf1af0f2e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#ab3c71ec9eacc51415cb53acf1af0f2e0">ValidateColumnConstraintForAdd</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_column_constraint.html">ColumnConstraint</a> constraint)</td></tr>
+<tr class="memdesc:ab3c71ec9eacc51415cb53acf1af0f2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>constraint</em>  is valid for add.  <a href="#ab3c71ec9eacc51415cb53acf1af0f2e0">More...</a><br /></td></tr>
+<tr class="separator:ab3c71ec9eacc51415cb53acf1af0f2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61875184a9a48eb06e943b4ddc1296a4"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a61875184a9a48eb06e943b4ddc1296a4">AddForeignKeyAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_foreign_key.html">ForeignKey</a> foreignKey)</td></tr>
 <tr class="memdesc:a61875184a9a48eb06e943b4ddc1296a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a foreign key to the specified table.  <a href="#a61875184a9a48eb06e943b4ddc1296a4">More...</a><br /></td></tr>
 <tr class="separator:a61875184a9a48eb06e943b4ddc1296a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dae26d52b3ee83cd9ab4c5d66342d8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a9dae26d52b3ee83cd9ab4c5d66342d8c">ValidateForeignKeyForAdd</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_foreign_key.html">ForeignKey</a> foreignKey)</td></tr>
+<tr class="memdesc:a9dae26d52b3ee83cd9ab4c5d66342d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>foreignKey</em>  is valid for add.  <a href="#a9dae26d52b3ee83cd9ab4c5d66342d8c">More...</a><br /></td></tr>
+<tr class="separator:a9dae26d52b3ee83cd9ab4c5d66342d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae92d87bb47e7b93ec952aa1603b4633"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#aae92d87bb47e7b93ec952aa1603b4633">AlterColumnAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a> from, <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a> to)</td></tr>
+<tr class="memdesc:aae92d87bb47e7b93ec952aa1603b4633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alters a column of a table.  <a href="#aae92d87bb47e7b93ec952aa1603b4633">More...</a><br /></td></tr>
+<tr class="separator:aae92d87bb47e7b93ec952aa1603b4633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a784abb977f8aae6d40eceb4bde614640"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a784abb977f8aae6d40eceb4bde614640">ValidateTableColumnForAlter</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a> column)</td></tr>
+<tr class="memdesc:a784abb977f8aae6d40eceb4bde614640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html" title="Models the information of a table column. ">TableColumn</a> is valid for a modify column command.  <a href="#a784abb977f8aae6d40eceb4bde614640">More...</a><br /></td></tr>
+<tr class="separator:a784abb977f8aae6d40eceb4bde614640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ae1764f8ff418711895285944fc991f"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a3ae1764f8ff418711895285944fc991f">CreateIndexAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html">Index</a> index)</td></tr>
 <tr class="memdesc:a3ae1764f8ff418711895285944fc991f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an index.  <a href="#a3ae1764f8ff418711895285944fc991f">More...</a><br /></td></tr>
 <tr class="separator:a3ae1764f8ff418711895285944fc991f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a863c72ba3799a8cb89196419e743a02a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a863c72ba3799a8cb89196419e743a02a">ValidateIndexForCreate</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html">Index</a> index)</td></tr>
+<tr class="memdesc:a863c72ba3799a8cb89196419e743a02a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>index</em>  is valid for creation.  <a href="#a863c72ba3799a8cb89196419e743a02a">More...</a><br /></td></tr>
+<tr class="separator:a863c72ba3799a8cb89196419e743a02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630c516b1a60aacfc102d663b5441427"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a630c516b1a60aacfc102d663b5441427">CreatePrimaryKeyAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html">Index</a> primaryKey)</td></tr>
+<tr class="memdesc:a630c516b1a60aacfc102d663b5441427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a primary key.  <a href="#a630c516b1a60aacfc102d663b5441427">More...</a><br /></td></tr>
+<tr class="separator:a630c516b1a60aacfc102d663b5441427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a4646ba4cd95acb60cfde3e158fa12a"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a5a4646ba4cd95acb60cfde3e158fa12a">CreateSchemaAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_schema.html">Schema</a> schema)</td></tr>
 <tr class="memdesc:a5a4646ba4cd95acb60cfde3e158fa12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a schema.  <a href="#a5a4646ba4cd95acb60cfde3e158fa12a">More...</a><br /></td></tr>
 <tr class="separator:a5a4646ba4cd95acb60cfde3e158fa12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdcab33a570c0b048ef31afc48b720e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#afdcab33a570c0b048ef31afc48b720e2">ValidateSchemaForCreate</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_schema.html">Schema</a> schema)</td></tr>
+<tr class="memdesc:afdcab33a570c0b048ef31afc48b720e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if <em>schema</em>  is valid for create.  <a href="#afdcab33a570c0b048ef31afc48b720e2">More...</a><br /></td></tr>
+<tr class="separator:afdcab33a570c0b048ef31afc48b720e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae10e560e35f1c5838a427dbca8ed4a08"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#ae10e560e35f1c5838a427dbca8ed4a08">CreateTableAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html">Table</a> table)</td></tr>
 <tr class="memdesc:ae10e560e35f1c5838a427dbca8ed4a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a table.  <a href="#ae10e560e35f1c5838a427dbca8ed4a08">More...</a><br /></td></tr>
 <tr class="separator:ae10e560e35f1c5838a427dbca8ed4a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e3c911b8f075dbef209e28d56b480c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#ad7e3c911b8f075dbef209e28d56b480c">ValidateTableForCreate</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html">Table</a> table)</td></tr>
+<tr class="memdesc:ad7e3c911b8f075dbef209e28d56b480c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>table</em>  is valid for creation.  <a href="#ad7e3c911b8f075dbef209e28d56b480c">More...</a><br /></td></tr>
+<tr class="separator:ad7e3c911b8f075dbef209e28d56b480c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfc8bbc80a7e012ee25692067ba7db2c"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#abfc8bbc80a7e012ee25692067ba7db2c">CreateViewAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_view.html">View</a> view)</td></tr>
 <tr class="memdesc:abfc8bbc80a7e012ee25692067ba7db2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a view.  <a href="#abfc8bbc80a7e012ee25692067ba7db2c">More...</a><br /></td></tr>
 <tr class="separator:abfc8bbc80a7e012ee25692067ba7db2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e3b4fb288f6da25be992b63bd5eb961"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a9e3b4fb288f6da25be992b63bd5eb961">DropColumnsAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html">Table</a> table)</td></tr>
-<tr class="memdesc:a9e3b4fb288f6da25be992b63bd5eb961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops from <em>table</em>  the columns listed in it's columns collection.  <a href="#a9e3b4fb288f6da25be992b63bd5eb961">More...</a><br /></td></tr>
-<tr class="separator:a9e3b4fb288f6da25be992b63bd5eb961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d0399295118bbf16b46adcce945a65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a95d0399295118bbf16b46adcce945a65">ValidateViewForCreate</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_view.html">View</a> view)</td></tr>
+<tr class="memdesc:a95d0399295118bbf16b46adcce945a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks is <em>view</em>  is valid for creation.  <a href="#a95d0399295118bbf16b46adcce945a65">More...</a><br /></td></tr>
+<tr class="separator:a95d0399295118bbf16b46adcce945a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa043c41cc910975cf4bbd6d291d41a7"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#afa043c41cc910975cf4bbd6d291d41a7">DropColumnAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a> column)</td></tr>
+<tr class="memdesc:afa043c41cc910975cf4bbd6d291d41a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a column from the table it belongs to.  <a href="#afa043c41cc910975cf4bbd6d291d41a7">More...</a><br /></td></tr>
+<tr class="separator:afa043c41cc910975cf4bbd6d291d41a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d1ffe2e864f2e51ffa84f578e00529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#ae8d1ffe2e864f2e51ffa84f578e00529">ValidateTableColumnForDrop</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a> column)</td></tr>
+<tr class="memdesc:ae8d1ffe2e864f2e51ffa84f578e00529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html" title="Models the information of a table column. ">TableColumn</a> is valid for a drop column command.  <a href="#ae8d1ffe2e864f2e51ffa84f578e00529">More...</a><br /></td></tr>
+<tr class="separator:ae8d1ffe2e864f2e51ffa84f578e00529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba85538724f40e98a29cc0ff010a2c4c"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#aba85538724f40e98a29cc0ff010a2c4c">DropColumnConstraintAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_column_constraint.html">ColumnConstraint</a> constraint)</td></tr>
+<tr class="memdesc:aba85538724f40e98a29cc0ff010a2c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a column constraint.  <a href="#aba85538724f40e98a29cc0ff010a2c4c">More...</a><br /></td></tr>
+<tr class="separator:aba85538724f40e98a29cc0ff010a2c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643eeb65f223d6a550370d87ccc9c31f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a643eeb65f223d6a550370d87ccc9c31f">ValidateColumnConstraintForDrop</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_column_constraint.html">ColumnConstraint</a> constraint)</td></tr>
+<tr class="memdesc:a643eeb65f223d6a550370d87ccc9c31f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the <em>constraint</em>  is valid for drop.  <a href="#a643eeb65f223d6a550370d87ccc9c31f">More...</a><br /></td></tr>
+<tr class="separator:a643eeb65f223d6a550370d87ccc9c31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee5e4a7c0a6bb2849051c843f8c4ffc"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#aaee5e4a7c0a6bb2849051c843f8c4ffc">DropForeignKeyAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_foreign_key.html">ForeignKey</a> foreignKey)</td></tr>
 <tr class="memdesc:aaee5e4a7c0a6bb2849051c843f8c4ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a foreign key.  <a href="#aaee5e4a7c0a6bb2849051c843f8c4ffc">More...</a><br /></td></tr>
 <tr class="separator:aaee5e4a7c0a6bb2849051c843f8c4ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe40295ed52688166af759010cd41291"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#afe40295ed52688166af759010cd41291">ValidateForeignKeyForDrop</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_foreign_key.html">ForeignKey</a> foreignKey)</td></tr>
+<tr class="memdesc:afe40295ed52688166af759010cd41291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>foreignKey</em>  is valid for drop.  <a href="#afe40295ed52688166af759010cd41291">More...</a><br /></td></tr>
+<tr class="separator:afe40295ed52688166af759010cd41291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd7d10533223cae441d093af46e12180"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#acd7d10533223cae441d093af46e12180">DropIndexAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html">Index</a> index)</td></tr>
 <tr class="memdesc:acd7d10533223cae441d093af46e12180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops an index.  <a href="#acd7d10533223cae441d093af46e12180">More...</a><br /></td></tr>
 <tr class="separator:acd7d10533223cae441d093af46e12180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1de9c9fbf2caaba321583e63fc15d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#adf1de9c9fbf2caaba321583e63fc15d2">ValidateIndexForDrop</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html">Index</a> index)</td></tr>
+<tr class="memdesc:adf1de9c9fbf2caaba321583e63fc15d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>index</em>  is valid for drop.  <a href="#adf1de9c9fbf2caaba321583e63fc15d2">More...</a><br /></td></tr>
+<tr class="separator:adf1de9c9fbf2caaba321583e63fc15d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a0b267349ae3666f8524294be00924"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a53a0b267349ae3666f8524294be00924">DropPrimaryKeyAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html">Index</a> primaryKey)</td></tr>
+<tr class="memdesc:a53a0b267349ae3666f8524294be00924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a primary key index.  <a href="#a53a0b267349ae3666f8524294be00924">More...</a><br /></td></tr>
+<tr class="separator:a53a0b267349ae3666f8524294be00924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fa45761a0885250dda811498a2a51fb"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a7fa45761a0885250dda811498a2a51fb">DropSchemaAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_schema.html">Schema</a> schema)</td></tr>
 <tr class="memdesc:a7fa45761a0885250dda811498a2a51fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a schema.  <a href="#a7fa45761a0885250dda811498a2a51fb">More...</a><br /></td></tr>
 <tr class="separator:a7fa45761a0885250dda811498a2a51fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ebb416b67639008a0a15d25eb687dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a33ebb416b67639008a0a15d25eb687dd">ValidateSchemaForDrop</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_schema.html">Schema</a> schema)</td></tr>
+<tr class="memdesc:a33ebb416b67639008a0a15d25eb687dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if <em>schema</em>  is valid for drop.  <a href="#a33ebb416b67639008a0a15d25eb687dd">More...</a><br /></td></tr>
+<tr class="separator:a33ebb416b67639008a0a15d25eb687dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d4ae24a9fded10dbd672ffa2081d78"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a87d4ae24a9fded10dbd672ffa2081d78">DropTableAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html">Table</a> table)</td></tr>
 <tr class="memdesc:a87d4ae24a9fded10dbd672ffa2081d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a table or view.  <a href="#a87d4ae24a9fded10dbd672ffa2081d78">More...</a><br /></td></tr>
 <tr class="separator:a87d4ae24a9fded10dbd672ffa2081d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9174d6136f36de447b5b926f9bc441db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a9174d6136f36de447b5b926f9bc441db">ValidateTableForDrop</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html">Table</a> table)</td></tr>
+<tr class="memdesc:a9174d6136f36de447b5b926f9bc441db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>table</em>  is valid for drop.  <a href="#a9174d6136f36de447b5b926f9bc441db">More...</a><br /></td></tr>
+<tr class="separator:a9174d6136f36de447b5b926f9bc441db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27ac0fd9b63bbd0d0b0eae73abffac64"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a27ac0fd9b63bbd0d0b0eae73abffac64">DropViewAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_view.html">View</a> view)</td></tr>
 <tr class="memdesc:a27ac0fd9b63bbd0d0b0eae73abffac64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a view.  <a href="#a27ac0fd9b63bbd0d0b0eae73abffac64">More...</a><br /></td></tr>
 <tr class="separator:a27ac0fd9b63bbd0d0b0eae73abffac64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0909feaee8371617e7bf81a427f299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a9e0909feaee8371617e7bf81a427f299">ValidateViewForDrop</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_view.html">View</a> view)</td></tr>
+<tr class="memdesc:a9e0909feaee8371617e7bf81a427f299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>view</em>  is valid for drop.  <a href="#a9e0909feaee8371617e7bf81a427f299">More...</a><br /></td></tr>
+<tr class="separator:a9e0909feaee8371617e7bf81a427f299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfa3da43ecc70385e55effd60655e1ca"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#abfa3da43ecc70385e55effd60655e1ca">GrantPermissionsAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_grant.html">Grant</a> grant)</td></tr>
 <tr class="memdesc:abfa3da43ecc70385e55effd60655e1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grants permissions to a grantee ro access a database object.  <a href="#abfa3da43ecc70385e55effd60655e1ca">More...</a><br /></td></tr>
 <tr class="separator:abfa3da43ecc70385e55effd60655e1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1491df1db62c4ab9d0a9c9d267e25b72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a1491df1db62c4ab9d0a9c9d267e25b72">ValidateGrantForGrant</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_grant.html">Grant</a> grant)</td></tr>
+<tr class="memdesc:a1491df1db62c4ab9d0a9c9d267e25b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <em>grant</em>  is valid for grant.  <a href="#a1491df1db62c4ab9d0a9c9d267e25b72">More...</a><br /></td></tr>
+<tr class="separator:a1491df1db62c4ab9d0a9c9d267e25b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -113,24 +176,48 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Allows the implementation of a provisiones that provision schema objects for databases. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aef2bce353822d5609995bac354c26f58"></a>
+<a class="anchor" id="a61ea715b0aa32ed61352ec90af8523cc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Task Inetdev.Data.DatabaseSchema.ISchemaProvisioner.AddColumnsAsync </td>
+          <td class="memname">Task Inetdev.Data.DatabaseSchema.ISchemaProvisioner.AddColumnAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html">Table</a>&#160;</td>
-          <td class="paramname"><em>table</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a>&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds to <em>table</em>  the columns listed in it's columns collection. </p>
+<p>Adds a column to a table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">table</td><td>The information of the table and columns to be added.</td></tr>
+    <tr><td class="paramname">column</td><td>Column to be added.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaeb881a6fabed062a117931448271223"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.DatabaseSchema.ISchemaProvisioner.AddColumnConstraintAsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_column_constraint.html">ColumnConstraint</a>&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a column contraint. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constraint</td><td>Contraint to be added.</td></tr>
   </table>
   </dd>
 </dl>
@@ -161,6 +248,41 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aae92d87bb47e7b93ec952aa1603b4633"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.DatabaseSchema.ISchemaProvisioner.AlterColumnAsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a>&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alters a column of a table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>The actual configuration of the column.</td></tr>
+    <tr><td class="paramname">to</td><td>The desired configuration of the column.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a3ae1764f8ff418711895285944fc991f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -179,6 +301,30 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html" title="Models an index. ">Index</a> configuration.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a630c516b1a60aacfc102d663b5441427"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.DatabaseSchema.ISchemaProvisioner.CreatePrimaryKeyAsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html">Index</a>&#160;</td>
+          <td class="paramname"><em>primaryKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a primary key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">primaryKey</td><td>Primary key configuration.</td></tr>
   </table>
   </dd>
 </dl>
@@ -257,24 +403,48 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9e3b4fb288f6da25be992b63bd5eb961"></a>
+<a class="anchor" id="afa043c41cc910975cf4bbd6d291d41a7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Task Inetdev.Data.DatabaseSchema.ISchemaProvisioner.DropColumnsAsync </td>
+          <td class="memname">Task Inetdev.Data.DatabaseSchema.ISchemaProvisioner.DropColumnAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html">Table</a>&#160;</td>
-          <td class="paramname"><em>table</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a>&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Drops from <em>table</em>  the columns listed in it's columns collection. </p>
+<p>Drops a column from the table it belongs to. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">table</td><td>The information of the table and columns to be dropped.</td></tr>
+    <tr><td class="paramname">column</td><td>The column to be dropped.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aba85538724f40e98a29cc0ff010a2c4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.DatabaseSchema.ISchemaProvisioner.DropColumnConstraintAsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_column_constraint.html">ColumnConstraint</a>&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drops a column constraint. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constraint</td><td>The contraint to be dropped.</td></tr>
   </table>
   </dd>
 </dl>
@@ -323,6 +493,30 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html" title="Models an index. ">Index</a> to drop.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a53a0b267349ae3666f8524294be00924"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.DatabaseSchema.ISchemaProvisioner.DropPrimaryKeyAsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html">Index</a>&#160;</td>
+          <td class="paramname"><em>primaryKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drops a primary key index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">primaryKey</td><td>The primary key to be dropped.</td></tr>
   </table>
   </dd>
 </dl>
@@ -419,6 +613,390 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">grant</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_grant.html" title="Models a grant statement to be executed. ">Grant</a> configuration.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab3c71ec9eacc51415cb53acf1af0f2e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateColumnConstraintForAdd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_column_constraint.html">ColumnConstraint</a>&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>constraint</em>  is valid for add. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constraint</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_column_constraint.html" title="Models a column constraint. ">ColumnConstraint</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a643eeb65f223d6a550370d87ccc9c31f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateColumnConstraintForDrop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_column_constraint.html">ColumnConstraint</a>&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if the <em>constraint</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constraint</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_column_constraint.html" title="Models a column constraint. ">ColumnConstraint</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9dae26d52b3ee83cd9ab4c5d66342d8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateForeignKeyForAdd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_foreign_key.html">ForeignKey</a>&#160;</td>
+          <td class="paramname"><em>foreignKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>foreignKey</em>  is valid for add. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">foreignKey</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_foreign_key.html" title="Models a foreign key ">ForeignKey</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afe40295ed52688166af759010cd41291"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateForeignKeyForDrop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_foreign_key.html">ForeignKey</a>&#160;</td>
+          <td class="paramname"><em>foreignKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>foreignKey</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">foreignKey</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_foreign_key.html" title="Models a foreign key ">ForeignKey</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1491df1db62c4ab9d0a9c9d267e25b72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateGrantForGrant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_grant.html">Grant</a>&#160;</td>
+          <td class="paramname"><em>grant</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>grant</em>  is valid for grant. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grant</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_grant.html" title="Models a grant statement to be executed. ">Grant</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a863c72ba3799a8cb89196419e743a02a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateIndexForCreate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html">Index</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>index</em>  is valid for creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html" title="Models an index. ">Index</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adf1de9c9fbf2caaba321583e63fc15d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateIndexForDrop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html">Index</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>index</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_index.html" title="Models an index. ">Index</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afdcab33a570c0b048ef31afc48b720e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateSchemaForCreate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_schema.html">Schema</a>&#160;</td>
+          <td class="paramname"><em>schema</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if <em>schema</em>  is valid for create. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">schema</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_schema.html" title="Models a database schema u owner. ">Schema</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a33ebb416b67639008a0a15d25eb687dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateSchemaForDrop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_schema.html">Schema</a>&#160;</td>
+          <td class="paramname"><em>schema</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if <em>schema</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">schema</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_schema.html" title="Models a database schema u owner. ">Schema</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5908e4daf74ee2bf2e030bc23206a672"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateTableColumnForAdd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a>&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html" title="Models the information of a table column. ">TableColumn</a> is valid for an add column command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">column</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html" title="Models the information of a table column. ">TableColumn</a> to verify.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a784abb977f8aae6d40eceb4bde614640"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateTableColumnForAlter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a>&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html" title="Models the information of a table column. ">TableColumn</a> is valid for a modify column command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">column</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html" title="Models the information of a table column. ">TableColumn</a> to verify.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae8d1ffe2e864f2e51ffa84f578e00529"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateTableColumnForDrop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html">TableColumn</a>&#160;</td>
+          <td class="paramname"><em>column</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html" title="Models the information of a table column. ">TableColumn</a> is valid for a drop column command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">column</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html" title="Models the information of a table column. ">TableColumn</a> to verify.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad7e3c911b8f075dbef209e28d56b480c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateTableForCreate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html">Table</a>&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>table</em>  is valid for creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html" title="Models a database table. ">Table</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9174d6136f36de447b5b926f9bc441db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateTableForDrop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html">Table</a>&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>table</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html" title="Models a database table. ">Table</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a95d0399295118bbf16b46adcce945a65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateViewForCreate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_view.html">View</a>&#160;</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks is <em>view</em>  is valid for creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_view.html" title="Models a database view. ">View</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e0909feaee8371617e7bf81a427f299"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateViewForDrop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_view.html">View</a>&#160;</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if <em>view</em>  is valid for drop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_view.html" title="Models a database view. ">View</a> to validate.</td></tr>
   </table>
   </dd>
 </dl>
