@@ -45,7 +45,8 @@
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Package Inetdev</div>  </div>
 </div><!--header-->
@@ -105,6 +106,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_missing_required_property_exception.html">MissingRequiredPropertyException</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thrown when a required property was not initialized.  <a href="class_inetdev_1_1_missing_required_property_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_nof_m_progress_event_args.html">NofMProgressEventArgs</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument for N of M progress report events.  <a href="class_inetdev_1_1_nof_m_progress_event_args.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_percentage_progress_event_args.html">PercentageProgressEventArgs</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument for percentage progress report events.  <a href="class_inetdev_1_1_percentage_progress_event_args.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_property_not_supported_exception.html">PropertyNotSupportedException</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thrown when trying to access a non-supported property.  <a href="class_inetdev_1_1_property_not_supported_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,6 +132,15 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a23a149e7dc5fae30056db16dfd718c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the results for actions or processes taken by applications.  <a href="namespace_inetdev.html#a23a149e7dc5fae30056db16dfd718c3a">More...</a><br /></td></tr>
 <tr class="separator:a23a149e7dc5fae30056db16dfd718c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2b1fcb04122ef3df9b576ac4596b566e"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_inetdev.html#a2b1fcb04122ef3df9b576ac4596b566e">NofMProgressEventHandler</a> (object sender, <a class="el" href="class_inetdev_1_1_nof_m_progress_event_args.html">NofMProgressEventArgs</a> e)</td></tr>
+<tr class="memdesc:a2b1fcb04122ef3df9b576ac4596b566e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that reports a process progress as a N of M items.  <a href="#a2b1fcb04122ef3df9b576ac4596b566e">More...</a><br /></td></tr>
+<tr class="separator:a2b1fcb04122ef3df9b576ac4596b566e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae822f0a1428a6a3111c64fcc626feea0"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_inetdev.html#ae822f0a1428a6a3111c64fcc626feea0">PercentageProgressEventHandler</a> (object sender, <a class="el" href="class_inetdev_1_1_percentage_progress_event_args.html">PercentageProgressEventArgs</a> e)</td></tr>
+<tr class="memdesc:ae822f0a1428a6a3111c64fcc626feea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that reports a process progress as a percentage.  <a href="#ae822f0a1428a6a3111c64fcc626feea0">More...</a><br /></td></tr>
+<tr class="separator:ae822f0a1428a6a3111c64fcc626feea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="a23a149e7dc5fae30056db16dfd718c3a"></a>
@@ -146,6 +162,77 @@ Enumerations</h2></td></tr>
 <p>The action has succeded. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a2b1fcb04122ef3df9b576ac4596b566e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void Inetdev.NofMProgressEventHandler </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_nof_m_progress_event_args.html">NofMProgressEventArgs</a>&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event that reports a process progress as a N of M items. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>Object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>Event arguments.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae822f0a1428a6a3111c64fcc626feea0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void Inetdev.PercentageProgressEventHandler </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_percentage_progress_event_args.html">PercentageProgressEventArgs</a>&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event that reports a process progress as a percentage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>Object that raised the event.</td></tr>
+    <tr><td class="paramname">e</td><td>Event arguments.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
