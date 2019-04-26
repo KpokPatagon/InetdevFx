@@ -100,6 +100,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afdcab33a570c0b048ef31afc48b720e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#afdcab33a570c0b048ef31afc48b720e2">ValidateSchemaForCreate</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_schema.html">Schema</a> schema)</td></tr>
 <tr class="memdesc:afdcab33a570c0b048ef31afc48b720e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if <em>schema</em>  is valid for create.  <a href="#afdcab33a570c0b048ef31afc48b720e2">More...</a><br /></td></tr>
 <tr class="separator:afdcab33a570c0b048ef31afc48b720e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7494c5bb66971faff8d0aa6275ee9ec"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#ab7494c5bb66971faff8d0aa6275ee9ec">CreateSequenceIfNotExistsAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_sequence.html">Sequence</a> sequence)</td></tr>
+<tr class="memdesc:ab7494c5bb66971faff8d0aa6275ee9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a sequence if it does not exists.  <a href="#ab7494c5bb66971faff8d0aa6275ee9ec">More...</a><br /></td></tr>
+<tr class="separator:ab7494c5bb66971faff8d0aa6275ee9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132160c37ac94d350d412e2204cbf41f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#a132160c37ac94d350d412e2204cbf41f">ValidateSequenceForCreate</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_sequence.html">Sequence</a> sequence)</td></tr>
+<tr class="memdesc:a132160c37ac94d350d412e2204cbf41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the sequence is valid for create.  <a href="#a132160c37ac94d350d412e2204cbf41f">More...</a><br /></td></tr>
+<tr class="separator:a132160c37ac94d350d412e2204cbf41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae10e560e35f1c5838a427dbca8ed4a08"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_database_schema_1_1_i_schema_provisioner.html#ae10e560e35f1c5838a427dbca8ed4a08">CreateTableAsync</a> (<a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table.html">Table</a> table)</td></tr>
 <tr class="memdesc:ae10e560e35f1c5838a427dbca8ed4a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a table.  <a href="#ae10e560e35f1c5838a427dbca8ed4a08">More...</a><br /></td></tr>
 <tr class="separator:ae10e560e35f1c5838a427dbca8ed4a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,6 +355,30 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">schema</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_schema.html" title="Models a database schema u owner. ">Schema</a> configuration.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab7494c5bb66971faff8d0aa6275ee9ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.DatabaseSchema.ISchemaProvisioner.CreateSequenceIfNotExistsAsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_sequence.html">Sequence</a>&#160;</td>
+          <td class="paramname"><em>sequence</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a sequence if it does not exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sequence</td><td>A <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_sequence.html" title="Models a sequence configuration. ">Sequence</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -829,6 +859,30 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">schema</td><td><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_schema.html" title="Models a database schema u owner. ">Schema</a> to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a132160c37ac94d350d412e2204cbf41f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DatabaseSchema.ISchemaProvisioner.ValidateSequenceForCreate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_sequence.html">Sequence</a>&#160;</td>
+          <td class="paramname"><em>sequence</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the sequence is valid for create. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sequence</td><td>A <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_sequence.html" title="Models a sequence configuration. ">Sequence</a>.</td></tr>
   </table>
   </dd>
 </dl>

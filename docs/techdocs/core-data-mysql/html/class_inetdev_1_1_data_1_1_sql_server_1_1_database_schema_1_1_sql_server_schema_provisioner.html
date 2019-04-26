@@ -102,6 +102,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3591d89851f8936a19aa93e85628c259"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_sql_server_1_1_database_schema_1_1_sql_server_schema_provisioner.html#a3591d89851f8936a19aa93e85628c259">ValidateSchemaForCreate</a> (Schema schema)</td></tr>
 <tr class="memdesc:a3591d89851f8936a19aa93e85628c259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if <em>schema</em>  is valid for create.  <a href="#a3591d89851f8936a19aa93e85628c259">More...</a><br /></td></tr>
 <tr class="separator:a3591d89851f8936a19aa93e85628c259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d65ff5fcdf37afbcaad8d562c9ae5c"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_sql_server_1_1_database_schema_1_1_sql_server_schema_provisioner.html#aa6d65ff5fcdf37afbcaad8d562c9ae5c">CreateSequenceIfNotExistsAsync</a> (Sequence sequence)</td></tr>
+<tr class="memdesc:aa6d65ff5fcdf37afbcaad8d562c9ae5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a sequence if it does not exists.  <a href="#aa6d65ff5fcdf37afbcaad8d562c9ae5c">More...</a><br /></td></tr>
+<tr class="separator:aa6d65ff5fcdf37afbcaad8d562c9ae5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9a871f0374a604d700b04a932b7473"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_sql_server_1_1_database_schema_1_1_sql_server_schema_provisioner.html#a9d9a871f0374a604d700b04a932b7473">ValidateSequenceForCreate</a> (Sequence sequence)</td></tr>
+<tr class="memdesc:a9d9a871f0374a604d700b04a932b7473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the sequence is valid for create.  <a href="#a9d9a871f0374a604d700b04a932b7473">More...</a><br /></td></tr>
+<tr class="separator:a9d9a871f0374a604d700b04a932b7473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0f064e98e1df450455c83df155a385a"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_sql_server_1_1_database_schema_1_1_sql_server_schema_provisioner.html#ae0f064e98e1df450455c83df155a385a">CreateTableAsync</a> (Table table)</td></tr>
 <tr class="memdesc:ae0f064e98e1df450455c83df155a385a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a table.  <a href="#ae0f064e98e1df450455c83df155a385a">More...</a><br /></td></tr>
 <tr class="separator:ae0f064e98e1df450455c83df155a385a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -408,6 +414,30 @@ Properties</h2></td></tr>
     <tr><td class="paramname">ValidationException</td><td>Thrown when the schema configuration is not valid for schema manipulation.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>schema</em>  is .</td></tr>
     <tr><td class="paramname">MissingRequiredPropertyException</td><td>Thrown when a required property was not properly initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa6d65ff5fcdf37afbcaad8d562c9ae5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CreateSequenceIfNotExistsAsync </td>
+          <td>(</td>
+          <td class="paramtype">Sequence&#160;</td>
+          <td class="paramname"><em>sequence</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a sequence if it does not exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sequence</td><td>A Sequence.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1026,6 +1056,31 @@ Properties</h2></td></tr>
   <table class="exception">
     <tr><td class="paramname">ValidationException</td><td>Thrown when the configuration is not valid.</td></tr>
     <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>schema</em>  is .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9d9a871f0374a604d700b04a932b7473"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateSequenceForCreate </td>
+          <td>(</td>
+          <td class="paramtype">Sequence&#160;</td>
+          <td class="paramname"><em>sequence</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the sequence is valid for create. </p>
+<p>This method does nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sequence</td><td>A Sequence.</td></tr>
   </table>
   </dd>
 </dl>
