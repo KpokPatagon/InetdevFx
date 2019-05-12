@@ -41,6 +41,14 @@ $(function() {
 <div class="contents">
 &#160;
 
+<h3><a id="index_c"></a>- c -</h3><ul>
+<li>ClearFilterAsync()
+: <a class="el" href="class_inetdev_1_1_commons_1_1_user_filter_data_services.html#aab1414e99db1127eaa968f840ff1f66e">Inetdev.Commons.UserFilterDataServices</a>
+, <a class="el" href="class_inetdev_1_1_commons_1_1_user_filter_store.html#ab2e361bdafb585fe6daf6b9f66eb2728">Inetdev.Commons.UserFilterStore&lt; T &gt;</a>
+</li>
+</ul>
+
+
 <h3><a id="index_d"></a>- d -</h3><ul>
 <li>DeletePropertiesAsync()
 : <a class="el" href="class_inetdev_1_1_commons_1_1_property_bag_item_data_services.html#a3113425cdf00e06f0870145f5d3a4d2c">Inetdev.Commons.PropertyBagItemDataServices</a>
@@ -52,7 +60,8 @@ $(function() {
 <li>Equals()
 : <a class="el" href="class_inetdev_1_1_commons_1_1_parameter.html#a686ae6998f178c969c83af06cb92eb04">Inetdev.Commons.Parameter</a>
 , <a class="el" href="class_inetdev_1_1_commons_1_1_property_bag_item.html#a7ddbeba3b3ec8e088b3f5611d86ef461">Inetdev.Commons.PropertyBagItem</a>
-, <a class="el" href="class_inetdev_1_1_commons_1_1_table_numerator.html#a4d679ce72a8fd36ceaf8f5f7f1d20a48">Inetdev.Commons.TableNumerator</a>
+, <a class="el" href="class_inetdev_1_1_commons_1_1_table_numerator.html#a2309477b266b55df866ec65092049ff6">Inetdev.Commons.TableNumerator</a>
+, <a class="el" href="class_inetdev_1_1_commons_1_1_user_filter.html#af03b3535f128ef18832061e5426c03f5">Inetdev.Commons.UserFilter</a>
 </li>
 </ul>
 
@@ -65,9 +74,13 @@ $(function() {
 : <a class="el" href="class_inetdev_1_1_commons_1_1_parameter.html#a6f4a8bfb86131e7a02d141691dc3e339">Inetdev.Commons.Parameter</a>
 , <a class="el" href="class_inetdev_1_1_commons_1_1_property_bag_item.html#ac5a76c1235baa5aead9d0d3dfefa2010">Inetdev.Commons.PropertyBagItem</a>
 , <a class="el" href="class_inetdev_1_1_commons_1_1_table_numerator.html#af04ec3e120c8898e17b87259268cac64">Inetdev.Commons.TableNumerator</a>
+, <a class="el" href="class_inetdev_1_1_commons_1_1_user_filter.html#af32340868ce8fcf79c6890fdb7cf7629">Inetdev.Commons.UserFilter</a>
 </li>
 <li>GetPropertiesAsync()
 : <a class="el" href="class_inetdev_1_1_commons_1_1_property_bag_item_data_services.html#a874056d348acda085aeaa2ff1a1d009d">Inetdev.Commons.PropertyBagItemDataServices</a>
+</li>
+<li>GetUserFilterByPageAndUserIdAsync()
+: <a class="el" href="class_inetdev_1_1_commons_1_1_user_filter_data_services.html#abb4f351ec14df0411fe1ad68f3c258db">Inetdev.Commons.UserFilterDataServices</a>
 </li>
 <li>GetValueAsync()
 : <a class="el" href="class_inetdev_1_1_commons_1_1_parameter_store.html#a7408e6332f82131303d7b6a23ee511da">Inetdev.Commons.ParameterStore</a>
@@ -87,11 +100,16 @@ $(function() {
 : <a class="el" href="class_inetdev_1_1_commons_1_1_parameter.html#ad84910f5b719c754a877b46689173c54">Inetdev.Commons.Parameter</a>
 , <a class="el" href="class_inetdev_1_1_commons_1_1_property_bag_item.html#a6d61e3a3c6a3bc585c64455fb145f52e">Inetdev.Commons.PropertyBagItem</a>
 , <a class="el" href="class_inetdev_1_1_commons_1_1_table_numerator.html#a5abb74ca61bd18487c1b8641973d60f4">Inetdev.Commons.TableNumerator</a>
+, <a class="el" href="class_inetdev_1_1_commons_1_1_user_filter.html#aba7657887b2bb45480a20632372e9331">Inetdev.Commons.UserFilter</a>
+</li>
+<li>LoadAndMergeFilterAsync()
+: <a class="el" href="class_inetdev_1_1_commons_1_1_user_filter_store.html#a031914e7a10c16cef2e56eb50a9e1c08">Inetdev.Commons.UserFilterStore&lt; T &gt;</a>
 </li>
 <li>LoadAsync()
 : <a class="el" href="class_inetdev_1_1_commons_1_1_parameter.html#a3225cf2d914abc6126113dab6f1cca29">Inetdev.Commons.Parameter</a>
 , <a class="el" href="class_inetdev_1_1_commons_1_1_property_bag_item.html#aeac02db7e3e154c27c5e9b07253cb7d4">Inetdev.Commons.PropertyBagItem</a>
 , <a class="el" href="class_inetdev_1_1_commons_1_1_table_numerator.html#a93ae2b9e9ebd9225b0d26ec55ea93a7b">Inetdev.Commons.TableNumerator</a>
+, <a class="el" href="class_inetdev_1_1_commons_1_1_user_filter.html#a06ed91b8baea8f87379e928352cdbeb6">Inetdev.Commons.UserFilter</a>
 </li>
 </ul>
 
@@ -123,6 +141,9 @@ $(function() {
 <li>SaveBagAsync()
 : <a class="el" href="class_inetdev_1_1_commons_1_1_bag_service.html#a088a21d28e6d87ee1d42b00bb71a1b9c">Inetdev.Commons.BagService</a>
 </li>
+<li>SaveFilterAsync()
+: <a class="el" href="class_inetdev_1_1_commons_1_1_user_filter_store.html#a784fc236e4ddba3142959e4ad8bd5472">Inetdev.Commons.UserFilterStore&lt; T &gt;</a>
+</li>
 <li>SaveValueAsync()
 : <a class="el" href="class_inetdev_1_1_commons_1_1_parameter_store.html#a0a05cf876efa49468435ab6882e9df9c">Inetdev.Commons.ParameterStore</a>
 </li>
@@ -139,6 +160,19 @@ $(function() {
 <li>ToString()
 : <a class="el" href="class_inetdev_1_1_commons_1_1_parameter.html#a5908bb21839cffa614b627dc4773dd57">Inetdev.Commons.Parameter</a>
 , <a class="el" href="class_inetdev_1_1_commons_1_1_property_bag_item.html#a46edc7d3cfc89a903310a18f55acaa50">Inetdev.Commons.PropertyBagItem</a>
+</li>
+</ul>
+
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>UserFilter()
+: <a class="el" href="class_inetdev_1_1_commons_1_1_user_filter.html#a048e9bedef1a6ff3aa46d0b122cc2c00">Inetdev.Commons.UserFilter</a>
+</li>
+<li>UserFilterDataServices()
+: <a class="el" href="class_inetdev_1_1_commons_1_1_user_filter_data_services.html#aebc7f753b903d9506d1b65c42a22a729">Inetdev.Commons.UserFilterDataServices</a>
+</li>
+<li>UserFilterStore()
+: <a class="el" href="class_inetdev_1_1_commons_1_1_user_filter_store.html#abf7e72f204c663dd8092a366fc764e53">Inetdev.Commons.UserFilterStore&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

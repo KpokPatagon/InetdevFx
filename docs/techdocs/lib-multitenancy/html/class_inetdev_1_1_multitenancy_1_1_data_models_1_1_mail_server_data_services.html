@@ -62,9 +62,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af8f326b84338b2fad6589dd8d48f308e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_mail_server_data_services.html#af8f326b84338b2fad6589dd8d48f308e">MailServerDataServices</a> ()</td></tr>
 <tr class="memdesc:af8f326b84338b2fad6589dd8d48f308e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of <a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_mail_server_data_services.html" title="MailServerDataServices implements the data services for the TenantStore.MAILSERVER table.">MailServerDataServices</a>.  <a href="#af8f326b84338b2fad6589dd8d48f308e">More...</a><br /></td></tr>
 <tr class="separator:af8f326b84338b2fad6589dd8d48f308e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49773d5368825a82b44d12425e27f833"><td class="memItemLeft" align="right" valign="top">async Task&lt; IEnumerable&lt; <a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_mail_server.html">MailServer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_mail_server_data_services.html#a49773d5368825a82b44d12425e27f833">FilterAsync</a> (FilterRequest request, int take)</td></tr>
-<tr class="memdesc:a49773d5368825a82b44d12425e27f833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filters mail servers.  <a href="#a49773d5368825a82b44d12425e27f833">More...</a><br /></td></tr>
-<tr class="separator:a49773d5368825a82b44d12425e27f833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177bc1436b0bb94fff7792d70f1e2fcc"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_mail_server_data_services.html#a177bc1436b0bb94fff7792d70f1e2fcc">FilterAsync</a> (Listing&lt; <a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_mail_server.html">MailServer</a> &gt; listing)</td></tr>
+<tr class="memdesc:a177bc1436b0bb94fff7792d70f1e2fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filters mail servers applying the first term (if any) to the name column.  <a href="#a177bc1436b0bb94fff7792d70f1e2fcc">More...</a><br /></td></tr>
+<tr class="separator:a177bc1436b0bb94fff7792d70f1e2fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -101,37 +101,32 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a49773d5368825a82b44d12425e27f833"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49773d5368825a82b44d12425e27f833">&#9670;&nbsp;</a></span>FilterAsync()</h2>
+<a id="a177bc1436b0bb94fff7792d70f1e2fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a177bc1436b0bb94fff7792d70f1e2fcc">&#9670;&nbsp;</a></span>FilterAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">async Task&lt;IEnumerable&lt;<a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_mail_server.html">MailServer</a>&gt; &gt; Inetdev.Multitenancy.DataModels.MailServerDataServices.FilterAsync </td>
+          <td class="memname">async Task Inetdev.Multitenancy.DataModels.MailServerDataServices.FilterAsync </td>
           <td>(</td>
-          <td class="paramtype">FilterRequest&#160;</td>
-          <td class="paramname"><em>request</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">Listing&lt; <a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_mail_server.html">MailServer</a> &gt;&#160;</td>
+          <td class="paramname"><em>listing</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>take</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Filters mail servers. </p>
+<p>Filters mail servers applying the first term (if any) to the name column. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">request</td><td>Filter request.</td></tr>
-    <tr><td class="paramname">take</td><td>Maximum items to return.</td></tr>
+    <tr><td class="paramname">listing</td><td>Argument to filter the server list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>listing</em>  is <code>null</code>.</td></tr>
   </table>
   </dd>
 </dl>

@@ -62,9 +62,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa6a669e8a9d4947814b14b3437b65dab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_database_server_data_services.html#aa6a669e8a9d4947814b14b3437b65dab">DatabaseServerDataServices</a> ()</td></tr>
 <tr class="memdesc:aa6a669e8a9d4947814b14b3437b65dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of <a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_database_server_data_services.html" title="DatabaseServerDataServices implements the data services for the TenantStore.DBSERVER table.">DatabaseServerDataServices</a>.  <a href="#aa6a669e8a9d4947814b14b3437b65dab">More...</a><br /></td></tr>
 <tr class="separator:aa6a669e8a9d4947814b14b3437b65dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac25fc17afd4280e5b8dae272ed0ad119"><td class="memItemLeft" align="right" valign="top">async Task&lt; IEnumerable&lt; <a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_database_server.html">DatabaseServer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_database_server_data_services.html#ac25fc17afd4280e5b8dae272ed0ad119">FilterAsync</a> (FilterRequest request, int take)</td></tr>
-<tr class="memdesc:ac25fc17afd4280e5b8dae272ed0ad119"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filters database servers.  <a href="#ac25fc17afd4280e5b8dae272ed0ad119">More...</a><br /></td></tr>
-<tr class="separator:ac25fc17afd4280e5b8dae272ed0ad119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7eb10baeaa3fd269b68b5a229f665ca"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_database_server_data_services.html#ab7eb10baeaa3fd269b68b5a229f665ca">FilterAsync</a> (Listing&lt; <a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_database_server.html">DatabaseServer</a> &gt; listing)</td></tr>
+<tr class="memdesc:ab7eb10baeaa3fd269b68b5a229f665ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filters database servers applying the first term (if any) to the name column.  <a href="#ab7eb10baeaa3fd269b68b5a229f665ca">More...</a><br /></td></tr>
+<tr class="separator:ab7eb10baeaa3fd269b68b5a229f665ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -101,37 +101,32 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac25fc17afd4280e5b8dae272ed0ad119"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac25fc17afd4280e5b8dae272ed0ad119">&#9670;&nbsp;</a></span>FilterAsync()</h2>
+<a id="ab7eb10baeaa3fd269b68b5a229f665ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7eb10baeaa3fd269b68b5a229f665ca">&#9670;&nbsp;</a></span>FilterAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">async Task&lt;IEnumerable&lt;<a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_database_server.html">DatabaseServer</a>&gt; &gt; Inetdev.Multitenancy.DataModels.DatabaseServerDataServices.FilterAsync </td>
+          <td class="memname">async Task Inetdev.Multitenancy.DataModels.DatabaseServerDataServices.FilterAsync </td>
           <td>(</td>
-          <td class="paramtype">FilterRequest&#160;</td>
-          <td class="paramname"><em>request</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">Listing&lt; <a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_database_server.html">DatabaseServer</a> &gt;&#160;</td>
+          <td class="paramname"><em>listing</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>take</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Filters database servers. </p>
+<p>Filters database servers applying the first term (if any) to the name column. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">request</td><td>Filter request.</td></tr>
-    <tr><td class="paramname">take</td><td>Maximum items to return.</td></tr>
+    <tr><td class="paramname">listing</td><td>Argument to filter the server list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>listing</em>  is <code>null</code>.</td></tr>
   </table>
   </dd>
 </dl>

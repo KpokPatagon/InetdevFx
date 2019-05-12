@@ -64,6 +64,7 @@ $(function() {
 , <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html#ab2ff07e6b750ddcbf8b7fe494e09be2e">Inetdev.Data.DatabaseSchema.TableColumn</a>
 , <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_view.html#a77bf2bdf6af1f0f81680e6db22e72c20">Inetdev.Data.DatabaseSchema.View</a>
 , <a class="el" href="class_inetdev_1_1_data_1_1_data_property.html#abbef1c52c42fd4e1af7425d233bacc3c">Inetdev.Data.DataProperty</a>
+, <a class="el" href="class_inetdev_1_1_data_1_1_filtering_1_1_term.html#a9679381cef4c15be33dd7e9d9a4bbfb1">Inetdev.Data.Filtering.Term</a>
 , <a class="el" href="interface_inetdev_1_1_data_1_1_i_data_property.html#aa24f9ad3fc6b9271399b6c289a6821f4">Inetdev.Data.IDataProperty</a>
 </li>
 <li>CaseSensitive
@@ -91,6 +92,7 @@ $(function() {
 </li>
 <li>Clear()
 : <a class="el" href="class_inetdev_1_1_data_1_1_data_model.html#a745725c19cd2d2bb0153d9030f2004cf">Inetdev.Data.DataModel</a>
+, <a class="el" href="class_inetdev_1_1_data_1_1_filtering_1_1_listing.html#ae508078bac9a0ecb19cd5320be15642d">Inetdev.Data.Filtering.Listing&lt; T &gt;</a>
 , <a class="el" href="interface_inetdev_1_1_data_1_1_i_data_model.html#a58d4decf9a8cef2b753abc373fb5736b">Inetdev.Data.IDataModel</a>
 </li>
 <li>ClearState()
@@ -116,6 +118,8 @@ $(function() {
 </li>
 <li>Column
 : <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_column_constraint.html#a38abe8000f0312c45c7958ef210b0955">Inetdev.Data.DatabaseSchema.ColumnConstraint</a>
+, <a class="el" href="class_inetdev_1_1_data_1_1_filtering_1_1_static_term.html#a8d3f7f89e4121e0e69575223c93f3349">Inetdev.Data.Filtering.StaticTerm</a>
+, <a class="el" href="class_inetdev_1_1_data_1_1_filtering_1_1_term.html#ad681584187b9a2779bf6f7782632cf3b">Inetdev.Data.Filtering.Term</a>
 , <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_adding_select_column_event_args.html#a7f05ddbf44a09121e115f603536d6c52">Inetdev.Data.Query.AddingSelectColumnEventArgs</a>
 , <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_between_predicate.html#aca300cc111c69da3522d042c990c3603">Inetdev.Data.Query.BetweenPredicate</a>
 , <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_column.html#a493fa2ee7f27f393993542aa2acc2afb">Inetdev.Data.Query.Column</a>
@@ -186,7 +190,7 @@ $(function() {
 : <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_constant_column.html#ab9b38087cd6b0486a793365be80fa69d">Inetdev.Data.Query.ConstantColumn</a>
 </li>
 <li>ConstantColumn()
-: <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_constant_column.html#a77c71f5695a5c35509ad5d1229ff1928">Inetdev.Data.Query.ConstantColumn</a>
+: <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_constant_column.html#a19d0775edcb11f14092b521e0de44fd0">Inetdev.Data.Query.ConstantColumn</a>
 </li>
 <li>Constraints
 : <a class="el" href="class_inetdev_1_1_data_1_1_database_schema_1_1_table_column.html#ac589838d4784371fdc5db12d804b8b83">Inetdev.Data.DatabaseSchema.TableColumn</a>
@@ -205,8 +209,12 @@ $(function() {
 : <a class="el" href="class_inetdev_1_1_data_1_1_binary_attachment.html#ad0ec3dbb24a4b71fea020de3534b2102">Inetdev.Data.BinaryAttachment</a>
 , <a class="el" href="interface_inetdev_1_1_data_1_1_i_attachment.html#ae8e521bac3fd8e999073b6e3e0f89b08">Inetdev.Data.IAttachment</a>
 </li>
+<li>Convert()
+: <a class="el" href="class_inetdev_1_1_data_1_1_default_string_to_db_type_converter.html#ab48ad0968aa6fd404cdcca4607400e57">Inetdev.Data.DefaultStringToDbTypeConverter</a>
+, <a class="el" href="interface_inetdev_1_1_data_1_1_i_string_to_db_type_converter.html#a3bcb84cc401d80c20ca5e363707d2f51">Inetdev.Data.IStringToDbTypeConverter</a>
+</li>
 <li>ConvertColumn()
-: <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_convert_column.html#a4789fc221deb3d59d8350eb1e9d3ba2a">Inetdev.Data.Query.ConvertColumn</a>
+: <a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_convert_column.html#a04c1343430dbece0826cdd82ed04b12b">Inetdev.Data.Query.ConvertColumn</a>
 </li>
 <li>CopyDataProperties()
 : <a class="el" href="class_inetdev_1_1_data_1_1_data_model.html#a81caa128356055b484023c53f675f787">Inetdev.Data.DataModel</a>

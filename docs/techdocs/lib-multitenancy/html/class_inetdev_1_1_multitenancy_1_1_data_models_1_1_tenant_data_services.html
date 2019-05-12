@@ -62,9 +62,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab5658cca1fbdd4124f1fd2877ac607a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_tenant_data_services.html#ab5658cca1fbdd4124f1fd2877ac607a4">TenantDataServices</a> ()</td></tr>
 <tr class="memdesc:ab5658cca1fbdd4124f1fd2877ac607a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of <a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_tenant_data_services.html" title="TenantDataServices implements the data services for the TenantStore.TENANT table.">TenantDataServices</a>.  <a href="#ab5658cca1fbdd4124f1fd2877ac607a4">More...</a><br /></td></tr>
 <tr class="separator:ab5658cca1fbdd4124f1fd2877ac607a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cbb61f2b39615af11c82268fc9375a8"><td class="memItemLeft" align="right" valign="top">async Task&lt; IEnumerable&lt; <a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_tenant.html">Tenant</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_tenant_data_services.html#a8cbb61f2b39615af11c82268fc9375a8">FilterAsync</a> (FilterRequest request, int take)</td></tr>
-<tr class="memdesc:a8cbb61f2b39615af11c82268fc9375a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter tenants.  <a href="#a8cbb61f2b39615af11c82268fc9375a8">More...</a><br /></td></tr>
-<tr class="separator:a8cbb61f2b39615af11c82268fc9375a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5685c8ab6ab46c726732b9ce95ac68e0"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_tenant_data_services.html#a5685c8ab6ab46c726732b9ce95ac68e0">FilterAsync</a> (Listing&lt; <a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_tenant.html">Tenant</a> &gt; listing)</td></tr>
+<tr class="memdesc:a5685c8ab6ab46c726732b9ce95ac68e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filters tenants applying the first term (if any) to the name and display name column.  <a href="#a5685c8ab6ab46c726732b9ce95ac68e0">More...</a><br /></td></tr>
+<tr class="separator:a5685c8ab6ab46c726732b9ce95ac68e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33efc642615e8b2094d1e5c56f7041e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_tenant.html">Tenant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_tenant_data_services.html#a33efc642615e8b2094d1e5c56f7041e0">GetProvisionedTenantByNameCaseInsensitive</a> (string name)</td></tr>
 <tr class="memdesc:a33efc642615e8b2094d1e5c56f7041e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a provisioned tenant looking by it's name without considering the case.  <a href="#a33efc642615e8b2094d1e5c56f7041e0">More...</a><br /></td></tr>
 <tr class="separator:a33efc642615e8b2094d1e5c56f7041e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,37 +110,32 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8cbb61f2b39615af11c82268fc9375a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cbb61f2b39615af11c82268fc9375a8">&#9670;&nbsp;</a></span>FilterAsync()</h2>
+<a id="a5685c8ab6ab46c726732b9ce95ac68e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5685c8ab6ab46c726732b9ce95ac68e0">&#9670;&nbsp;</a></span>FilterAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">async Task&lt;IEnumerable&lt;<a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_tenant.html">Tenant</a>&gt; &gt; Inetdev.Multitenancy.DataModels.TenantDataServices.FilterAsync </td>
+          <td class="memname">async Task Inetdev.Multitenancy.DataModels.TenantDataServices.FilterAsync </td>
           <td>(</td>
-          <td class="paramtype">FilterRequest&#160;</td>
-          <td class="paramname"><em>request</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">Listing&lt; <a class="el" href="class_inetdev_1_1_multitenancy_1_1_data_models_1_1_tenant.html">Tenant</a> &gt;&#160;</td>
+          <td class="paramname"><em>listing</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>take</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Filter tenants. </p>
+<p>Filters tenants applying the first term (if any) to the name and display name column. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">request</td><td>Optional filtering information.</td></tr>
-    <tr><td class="paramname">take</td><td>Maximum tenants to return.</td></tr>
+    <tr><td class="paramname">listing</td><td>Argument to filter tenants.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>listing</em>  is <code>null</code>.</td></tr>
   </table>
   </dd>
 </dl>

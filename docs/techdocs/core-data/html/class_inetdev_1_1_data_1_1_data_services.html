@@ -61,6 +61,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab48c28dc12e28821a1ce49e953d6f9e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_data_services.html#ab48c28dc12e28821a1ce49e953d6f9e3">AppendFilterTerms</a> (<a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_statement.html">Statement</a> statement, List&lt; <a class="el" href="class_inetdev_1_1_data_1_1_filtering_1_1_term.html">Term</a> &gt; terms, <a class="el" href="namespace_inetdev_1_1_data_1_1_filtering.html#ab9974cd16d69481ce266122ba05e722f">MatchKind</a> match)</td></tr>
+<tr class="memdesc:ab48c28dc12e28821a1ce49e953d6f9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends to the where clause all set terms.  <a href="#ab48c28dc12e28821a1ce49e953d6f9e3">More...</a><br /></td></tr>
+<tr class="separator:ab48c28dc12e28821a1ce49e953d6f9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d26b091905206a442c8b12ce30c56d9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="interface_inetdev_1_1_data_1_1_i_data_model.html">IDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_data_services.html#a0d26b091905206a442c8b12ce30c56d9">GetModel</a> (Type dataModelType, <a class="el" href="interface_inetdev_1_1_data_1_1_i_data_model.html">IDataModel</a> model)</td></tr>
 <tr class="memdesc:a0d26b091905206a442c8b12ce30c56d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a domain model object of <em>dataModelType</em>  looking for it's primary key.  <a href="#a0d26b091905206a442c8b12ce30c56d9">More...</a><br /></td></tr>
 <tr class="separator:a0d26b091905206a442c8b12ce30c56d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +172,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aae51664855be09d21dd3be846a574279"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_select_statement.html">SelectStatement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_data_services.html#aae51664855be09d21dd3be846a574279">GetTableStatement</a> (<a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_order.html">Order</a> order)</td></tr>
 <tr class="memdesc:aae51664855be09d21dd3be846a574279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a SelectStatement that retrieves all records from the underlaying table.  <a href="#aae51664855be09d21dd3be846a574279">More...</a><br /></td></tr>
 <tr class="separator:aae51664855be09d21dd3be846a574279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0f173fb1f451ab4269318b3802ed5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_data_services.html#afa0f173fb1f451ab4269318b3802ed5a">SanitizePageNumber</a> (int page, int pageLength, int totalItems)</td></tr>
+<tr class="memdesc:afa0f173fb1f451ab4269318b3802ed5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the maximum page number and returns the specified <em>page</em>  or the maximun page number if <em>page</em>  is not valid.  <a href="#afa0f173fb1f451ab4269318b3802ed5a">More...</a><br /></td></tr>
+<tr class="separator:afa0f173fb1f451ab4269318b3802ed5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -199,6 +205,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a556ede2f70debe49dc4b749b7b2fe023"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_inetdev_1_1_data_1_1_i_data_model_cmd_builder.html">IDataModelCmdBuilder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_data_services.html#a556ede2f70debe49dc4b749b7b2fe023">DataModelCmdBuilder</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a556ede2f70debe49dc4b749b7b2fe023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get or set the SQL builder object.  <a href="#a556ede2f70debe49dc4b749b7b2fe023">More...</a><br /></td></tr>
 <tr class="separator:a556ede2f70debe49dc4b749b7b2fe023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd29e97c105ff996e67ce3d4aa739a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_inetdev_1_1_data_1_1_i_string_to_db_type_converter.html">IStringToDbTypeConverter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_data_services.html#a1fd29e97c105ff996e67ce3d4aa739a3">StringToDbTypeConverter</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a1fd29e97c105ff996e67ce3d4aa739a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts string to object of a specified <a class="el" href="namespace_inetdev_1_1_data.html#a30b1bcd1f8a0f5dca4b999b2f528fef6" title="Application supported data types">DbType</a>.  <a href="#a1fd29e97c105ff996e67ce3d4aa739a3">More...</a><br /></td></tr>
+<tr class="separator:a1fd29e97c105ff996e67ce3d4aa739a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_inetdev_1_1_data_1_1_i_data_services"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_inetdev_1_1_data_1_1_i_data_services')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_inetdev_1_1_data_1_1_i_data_services.html">Inetdev.Data.IDataServices</a></td></tr>
 <tr class="memitem:a1ce79dd0913640d83df7ae5d0cc99a5b inherit properties_interface_inetdev_1_1_data_1_1_i_data_services"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_i_data_services.html#a1ce79dd0913640d83df7ae5d0cc99a5b">Alias</a><code> [get]</code></td></tr>
 <tr class="memdesc:a1ce79dd0913640d83df7ae5d0cc99a5b inherit properties_interface_inetdev_1_1_data_1_1_i_data_services"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the alias of the database table.  <a href="interface_inetdev_1_1_data_1_1_i_data_services.html#a1ce79dd0913640d83df7ae5d0cc99a5b">More...</a><br /></td></tr>
@@ -224,6 +233,9 @@ Properties</h2></td></tr>
 <tr class="memitem:ae548f5f3eac17745c45168c1f9ea796e inherit properties_interface_inetdev_1_1_data_1_1_i_data_services"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_i_data_services.html#ae548f5f3eac17745c45168c1f9ea796e">SequenceName</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ae548f5f3eac17745c45168c1f9ea796e inherit properties_interface_inetdev_1_1_data_1_1_i_data_services"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get or set the name of the sequence to use.  <a href="interface_inetdev_1_1_data_1_1_i_data_services.html#ae548f5f3eac17745c45168c1f9ea796e">More...</a><br /></td></tr>
 <tr class="separator:ae548f5f3eac17745c45168c1f9ea796e inherit properties_interface_inetdev_1_1_data_1_1_i_data_services"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc48f8ea3934af1ff6edcd63a1c95521 inherit properties_interface_inetdev_1_1_data_1_1_i_data_services"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_inetdev_1_1_data_1_1_i_string_to_db_type_converter.html">IStringToDbTypeConverter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_i_data_services.html#adc48f8ea3934af1ff6edcd63a1c95521">StringToDbTypeConverter</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:adc48f8ea3934af1ff6edcd63a1c95521 inherit properties_interface_inetdev_1_1_data_1_1_i_data_services"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts string to object of a specified <a class="el" href="namespace_inetdev_1_1_data.html#a30b1bcd1f8a0f5dca4b999b2f528fef6" title="Application supported data types">DbType</a>.  <a href="interface_inetdev_1_1_data_1_1_i_data_services.html#adc48f8ea3934af1ff6edcd63a1c95521">More...</a><br /></td></tr>
+<tr class="separator:adc48f8ea3934af1ff6edcd63a1c95521 inherit properties_interface_inetdev_1_1_data_1_1_i_data_services"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6986dc91c0b607ec646d4b1630daf54c inherit properties_interface_inetdev_1_1_data_1_1_i_data_services"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_inetdev_1_1_data_1_1_i_data_services.html#a6986dc91c0b607ec646d4b1630daf54c">Table</a><code> [get]</code></td></tr>
 <tr class="memdesc:a6986dc91c0b607ec646d4b1630daf54c inherit properties_interface_inetdev_1_1_data_1_1_i_data_services"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the table name.  <a href="interface_inetdev_1_1_data_1_1_i_data_services.html#a6986dc91c0b607ec646d4b1630daf54c">More...</a><br /></td></tr>
 <tr class="separator:a6986dc91c0b607ec646d4b1630daf54c inherit properties_interface_inetdev_1_1_data_1_1_i_data_services"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,6 +243,60 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the base clase for DataService classes that implements <a class="el" href="interface_inetdev_1_1_data_1_1_i_data_services.html" title="Allows implementation data services for domain models.">IDataServices</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab48c28dc12e28821a1ce49e953d6f9e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab48c28dc12e28821a1ce49e953d6f9e3">&#9670;&nbsp;</a></span>AppendFilterTerms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inetdev.Data.DataServices.AppendFilterTerms </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inetdev_1_1_data_1_1_query_1_1_statement.html">Statement</a>&#160;</td>
+          <td class="paramname"><em>statement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="class_inetdev_1_1_data_1_1_filtering_1_1_term.html">Term</a> &gt;&#160;</td>
+          <td class="paramname"><em>terms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_inetdev_1_1_data_1_1_filtering.html#ab9974cd16d69481ce266122ba05e722f">MatchKind</a>&#160;</td>
+          <td class="paramname"><em>match</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Appends to the where clause all set terms. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">statement</td><td>Statement to add terms.</td></tr>
+    <tr><td class="paramname">terms</td><td>A collections of terms.</td></tr>
+    <tr><td class="paramname">match</td><td>How to match the terms.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>statement</em>  is <code>null</code>.</td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown when <em>terms</em>  is <code>null</code>.</td></tr>
+    <tr><td class="paramname">InvalidTermColumnNameException</td><td>Thrown when a term.Column name does not exists within the fields collection.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interface_inetdev_1_1_data_1_1_i_data_services.html#aa85167b73fe59ff2f083eb0189a2bbad">Inetdev.Data.IDataServices</a>.</p>
+
+</div>
+</div>
 <a id="a65e2479e6ecb0b4327a9e853f706c691"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65e2479e6ecb0b4327a9e853f706c691">&#9670;&nbsp;</a></span>BuildModelList() <span class="overload">[1/2]</span></h2>
 
@@ -1930,6 +1996,59 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="afa0f173fb1f451ab4269318b3802ed5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa0f173fb1f451ab4269318b3802ed5a">&#9670;&nbsp;</a></span>SanitizePageNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Inetdev.Data.DataServices.SanitizePageNumber </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>page</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pageLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>totalItems</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the maximum page number and returns the specified <em>page</em>  or the maximun page number if <em>page</em>  is not valid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">page</td><td>Attempted page number.</td></tr>
+    <tr><td class="paramname">pageLength</td><td>Page length.</td></tr>
+    <tr><td class="paramname">totalItems</td><td>Total items.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A sanitized page number.</dd></dl>
+
+</div>
+</div>
 <a id="aa21c2bf1711391abe9de76e833e3c0a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa21c2bf1711391abe9de76e833e3c0a9">&#9670;&nbsp;</a></span>Update()</h2>
 
@@ -2246,6 +2365,30 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get or set the name of the sequence to use. </p>
+
+</div>
+</div>
+<a id="a1fd29e97c105ff996e67ce3d4aa739a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd29e97c105ff996e67ce3d4aa739a3">&#9670;&nbsp;</a></span>StringToDbTypeConverter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_inetdev_1_1_data_1_1_i_string_to_db_type_converter.html">IStringToDbTypeConverter</a> Inetdev.Data.DataServices.StringToDbTypeConverter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts string to object of a specified <a class="el" href="namespace_inetdev_1_1_data.html#a30b1bcd1f8a0f5dca4b999b2f528fef6" title="Application supported data types">DbType</a>. </p>
 
 </div>
 </div>
