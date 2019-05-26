@@ -280,6 +280,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_query_builder_exception.html">QueryBuilderException</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic query building exception  <a href="class_inetdev_1_1_data_1_1_query_builder_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_schema_manipulation_exception.html">SchemaManipulationException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the base class for exceptions that reports error while manipulatind tha database schema.  <a href="class_inetdev_1_1_data_1_1_schema_manipulation_exception.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inetdev_1_1_data_1_1_server_unavailable_exception.html">ServerUnavailableException</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thrown when the database server is not available.  <a href="class_inetdev_1_1_data_1_1_server_unavailable_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,12 +356,6 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a4ca68463779db02059ae1404b16c16d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerates the available data actions to be execute on data model objects.  <a href="namespace_inetdev_1_1_data.html#a4ca68463779db02059ae1404b16c16d6">More...</a><br /></td></tr>
 <tr class="separator:a4ca68463779db02059ae1404b16c16d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad16cc117c17613b819c41c5dd2c76893"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_inetdev_1_1_data.html#ad16cc117c17613b819c41c5dd2c76893">DbServerRole</a> { <a class="el" href="namespace_inetdev_1_1_data.html#ad16cc117c17613b819c41c5dd2c76893a6adf97f83acf6453d4a6a4b1070f3754">DbServerRole.None</a> = 0, 
-<a class="el" href="namespace_inetdev_1_1_data.html#ad16cc117c17613b819c41c5dd2c76893a0248c366ce0e11f0017809afd8132652">DbServerRole.DbCreator</a> = 1, 
-<a class="el" href="namespace_inetdev_1_1_data.html#ad16cc117c17613b819c41c5dd2c76893a140321aacc59af1f6d7147e034bb6ff0">DbServerRole.SecurityAdmin</a> = 2
- }</td></tr>
-<tr class="memdesc:ad16cc117c17613b819c41c5dd2c76893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the server roles that a database user can have.  <a href="namespace_inetdev_1_1_data.html#ad16cc117c17613b819c41c5dd2c76893">More...</a><br /></td></tr>
-<tr class="separator:ad16cc117c17613b819c41c5dd2c76893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30b1bcd1f8a0f5dca4b999b2f528fef6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_inetdev_1_1_data.html#a30b1bcd1f8a0f5dca4b999b2f528fef6">DbType</a> { <br />
 &#160;&#160;<a class="el" href="namespace_inetdev_1_1_data.html#a30b1bcd1f8a0f5dca4b999b2f528fef6a65bb9fbe0268dd0c19e1af6542d9dc93">DbType.BigInt</a>, 
 <a class="el" href="namespace_inetdev_1_1_data.html#a30b1bcd1f8a0f5dca4b999b2f528fef6ae8016c85ada38bdc5fac616ec1318047">DbType.Blob</a>, 
@@ -381,18 +378,6 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a30b1bcd1f8a0f5dca4b999b2f528fef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application supported data types  <a href="namespace_inetdev_1_1_data.html#a30b1bcd1f8a0f5dca4b999b2f528fef6">More...</a><br /></td></tr>
 <tr class="separator:a30b1bcd1f8a0f5dca4b999b2f528fef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f7d0026a33d784fe821c85e3578383f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_inetdev_1_1_data.html#a3f7d0026a33d784fe821c85e3578383f">DbUserRole</a> { <br />
-&#160;&#160;<a class="el" href="namespace_inetdev_1_1_data.html#a3f7d0026a33d784fe821c85e3578383fa6adf97f83acf6453d4a6a4b1070f3754">DbUserRole.None</a> = 0, 
-<a class="el" href="namespace_inetdev_1_1_data.html#a3f7d0026a33d784fe821c85e3578383fa7c1bae5da833c27ab3a2131feabec7c7">DbUserRole.BackupOperator</a> = 1, 
-<a class="el" href="namespace_inetdev_1_1_data.html#a3f7d0026a33d784fe821c85e3578383fa3775696080d7aa97cf6af9d867859b18">DbUserRole.DataReader</a> = 2, 
-<a class="el" href="namespace_inetdev_1_1_data.html#a3f7d0026a33d784fe821c85e3578383fa734037d0e8cf7b3e79efebdefe40881e">DbUserRole.DataWriter</a> = 4, 
-<br />
-&#160;&#160;<a class="el" href="namespace_inetdev_1_1_data.html#a3f7d0026a33d784fe821c85e3578383fa5f1abd67bfe4e45c1f86b8a410fd0cfc">DbUserRole.DDLAdmin</a> = 8, 
-<a class="el" href="namespace_inetdev_1_1_data.html#a3f7d0026a33d784fe821c85e3578383fa9d4bb2b569d0568e8e8a35c1e85b93ad">DbUserRole.DbOwner</a> = 16
-<br />
- }</td></tr>
-<tr class="memdesc:a3f7d0026a33d784fe821c85e3578383f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the database role that a database user can have.  <a href="namespace_inetdev_1_1_data.html#a3f7d0026a33d784fe821c85e3578383f">More...</a><br /></td></tr>
-<tr class="separator:a3f7d0026a33d784fe821c85e3578383f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c8bcae5065a0763b0154b7012cff3ce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_inetdev_1_1_data.html#a6c8bcae5065a0763b0154b7012cff3ce">ProtectionType</a> { <a class="el" href="namespace_inetdev_1_1_data.html#a6c8bcae5065a0763b0154b7012cff3ceab0871eded31b84c020b661199ba1ff85">ProtectionType.Encripted</a>, 
 <a class="el" href="namespace_inetdev_1_1_data.html#a6c8bcae5065a0763b0154b7012cff3cead6a280b23327bfbf909a3b44ee9b0891">ProtectionType.Hashed</a>, 
 <a class="el" href="namespace_inetdev_1_1_data.html#a6c8bcae5065a0763b0154b7012cff3cea6adf97f83acf6453d4a6a4b1070f3754">ProtectionType.None</a>, 
@@ -588,38 +573,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad16cc117c17613b819c41c5dd2c76893"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad16cc117c17613b819c41c5dd2c76893">&#9670;&nbsp;</a></span>DbServerRole</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespace_inetdev_1_1_data.html#ad16cc117c17613b819c41c5dd2c76893">Inetdev.Data.DbServerRole</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Defines the server roles that a database user can have. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad16cc117c17613b819c41c5dd2c76893a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>No server roles for the user. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad16cc117c17613b819c41c5dd2c76893a0248c366ce0e11f0017809afd8132652"></a>DbCreator&#160;</td><td class="fielddoc"><p>Database creator. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad16cc117c17613b819c41c5dd2c76893a140321aacc59af1f6d7147e034bb6ff0"></a>SecurityAdmin&#160;</td><td class="fielddoc"><p>Security administrator. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a id="a30b1bcd1f8a0f5dca4b999b2f528fef6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30b1bcd1f8a0f5dca4b999b2f528fef6">&#9670;&nbsp;</a></span>DbType</h2>
 
@@ -669,44 +622,6 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a30b1bcd1f8a0f5dca4b999b2f528fef6a9dffbf69ffba8bc38bc4e01abf4b1675"></a>Text&#160;</td><td class="fielddoc"><p>Text. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a30b1bcd1f8a0f5dca4b999b2f528fef6a4ed585d0619a0a98e9d6816528777f5b"></a>TinyInt&#160;</td><td class="fielddoc"><p>TinyInt. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="a3f7d0026a33d784fe821c85e3578383f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f7d0026a33d784fe821c85e3578383f">&#9670;&nbsp;</a></span>DbUserRole</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespace_inetdev_1_1_data.html#a3f7d0026a33d784fe821c85e3578383f">Inetdev.Data.DbUserRole</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Defines the database role that a database user can have. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3f7d0026a33d784fe821c85e3578383fa6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>No role assigned. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3f7d0026a33d784fe821c85e3578383fa7c1bae5da833c27ab3a2131feabec7c7"></a>BackupOperator&#160;</td><td class="fielddoc"><p>Backup operator role. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3f7d0026a33d784fe821c85e3578383fa3775696080d7aa97cf6af9d867859b18"></a>DataReader&#160;</td><td class="fielddoc"><p>User can read data. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3f7d0026a33d784fe821c85e3578383fa734037d0e8cf7b3e79efebdefe40881e"></a>DataWriter&#160;</td><td class="fielddoc"><p>User can write data. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3f7d0026a33d784fe821c85e3578383fa5f1abd67bfe4e45c1f86b8a410fd0cfc"></a>DDLAdmin&#160;</td><td class="fielddoc"><p>User can create database objects. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3f7d0026a33d784fe821c85e3578383fa9d4bb2b569d0568e8e8a35c1e85b93ad"></a>DbOwner&#160;</td><td class="fielddoc"><p>The user is the database owner. </p>
 </td></tr>
 </table>
 

@@ -77,7 +77,7 @@ $(function() {
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_data_model_cmd_builder.html#a0daab347ca57cddcc274920871a11f55">Inetdev.Data.Oracle.OracleDataModelCmdBuilder</a>
 </li>
 <li>BuildPredicate()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_cmd_builder.html#aa1a7760428c2b5d86c1de3a161e9e0ba">Inetdev.Data.Oracle.OracleCmdBuilder</a>
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_cmd_builder.html#ab8a1de44012b8f399a8138dedb70530d">Inetdev.Data.Oracle.OracleCmdBuilder</a>
 </li>
 <li>BuildSearchCondition()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_cmd_builder.html#aba84168b2184b92e69f01a5adc1a88aa">Inetdev.Data.Oracle.OracleCmdBuilder</a>
@@ -107,14 +107,20 @@ $(function() {
 <li>CreatePrimaryKeyAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a64e68777ef95169567f8ff93012b6774">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
 </li>
-<li>CreateSchemaAsync()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a20a6ab4d3d9a19459f336a8b188365b6">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+<li>CreateRoleAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_dba_1_1_oracle_dba_services.html#a829637cca5e6c66ad3cbda09ae58483a">Inetdev.Data.Oracle.Dba.OracleDbaServices</a>
 </li>
 <li>CreateSequenceIfNotExistsAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a213618ab88b7b3565766e967faf80e31">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
 </li>
 <li>CreateTableAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a94004274be112ec7494463ee8caf39ae">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>CreateTablespaceAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_dba_1_1_oracle_dba_services.html#a5bc17dd157a430e6238cb24b2cbeb515">Inetdev.Data.Oracle.Dba.OracleDbaServices</a>
+</li>
+<li>CreateUserAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_dba_1_1_oracle_dba_services.html#a25c71cd398b10960b9c4682de2b19c73">Inetdev.Data.Oracle.Dba.OracleDbaServices</a>
 </li>
 <li>CreateViewAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a1f51c82ae055138d884a3ab128a34dd4">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
@@ -141,11 +147,17 @@ $(function() {
 <li>DropPrimaryKeyAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a6a1fd22cd6e8a5ecd62584f7bc33bd6b">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
 </li>
-<li>DropSchemaAsync()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a6f5125efdb05e5bdce870679fb883ff5">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+<li>DropRoleAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_dba_1_1_oracle_dba_services.html#ac81df7a4a472ee63e76bd5435739d817">Inetdev.Data.Oracle.Dba.OracleDbaServices</a>
 </li>
 <li>DropTableAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#af3d7c14130d7059af97db1785f14ec02">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
+</li>
+<li>DropTablespaceAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_dba_1_1_oracle_dba_services.html#ad109c69194f8af186937b006ba7ed2b3">Inetdev.Data.Oracle.Dba.OracleDbaServices</a>
+</li>
+<li>DropUserAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_dba_1_1_oracle_dba_services.html#ab365567253653f4209eb722daf154e08">Inetdev.Data.Oracle.Dba.OracleDbaServices</a>
 </li>
 <li>DropViewAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#aa6ec5006f5274eca9b9b407039f23aa6">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
@@ -172,11 +184,20 @@ $(function() {
 <li>ExecuteScalarAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#ad24ac0b4012651e56025fbf575795255">Inetdev.Data.Oracle.OracleDbAccess</a>
 </li>
+<li>ExistsRoleAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_dba_1_1_oracle_dba_services.html#a7605bffe2c5061466df4d4e040027a8c">Inetdev.Data.Oracle.Dba.OracleDbaServices</a>
+</li>
 <li>ExistsSchema()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#a010e1f2f5a4a6ec204bc89a1fe208363">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaDiscoverer</a>
 </li>
 <li>ExistsTable()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#a6c0e5c841632b88f6611630c6410e722">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaDiscoverer</a>
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#ab51df80181420dfe1a143a878c5876eb">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaDiscoverer</a>
+</li>
+<li>ExistsTablespaceAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_dba_1_1_oracle_dba_services.html#a2c545e76def979219ec6ae58f6dacbcc">Inetdev.Data.Oracle.Dba.OracleDbaServices</a>
+</li>
+<li>ExistsUserAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_dba_1_1_oracle_dba_services.html#a2621299b535b5cd4c86efa3ba3b75714">Inetdev.Data.Oracle.Dba.OracleDbaServices</a>
 </li>
 <li>ExistsView()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#a990d62b2975088cd6e56ee233b9ebd8e">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaDiscoverer</a>
@@ -195,7 +216,7 @@ $(function() {
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_name_qualifier.html#afd8c48f2e658c493e51bc222b9f314a9">Inetdev.Data.Oracle.OracleDbNameQualifier</a>
 </li>
 <li>GetSchema()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#a77be283eed15d847573506f757cf1dd5">Inetdev.Data.Oracle.OracleDbAccess</a>
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#ad8435d56decf5eb47fa136563d044d93">Inetdev.Data.Oracle.OracleDbAccess</a>
 </li>
 <li>GetSchemas()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_discoverer.html#ac58d25c6cd4e73513df4e18b047cf1b1">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaDiscoverer</a>
@@ -224,6 +245,9 @@ $(function() {
 <li>GrantPermissionsAsync()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a09e72a27a5f58fdc6ff3deee3fdbb06e">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
 </li>
+<li>GrantRoleToUserAsync()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_dba_1_1_oracle_dba_services.html#a3dc31ab1044344f4665383ce20e41003">Inetdev.Data.Oracle.Dba.OracleDbaServices</a>
+</li>
 </ul>
 
 
@@ -243,6 +267,13 @@ $(function() {
 <h3><a id="index_r"></a>- r -</h3><ul>
 <li>RollbackTransaction()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_oracle_db_access.html#abf4a149aaf01f0d33ce49397fd88ab6b">Inetdev.Data.Oracle.OracleDbAccess</a>
+</li>
+</ul>
+
+
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>Tablespace()
+: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_dba_1_1_tablespace.html#a9162ea7a737cc56abc9265ee5259cb56">Inetdev.Data.Oracle.Dba.Tablespace</a>
 </li>
 </ul>
 
@@ -268,12 +299,6 @@ $(function() {
 </li>
 <li>ValidateIndexForDrop()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#ab7bddf21c15e6ac43b8ebb4a7cae9150">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
-</li>
-<li>ValidateSchemaForCreate()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a9dc65d3d77d1002968785835c074ec23">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
-</li>
-<li>ValidateSchemaForDrop()
-: <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#adca7f495163875e1054bb08fc6109a7b">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
 </li>
 <li>ValidateSequenceForCreate()
 : <a class="el" href="class_inetdev_1_1_data_1_1_oracle_1_1_database_schema_1_1_oracle_schema_provisioner.html#a8b8f207834a4cac8d2621137850fce4e">Inetdev.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner</a>
