@@ -1,0 +1,226 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>ConfigurationDocumentService - Inetdev Framework Std</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Inetdev Framework Std</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../inetdev/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+<h1>ConfigurationDocumentService</h1>
+<p class="lead">Provides services for load and validate configuration documents.</p>
+<h5><small>Namespace</small>: Inetdev.Context.Configuration</h5>
+<h5><small>Type</small>: Class</h5>
+<dl class="mt-4 row">
+    <dt class="col-3">Public:</dt>
+    <dd class="col-9">Yes</dd>
+    <dt class="col-3">Protected:</dt>
+    <dd class="col-9">No</dd>
+    <dt class="col-3">Sealed:</dt>
+    <dd class="col-9">Yes</dd>
+    <dt class="col-3">Abstract:</dt>
+    <dd class="col-9">No</dd>
+<dt class="col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<hr/>
+<p class="lead text-info">ConfigurationDocumentService</p>
+<p>Default constructor</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ConfigurationDocumentService()</code></dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<hr/>
+<p class="lead text-info">EnumerateObjectConfiguration</p>
+<p>Enumerates a list of object configuration from specified document.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{Inetdev.Context.Configuration.ObjectConfiguration}">IEnumerable&lt;<a href="../../inetdev/inetdev-context-configuration/inetdev-context-configuration-objectconfiguration.html">ObjectConfiguration</a>&gt;</span> EnumerateObjectConfiguration(doc)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A collection of object configuration models from the specified document.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td><span class="text-info" title="System.Xml.XmlDocument">XmlDocument</span></td>
+<td>Factory configuration document.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">doc</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+<td>Thrown when <strong class="text-info">doc</strong> has not been validated against the schema.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">EnumeratePackageConfiguration</p>
+<p>Enumerates a list of package configuration from specified document.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{Inetdev.Context.Configuration.PackageConfiguration}">IEnumerable&lt;<a href="../../inetdev/inetdev-context-configuration/inetdev-context-configuration-packageconfiguration.html">PackageConfiguration</a>&gt;</span> EnumeratePackageConfiguration(doc)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A collection of package configuration models from the specified document.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td><span class="text-info" title="System.Xml.XmlDocument">XmlDocument</span></td>
+<td>Package configuration document.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">doc</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+<td>Thrown when <strong class="text-info">doc</strong> has not been validated against the schema.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetFactoryName</p>
+<p>Gets the name of the application object factory specified in <strong class="text-info">doc</strong>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetFactoryName(doc)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>Configured name of the object factory.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td><span class="text-info" title="System.Xml.XmlDocument">XmlDocument</span></td>
+<td>Factory configuration document.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">doc</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+<td>Thrown when <strong class="text-info">doc</strong> has not been validated against the schema.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">LoadFactoryDocument</p>
+<p>Loads <strong class="text-info">stream</strong> into a <span class="text-info" title="System.Xml.XmlDocument">XmlDocument</span> applying
+            validation to the stream against the object factory schema.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Xml.XmlDocument">XmlDocument</span> LoadFactoryDocument(stream)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>An object factory configuration document.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>stream</td>
+<td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+<td>Contents of the configuration document.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="Inetdev.Context.ContextConfigurationException"><a href="../../inetdev/inetdev-context/inetdev-context-contextconfigurationexception.html">ContextConfigurationException</a></span></td>
+<td>Thrown when the configuration document is not valid.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">LoadPackageDocument</p>
+<p>Loads <strong class="text-info">stream</strong> into a <span class="text-info" title="System.Xml.XmlDocument">XmlDocument</span> applying
+            validation to the stream against the package schema.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Xml.XmlDocument">XmlDocument</span> LoadPackageDocument(stream)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A package configuration document.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>stream</td>
+<td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+<td>Contents of the configuration document.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="Inetdev.Context.ContextConfigurationException"><a href="../../inetdev/inetdev-context/inetdev-context-contextconfigurationexception.html">ContextConfigurationException</a></span></td>
+<td>Thrown when the configuration document is not valid.</td>
+</tr>
+</tbody></table>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="position-fixed">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#top">Top</a></li>
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#methods">Methods</a></li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>

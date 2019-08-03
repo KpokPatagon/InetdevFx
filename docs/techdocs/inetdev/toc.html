@@ -1,0 +1,709 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Inetdev - Inetdev Framework Std</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Inetdev Framework Std</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html">Index</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+<h1 id="top">Inetdev</h1>
+<hr />
+<p class="lead">Assembly</p>
+<dl class="mt-4 row">
+    <dt class="col-3">Version:</dt>
+    <dd class="col-9">1.12.0.0</dd>
+    <dt class="col-3">Product version:</dt>
+    <dd class="col-9">1.12.0-InetdevFx-CI-AutoDocs_master_20190803.5</dd>
+    <dt class="col-3">Product:</dt>
+    <dd class="col-9">Inetdev Framework Std</dd>
+    <dt class="col-3">Culture:</dt>
+    <dd class="col-9">neutral</dd>
+    <dt class="col-3">Public key token:</dt>
+    <dd class="col-9">856a2402e38a9992</dd>
+</dl>
+<h2 class="mt-5">Namespaces (15)</h2>
+<h3 id="inetdev" class="mt-5">Inetdev</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></td>
+<td>Thrown when a required argument is <strong class="text-info">null</strong> or empty.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-configurationfinder.html">ConfigurationFinder</a></td>
+<td>Provides methods to help find .json configuration files like <b>settings.json</b>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-configurationoptionattribute.html">ConfigurationOptionAttribute</a></td>
+<td>Allows to mark a property that is filled with configuration information.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-eventnotsupportedexception.html">EventNotSupportedException</a></td>
+<td>Thrown when trying to access a non-supported event.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-frameworkexception.html">FrameworkException</a></td>
+<td>This is the root class for application exceptions.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-hashextensions.html">HashExtensions</a></td>
+<td>Extension methods for hashing strings and byte arrays.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-ilistitem.html">IListItem</a></td>
+<td>Represents an item of a list.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-itemprocessflag1.html">ItemProcessFlag</a></td>
+<td>A flag to control the process state of an item.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-languageextensions.html">LanguageExtensions</a></td>
+<td>Provides for commons language types.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-listitem.html">ListItem</a></td>
+<td>Default implementation of <a href="../../inetdev/inetdev/inetdev-ilistitem.html">IListItem</a>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-localization.html">Localization</a></td>
+<td>Models localization text to be stored.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-localizationcollection.html">LocalizationCollection</a></td>
+<td>A collection of <a href="../../inetdev/inetdev/inetdev-localization.html">Localization</a>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-methodnotsupportedexception.html">MethodNotSupportedException</a></td>
+<td>Thrown when trying to access a non-supported method.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></td>
+<td>Thrown when a required property was not initialized.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-nofmprogresseventargs.html">NofMProgressEventArgs</a></td>
+<td>Argument for N of M progress report events.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-nofmprogresseventhandler.html">NofMProgressEventHandler</a></td>
+<td>Event that reports a process progress as a N of M items.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-percentageprogresseventargs.html">PercentageProgressEventArgs</a></td>
+<td>Argument for percentage progress report events.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-percentageprogresseventhandler.html">PercentageProgressEventHandler</a></td>
+<td>Event that reports a process progress as a percentage.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-processresult.html">ProcessResult</a></td>
+<td>Defines the results for actions or processes taken by applications.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></td>
+<td>Thrown when trying to access a non-supported property.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-resourcesextensions.html">ResourcesExtensions</a></td>
+<td>Provides extension method related to localization resources functionality.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-typedescriptionattribute.html">TypeDescriptionAttribute</a></td>
+<td><strong>TypeDescriptionAttribute</strong> is used for descripting a type for an application UI.</td>
+</tr>
+<tr>
+<td><a href="./inetdev/inetdev-util.html">Util</a></td>
+<td>Provides utility functions for the framework.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-context" class="mt-5">Inetdev.Context</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-applicationcontext.html">ApplicationContext</a></td>
+<td>Interface for the application context.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-applicationcontextregistration.html">ApplicationContextRegistration</a></td>
+<td>Provides a way to register application context packages and factories.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-contextconfigurationexception.html">ContextConfigurationException</a></td>
+<td>Thrown when a configuration error is detected.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-contextexception.html">ContextException</a></td>
+<td>The base class for exceptions that are thrown from the application context sub-system.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-contextobjectassemblyloadexception.html">ContextObjectAssemblyLoadException</a></td>
+<td>Thrown the the <b>Assembly</b> of an application context object could not be loaded.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-dependencyinjectionexception.html">DependencyInjectionException</a></td>
+<td>Thrown when an instance of an application context object could not be dependecy injected.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-encryptedfilesystemxmlobjectfactory.html">EncryptedFileSystemXmlObjectFactory</a></td>
+<td>Implements an <a href="../../inetdev/inetdev-context/inetdev-context-iobjectfactory.html">IObjectFactory</a> that reads the application 
+            context from an encrypted XML file.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-filesystemxmlobjectfactory.html">FileSystemXmlObjectFactory</a></td>
+<td>Implements an <a href="../../inetdev/inetdev-context/inetdev-context-iobjectfactory.html">IObjectFactory</a> that reads the application 
+            context from an XML file.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-instancecreationexception.html">InstanceCreationException</a></td>
+<td>Thrown when an instance of an application context object could not be created.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-iobjectfactory.html">IObjectFactory</a></td>
+<td>Allows the implementation of object factories used to create application context objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-ipackage.html">IPackage</a></td>
+<td>Allows the implementation of application software packages.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-iruntimedependencyinjector.html">IRuntimeDependencyInjector</a></td>
+<td>Allows the implementation of classes that inject a runtime calculated dependency.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-manifestresourcexmlobjectfactory.html">ManifestResourceXmlObjectFactory</a></td>
+<td>Implements an <a href="../../inetdev/inetdev-context/inetdev-context-iobjectfactory.html">IObjectFactory</a> that reads the application 
+            context from embedded resources.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-nosuchfactoryexception.html">NoSuchFactoryException</a></td>
+<td>Thrown when a required object factory was not found.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></td>
+<td>Thrown when an object is required and no definition is found for that object.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-nosuchpackageexception.html">NoSuchPackageException</a></td>
+<td>Thrown when the required package was not found in the application context.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-objectfactory.html">ObjectFactory</a></td>
+<td>Implements a generic <a href="../../inetdev/inetdev-context/inetdev-context-iobjectfactory.html">IObjectFactory</a>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-objectnotofrequiredtypeexception.html">ObjectNotOfRequiredTypeException</a></td>
+<td>Thrown when an object required is not of the type required.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-package.html">Package</a></td>
+<td>Default software package representation.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-packageassemblyloadexception.html">PackageAssemblyLoadException</a></td>
+<td>Thrown when the assembly for a software package could not be loaded.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-propertytype.html">PropertyType</a></td>
+<td>Defines the type of properties that can be configured for application context objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context/inetdev-context-typenotfoundexception.html">TypeNotFoundException</a></td>
+<td>Thrown when a context object type cannot be found into an assembly.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-context-configuration" class="mt-5">Inetdev.Context.Configuration</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-context-configuration/inetdev-context-configuration-applicationcontextoptions.html">ApplicationContextOptions</a></td>
+<td>Application context configuration options.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context-configuration/inetdev-context-configuration-configurationdocumentservice.html">ConfigurationDocumentService</a></td>
+<td>Provides services for load and validate configuration documents.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context-configuration/inetdev-context-configuration-objectconfiguration.html">ObjectConfiguration</a></td>
+<td>Configuration of an application context object.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context-configuration/inetdev-context-configuration-objectdelegate.html">ObjectDelegate</a></td>
+<td>Configuration of an object delegate (Event).</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context-configuration/inetdev-context-configuration-objectproperty.html">ObjectProperty</a></td>
+<td>Configuration of an object property.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context-configuration/inetdev-context-configuration-packageconfiguration.html">PackageConfiguration</a></td>
+<td>Models the configuration of an application context package.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-context-configuration/inetdev-context-configuration-runtimeinjectorconfiguration.html">RuntimeInjectorConfiguration</a></td>
+<td>Configuration for a runtime dependency injector.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-diagnostics" class="mt-5">Inetdev.Diagnostics</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-diagnostics/inetdev-diagnostics-diagnosticsconstants.html">DiagnosticsConstants</a></td>
+<td>Defines constants used for diagnostics</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics/inetdev-diagnostics-diagnosticsexception.html">DiagnosticsException</a></td>
+<td>Base exception for diagnostics errors.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics/inetdev-diagnostics-diagnosticsextensions.html">DiagnosticsExtensions</a></td>
+<td>Provides extensions for diagnostics.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
+<td>Event identification.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics/inetdev-diagnostics-ilogger.html">ILogger</a></td>
+<td>Allows the implementation of a logger.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a></td>
+<td>An entry to be logged.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics/inetdev-diagnostics-logger.html">Logger</a></td>
+<td>Facade for writing a log entry to one or more trace targets.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics/inetdev-diagnostics-loglevel.html">LogLevel</a></td>
+<td>Defines the level of log entries.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics/inetdev-diagnostics-logtarget.html">LogTarget</a></td>
+<td>Provides tracing services through a set of <a href="../../inetdev/inetdev-diagnostics-tracetargets/inetdev-diagnostics-tracetargets-tracetarget.html">TraceTarget</a>s.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a></td>
+<td>This class routes log messages to <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logtarget.html">LogTarget</a>s based on categories.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics/inetdev-diagnostics-logwriterfactory.html">LogWriterFactory</a></td>
+<td>Factory to create <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a> instances.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics/inetdev-diagnostics-logwriterprovider.html">LogWriterProvider</a></td>
+<td>Allows the implementation of an insertion point within 
+            applications that creates a <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a>.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-diagnostics-configuration" class="mt-5">Inetdev.Diagnostics.Configuration</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-diagnostics-configuration/inetdev-diagnostics-configuration-diagnostics.html">Diagnostics</a></td>
+<td>Diagnostics configuration options.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics-configuration/inetdev-diagnostics-configuration-formatter.html">Formatter</a></td>
+<td>Allows the configuration of <a href="../../inetdev/inetdev-diagnostics-formatters/inetdev-diagnostics-formatters-ilogformatter.html">ILogFormatter</a>s.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics-configuration/inetdev-diagnostics-configuration-logtarget.html">LogTarget</a></td>
+<td>Allows the configuration of <strong>LogTarget</strong>s.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics-configuration/inetdev-diagnostics-configuration-tracetarget.html">TraceTarget</a></td>
+<td>Allows the configuration of <a href="../../inetdev/inetdev-diagnostics-tracetargets/inetdev-diagnostics-tracetargets-itracetarget.html">ITraceTarget</a>s.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-diagnostics-formatters" class="mt-5">Inetdev.Diagnostics.Formatters</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-diagnostics-formatters/inetdev-diagnostics-formatters-ilogformatter.html">ILogFormatter</a></td>
+<td>Allows the implementation of log formatters.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics-formatters/inetdev-diagnostics-formatters-logformatter.html">LogFormatter</a></td>
+<td>This base class for <b>LogFormatters</b> implements default
+            funcionality required by a log formatter.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics-formatters/inetdev-diagnostics-formatters-textlogformatter.html">TextLogFormatter</a></td>
+<td>Formats a LogEntry to be printed as text.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-diagnostics-tracetargets" class="mt-5">Inetdev.Diagnostics.TraceTargets</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-diagnostics-tracetargets/inetdev-diagnostics-tracetargets-flatfiletracetarget.html">FlatFileTraceTarget</a></td>
+<td>A <b>TraceTarget</b> that writes log messages to text files.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics-tracetargets/inetdev-diagnostics-tracetargets-itracetarget.html">ITraceTarget</a></td>
+<td>Allows the implementation of trace targets for writing log entries.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-diagnostics-tracetargets/inetdev-diagnostics-tracetargets-tracetarget.html">TraceTarget</a></td>
+<td>Abstract base class for implementing Trace Targets.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-messaging" class="mt-5">Inetdev.Messaging</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-messaging/inetdev-messaging-imessageservice.html">IMessageService</a></td>
+<td>Allows the implementation of messaging services.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-messaging/inetdev-messaging-message.html">Message</a></td>
+<td>A message to be send by a messaging service.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-messaging/inetdev-messaging-sendexception.html">SendException</a></td>
+<td>Thrown by a message service when an error occured while sending a message.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-messaging/inetdev-messaging-smtpmessageservice.html">SmtpMessageService</a></td>
+<td>Implements an <a href="../../inetdev/inetdev-messaging/inetdev-messaging-imessageservice.html">IMessageService</a> that send messages through e-mail.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-navigation" class="mt-5">Inetdev.Navigation</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-navigation/inetdev-navigation-inavigationprovider.html">INavigationProvider</a></td>
+<td>Allows the implementation of a provider that returns <a href="../../inetdev/inetdev-navigation/inetdev-navigation-navigation.html">Navigation</a> objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-navigation/inetdev-navigation-navigation.html">Navigation</a></td>
+<td>Models navigation information</td>
+</tr>
+<tr>
+<td><a href="./inetdev-navigation/inetdev-navigation-navigationconfigurationexception.html">NavigationConfigurationException</a></td>
+<td>Thown when navigation configuration errors are detected.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-navigation/inetdev-navigation-navigationconfigurationservice.html">NavigationConfigurationService</a></td>
+<td>Implements a service that scans the application context packages for
+            navigation configuration and constructs a <a href="../../inetdev/inetdev-navigation/inetdev-navigation-navigation.html">Navigation</a>
+            model.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-navigation/inetdev-navigation-navigationexception.html">NavigationException</a></td>
+<td>Thrown when an error occured into de navigation sub-system.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-navigation/inetdev-navigation-navigationitem.html">NavigationItem</a></td>
+<td>Models an item of the navigation sub-system.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-navigation/inetdev-navigation-navigationitemkind.html">NavigationItemKind</a></td>
+<td>Define the diferent kinds of navigation items.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-navigation/inetdev-navigation-navigationnotfoundexception.html">NavigationNotFoundException</a></td>
+<td>Thrown when a navigation configuration could'nt be found.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-navigation/inetdev-navigation-navigationprovider.html">NavigationProvider</a></td>
+<td>Default navigation provider.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-parameters" class="mt-5">Inetdev.Parameters</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-iparameter.html">IParameter</a></td>
+<td>Allows the implementation of a class that represents a configuration parameter.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-iparameteroptionsprovider.html">IParameterOptionsProvider</a></td>
+<td>Allows the implementation of an option provider for parameter edition.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-iparameterprovider.html">IParameterProvider</a></td>
+<td>Allows the implementation of parameter providers.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-iparameterservice.html">IParameterService</a></td>
+<td>Allows the implementation of a parameter service.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-iparameterstore.html">IParameterStore</a></td>
+<td>Allows the implementation of a store for parameters</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-iparametertreenode.html">IParameterTreeNode</a></td>
+<td>Allows the implementation of a tree structure for configuration parameters.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-iparametervaluevalidator.html">IParameterValueValidator</a></td>
+<td>Allows the implementation of a class that validates a parameter value.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parameter.html">Parameter</a></td>
+<td>Default <a href="../../inetdev/inetdev-parameters/inetdev-parameters-iparameter.html">IParameter</a> implementation.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parameterconfiguration.html">ParameterConfiguration</a></td>
+<td>Defines the configuration of a parameter.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parameterconfigurationexception.html">ParameterConfigurationException</a></td>
+<td>Thrown when parameter configuration errors are detected.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parameterconfigurationservice.html">ParameterConfigurationService</a></td>
+<td>Implements a service that scans the application context packages for 
+            parameter configuration and construct a parameter configuration 
+            tree to by used by a <a href="../../inetdev/inetdev-parameters/inetdev-parameters-iparameterprovider.html">IParameterProvider</a>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parameterdoesnotexistexception.html">ParameterDoesNotExistException</a></td>
+<td>Thrown when a parameter does not exist.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parameterexception.html">ParameterException</a></td>
+<td>This is the base exception for parameter related erros.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parameterinitializationexception.html">ParameterInitializationException</a></td>
+<td>Thrown when an error occurs while initializing the parameter infrastructure.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parameterinjector.html">ParameterInjector</a></td>
+<td>Allows the application context to inject configuration parameter into context objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parameterprovider.html">ParameterProvider</a></td>
+<td>Default parameter provider.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parameterservice.html">ParameterService</a></td>
+<td>Default service for getting/setting configuration parameters.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parametertreenode.html">ParameterTreeNode</a></td>
+<td>A node of the parameter tree.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parametertype.html">ParameterType</a></td>
+<td>Defines the supported parameter types.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-parametervaluevalidationexception.html">ParameterValueValidationException</a></td>
+<td>Thrown when the value for a parameter is not valid.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-staticparameteroptionsprovider.html">StaticParameterOptionsProvider</a></td>
+<td>Implements an <a href="../../inetdev/inetdev-parameters/inetdev-parameters-iparameteroptionsprovider.html">IParameterOptionsProvider</a> that reads the options from
+            the parameter Xml configuration document.
+            To configure, add <option value="" text="" />s to the optionsProvider node.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-parameters/inetdev-parameters-wrongparametertypeexception.html">WrongParameterTypeException</a></td>
+<td>Thrown when requested a wrong type for a particular parameter.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-propertybag" class="mt-5">Inetdev.PropertyBag</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-propertybag/inetdev-propertybag-bagattribute.html">BagAttribute</a></td>
+<td>Marks a class as a PropertyBag.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-propertybag/inetdev-propertybag-ipropertybag.html">IPropertyBag</a></td>
+<td>A marker interface for property bag objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-propertybag/inetdev-propertybag-propertyattribute.html">PropertyAttribute</a></td>
+<td>Marks a property as a property bag property.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-propertybag/inetdev-propertybag-propertydatatype.html">PropertyDataType</a></td>
+<td>Defines the data types for properties.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-security" class="mt-5">Inetdev.Security</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-security/inetdev-security-iroleprovider.html">IRoleProvider</a></td>
+<td>Allows the implementation of a provider that return application <a href="../../inetdev/inetdev-security/inetdev-security-role.html">Role</a>s.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security/inetdev-security-principalextensions.html">PrincipalExtensions</a></td>
+<td>Extensión for principal an identity.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security/inetdev-security-role.html">Role</a></td>
+<td>A <strong>Role</strong> definition for privileges assignment.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security/inetdev-security-securityexception.html">SecurityException</a></td>
+<td>This is the framework root class for security exceptions.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security/inetdev-security-securityhelpers.html">SecurityHelpers</a></td>
+<td>Provides generic methods for security.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-security-cryptography" class="mt-5">Inetdev.Security.Cryptography</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-asymmetriccryptographer.html">AsymmetricCryptographer</a></td>
+<td>Asymmetric cryptographic utilities.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-cryptographer.html">Cryptographer</a></td>
+<td>Facade which exposes common cryptography uses.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-cryptographyexception.html">CryptographyException</a></td>
+<td>Thrown when an error occured during a cryptographic operation.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-cryptographyutility.html">CryptographyUtility</a></td>
+<td>Common cryptography methods.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-defaultsymmetrickeygenerator.html">DefaultSymmetricKeyGenerator</a></td>
+<td>Creates a key for the <b>SymmetricCryptographer</b> that use an initializator vector 
+            of 16 bytes and a key of 32 bytes based on two provided keys.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-hashcryptographer.html">HashCryptographer</a></td>
+<td>A hash provider for any hash algorithm which derives from <span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-hashproviderfactory.html">HashProviderFactory</a></td>
+<td><strong>HashProviderFactory</strong> implements a class factory for hash providers.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-ihashprovider.html">IHashProvider</a></td>
+<td>A contract for any provider for hash implementations.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-ikeygenerator.html">IKeyGenerator</a></td>
+<td><strong>IKeyGenerator</strong> allows the implementation of classes that
+            generates encryption keys for symmetric algorithm.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-isymmetricprovider.html">ISymmetricProvider</a></td>
+<td>A contract for any provider for symmetric cryptographic implementations.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-rsakey.html">RsaKey</a></td>
+<td>Models a RSA key for serialization.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-rsakeycontractresolver.html">RsaKeyContractResolver</a></td>
+<td>Contract resolverd for serializing RSA keys.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-symmetriccryptographer.html">SymmetricCryptographer</a></td>
+<td>Represents basic cryptography services for a <span class="text-info" title="System.Security.Cryptography.SymmetricAlgorithm">SymmetricAlgorithm</span>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-symmetrickeynotfoundexception.html">SymmetricKeyNotFoundException</a></td>
+<td>Thrown when the required symmetric key was not found.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-symmetricproviderfactory.html">SymmetricProviderFactory</a></td>
+<td><strong>SymmetricProviderFactory</strong> implements a class factory for 
+            symmetric cryptographers.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-security-cryptography-configuration" class="mt-5">Inetdev.Security.Cryptography.Configuration</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-security-cryptography-configuration/inetdev-security-cryptography-configuration-cryptographyoptions.html">CryptographyOptions</a></td>
+<td>Cryptography configuration options.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-text" class="mt-5">Inetdev.Text</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-text/inetdev-text-dictionarytoken.html">DictionaryToken</a></td>
+<td>Formats a dictionary token by iterating through the dictionary
+            and display de key and value for each entry.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-text/inetdev-text-tokenfunction.html">TokenFunction</a></td>
+<td>Provides default algorithm for cutting and formatting tokens</td>
+</tr>
+</tbody></table>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+                <div class="position-fixed">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#top">Top</a></li>
+<li><a href="#inetdev">Inetdev</a></li>
+<li><a href="#inetdev-context">Inetdev.Context</a></li>
+<li><a href="#inetdev-context-configuration">Inetdev.Context.Configuration</a></li>
+<li><a href="#inetdev-diagnostics">Inetdev.Diagnostics</a></li>
+<li><a href="#inetdev-diagnostics-configuration">Inetdev.Diagnostics.Configuration</a></li>
+<li><a href="#inetdev-diagnostics-formatters">Inetdev.Diagnostics.Formatters</a></li>
+<li><a href="#inetdev-diagnostics-tracetargets">Inetdev.Diagnostics.TraceTargets</a></li>
+<li><a href="#inetdev-messaging">Inetdev.Messaging</a></li>
+<li><a href="#inetdev-navigation">Inetdev.Navigation</a></li>
+<li><a href="#inetdev-parameters">Inetdev.Parameters</a></li>
+<li><a href="#inetdev-propertybag">Inetdev.PropertyBag</a></li>
+<li><a href="#inetdev-security">Inetdev.Security</a></li>
+<li><a href="#inetdev-security-cryptography">Inetdev.Security.Cryptography</a></li>
+<li><a href="#inetdev-security-cryptography-configuration">Inetdev.Security.Cryptography.Configuration</a></li>
+<li><a href="#inetdev-text">Inetdev.Text</a></li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>

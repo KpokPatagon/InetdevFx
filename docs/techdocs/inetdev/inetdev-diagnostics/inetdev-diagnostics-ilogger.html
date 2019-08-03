@@ -1,0 +1,353 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>ILogger - Inetdev Framework Std</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Inetdev Framework Std</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../inetdev/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+<h1>ILogger</h1>
+<p class="lead">Allows the implementation of a logger.</p>
+<h5><small>Namespace</small>: Inetdev.Diagnostics</h5>
+<h5><small>Type</small>: Interface</h5>
+<dl class="mt-4 row">
+    <dt class="col-3">Public:</dt>
+    <dd class="col-9">Yes</dd>
+    <dt class="col-3">Protected:</dt>
+    <dd class="col-9">No</dd>
+    <dt class="col-3">Sealed:</dt>
+    <dd class="col-9">No</dd>
+    <dt class="col-3">Abstract:</dt>
+    <dd class="col-9">Yes</dd>
+</dl>
+<h2 id="properties" class="mt-5">Properties</h2>
+<hr/>
+<p class="lead text-info">Writer</p>
+<p>A <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a> that this instance uses to write logging information.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a> Writer { get; }</code></dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<hr/>
+<p class="lead text-info">Write</p>
+<p>Writes a <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Write(entry)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>entry</td>
+<td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a></td>
+<td>A <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a> to be written.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">Write</p>
+<p>Writes a message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Write(message, level, category, eventid)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+<tr>
+<td>level</td>
+<td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-loglevel.html">LogLevel</a></td>
+<td>Message level.</td>
+</tr>
+<tr>
+<td>category</td>
+<td><span class="text-info" title="System.String">String</span></td>
+<td>Message category.</td>
+</tr>
+<tr>
+<td>eventid</td>
+<td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
+<td>Message event id.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">WriteCritical</p>
+<p>Writes a critial message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteCritical(message)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">WriteCritical</p>
+<p>Writes a critial message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteCritical(message, eventid)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+<tr>
+<td>eventid</td>
+<td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
+<td>message event id.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">WriteDebug</p>
+<p>Writes a debug message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteDebug(message)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">WriteDebug</p>
+<p>Writes a debug message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteDebug(message, eventid)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+<tr>
+<td>eventid</td>
+<td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
+<td>message event id.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">WriteError</p>
+<p>Writes an error message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteError(message)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">WriteError</p>
+<p>Writes an error message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteError(message, eventid)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+<tr>
+<td>eventid</td>
+<td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
+<td>message event id.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">WriteInformation</p>
+<p>Writes an informational message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteInformation(message)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">WriteInformation</p>
+<p>Writes an informational message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteInformation(message, eventid)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+<tr>
+<td>eventid</td>
+<td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
+<td>message event id.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">WriteVerbose</p>
+<p>Writes a verbose message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteVerbose(message)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">WriteVerbose</p>
+<p>Writes a verbose message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteVerbose(message, eventid)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+<tr>
+<td>eventid</td>
+<td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
+<td>message event id.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">WriteWarning</p>
+<p>Writes a warning message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteWarning(message)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">WriteWarning</p>
+<p>Writes a warning message.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteWarning(message, eventid)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>message</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>Message to be written.</td>
+</tr>
+<tr>
+<td>eventid</td>
+<td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
+<td>message event id.</td>
+</tr>
+</tbody></table>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="position-fixed">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#top">Top</a></li>
+<li><a href="#properties">Properties</a></li>
+<li><a href="#methods">Methods</a></li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>
