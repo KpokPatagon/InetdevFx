@@ -1,0 +1,404 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>IDataModel - Inetdev Framework Std</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Inetdev Framework Std</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../inetdev-data/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+<h1>IDataModel</h1>
+<p class="lead">Allows the implementation of domain model objects.</p>
+<h5><small>Namespace</small>: Inetdev.Data</h5>
+<h5><small>Type</small>: Interface</h5>
+<dl class="mt-4 row">
+    <dt class="col-3">Public:</dt>
+    <dd class="col-9">Yes</dd>
+    <dt class="col-3">Protected:</dt>
+    <dd class="col-9">No</dd>
+    <dt class="col-3">Sealed:</dt>
+    <dd class="col-9">No</dd>
+    <dt class="col-3">Abstract:</dt>
+    <dd class="col-9">Yes</dd>
+</dl>
+<h2 id="events" class="mt-5">Events</h2>
+<table class="table"><tbody>
+<tr>
+    <td><a href="../../inetdev-data/inetdev-data/inetdev-data-aftereraseeventhandler.html">AfterEraseEventHandler</a></td>
+    <td><strong>AfterErase</strong></td>
+    <td><span class="text-info" title="Inetdev.Data.IDataModel.AfterErase">AfterErase</span> event is fired after that the <b>Erase</b> method is executed.</td>
+</tr>
+<tr>
+    <td><a href="../../inetdev-data/inetdev-data/inetdev-data-aftersaveeventhandler.html">AfterSaveEventHandler</a></td>
+    <td><strong>AfterSave</strong></td>
+    <td><span class="text-info" title="Inetdev.Data.IDataModel.AfterSave">AfterSave</span> event is fired after that the <b>Save</b> method is executed.</td>
+</tr>
+<tr>
+    <td><a href="../../inetdev-data/inetdev-data/inetdev-data-beforeeraseeventhandler.html">BeforeEraseEventHandler</a></td>
+    <td><strong>BeforeErase</strong></td>
+    <td><span class="text-info" title="Inetdev.Data.IDataModel.BeforeErase">BeforeErase</span> event is fired before that the <b>Erase</b> method is executed.</td>
+</tr>
+<tr>
+    <td><a href="../../inetdev-data/inetdev-data/inetdev-data-beforesaveeventhandler.html">BeforeSaveEventHandler</a></td>
+    <td><strong>BeforeSave</strong></td>
+    <td><span class="text-info" title="Inetdev.Data.IDataModel.BeforeSave">BeforeSave</span> event is fired before that the <b>Save</b> method is executed.</td>
+</tr>
+</tbody></table>
+<h2 id="properties" class="mt-5">Properties</h2>
+<hr/>
+<p class="lead text-info">ColumnPropertyMappings</p>
+<p>Column/property map.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-columnpropertymappings.html">ColumnPropertyMappings</a> ColumnPropertyMappings { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">CurrentAction</p>
+<p>Gets the <a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a> that is currently performed on this object.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a> CurrentAction { get; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">DataProperties</p>
+<p>A collection of data properties.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IDictionary{System.String,Inetdev.Data.IDataProperty}">IDictionary&lt;String, <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>&gt;</span> DataProperties { get; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">DataServices</p>
+<p>Get or set the data services object.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idataservices.html">IDataServices</a> DataServices { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">EnforceModelValidation</p>
+<p>Get whether the validation of the object must be enforced.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> EnforceModelValidation { get; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Identity</p>
+<p>Get or set an object that manages the generation of identity fields values.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-iidentity.html">IIdentity</a> Identity { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Item</p>
+<p>Get or set data properties.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> Item { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Modified</p>
+<p>Get whether the object has been modified.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Modified { get; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Numerator</p>
+<p>Get or set an object that manages the generation of numerator fields values.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-inumerator.html">INumerator</a> Numerator { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Sequencer</p>
+<p>Get or set an object that manages the generation of sequence fields values.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-isequencer.html">ISequencer</a> Sequencer { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Validator</p>
+<p>Get or set the data validator object.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodelvalidator.html">IDataModelValidator</a> Validator { get; set; }</code></dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<hr/>
+<p class="lead text-info">Clear</p>
+<p>Clears the contents of the object.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Clear()</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Erase</p>
+<p>Erases an object by issuing a delete command to the underlaying data source,
+            automatically applying concurrency check when possible.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Erase()</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Erase</p>
+<p>Erases an object by issuing a delete command to the underlaying data source.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Erase(concurrency)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>concurrency</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
+<td>Mode of concurrency to apply to the erase action.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">EraseAsync</p>
+<p>Erases an object by issuing a delete command to the underlaying data source,
+            automatically applying concurrency check when possible.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> EraseAsync()</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">EraseAsync</p>
+<p>Erases an object by issuing a delete command to the underlaying data source.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> EraseAsync(concurrency)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>concurrency</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
+<td>Mode of concurrency to apply to the erase action.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">Fill</p>
+<p>Fill this object with the contents of the specified DataRow object.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Fill(row)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>row</td>
+<td><span class="text-info" title="System.Data.DataRow">DataRow</span></td>
+<td>The DataRow object.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetDataPropertyValue</p>
+<p>Returns the value of the internal property field.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetDataPropertyValue(property)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>The value of the property field.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>property</td>
+<td><span class="text-info" title="System.String">String</span></td>
+<td>The property to get it's internal value.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">HasData</p>
+<p>Test if a data property has data.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> HasData(property)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>True if the property has data.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>property</td>
+<td><span class="text-info" title="System.String">String</span></td>
+<td>The name of the property.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">IsModified</p>
+<p>Test if a data property has been modified.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsModified(property)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>True if the property has been modified.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>property</td>
+<td><span class="text-info" title="System.String">String</span></td>
+<td>The name of the property.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">Save</p>
+<p>Saves the object by issuing an insert or update command based on the specified action,
+            automatically applying concurrency check when possible.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Save(action)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>action</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
+<td>The action to execute.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">Save</p>
+<p>Saves the object by issuing an insert or update command based on the specified action.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Save(action, concurrency)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>action</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
+<td>The action to execute.</td>
+</tr>
+<tr>
+<td>concurrency</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
+<td>Concurrency mode to apply.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">SaveAsync</p>
+<p>Saves the object by issuing an insert or update command based on the specified action,
+            automatically applying concurrency check when possible.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> SaveAsync(action)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>action</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
+<td>The action to execute.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">SaveAsync</p>
+<p>Saves the object by issuing an insert or update command based on the specified action.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> SaveAsync(action, concurrency)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>action</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
+<td>The action to execute.</td>
+</tr>
+<tr>
+<td>concurrency</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
+<td>Concurrency mode to apply.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">SetDataPropertyValue</p>
+<p>Sets the value od the internal property field.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SetDataPropertyValue(property, value)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>property</td>
+<td><span class="text-info" title="System.String">String</span></td>
+<td>The property to set it's internal value.</td>
+</tr>
+<tr>
+<td>value</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>The new value for the property.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">Validate</p>
+<p>Validates this object.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Validate()</code></dd>
+</dl>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="position-fixed">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#top">Top</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#properties">Properties</a></li>
+<li><a href="#methods">Methods</a></li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>

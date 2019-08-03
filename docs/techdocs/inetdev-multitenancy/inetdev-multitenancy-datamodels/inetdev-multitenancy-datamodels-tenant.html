@@ -1,0 +1,422 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Tenant - Inetdev Framework Std</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Inetdev Framework Std</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../inetdev-multitenancy/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+<h1>Tenant</h1>
+<p class="lead"><strong>Tenant</strong> implements a data model for tenants information.</p>
+<h5><small>Namespace</small>: Inetdev.Multitenancy.DataModels</h5>
+<h5><small>Type</small>: Class</h5>
+<dl class="mt-4 row">
+    <dt class="col-3">Public:</dt>
+    <dd class="col-9">Yes</dd>
+    <dt class="col-3">Protected:</dt>
+    <dd class="col-9">No</dd>
+    <dt class="col-3">Sealed:</dt>
+    <dd class="col-9">No</dd>
+    <dt class="col-3">Abstract:</dt>
+    <dd class="col-9">No</dd>
+<dt class="col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">Inetdev.Data.DataModel</dd>
+<dt class="col-sm-3">Implements:</dt>
+<dd class="col-sm-9">System.IEquatable{Inetdev.Multitenancy.DataModels.Tenant}, Inetdev.Multitenancy.ITenant, Inetdev.Data.IIdentifiable</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<hr/>
+<p class="lead text-info">Tenant</p>
+<p>Default constructor</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Tenant()</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Tenant</p>
+<p>Initializes a new instance of <strong>Tenant</strong>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Tenant(id)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><span class="text-info" title="System.Int32">Int32</span></td>
+<td>Tenant Id.</td>
+</tr>
+</tbody></table>
+<h2 id="properties" class="mt-5">Properties</h2>
+<hr/>
+<p class="lead text-info">Culture</p>
+<p>Culture name.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Culture { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">DatabaseName</p>
+<p>The name of the database that this tenant use.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> DatabaseName { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">DatabasePassword</p>
+<p>Database password.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> DatabasePassword { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">DatabaseServer</p>
+<p>The database server.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-multitenancy/inetdev-multitenancy-datamodels/inetdev-multitenancy-datamodels-databaseserver.html">DatabaseServer</a> DatabaseServer { get; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">DatabaseServerId</p>
+<p>Database server ID.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> DatabaseServerId { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">DatabaseUserName</p>
+<p>Database user name.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> DatabaseUserName { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">DisplayName</p>
+<p>Display name of this tenant.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> DisplayName { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Email</p>
+<p>Primary tenant's e-mail.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Email { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">EnforceModelValidation</p>
+<p>Gets whether the model validation must be enforced.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> EnforceModelValidation { get; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Id</p>
+<p>Tenant Id.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Id { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Identification</p>
+<p>Object identification.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-identification.html">Identification</a> Identification { get; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">MailFromAddress</p>
+<p>Address from which mails are sent.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> MailFromAddress { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">MailFromName</p>
+<p>Display name for sending address.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> MailFromName { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">MailServer</p>
+<p>The mail server.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-multitenancy/inetdev-multitenancy-datamodels/inetdev-multitenancy-datamodels-mailserver.html">MailServer</a> MailServer { get; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">MailServerId</p>
+<p>Mail server ID.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> MailServerId { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Name</p>
+<p>The name or code of the tenant.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Protocol</p>
+<p>Protocol that identify this object.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Protocol { get; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">ProtocolCaption</p>
+<p>Localized caption for this object.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ProtocolCaption { get; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">ProvisionState</p>
+<p>State of tenant provisioning.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-provisionstate.html">ProvisionState</a> ProvisionState { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">SubscriptionState</p>
+<p>State of tenant subscription</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-subscriptionstate.html">SubscriptionState</a> SubscriptionState { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">SubscriptionStateComment</p>
+<p>A comment about the subscription state.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SubscriptionStateComment { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">TrialDurationInDays</p>
+<p>Trial duration in days.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.Int32}">Nullable&lt;Int32&gt;</span> TrialDurationInDays { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">TrialEndsUtc</p>
+<p>Date and time that the trial period ends or ended.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.DateTime">DateTime</span> TrialEndsUtc { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">TrialStartedUtc</p>
+<p>Date and time that the trial period has started.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.DateTime">DateTime</span> TrialStartedUtc { get; set; }</code></dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<hr/>
+<p class="lead text-info">Equals</p>
+<p>Indicates whether the current object is equal to another object of the same type.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(other)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>other</td>
+<td><strong>Tenant</strong></td>
+<td>The object to compare this object to.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">Equals</p>
+<p>Indicates whether the current object is equal to the <strong class="text-info">obj</strong> object.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(obj)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>obj</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>The object to compare this object to.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetHashCode</p>
+<p>Serves as the default hash function.
+            <remarks>Not required, implemented to avoid compiler warning.</remarks></p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> GetHashCode()</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">GetObject</p>
+<p>Loads an instance of the Tenant identified by <strong class="text-info">identification</strong>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(identification)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>identification</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-identification.html">Identification</a></td>
+<td>Tenant identification.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">identification</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.FrameworkException"><a href="../../inetdev/inetdev/inetdev-frameworkexception.html">FrameworkException</a></span></td>
+<td>Thrown when the protocol does not match.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetObjectAsync</p>
+<p>Loads an instance of the Tenant identified by <strong class="text-info">identification</strong>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Object}">Task&lt;Object&gt;</span> GetObjectAsync(identification)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>identification</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-identification.html">Identification</a></td>
+<td>Tenant identification.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">identification</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.FrameworkException"><a href="../../inetdev/inetdev/inetdev-frameworkexception.html">FrameworkException</a></span></td>
+<td>Thrown when the protocol does not match.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">Load</p>
+<p>Initializes a new instance of <strong>Tenant</strong> and 
+            loads it data from the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <strong>Tenant</strong> Load(id)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><span class="text-info" title="System.Int32">Int32</span></td>
+<td>Object Id.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">LoadAsync</p>
+<p>Initializes a new instance of <strong>Tenant</strong> and 
+            loads it data from the underlaying repository asyncronously.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Multitenancy.DataModels.Tenant}">Task&lt;<strong>Tenant</strong>&gt;</span> LoadAsync(id)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><span class="text-info" title="System.Int32">Int32</span></td>
+<td>The identification of the object.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">ToString</p>
+<p>Returns a textual representation of the <strong>Tenant</strong>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Validate</p>
+<p>Checks whether the object is valid for saving.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Validate()</code></dd>
+</dl>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+<td>Thrown when the object is not valid.</td>
+</tr>
+</tbody></table>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="position-fixed">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#top">Top</a></li>
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li><a href="#methods">Methods</a></li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>

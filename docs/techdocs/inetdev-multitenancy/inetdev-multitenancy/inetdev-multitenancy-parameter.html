@@ -1,0 +1,218 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Parameter - Inetdev Framework Std</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Inetdev Framework Std</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../inetdev-multitenancy/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+<h1>Parameter</h1>
+<p class="lead">The <strong>Parameter</strong> domain object model.</p>
+<h5><small>Namespace</small>: Inetdev.Multitenancy</h5>
+<h5><small>Type</small>: Class</h5>
+<dl class="mt-4 row">
+    <dt class="col-3">Public:</dt>
+    <dd class="col-9">Yes</dd>
+    <dt class="col-3">Protected:</dt>
+    <dd class="col-9">No</dd>
+    <dt class="col-3">Sealed:</dt>
+    <dd class="col-9">No</dd>
+    <dt class="col-3">Abstract:</dt>
+    <dd class="col-9">No</dd>
+<dt class="col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">Inetdev.Data.DataModel</dd>
+<dt class="col-sm-3">Implements:</dt>
+<dd class="col-sm-9">System.IEquatable{Inetdev.Multitenancy.Parameter}</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<hr/>
+<p class="lead text-info">Parameter</p>
+<p>Default constructor</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Parameter()</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Parameter</p>
+<p>Initializes a new instance of <strong>Parameter</strong>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Parameter(tenantId, id)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>tenantId</td>
+<td><span class="text-info" title="System.Int32">Int32</span></td>
+<td>Tenant Id.</td>
+</tr>
+<tr>
+<td>id</td>
+<td><span class="text-info" title="System.String">String</span></td>
+<td>Parameter Id.</td>
+</tr>
+</tbody></table>
+<h2 id="properties" class="mt-5">Properties</h2>
+<hr/>
+<p class="lead text-info">EnforceModelValidation</p>
+<p>Whether model validation must be enforced.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> EnforceModelValidation { get; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Id</p>
+<p>Object Id.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Id { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">TenantId</p>
+<p>Tenant Id.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> TenantId { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Value</p>
+<p>A text representation of the parameter value.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Value { get; set; }</code></dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<hr/>
+<p class="lead text-info">Equals</p>
+<p>Checks if <strong class="text-info">other</strong> is equals to this object.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(other)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>other</td>
+<td><strong>Parameter</strong></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">Equals</p>
+<p>Checks if <strong class="text-info">obj</strong> is equals to this object.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(obj)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>obj</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>An object to compare with this object.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetHashCode</p>
+<p>Not required, implemented to avoid warnings, returns base.GetHasCode().</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> GetHashCode()</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Load</p>
+<p>Initializes a new instance of <strong>Parameter</strong> by loading the data from the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <strong>Parameter</strong> Load(partitionKey, id)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>partitionKey</td>
+<td><span class="text-info" title="System.Int32">Int32</span></td>
+<td>Tenant Id.</td>
+</tr>
+<tr>
+<td>id</td>
+<td><span class="text-info" title="System.String">String</span></td>
+<td>Parameter Id.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">LoadAsync</p>
+<p>Initializes a new instance of <strong>Parameter</strong> by loading the data from the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Multitenancy.Parameter}">Task&lt;<strong>Parameter</strong>&gt;</span> LoadAsync(partitionKey, id)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>partitionKey</td>
+<td><span class="text-info" title="System.Int32">Int32</span></td>
+<td>Tenant Id.</td>
+</tr>
+<tr>
+<td>id</td>
+<td><span class="text-info" title="System.String">String</span></td>
+<td>Parameter Id.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">ToString</p>
+<p>Returns a textual representation of this <strong>Parameter</strong>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+</dl>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="position-fixed">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#top">Top</a></li>
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li><a href="#methods">Methods</a></li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>

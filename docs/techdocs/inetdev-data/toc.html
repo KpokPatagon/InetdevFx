@@ -1,0 +1,928 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Inetdev.Data - Inetdev Framework Std</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Inetdev Framework Std</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html">Index</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+<h1 id="top">Inetdev.Data</h1>
+<hr />
+<p class="lead">Assembly</p>
+<dl class="mt-4 row">
+    <dt class="col-3">Version:</dt>
+    <dd class="col-9">1.12.0.0</dd>
+    <dt class="col-3">Product version:</dt>
+    <dd class="col-9">1.12.0-InetdevFx-CI-AutoDocs_master_20190803.5</dd>
+    <dt class="col-3">Product:</dt>
+    <dd class="col-9">Inetdev Framework Std</dd>
+    <dt class="col-3">Culture:</dt>
+    <dd class="col-9">neutral</dd>
+    <dt class="col-3">Public key token:</dt>
+    <dd class="col-9">856a2402e38a9992</dd>
+</dl>
+<h2 class="mt-5">Namespaces (6)</h2>
+<h3 id="inetdev-data" class="mt-5">Inetdev.Data</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-abstractdbaccess.html">AbstractDbAccess</a></td>
+<td>Abstract base class for implementator of IDbAccess</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-abstractdbcmdbuilder.html">AbstractDbCmdBuilder</a></td>
+<td>Abstract base class implementation of <a href="../../inetdev-data/inetdev-data/inetdev-data-idbcmdbuilder.html">IDbCmdBuilder</a>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-abstractdbformatter.html">AbstractDbFormatter</a></td>
+<td>Generic base class that implements IDbFormatter</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-abstractdbnamequalifier.html">AbstractDbNameQualifier</a></td>
+<td><strong>AbstractDbNameQualifier</strong> is the base class for those classes
+            that provides the functionality of construct full qualified names for
+            database objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-aftereraseeventhandler.html">AfterEraseEventHandler</a></td>
+<td>The <b>AfterErase</b> event handler delegate.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-aftersaveeventhandler.html">AfterSaveEventHandler</a></td>
+<td>The <b>AfterSave</b> event handler delegate.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-applicationcontextextensions.html">ApplicationContextExtensions</a></td>
+<td>Extends the application context.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></td>
+<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-automatictype.html">AutomaticType</a></td>
+<td>Application supported automatic field types</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-beforeeraseeventhandler.html">BeforeEraseEventHandler</a></td>
+<td>The <b>BeforeErase</b> event handler delegate.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-beforesaveeventhandler.html">BeforeSaveEventHandler</a></td>
+<td>The <b>BeforeSave</b> event handler delegate.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-binaryattachment.html">BinaryAttachment</a></td>
+<td>Allows the storing of files into a database.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-binaryattachmentformatexception.html">BinaryAttachmentFormatException</a></td>
+<td>Thrown when a byte array could not be deserialized into a BinaryAttachment.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-catalognotfoundexception.html">CatalogNotFoundException</a></td>
+<td>Thrown when the database catalog is not found.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-columnpropertymappings.html">ColumnPropertyMappings</a></td>
+<td>A collection that maps database column names to data model object property names.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-commonextensions.html">CommonExtensions</a></td>
+<td>Provides commonly used extensions.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-comparisonoperator.html">ComparisonOperator</a></td>
+<td>Data comparison operators.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></td>
+<td>Thrown when a UPDATE or DELETE does not affect the expected record
+            because the concurrency WHERE predicate did not match.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
+<td>The mode for checking concurrency.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-constraintviolationexception.html">ConstraintViolationException</a></td>
+<td>Thrown the a database constraint is violated by a data modification command.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-credentialsexpiredexception.html">CredentialsExpiredException</a></td>
+<td>Thrown when the password of the database connection user has expired.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-dataaccessexception.html">DataAccessException</a></td>
+<td>Thrown when an error occurred and the system is not able to identify it accuratly.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
+<td>Enumerates the available data actions to be execute on data model objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-databaseobjectnotfoundexception.html">DatabaseObjectNotFoundException</a></td>
+<td>Thrown when a database object as a table, view, field, etc. specified in a SQL query does not exist.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-databaseoperationnotsupportedexception.html">DatabaseOperationNotSupportedException</a></td>
+<td>Thrown when a database operation is not supported.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-datamodel.html">DataModel</a></td>
+<td><strong>DataModel</strong> is an abstract base class for data model objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-datamodelcmdbuilder.html">DataModelCmdBuilder</a></td>
+<td><strong>DataModelCmdBuilder</strong> is an abstract base class for
+            those that implements the functionality of building database commands
+            based on domain data objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-datamodeleraseeventargs.html">DataModelEraseEventArgs</a></td>
+<td><strong>DataModelEraseEventArgs</strong> contains event data for events related to the <b>Erase</b> method.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-datamodelhelper.html">DataModelHelper</a></td>
+<td>Provides helper methods to work with data models.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-datamodelsaveeventargs.html">DataModelSaveEventArgs</a></td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-datamodeleraseeventargs.html">DataModelEraseEventArgs</a> contains event data for events related to the <b>Save</b> method.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-dataproperty.html">DataProperty</a></td>
+<td><strong>DataProperty</strong> implements <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a> as
+            an <b>Attribute</b>, and it's the base class for those that 
+            implements specific data property functionality.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></td>
+<td>This exception is thrown when the data model object passed
+            to an operation is not valid or supported for that operation.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-dataservices.html">DataServices</a></td>
+<td>This is the base clase for DataService classes that implements <a href="../../inetdev-data/inetdev-data/inetdev-data-idataservices.html">IDataServices</a>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-dberror.html">DbError</a></td>
+<td>Represents an error or informational message from a database engine.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-dbtype.html">DbType</a></td>
+<td>Application supported data types</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-decimaldataproperty.html">DecimalDataProperty</a></td>
+<td><strong>DecimalDataProperty</strong> implements a data property
+            attribute for a decimal data property.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-defaultstringtodbtypeconverter.html">DefaultStringToDbTypeConverter</a></td>
+<td>Implements a defautl conversión of string to a type.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-duplicatedprimarykeyexception.html">DuplicatedPrimaryKeyException</a></td>
+<td><strong>DuplicatedPrimaryKeyException</strong> is thrown when a data modification
+            command violates a primary key or unique index constraint.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-emailtextdataproperty.html">EmailTextDataProperty</a></td>
+<td><strong>EmailTextDataProperty</strong> implements a data property
+            attribute for a text data property that validates as an email.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-field.html">Field</a></td>
+<td>Represents the definition of a table field.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-fieldnotfoundexception.html">FieldNotFoundException</a></td>
+<td>Thrown when no <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> is found for a data model property.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-floatdataproperty.html">FloatDataProperty</a></td>
+<td><strong>FloatDataProperty</strong> implements a data property attribute for a float data property.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-genericdataproperty.html">GenericDataProperty</a></td>
+<td><strong>GenericDataProperty</strong> implements an attribute for a generic data property.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-guididentity.html">GuidIdentity</a></td>
+<td><strong>GuidIdentity</strong> generates a Guid identity field data.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-iattachment.html">IAttachment</a></td>
+<td>Allows the implementation of wrappers for store files into database fields.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-iconnectionstringbuilder.html">IConnectionStringBuilder</a></td>
+<td>Allows the implementation of classes that builds connection strings.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>Allows the implementation of domain model objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-idatamodelauditor.html">IDataModelAuditor</a></td>
+<td>Allows implementing classes to log data modifications.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-idatamodelcmdbuilder.html">IDataModelCmdBuilder</a></td>
+<td>Allows the implementation of database command builders that are based of data model objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-idatamodelvalidator.html">IDataModelValidator</a></td>
+<td>Allows the validation of data model objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a></td>
+<td>Allows the implementation of classes that defines data properties.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-idataservices.html">IDataServices</a></td>
+<td>Allows implementation data services for domain models.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a></td>
+<td>Allows the implementation of database access.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-idbcmdbuilder.html">IDbCmdBuilder</a></td>
+<td>Allows the implementation of Command Builders for specific database engine.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-idbformatter.html">IDbFormatter</a></td>
+<td>Allows implementers to provide SQL queries formatting capabilities.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-idbnamequalifier.html">IDbNameQualifier</a></td>
+<td>Allows the implementation of qualifiers that provides full database object names.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-idbstatementpreparer.html">IDbStatementPreparer</a></td>
+<td>Allows the implementation of classes that prepares statements to be issued to database engines.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-identification.html">Identification</a></td>
+<td><strong>Identification</strong> models the information for identify an object.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-idescriptivedatamodel.html">IDescriptiveDataModel</a></td>
+<td>Allows the implementation of a descriptive object. A descriptive object is
+            an object that has a code or ID and a name or description, used to typify
+            another object or objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-iidentifiable.html">IIdentifiable</a></td>
+<td>Allows the implementation of classes that can be identified in a consistent manner from other classes.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-iidentity.html">IIdentity</a></td>
+<td>Allows the implementation of Identity generation.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-infomessageeventargs.html">InfoMessageEventArgs</a></td>
+<td>Provides data for the Inetdev.Data.IDbAccess.InfoMessage event.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-infomessageeventhandler.html">InfoMessageEventHandler</a></td>
+<td>Represents the method that will be handle the Inetdev.Data.IDbAccess.InfoMessage event.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-integerdataproperty.html">IntegerDataProperty</a></td>
+<td><strong>IntegerDataProperty</strong> implements a data property
+            attribute for an integer data property.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-inumerator.html">INumerator</a></td>
+<td>Allows the implementation of numerators.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-invalidcharactersexception.html">InvalidCharactersException</a></td>
+<td>hrown when invalid characters has been detected for a text property.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-invalidcredentialsexception.html">InvalidCredentialsException</a></td>
+<td>Thrown when the credentials for the database server are invalid.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-invaliddataactionexception.html">InvalidDataActionException</a></td>
+<td>Thrown when the DataAction is not valid for the executed operation.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-invalidemailexception.html">InvalidEmailException</a></td>
+<td>Thrown when an e-mail property does not contains a valid e-mail address.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-invalidnumericlengthexception.html">InvalidNumericLengthException</a></td>
+<td>Thrown when a numeric value does not conform to the maximum length of integers and decimals digits.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-invalidprimarykeyexception.html">InvalidPrimaryKeyException</a></td>
+<td>Thrown when a primary key property contains invalid data.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-invalidtextlengthexception.html">InvalidTextLengthException</a></td>
+<td>Thrown when  a text property has an invalid length of characters.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-isecureddatamodel.html">ISecuredDataModel</a></td>
+<td>Allows the implementation of data model that can be securely audited.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-isequencer.html">ISequencer</a></td>
+<td>Allows the implementation of sequencers.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-istringtodbtypeconverter.html">IStringToDbTypeConverter</a></td>
+<td>Allows the convertion of string to a specified data type.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-missingmandatorypropertyexception.html">MissingMandatoryPropertyException</a></td>
+<td>Thrown  when a mandatory property is missing.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-missingwhereclauseexception.html">MissingWhereClauseException</a></td>
+<td>Thrown when no  where clause is provided for and update or delete command.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-notfoundexception.html">NotFoundException</a></td>
+<td>This is a base class for throwing not found exceptions.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-openconnectionexception.html">OpenConnectionException</a></td>
+<td>Thrown when an error occured while opening a database connection.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-openedconnectionrequiredexception.html">OpenedConnectionRequiredException</a></td>
+<td>Thrown when an opened connection if required for the operation and the connection is closed.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-parentnavigationalpropertyattribute.html">ParentNavigationalPropertyAttribute</a></td>
+<td>Allows to mark a property that will contains the parent object.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-primarykeytextdataproperty.html">PrimaryKeyTextDataProperty</a></td>
+<td><strong>PrimaryKeyTextDataProperty</strong> implements a data property 
+            attribute for a text data property that validates as a primary key.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-propertyfieldnotfoundexception.html">PropertyFieldNotFoundException</a></td>
+<td>Thrown when a property backing field is not found.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-propertyoutofrangeexception.html">PropertyOutOfRangeException</a></td>
+<td>Thrown when a numeric property is out of range.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-protectiontype.html">ProtectionType</a></td>
+<td>Types of protections applied to data properties</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-querybuilderexception.html">QueryBuilderException</a></td>
+<td>Generic query building exception</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-relationaloperator.html">RelationalOperator</a></td>
+<td>Represents a relation between predicates.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+<td>This is the base class for exceptions that reports error while manipulatind tha database schema.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-serverunavailableexception.html">ServerUnavailableException</a></td>
+<td>Thrown when the database server is not available.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-textdataproperty.html">TextDataProperty</a></td>
+<td><strong>TextDataProperty</strong> implements a data property 
+            attribute for a text data property.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-textguididentity.html">TextGuidIdentity</a></td>
+<td><strong>TextGuidIdentity</strong> generates a Guid identity field data as a string.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-timestampkind.html">TimestampKind</a></td>
+<td>Defines usable kinds of timestamp fields.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-transactionrequiredexception.html">TransactionRequiredException</a></td>
+<td>Thrown when there is no active transaction and one is required.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-unabletosetdatapropertyvalueexception.html">UnableToSetDataPropertyValueException</a></td>
+<td>Thrown when a property value cannot be setted.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-untrusteddatabaseservercertificateexception.html">UntrustedDatabaseServerCertificateException</a></td>
+<td>Thrown when open a connection using an encrypted channel and the server certificated is untrust.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data/inetdev-data-validationexception.html">ValidationException</a></td>
+<td>This is the base class for validation exception that are
+            thrown when data inside data model objects is invalid.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-data-dataannotations" class="mt-5">Inetdev.Data.DataAnnotations</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-data-dataannotations/inetdev-data-dataannotations-descriptivedatamodeldescriptor.html">DescriptiveDataModelDescriptor</a></td>
+<td>Models the information for building a dynamic user 
+            interface for <a href="../../inetdev-data/inetdev-data/inetdev-data-idescriptivedatamodel.html">IDescriptiveDataModel</a> types.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-dataannotations/inetdev-data-dataannotations-emailattribute.html">EmailAttribute</a></td>
+<td><strong>EmailAttribute</strong> is a validation attribute used to validate e-mail addresses.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-dataannotations/inetdev-data-dataannotations-textcontroldescriptor.html">TextControlDescriptor</a></td>
+<td>Models the information required for building a simple
+            text control into a user interface.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-data-databaseschema" class="mt-5">Inetdev.Data.DatabaseSchema</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-abstractviewbuilder.html">AbstractViewBuilder</a></td>
+<td>Implements the basic functionality of an <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-iviewbuilder.html">IViewBuilder</a>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-catalog.html">Catalog</a></td>
+<td>Models the information of a Catalog or Database.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
+<td>Models a column constraint.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraintcollection.html">ColumnConstraintCollection</a></td>
+<td>A collection of <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a>s.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-constrainttype.html">ConstraintType</a></td>
+<td>Types of constraint that can be apply to columns.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-databaseobjectduplicatedexception.html">DatabaseObjectDuplicatedException</a></td>
+<td>Thrown when a database object cannot be created because another with the same name exists.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-databaseobjectkindom.html">DatabaseObjectKindom</a></td>
+<td>Enumerates the kindom of database objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-direction.html">Direction</a></td>
+<td>Direction for key creation.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a></td>
+<td>Models a foreign key</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkeycollection.html">ForeignKeyCollection</a></td>
+<td>A collection of <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a>s.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkeycolumn.html">ForeignKeyColumn</a></td>
+<td>Models a foreign key column.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkeycolumncollection.html">ForeignKeyColumnCollection</a></td>
+<td>A collection of <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkeycolumn.html">ForeignKeyColumn</a>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-grant.html">Grant</a></td>
+<td>Models a grant statement to be executed.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
+<td>Models an index.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-indexcollection.html">IndexCollection</a></td>
+<td>A collection of <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a>es.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-indexcolumn.html">IndexColumn</a></td>
+<td>Models an index column.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-indexcolumncollection.html">IndexColumnCollection</a></td>
+<td>A collection of <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-indexcolumn.html">IndexColumn</a>s.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-indextype.html">IndexType</a></td>
+<td><strong>IndexType</strong> defines index types.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-ischemadiscoverer.html">ISchemaDiscoverer</a></td>
+<td>Allows the implementation of code that discover a database schema.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-ischemaprovisioner.html">ISchemaProvisioner</a></td>
+<td>Allows the implementation of a provisiones that provision schema objects for databases.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-itableconfiguration.html">ITableConfiguration</a></td>
+<td>Allows the implementation of classes that return the configuration
+            of a database <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-iviewbuilder.html">IViewBuilder</a></td>
+<td>Allows the implementation of database agnostinc builders that builds the text of a view.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-iviewconfiguration.html">IViewConfiguration</a></td>
+<td>Allows the implementation of components that provides configuration for creating views.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-permission.html">Permission</a></td>
+<td>Permissions that can be granted to database objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-referentialaction.html">ReferentialAction</a></td>
+<td><strong>ReferentialAction</strong> defines the referential actions for foreign keys.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-schema.html">Schema</a></td>
+<td>Models a database schema u owner.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-schemacollection.html">SchemaCollection</a></td>
+<td>A collection of <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-schema.html">Schema</a>s.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-sequence.html">Sequence</a></td>
+<td>Models a sequence configuration.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a></td>
+<td>Models a database table.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-tablecollection.html">TableCollection</a></td>
+<td>A collection of <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a>s.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+<td>Models the information of a table column.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumncollection.html">TableColumnCollection</a></td>
+<td>A collection of <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> items.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-tablename.html">TableName</a></td>
+<td>Models the name of a table or view.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-tableorviewnotfoundexception.html">TableOrViewNotFoundException</a></td>
+<td>Thrown when a table or view is not found.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a></td>
+<td>Models a database view.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-data-databaseschema-dsc" class="mt-5">Inetdev.Data.DatabaseSchema.DSC</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-aftertablemigrationeventhandler.html">AfterTableMigrationEventHandler</a></td>
+<td>Raised after the <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-ischemaprovisioner.html">ISchemaProvisioner</a> method has been executed.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-aftertableprocessmissresulteventhandler.html">AfterTableProcessMissResultEventHandler</a></td>
+<td>Reised after the process of a miss result.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-aftertableprocessmissresultseventhandler.html">AfterTableProcessMissResultsEventHandler</a></td>
+<td>Raised after the processing of all miss results.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-beforetablemigrationeventhandler.html">BeforeTableMigrationEventHandler</a></td>
+<td>Raised before the execution if the <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-ischemaprovisioner.html">ISchemaProvisioner</a> method that
+            executes the migration. This event can cancel the method execution.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-beforetableprocessmissresulteventhandler.html">BeforeTableProcessMissResultEventHandler</a></td>
+<td>Reised before the process of a miss result.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-beforetableprocessmissresultseventhandler.html">BeforeTableProcessMissResultsEventHandler</a></td>
+<td>Raised before the process of miss results.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-dependencynotfoundexception.html">DependencyNotFoundException</a></td>
+<td>Thrown when a dependency for an element is not found.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-dscexception.html">DSCException</a></td>
+<td>Base exception for schema DSC.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-itablecomparisonservice.html">ITableComparisonService</a></td>
+<td>Allows the implementation of a service that compares tables.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-migrationtype.html">MigrationType</a></td>
+<td>Defines the diferent types of migrations.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-missactionfor1.html">MissActionFor</a></td>
+<td>Models the action to be executed when a configuration item is missed.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-missactiontype.html">MissActionType</a></td>
+<td>Defines the type of action to execute when the configuration missed the desired.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-tablecomparisonmissresulttype.html">TableComparisonMissResultType</a></td>
+<td>Typification of a miss result of a table comparison.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-tablecomparisonresult.html">TableComparisonResult</a></td>
+<td>Models the result of a table configuration comparison.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-tablecomparisonservice.html">TableComparisonService</a></td>
+<td>Default implementation a service that compares <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a>s.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-tablemigrationeventargs.html">TableMigrationEventArgs</a></td>
+<td>Model information for migration events.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-tableprocessmissresulteventargs.html">TableProcessMissResultEventArgs</a></td>
+<td>Argument for the process of a miss result.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-tableprocessmissresultseventargs.html">TableProcessMissResultsEventArgs</a></td>
+<td>Arguments for events related to the entire process of miss results for tables.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-tableprocessor.html">TableProcessor</a></td>
+<td>Process the DSC for tables.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-validationresult.html">ValidationResult</a></td>
+<td>Represents the result of a validation process for DSC operations.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-data-filtering" class="mt-5">Inetdev.Data.Filtering</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-data-filtering/inetdev-data-filtering-invalidtermcolumnnameexception.html">InvalidTermColumnNameException</a></td>
+<td>Thrown when a <a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-term.html">Term</a> column does not exists within the <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a>s collection.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-filtering/inetdev-data-filtering-listing1.html">Listing</a></td>
+<td>Models the result of a filter operation used for list data on pages.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-filtering/inetdev-data-filtering-matchkind.html">MatchKind</a></td>
+<td>Term matching kind.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-filtering/inetdev-data-filtering-pageinfo.html">PageInfo</a></td>
+<td>Page information of a paged listing.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-filtering/inetdev-data-filtering-staticterm.html">StaticTerm</a></td>
+<td>A filter term that must always be applied while retriving data.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-filtering/inetdev-data-filtering-term.html">Term</a></td>
+<td>Filter term.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-filtering/inetdev-data-filtering-termoperator.html">TermOperator</a></td>
+<td>Operator for filtering data based on user terms.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-data-query" class="mt-5">Inetdev.Data.Query</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-addingselectcolumneventargs.html">AddingSelectColumnEventArgs</a></td>
+<td><strong>AddingSelectColumnEventArgs</strong> allows the processing of the event 
+            of adding columns to a SELECT statement.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-addingselectcolumneventhandler.html">AddingSelectColumnEventHandler</a></td>
+<td>The <b>AddingSelectColumnEventHandler</b> delegate.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-autonumericcolumn.html">AutonumericColumn</a></td>
+<td><strong>AutonumericColumn</strong> represents a column for an autonumeric field.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-basecmdbuilder.html">BaseCmdBuilder</a></td>
+<td><strong>BaseCmdBuilder</strong> implements the basic functionality for
+            command builders bases on <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a> objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-betweenpredicate.html">BetweenPredicate</a></td>
+<td>Represents a predicates for the BETWEEN SQL operator.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-coalescecolumn.html">CoalesceColumn</a></td>
+<td>Defines a column that is decorated with a coalesce function</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-column.html">Column</a></td>
+<td>Represents a column of a statement.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-constantcolumn.html">ConstantColumn</a></td>
+<td>Defines a constant column</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-convertcolumn.html">ConvertColumn</a></td>
+<td>Defines a decoration that converts one type into another</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-decoratedcolumn.html">DecoratedColumn</a></td>
+<td>Defines a column with a decoration option</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-decorationtype.html">DecorationType</a></td>
+<td>Decoration type that applies to select columns</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-deletestatement.html">DeleteStatement</a></td>
+<td><strong>DeleteStatement</strong> allows the construction of SQL DELETE statements.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-existspredicate.html">ExistsPredicate</a></td>
+<td>Represents a condition predicate for the EXISTS keyword.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-icmdbuilder.html">ICmdBuilder</a></td>
+<td><strong>ICmdBuilder</strong> allows implementation of command builders
+            base on <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a> objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-icolumn.html">IColumn</a></td>
+<td>Allows the definition of colum objects.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-insertcolumnnotsupportedexception.html">InsertColumnNotSupportedException</a></td>
+<td>Thrown when an insert column type is not supported.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-insertselectstatement.html">InsertSelectStatement</a></td>
+<td><strong>InsertSelectStatement</strong> allows the construction of INSERT/SELECT statements.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-insertstatement.html">InsertStatement</a></td>
+<td><strong>InsertStatement</strong> allows the construction of INSERT statement.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-invalidsimplepredicatevalueexception.html">InvalidSimplePredicateValueException</a></td>
+<td>Thrown when the value for a SimplePredicare is not of a valid type</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-modifier.html">Modifier</a></td>
+<td><strong>Modifier</strong> is the base class for <b>Modifier</b> classes.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-noselectcolumnsexception.html">NoSelectColumnsException</a></td>
+<td>Thrown when no select columns have been specified</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-nosetcolumnsexception.html">NoSetColumnsException</a></td>
+<td>Thrown when no SET columns where provided for an UPDATE statement.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-order.html">Order</a></td>
+<td>Models the information for ordering.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-ordercolumn.html">OrderColumn</a></td>
+<td>Represents a column for the ORDER BY clause.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-predicate.html">Predicate</a></td>
+<td>Abstract base class for classes that implement predicates</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-predicatecolumn.html">PredicateColumn</a></td>
+<td>A column to be used on predicates</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-relation.html">Relation</a></td>
+<td>Represents a relation between two data repositories</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-relationtype.html">RelationType</a></td>
+<td>Types of relations between tables or views</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-repository.html">Repository</a></td>
+<td><strong>Repository</strong> represents a data table or view.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-scopemodifier.html">ScopeModifier</a></td>
+<td>Represents a scope modifier for a SELECT clause.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-scopetype.html">ScopeType</a></td>
+<td>Define the scopes for diferentes query options</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-searchcondition.html">SearchCondition</a></td>
+<td>Represents a search condition for a WHERE or HAVING clause</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a></td>
+<td><strong>SelectStatement</strong> allows the construction of SQL SELECT statements.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-setcolumn.html">SetColumn</a></td>
+<td>Defines a set column for an update statement</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-simplepredicate.html">SimplePredicate</a></td>
+<td>Represents a simple predicate for a filter condition</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-sortdirection.html">SortDirection</a></td>
+<td>SQL order by clause order direction</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-statement.html">Statement</a></td>
+<td><strong>Statement</strong> is an abstract base class for all statement classes.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-statementnotsupportedexception.html">StatementNotSupportedException</a></td>
+<td>Thrown when a SqlBuilder is not supported and cannot be processed.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-topmodifier.html">TopModifier</a></td>
+<td>Represents a TOP modifier for a SELECT clause</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-truncatestatement.html">TruncateStatement</a></td>
+<td><strong>TruncateStatement</strong> allows the construction of SQL TRUNCATE statements.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-data-query/inetdev-data-query-updatestatement.html">UpdateStatement</a></td>
+<td><strong>UpdateStatement</strong> allows the construction of SQL UPDATE statements.</td>
+</tr>
+</tbody></table>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+                <div class="position-fixed">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#top">Top</a></li>
+<li><a href="#inetdev-data">Inetdev.Data</a></li>
+<li><a href="#inetdev-data-dataannotations">Inetdev.Data.DataAnnotations</a></li>
+<li><a href="#inetdev-data-databaseschema">Inetdev.Data.DatabaseSchema</a></li>
+<li><a href="#inetdev-data-databaseschema-dsc">Inetdev.Data.DatabaseSchema.DSC</a></li>
+<li><a href="#inetdev-data-filtering">Inetdev.Data.Filtering</a></li>
+<li><a href="#inetdev-data-query">Inetdev.Data.Query</a></li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>

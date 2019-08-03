@@ -1,0 +1,1492 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>MultitenantDataServices - Inetdev Framework Std</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Inetdev Framework Std</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../inetdev-multitenancy/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+<h1>MultitenantDataServices</h1>
+<p class="lead">Implements <a href="../../inetdev-data/inetdev-data/inetdev-data-idataservices.html">IDataServices</a> fro multi-tenant environments.</p>
+<h5><small>Namespace</small>: Inetdev.Multitenancy</h5>
+<h5><small>Type</small>: Class</h5>
+<dl class="mt-4 row">
+    <dt class="col-3">Public:</dt>
+    <dd class="col-9">Yes</dd>
+    <dt class="col-3">Protected:</dt>
+    <dd class="col-9">No</dd>
+    <dt class="col-3">Sealed:</dt>
+    <dd class="col-9">No</dd>
+    <dt class="col-3">Abstract:</dt>
+    <dd class="col-9">Yes</dd>
+<dt class="col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+<dt class="col-sm-3">Implements:</dt>
+<dd class="col-sm-9">Inetdev.Data.IDataServices</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<hr/>
+<p class="lead text-info">MultitenantDataServices</p>
+<p>Default constructor</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> MultitenantDataServices()</code></dd>
+</dl>
+<h2 id="properties" class="mt-5">Properties</h2>
+<hr/>
+<p class="lead text-info">Alias</p>
+<p>Alias of the table.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Alias { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">CommandBuilder</p>
+<p>Database engine command builder.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idbcmdbuilder.html">IDbCmdBuilder</a> CommandBuilder { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">DataAccessAPI</p>
+<p>Database engine API.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a> DataAccessAPI { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">DataModelAuditor</p>
+<p>Gets or set the service for modification auditing.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodelauditor.html">IDataModelAuditor</a> DataModelAuditor { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">DataModelCmdBuilder</p>
+<p>Database engine command builder for data model objects.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodelcmdbuilder.html">IDataModelCmdBuilder</a> DataModelCmdBuilder { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Fields</p>
+<p>A collection of fields that defines the table columns.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IDictionary{System.String,Inetdev.Data.Field}">IDictionary&lt;String, <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a>&gt;</span> Fields { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Schema</p>
+<p>Schema to which the table belongs to.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Schema { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">SequenceName</p>
+<p>Name of the sequence.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SequenceName { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">StringToDbTypeConverter</p>
+<p>Converts string to object of a specified <a href="../../inetdev-data/inetdev-data/inetdev-data-dbtype.html">DbType</a>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-istringtodbtypeconverter.html">IStringToDbTypeConverter</a> StringToDbTypeConverter { get; set; }</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">Table</p>
+<p>Database table name.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Table { get; set; }</code></dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<hr/>
+<p class="lead text-info">AppendFilterTerms</p>
+<p>Appends to the where clause all set terms.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AppendFilterTerms(statement, terms, match)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>statement</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a></td>
+<td>Statement to add terms.</td>
+</tr>
+<tr>
+<td>terms</td>
+<td><span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.Filtering.Term}">List&lt;<a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-term.html">Term</a>&gt;</span></td>
+<td>A collections of terms.</td>
+</tr>
+<tr>
+<td>match</td>
+<td><a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-matchkind.html">MatchKind</a></td>
+<td>How to match the terms.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">terms</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.Filtering.InvalidTermColumnNameException"><a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-invalidtermcolumnnameexception.html">InvalidTermColumnNameException</a></span></td>
+<td>Thrown when a term.Column name does not exists within the fields collection.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">AppendPartitionKeyPredicate</p>
+<p>Appends to <strong class="text-info">statement</strong> a predicate that equals <strong class="text-info">field</strong> to
+            the tenant Id obtained from the application context.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> AppendPartitionKeyPredicate(statement, field)</code></dd>
+</dl>
+<h5>Remarks</h5>
+<p>The predicate is appended only if it does not exists.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>statement</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a></td>
+<td>The <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a> to append the predicate to.</td>
+</tr>
+<tr>
+<td>field</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a></td>
+<td>A <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> to filter by.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">field</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when the partition key value is not found within the application context..</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">AppendPartitionKeyPredicate</p>
+<p>Appends to <strong class="text-info">statement</strong> a predicate that equals <strong class="text-info">field</strong>
+            to the specified <strong class="text-info">partitionKeyValue</strong>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> AppendPartitionKeyPredicate(statement, field, partitionKeyValue)</code></dd>
+</dl>
+<h5>Remarks</h5>
+<p>The predicate is appended only if it does not exists.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>statement</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a></td>
+<td>The <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a> to append the predicate to.</td>
+</tr>
+<tr>
+<td>field</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a></td>
+<td>A <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> to filter by.</td>
+</tr>
+<tr>
+<td>partitionKeyValue</td>
+<td><span class="text-info" title="System.Object">Object</span></td>
+<td>The actual value of the partition key.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">field</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">partitionKeyValue</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">AppendPartitionKeyPredicate</p>
+<p>Appends to <strong class="text-info">statement</strong> a predicate that equals the partition key field
+            to the partition key property of the model or to the partition key within the application
+            context if the the model property is <strong class="text-info">null</strong>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> AppendPartitionKeyPredicate(statement, model)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>statement</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a></td>
+<td>The <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a> to append the predicate to.</td>
+</tr>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when the partition key is missing.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
+<td>Thrown when the field that maps to the partition key property cannot be found.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">BuildModelList</p>
+<p>Builds a list of domain model objects of <typeparamref name="T" /> from the specified <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> BuildModelList&lt;T&gt;(statement)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A list of domain model objects.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>statement</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a></td>
+<td>The <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> to excecute.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown where <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">BuildModelList</p>
+<p>Builds a list of domain model objects of <typeparamref name="T" /> from the specified <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> BuildModelList&lt;T&gt;(statement, parent)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A list of domain model objects.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>statement</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a></td>
+<td>The <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> to excecute.</td>
+</tr>
+<tr>
+<td>parent</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>The parent object of the model being constructed.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown where <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">BuildModelListAsync</p>
+<p>Builds a list of domain model objects of <typeparamref name="T" /> from the specified <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{}}">Task&lt;IEnumerable&gt;</span> BuildModelListAsync&lt;T&gt;(statement)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A list of domain model objects.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>statement</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a></td>
+<td>The <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> to excecute.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown where <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">BuildModelListAsync</p>
+<p>Builds a list of domain model objects of <typeparamref name="T" /> from the specified <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{}}">Task&lt;IEnumerable&gt;</span> BuildModelListAsync&lt;T&gt;(statement, parent)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A list of domain model objects.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>statement</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a></td>
+<td>The <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> to excecute.</td>
+</tr>
+<tr>
+<td>parent</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>The parent object of the model being constructed.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown where <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">Delete</p>
+<p>Deletes a record from the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Delete(model, timestampKind, expectedTimestamp)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>Amount of records affected.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> to be deleted.</td>
+</tr>
+<tr>
+<td>timestampKind</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-timestampkind.html">TimestampKind</a></td>
+<td>Kind of timestamp to apply to the WHERE clause.</td>
+</tr>
+<tr>
+<td>expectedTimestamp</td>
+<td><span class="text-info" title="System.DateTime">DateTime</span></td>
+<td>Timestamp that is expected to be on the database.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the object is not correctly initialized.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
+<td>Thrown when no record was affected and a timestamp kind was specified.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">DeleteAsync</p>
+<p>Deletes a record from the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Int32}">Task&lt;Int32&gt;</span> DeleteAsync(model, timestampKind, expectedTimestamp)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>Amount of records affected.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> to be deleted.</td>
+</tr>
+<tr>
+<td>timestampKind</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-timestampkind.html">TimestampKind</a></td>
+<td>Kind of timestamp to apply to the WHERE clause.</td>
+</tr>
+<tr>
+<td>expectedTimestamp</td>
+<td><span class="text-info" title="System.DateTime">DateTime</span></td>
+<td>Timestamp that is expected to be on the database.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the object is not correctly initialized.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
+<td>Thrown when no record was affected and a timestamp kind was specified.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">EnsureModelConfiguration</p>
+<p>Ensures that <strong class="text-info">model</strong> is valid for multi-tenant operations.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> EnsureModelConfiguration(model)</code></dd>
+</dl>
+<h5>Remarks</h5>
+<p>This method checks if the model has a partition key property and if it
+                was modified, if not a partition key from the application context is 
+                assigned to the partition key property.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>A <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> to validate.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when the partition key is missing.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">EnsureObjectState</p>
+<p>Ensures that this object has a valid state.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> EnsureObjectState()</code></dd>
+</dl>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when a required property is not initialized.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetModel</p>
+<p>Gets a domain model object of <strong class="text-info">dataModelType</strong> looking for it's primary key.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> GetModel(dataModelType, model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>dataModelType</td>
+<td><span class="text-info" title="System.Type">Type</span></td>
+<td>The <span class="text-info" title="System.Type">Type</span> of the domain model object to retrieve.</td>
+</tr>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> holding the primary key to look for.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">dataModelType</strong> or <strong class="text-info">model</strong> are <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the this data service object was not properly initialized.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetModel</p>
+<p>Gets an <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> object of type <typeparamref name="T" /> looking
+            for it's primary key in the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title=""></span> GetModel&lt;T&gt;(model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>An model of <typeparamref name="T" /> or <strong class="text-info">null</strong> if not found.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><span class="text-info" title="T">T</span></td>
+<td>An instance of the model with the primary key to look for.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thown the <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when a required property is not initialized.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+<td>Thrown when the repository does not have a primary key column.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetModelAsync</p>
+<p>Gets a domain model object of <strong class="text-info">dataModelType</strong> looking for it's primary key.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Data.IDataModel}">Task&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> GetModelAsync(dataModelType, model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>dataModelType</td>
+<td><span class="text-info" title="System.Type">Type</span></td>
+<td>The <span class="text-info" title="System.Type">Type</span> of the domain model object to retrieve.</td>
+</tr>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> holding the primary key to look for.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">dataModelType</strong> or <strong class="text-info">model</strong> are <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the this data service object was not properly initialized.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetModelAsync</p>
+<p>Gets an <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> object of type <typeparamref name="T" /> looking
+            for it's primary key in the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{}">Task</span> GetModelAsync&lt;T&gt;(model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>An model of <typeparamref name="T" /> or <strong class="text-info">null</strong> if not found.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><span class="text-info" title="T">T</span></td>
+<td>An instance of the model with the primary key to look for.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thown the <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when a required property is not initialized.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+<td>Thrown when the repository does not have a primary key column.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetModelByIdentity</p>
+<p>Gets a domain model object of <strong class="text-info">dataModelType</strong> looking for it's identity property.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> GetModelByIdentity(dataModelType, model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>dataModelType</td>
+<td><span class="text-info" title="System.Type">Type</span></td>
+<td>The <span class="text-info" title="System.Type">Type</span> of the domain model object to retrieve.</td>
+</tr>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> holding the identity to look for.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">dataModelType</strong> or <strong class="text-info">model</strong> are <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the this data service object was not properly initialized.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetModelByIdentity</p>
+<p>Gets an <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> object of type <typeparamref name="T" /> looking
+            for it's identity in the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title=""></span> GetModelByIdentity&lt;T&gt;(model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>An model of <typeparamref name="T" /> or <strong class="text-info">null</strong> if not found.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><span class="text-info" title="T">T</span></td>
+<td>An instance of the model with the identity to look for.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thown the <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when a required property is not initialized.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+<td>Thrown when the repository does not have an Identity column.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetModelByIdentityAsync</p>
+<p>Gets a domain model object of <strong class="text-info">dataModelType</strong> looking for it's primary key.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Data.IDataModel}">Task&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> GetModelByIdentityAsync(dataModelType, model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>dataModelType</td>
+<td><span class="text-info" title="System.Type">Type</span></td>
+<td>The <span class="text-info" title="System.Type">Type</span> of the domain model object to retrieve.</td>
+</tr>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> holding the primary key to look for.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">dataModelType</strong> or <strong class="text-info">model</strong> are <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the this data service object was not properly initialized.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetModelByIdentityAsync</p>
+<p>Gets an <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> object of type <typeparamref name="T" /> looking
+            for it's identity in the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{}">Task</span> GetModelByIdentityAsync&lt;T&gt;(model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>An model of <typeparamref name="T" /> or <strong class="text-info">null</strong> if not found.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><span class="text-info" title="T">T</span></td>
+<td>An instance of the model with the identity to look for.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thown the <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when a required property is not initialized.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+<td>Thrown when the repository does not have an Identity column.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetModels</p>
+<p>Gets a collection of all objects from the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> GetModels&lt;T&gt;()</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A collection of models of <typeparamref name="T" />.</p>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
+<td>Thown when the partition key <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> cannot be found.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when the <b>PartitionKey</b> cannot be found.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when a required property is not initialized.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetModels</p>
+<p>Gets a collection of all objects from the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> GetModels&lt;T&gt;(order)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A collection of models of <typeparamref name="T" />.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>order</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a></td>
+<td>Specify how to order the records.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
+<td>Thown when the partition key <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> cannot be found.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when the <b>PartitionKey</b> cannot be found.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when a required property is not initialized.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetModelsAsync</p>
+<p>Gets a collection of all objects from the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{}}">Task&lt;IEnumerable&gt;</span> GetModelsAsync&lt;T&gt;()</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A collection of models of <typeparamref name="T" />.</p>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
+<td>Thown when the partition key <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> cannot be found.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when the <b>PartitionKey</b> cannot be found.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when a required property is not initialized.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetModelsAsync</p>
+<p>Gets a collection of all objects from the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{}}">Task&lt;IEnumerable&gt;</span> GetModelsAsync&lt;T&gt;(order)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A collection of models of <typeparamref name="T" />.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>order</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a></td>
+<td>Specify how to order the records.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
+<td>Thown when the partition key <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> cannot be found.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when the <b>PartitionKey</b> cannot be found.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when a required property is not initialized.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetPartitionKey</p>
+<p>Gets the current tenant Id from the application context.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Int32">Int32</span> GetPartitionKey()</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>The current tenant Id.</p>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when no tenant is found within the application context.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetPartitionKeyPropertyName</p>
+<p>Gets the name of the <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a> of <strong class="text-info">model</strong> that is marked with <a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-partitionkeyattribute.html">PartitionKeyAttribute</a>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.String">String</span> GetPartitionKeyPropertyName(model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>The name of the <b>PartitionKey</b><a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetRowByIdentityStatement</p>
+<p>Builds a <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> that retrives a record looking by identity
+            and filtering by the partition key.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> GetRowByIdentityStatement(model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> to execute.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> that holds the identity.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+<td>Thrown when the repository does not have an Identity column.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetRowByPrimaryKeyStatement</p>
+<p>Builds a <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> that retrives a record looking by primary key
+            and filtering by the partition key.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> GetRowByPrimaryKeyStatement(model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> to execute.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> that holds the primary key.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+<td>Thrown when the repository does not have a primary key column.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">GetTableStatement</p>
+<p>Builds a <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> that retrieves all records from the underlaying table.
+            Records are filtered for the multi-tenant partition key.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> GetTableStatement(model, order)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a>.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> with the partition key to filter the record.</td>
+</tr>
+<tr>
+<td>order</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a></td>
+<td>Specify how to order the records.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
+<td>Thown when the partition key <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> cannot be found.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">Insert</p>
+<p>Inserts a record into the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Insert(model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>Amount of records affected.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> to be inserted.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the object is not correctly initialized.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">InsertAsync</p>
+<p>Inserts a record into the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Int32}">Task&lt;Int32&gt;</span> InsertAsync(model)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>Amount of records affected.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> to be inserted.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the object is not correctly initialized.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">RunCountStatement</p>
+<p>Run a count statement and returns the count.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Int32">Int32</span> RunCountStatement(statement)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>statement</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a></td>
+<td>The statement to run.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown where <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">RunCountStatementAsync</p>
+<p>Run a count statement and returns the count.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Threading.Tasks.Task{System.Int32}">Task&lt;Int32&gt;</span> RunCountStatementAsync(statement)</code></dd>
+</dl>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>statement</td>
+<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a></td>
+<td>The statement to run.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown where <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">SanitizePageNumber</p>
+<p>Calculates the maximum page number and returns the specified <strong class="text-info">page</strong>
+            or the maximun page number if <strong class="text-info">page</strong> is not valid.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Int32">Int32</span> SanitizePageNumber(page, pageLength, totalItems)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>A sanitized page number.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>page</td>
+<td><span class="text-info" title="System.Int32">Int32</span></td>
+<td>Attempted page number.</td>
+</tr>
+<tr>
+<td>pageLength</td>
+<td><span class="text-info" title="System.Int32">Int32</span></td>
+<td>Page length.</td>
+</tr>
+<tr>
+<td>totalItems</td>
+<td><span class="text-info" title="System.Int32">Int32</span></td>
+<td>Total items.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">Update</p>
+<p>Updates a record on the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Update(model, timestampKind, expectedTimestamp)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>Amount of records affected.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> to be updated.</td>
+</tr>
+<tr>
+<td>timestampKind</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-timestampkind.html">TimestampKind</a></td>
+<td>Kind of timestamp to apply to the WHERE clause.</td>
+</tr>
+<tr>
+<td>expectedTimestamp</td>
+<td><span class="text-info" title="System.DateTime">DateTime</span></td>
+<td>Timestamp that is expected to be on the database.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the object is not correctly initialized.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
+<td>Thrown when no record was affected and a timestamp kind was specified.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+</tr>
+</tbody></table>
+<hr/>
+<p class="lead text-info">UpdateAsync</p>
+<p>Updates a record on the underlaying repository.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Int32}">Task&lt;Int32&gt;</span> UpdateAsync(model, timestampKind, expectedTimestamp)</code></dd>
+</dl>
+<h5>Returns</h5>
+<p>Amount of records affected.</p>
+<h5>Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>model</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+<td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> to be updated.</td>
+</tr>
+<tr>
+<td>timestampKind</td>
+<td><a href="../../inetdev-data/inetdev-data/inetdev-data-timestampkind.html">TimestampKind</a></td>
+<td>Kind of timestamp to apply to the WHERE clause.</td>
+</tr>
+<tr>
+<td>expectedTimestamp</td>
+<td><span class="text-info" title="System.DateTime">DateTime</span></td>
+<td>Timestamp that is expected to be on the database.</td>
+</tr>
+</tbody></table>
+<h5>Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the object is not correctly initialized.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+<td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
+<td>Thrown when no record was affected and a timestamp kind was specified.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+</tr>
+</tbody></table>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="position-fixed">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#top">Top</a></li>
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li><a href="#methods">Methods</a></li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>
