@@ -114,7 +114,7 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddParameter(command, name, type, direction, size, value)</code></dd>
 </dl>
-<h5>Parameters</h5>
+<h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -149,7 +149,7 @@
 <td>Parameter value.</td>
 </tr>
 </tbody></table>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -165,9 +165,9 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbTransaction">IDbTransaction</span> BeginTransaction()</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>An object representing the new transaction.</p>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -183,9 +183,9 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbTransaction">IDbTransaction</span> BeginTransaction(iso)</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>An object representing the new transaction.</p>
-<h5>Parameters</h5>
+<h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -195,7 +195,7 @@
 <td>Isolation level for the transaction.</td>
 </tr>
 </tbody></table>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -225,9 +225,9 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> CreateCommand(commandType)</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>An <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span>.</p>
-<h5>Parameters</h5>
+<h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -251,12 +251,12 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> ExecuteCommand(command, dataTable)</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>Amount of records affected by the command.</p>
-<h5>Remarks</h5>
+<h5 class="mt-3">Remarks</h5>
 <p>If the command returns a set of records the <strong class="text-info">dataTable</strong> must
                 point to an initialized <span class="text-info" title="System.Data.DataTable">DataTable</span> otherwise it must be <strong class="text-info">null</strong>.</p>
-<h5>Parameters</h5>
+<h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -271,7 +271,7 @@
 <td>A <span class="text-info" title="System.Data.DataTable">DataTable</span> where SELECT results are returned.</td>
 </tr>
 </tbody></table>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -303,12 +303,12 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Int32}">Task&lt;Int32&gt;</span> ExecuteCommandAsync(command, dataTable)</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>Amount of records affected by the command.</p>
-<h5>Remarks</h5>
+<h5 class="mt-3">Remarks</h5>
 <p>If the command returns a set of records the <strong class="text-info">dataTable</strong> must
                 point to an initialized <span class="text-info" title="System.Data.DataTable">DataTable</span> otherwise it must be <strong class="text-info">null</strong>.</p>
-<h5>Parameters</h5>
+<h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -323,7 +323,7 @@
 <td>A <span class="text-info" title="System.Data.DataTable">DataTable</span> where SELECT results are returned.</td>
 </tr>
 </tbody></table>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -355,9 +355,9 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDataReader">IDataReader</span> ExecuteReader(command)</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the results of the command.</p>
-<h5>Parameters</h5>
+<h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -367,7 +367,7 @@
 <td>A <span class="text-info" title="MySql.Data.MySqlClient.MySqlCommand">MySqlCommand</span> to execute.</td>
 </tr>
 </tbody></table>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -392,9 +392,9 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Data.IDataReader}">Task&lt;IDataReader&gt;</span> ExecuteReaderAsync(command)</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the results of the command.</p>
-<h5>Parameters</h5>
+<h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -404,7 +404,7 @@
 <td>A <span class="text-info" title="MySql.Data.MySqlClient.MySqlCommand">MySqlCommand</span> to execute.</td>
 </tr>
 </tbody></table>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -429,11 +429,11 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> ExecuteScalar(command)</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>Value of the first field of the first record. If the CommandType is
                 a Stored Procedure the value of the parameter with Direction equals
                 to ReturnValue is returned.</p>
-<h5>Parameters</h5>
+<h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -443,7 +443,7 @@
 <td>A <span class="text-info" title="MySql.Data.MySqlClient.MySqlCommand">MySqlCommand</span> to execute.</td>
 </tr>
 </tbody></table>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -468,11 +468,11 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Object}">Task&lt;Object&gt;</span> ExecuteScalarAsync(command)</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>Value of the first field of the first record. If the CommandType is
                 a Stored Procedure the value of the parameter with Direction equals
                 to ReturnValue is returned.</p>
-<h5>Parameters</h5>
+<h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -482,7 +482,7 @@
 <td>A <span class="text-info" title="MySql.Data.MySqlClient.MySqlCommand">MySqlCommand</span> to execute.</td>
 </tr>
 </tbody></table>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -506,9 +506,9 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.DataTable">DataTable</span> GetSchema()</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>A <span class="text-info" title="System.Data.DataTable">DataTable</span> as obtained from the GetSchema() method.</p>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -524,9 +524,9 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.DataTable">DataTable</span> GetSchema(collectionName)</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>A <span class="text-info" title="System.Data.DataTable">DataTable</span> as obtained from the GetSchema() method.</p>
-<h5>Parameters</h5>
+<h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -536,7 +536,7 @@
 <td>The name of the collection to retrieve.</td>
 </tr>
 </tbody></table>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -552,9 +552,9 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.DataTable">DataTable</span> GetSchema(collectionName, restrictionValues)</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>A <span class="text-info" title="System.Data.DataTable">DataTable</span> as obtained from the GetSchema() method.</p>
-<h5>Parameters</h5>
+<h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -569,7 +569,7 @@
 <td>A set of restriction values.</td>
 </tr>
 </tbody></table>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -585,9 +585,9 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetServerVersion()</code></dd>
 </dl>
-<h5>Returns</h5>
+<h5 class="mt-3">Returns</h5>
 <p>The server version.</p>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -603,7 +603,7 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> OpenConnection()</code></dd>
 </dl>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
@@ -627,7 +627,7 @@
     <dt class="col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> OpenConnectionAsync()</code></dd>
 </dl>
-<h5>Exceptions</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
