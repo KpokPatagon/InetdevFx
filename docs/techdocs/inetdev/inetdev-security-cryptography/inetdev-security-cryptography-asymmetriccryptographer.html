@@ -37,124 +37,141 @@
     <dt class="col-3">Sealed:</dt>
     <dd class="col-9">Yes</dd>
     <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">Yes</dd>
+    <dd class="col-9">No</dd>
 <dt class="col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">System.Object</dd>
 </dl>
-<h2 id="methods" class="mt-5">Methods</h2>
+<h2 id="constructors" class="mt-5">Constructors</h2>
 <hr/>
-<p class="lead text-info">CreateAsymmetricKey</p>
-<p>Creates an asymmetric key and stored it in a machine key container of the specified name.</p>
+<p class="lead text-info">AsymmetricCryptographer</p>
+<p>Default constructor</p>
 <dl class="row">
     <dt class="col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreateAsymmetricKey(keyContainerName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AsymmetricCryptographer()</code></dd>
+</dl>
+<hr/>
+<p class="lead text-info">AsymmetricCryptographer</p>
+<p>Initializes a new instance of <strong>AsymmetricCryptographer</strong>.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AsymmetricCryptographer(keyStore)</code></dd>
 </dl>
 <h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
 <tr>
-<td>keyContainerName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
+<td>keyStore</td>
+<td><a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-iasymmetrickeystore.html">IAsymmetricKeyStore</a></td>
+<td>An <a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-iasymmetrickeystore.html">IAsymmetricKeyStore</a>.</td>
 </tr>
 </tbody></table>
+<h5 class="mt-5">Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">keyStore</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+</tbody></table>
+<h2 id="properties" class="mt-5">Properties</h2>
 <hr/>
-<p class="lead text-info">DecryptPackage</p>
-<p>Decrypts the information.</p>
+<p class="lead text-info">KeyStore</p>
+<p>An <a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-iasymmetrickeystore.html">IAsymmetricKeyStore</a> to get the keys</p>
 <dl class="row">
     <dt class="col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DecryptPackage(keyContainerName, ciphered, plaintext)</code></dd>
+    <dd class="col-10"><code>public <a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-iasymmetrickeystore.html">IAsymmetricKeyStore</a> KeyStore { get; set; }</code></dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<hr/>
+<p class="lead text-info">DecryptPackage</p>
+<p>Decrypts the information contained within the <strong class="text-info">ciphered</strong> package.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DecryptPackage(ciphered, plaintext, closeCryptoStream)</code></dd>
 </dl>
 <h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
-<tr>
-<td>keyContainerName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
-</tr>
 <tr>
 <td>ciphered</td>
 <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
-<td></td>
+<td>Ciphered package to decrypt.</td>
 </tr>
 <tr>
 <td>plaintext</td>
 <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
-<td></td>
+<td>Decrypted data from the ciphered package.</td>
+</tr>
+<tr>
+<td>closeCryptoStream</td>
+<td><span class="text-info" title="System.Boolean">Boolean</span></td>
+<td><strong class="text-info">true</strong> is the internal stream must be closed (default) closing
+                the internal stream will also close the <strong class="text-info">ciphered</strong> stream.</td>
+</tr>
+</tbody></table>
+<h5 class="mt-5">Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td><p>Thrown when <strong class="text-info">ciphered</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">plaintext</strong> is <strong class="text-info">null</strong>.</p></td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Security.Cryptography.AsymmetricKeyNotFoundException"><a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-asymmetrickeynotfoundexception.html">AsymmetricKeyNotFoundException</a></span></td>
+<td>Thrown when the key could not be found.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the object was not correctly initialized.</td>
 </tr>
 </tbody></table>
 <hr/>
 <p class="lead text-info">EncryptPackage</p>
-<p>Encrypts the plain text into the ciphered package.</p>
+<p>Encrypts <strong class="text-info">plaintext</strong> into a <strong class="text-info">ciphered</strong> package.</p>
 <dl class="row">
     <dt class="col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> EncryptPackage(keyContainerName, plaintext, ciphered)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> EncryptPackage(plaintext, ciphered, closeCryptoStream)</code></dd>
 </dl>
 <h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
 <tr>
-<td>keyContainerName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
-</tr>
-<tr>
 <td>plaintext</td>
 <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
-<td></td>
+<td>Information to be ciphered.</td>
 </tr>
 <tr>
 <td>ciphered</td>
 <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
-<td></td>
+<td>Ciphered information</td>
+</tr>
+<tr>
+<td>closeCryptoStream</td>
+<td><span class="text-info" title="System.Boolean">Boolean</span></td>
+<td><strong class="text-info">true</strong> is the internal stream must be closed (default) closing
+                the internal stream will also close the <strong class="text-info">ciphered</strong> stream.</td>
 </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ExportPublicKey</p>
-<p>Export the public key within the container into the specified stream.</p>
-<dl class="row">
-    <dt class="col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ExportPublicKey(keyContainerName, publicKey)</code></dd>
-</dl>
-<h5 class="mt-5">Parameters</h5>
+<h5 class="mt-5">Exceptions</h5>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
 <tr>
-<td>keyContainerName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td><p>Thrown when <strong class="text-info">ciphered</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">plaintext</strong> is <strong class="text-info">null</strong>.</p></td>
 </tr>
 <tr>
-<td>publicKey</td>
-<td><span class="text-info" title="System.IO.Stream">Stream</span></td>
-<td></td>
-</tr>
-</tbody></table>
-<hr/>
-<p class="lead text-info">ImportPublicKey</p>
-<p>Imports a public key into the specified container.</p>
-<dl class="row">
-    <dt class="col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ImportPublicKey(keyContainerName, publicKey)</code></dd>
-</dl>
-<h5 class="mt-5">Parameters</h5>
-<table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
-<tbody>
-<tr>
-<td>keyContainerName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
+<td><span class="text-info" title="Inetdev.Security.Cryptography.AsymmetricKeyNotFoundException"><a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-asymmetrickeynotfoundexception.html">AsymmetricKeyNotFoundException</a></span></td>
+<td>Thrown when the key could not be found.</td>
 </tr>
 <tr>
-<td>publicKey</td>
-<td><span class="text-info" title="System.IO.Stream">Stream</span></td>
-<td></td>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the object was not correctly initialized.</td>
 </tr>
 </tbody></table>
             </div>
@@ -163,6 +180,8 @@
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
 <li><a href="#top">Top</a></li>
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
 <li><a href="#methods">Methods</a></li>
 </ul>
                 </div>

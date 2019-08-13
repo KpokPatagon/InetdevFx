@@ -66,6 +66,44 @@
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
 <hr/>
+<p class="lead text-info">ChangeUserPasswordAsync</p>
+<p>Changes a user password.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> ChangeUserPasswordAsync(user)</code></dd>
+</dl>
+<h5 class="mt-5">Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>user</td>
+<td><a href="../../inetdev-data-oracle/inetdev-data-oracle-dba/inetdev-data-oracle-dba-user.html">User</a></td>
+<td>A <a href="../../inetdev-data-oracle/inetdev-data-oracle-dba/inetdev-data-oracle-dba-user.html">User</a> to change it's password.</td>
+</tr>
+</tbody></table>
+<h5 class="mt-5">Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">user</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+<td>Thrown when the provided input is not valid to run this operation.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.SchemaManipulationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+<td>Thrown when an error occurs while manipulating the schema.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown when the object has not been correctly initialized.</td>
+</tr>
+</tbody></table>
+<hr/>
 <p class="lead text-info">CreateRoleAsync</p>
 <p>Creates a role.</p>
 <dl class="row">

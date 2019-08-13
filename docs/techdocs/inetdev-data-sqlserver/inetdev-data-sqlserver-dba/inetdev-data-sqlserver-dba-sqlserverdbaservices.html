@@ -66,6 +66,44 @@
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
 <hr/>
+<p class="lead text-info">ChangeLoginPasswordAsync</p>
+<p>Changes the <strong class="text-info">login</strong> password.</p>
+<dl class="row">
+    <dt class="col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> ChangeLoginPasswordAsync(login)</code></dd>
+</dl>
+<h5 class="mt-5">Parameters</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td>login</td>
+<td><a href="../../inetdev-data-sqlserver/inetdev-data-sqlserver-dba/inetdev-data-sqlserver-dba-login.html">Login</a></td>
+<td>A <a href="../../inetdev-data-sqlserver/inetdev-data-sqlserver-dba/inetdev-data-sqlserver-dba-login.html">Login</a> to create.</td>
+</tr>
+</tbody></table>
+<h5 class="mt-5">Exceptions</h5>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+<td>Thrown when <strong class="text-info">login</strong> does not have the required configuration.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+<td>Thrown when <strong class="text-info">login</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.Data.SchemaManipulationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+<td>Thrown when an error occurs while manipulating the database.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+<td>Thrown the object was not correctly initialized.</td>
+</tr>
+</tbody></table>
+<hr/>
 <p class="lead text-info">CreateDatabaseAsync</p>
 <p>Creates a new database.</p>
 <dl class="row">

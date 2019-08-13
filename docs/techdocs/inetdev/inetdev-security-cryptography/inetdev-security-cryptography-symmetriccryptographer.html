@@ -46,18 +46,23 @@
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <hr/>
 <p class="lead text-info">SymmetricCryptographer</p>
-<p>Creates a new instance of <strong>SymmetricCryptographer</strong>.</p>
+<p>Initializes a new instance of <strong>SymmetricCryptographer</strong>.</p>
 <dl class="row">
     <dt class="col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SymmetricCryptographer(algorithmType, symmetricKey)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SymmetricCryptographer(algorithmType, symmetricKey, previousSymmetricKey)</code></dd>
 </dl>
 <h5 class="mt-3">Remarks</h5>
 <p><p>
-                    The <strong class="text-info">symmetricKey</strong> parameter should be conformed by concatenating the
-                    initializacion vector (IV) and the symmetric key (Key) for the specified symmetric algorithm.
+                    If previous symmetric key is provided, it will ve used when decrypting if the
+                    decryption with the <strong class="text-info">symmetricKey</strong> fails.
                 </p><p>
-                    The length of the <strong class="text-info">symmetricKey</strong> parameter should be the sum of the length of
-                    both fields as it will be validate against the BlockSize and KeySize field of the symmetric algorithm.
+                    The <strong class="text-info">symmetricKey</strong> and <strong class="text-info">previousSymmetricKey</strong> 
+                    parameters should be conformed by concatenating the initializacion vector (IV) 
+                    and the symmetric key (Key) for the specified symmetric algorithm.
+                </p><p>
+                    The length of the <strong class="text-info">symmetricKey</strong> and <strong class="text-info">previousSymmetricKey</strong> 
+                    parameters should be the sum of the length of both fields as it will be validate against the 
+                    BlockSize and KeySize field of the symmetric algorithm.
                 </p></p>
 <h5 class="mt-5">Parameters</h5>
 <table class="table table-sm table-bordered">
@@ -71,7 +76,12 @@
 <tr>
 <td>symmetricKey</td>
 <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
-<td>The secret Key for this symmetric cryptographer.</td>
+<td>The secret key for this symmetric cryptographer.</td>
+</tr>
+<tr>
+<td>previousSymmetricKey</td>
+<td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+<td>Previous secret key for the symmetric algorithm (optional).</td>
 </tr>
 </tbody></table>
 <h5 class="mt-5">Exceptions</h5>
@@ -84,31 +94,9 @@
 </tr>
 <tr>
 <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">algorithmType</strong> or <strong class="text-info">symmetricKey</strong> are <strong class="text-info">null</strong>.</td>
+<td><p>Thrown when <strong class="text-info">algorithmType</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">symmetricKey</strong> is <strong class="text-info">null</strong>.</p></td>
 </tr>
 </tbody></table>
-<h2 id="properties" class="mt-5">Properties</h2>
-<hr/>
-<p class="lead text-info">AlgorithmType</p>
-<p>Get the algorithm type for this symmetric cryptographer.</p>
-<dl class="row">
-    <dt class="col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Type">Type</span> AlgorithmType { get; }</code></dd>
-</dl>
-<hr/>
-<p class="lead text-info">IV</p>
-<p>Gets the Initialization Vector for this symmetric cryptographer.</p>
-<dl class="row">
-    <dt class="col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> IV { get; }</code></dd>
-</dl>
-<hr/>
-<p class="lead text-info">Key</p>
-<p>Gets the secret Key for this symmetric cryptographer.</p>
-<dl class="row">
-    <dt class="col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> Key { get; }</code></dd>
-</dl>
 <h2 id="methods" class="mt-5">Methods</h2>
 <hr/>
 <p class="lead text-info">Decrypt</p>
@@ -136,6 +124,10 @@
 <tr>
 <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
 <td>Thrown the <strong class="text-info">ciphertext</strong> is <strong class="text-info">null</strong>.</td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.Security.Cryptography.CryptographicException">CryptographicException</span></td>
+<td>Thrown when a decryption error occurs.</td>
 </tr>
 </tbody></table>
 <hr/>
@@ -166,7 +158,11 @@
 <tbody>
 <tr>
 <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown the <strong class="text-info">source</strong> or <strong class="text-info">destination</strong> is <strong class="text-info">null</strong>.</td>
+<td><p>Thrown the <strong class="text-info">source</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">destination</strong> is <strong class="text-info">null</strong>.</p></td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.Security.Cryptography.CryptographicException">CryptographicException</span></td>
+<td>Thrown when a decryption error occurs.</td>
 </tr>
 </tbody></table>
 <hr/>
@@ -203,6 +199,10 @@
 <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
 <td>Thrown the <strong class="text-info">plaintext</strong> is <strong class="text-info">null</strong>.</td>
 </tr>
+<tr>
+<td><span class="text-info" title="System.Security.Cryptography.CryptographicException">CryptographicException</span></td>
+<td>Thrown when a decryption error occurs.</td>
+</tr>
 </tbody></table>
 <hr/>
 <p class="lead text-info">Encrypt</p>
@@ -232,7 +232,11 @@
 <tbody>
 <tr>
 <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown the <strong class="text-info">source</strong> or <strong class="text-info">destination</strong> is <strong class="text-info">null</strong>.</td>
+<td><p>Thrown the <strong class="text-info">source</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">destination</strong> is <strong class="text-info">null</strong>.</p></td>
+</tr>
+<tr>
+<td><span class="text-info" title="System.Security.Cryptography.CryptographicException">CryptographicException</span></td>
+<td>Thrown when a decryption error occurs.</td>
 </tr>
 </tbody></table>
             </div>
@@ -242,7 +246,6 @@
 <ul class="list-unstyled">
 <li><a href="#top">Top</a></li>
 <li><a href="#constructors">Constructors</a></li>
-<li><a href="#properties">Properties</a></li>
 <li><a href="#methods">Methods</a></li>
 </ul>
                 </div>

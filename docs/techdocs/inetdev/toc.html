@@ -29,9 +29,9 @@
 <p class="lead">Assembly</p>
 <dl class="mt-4 row">
     <dt class="col-3">Version:</dt>
-    <dd class="col-9">1.13.0.0</dd>
+    <dd class="col-9">1.14.0.0</dd>
     <dt class="col-3">Product version:</dt>
-    <dd class="col-9">1.13.0-InetdevFx-CI_master_20190810.1</dd>
+    <dd class="col-9">1.14.0-InetdevFx-CI_master_20190813.1</dd>
     <dt class="col-3">Product:</dt>
     <dd class="col-9">Inetdev Framework Std</dd>
     <dt class="col-3">Culture:</dt>
@@ -592,6 +592,10 @@
 <td>Asymmetric cryptographic utilities.</td>
 </tr>
 <tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-asymmetrickeynotfoundexception.html">AsymmetricKeyNotFoundException</a></td>
+<td>Thrown when an asymmetric key could not fe found.</td>
+</tr>
+<tr>
 <td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-cryptographer.html">Cryptographer</a></td>
 <td>Facade which exposes common cryptography uses.</td>
 </tr>
@@ -609,12 +613,20 @@
             of 16 bytes and a key of 32 bytes based on two provided keys.</td>
 </tr>
 <tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-filesystemasymmetrickeystore.html">FileSystemAsymmetricKeyStore</a></td>
+<td>An <a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-iasymmetrickeystore.html">IAsymmetricKeyStore</a> that read the key from the file system.</td>
+</tr>
+<tr>
 <td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-hashcryptographer.html">HashCryptographer</a></td>
 <td>A hash provider for any hash algorithm which derives from <span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span>.</td>
 </tr>
 <tr>
 <td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-hashproviderfactory.html">HashProviderFactory</a></td>
 <td><strong>HashProviderFactory</strong> implements a class factory for hash providers.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-iasymmetrickeystore.html">IAsymmetricKeyStore</a></td>
+<td>Allows implementation of a store for asymmetric keys.</td>
 </tr>
 <tr>
 <td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-ihashprovider.html">IHashProvider</a></td>
@@ -647,8 +659,7 @@
 </tr>
 <tr>
 <td><a href="./inetdev-security-cryptography/inetdev-security-cryptography-symmetricproviderfactory.html">SymmetricProviderFactory</a></td>
-<td><strong>SymmetricProviderFactory</strong> implements a class factory for 
-            symmetric cryptographers.</td>
+<td><strong>SymmetricProviderFactory</strong> implements a class factory for symmetric cryptographers.</td>
 </tr>
 </tbody></table>
 <h3 id="inetdev-security-cryptography-configuration" class="mt-5">Inetdev.Security.Cryptography.Configuration</h3>
