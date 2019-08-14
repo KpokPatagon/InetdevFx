@@ -1,0 +1,122 @@
+﻿{
+  "Schema": "dbo",
+  "Name": "USER_FILTER",
+  "IsView": false,
+  "Release": null,
+  "Caption": "Filtro",
+  "Description": "Stores user filters applied to pages for non-multitenant applications.",
+  "FileGroup": null,
+  "Kindom": "Application",
+  "PrimaryKey": {
+    "Name": "PK_USER_FILTER",
+    "Type": "NonClustered",
+    "IsUnique": true,
+    "Description": "A user filter is identified by it's ID.",
+    "FileGroup": null,
+    "Columns": [
+      {
+        "Name": "ID",
+        "Position": 1,
+        "Direction": "Ascending"
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "Name": "ID",
+      "DataType": "Text",
+      "Caption": "Identificación",
+      "Description": "Identification",
+      "Position": 1,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "50",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "PAGE_ID",
+      "DataType": "Text",
+      "Caption": "Identificación de página",
+      "Description": "Page Id",
+      "Position": 2,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "256",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "USER_ID",
+      "DataType": "NText",
+      "Caption": "Identificación de usuario",
+      "Description": "User Id",
+      "Position": 3,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "DATA",
+      "DataType": "NClob",
+      "Caption": "Datos",
+      "Description": "Serialized filter data",
+      "Position": 4,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    }
+  ],
+  "Indexes": [
+    {
+      "Name": "UX_USER_FILTER_1",
+      "Type": "NonClustered",
+      "IsUnique": true,
+      "Description": "User filter information is looked by page and user IDs",
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "USER_ID",
+          "Position": 1,
+          "Direction": "Ascending"
+        },
+        {
+          "Name": "PAGE_ID",
+          "Position": 2,
+          "Direction": "Ascending"
+        }
+      ]
+    }
+  ],
+  "ForeignKeys": [],
+  "DesignerTemplate": null,
+  "ResourceFileName": null,
+  "ResourceTypeName": null,
+  "Summary": null,
+  "Namespace": null,
+  "ClassName": null,
+  "Access": "Public",
+  "SequenceName": null,
+  "Order": null,
+  "ExtendedProperties": []
+}
