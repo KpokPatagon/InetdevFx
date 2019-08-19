@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="navbar navbar-light bg-secondary">
             <a class="navbar-brand" href="#">Inetdev Framework Std</a>
         </div>
@@ -22,144 +22,170 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
 <h1>TableColumn</h1>
 <p class="lead">Models the information of a table column.</p>
-<h5><small>Namespace</small>: Inetdev.Data.DatabaseSchema</h5>
-<h5><small>Type</small>: Class</h5>
-<dl class="mt-4 row">
-    <dt class="col-3">Public:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Protected:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Sealed:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">No</dd>
-<dt class="col-sm-3">Inherits from:</dt>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Data.DatabaseSchema</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<hr/>
-<p class="lead text-info">TableColumn</p>
-<p>Default constructor</p>
+<div id="" class="mb-5">
+    <h3 class="lead text-info">TableColumn</h3>
+    <p>Default constructor</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TableColumn()</code></dd>
 </dl>
+</div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<hr/>
-<p class="lead text-info">Caption</p>
-<p>Caption.</p>
+<div id="P:Inetdev.Data.DatabaseSchema.TableColumn.Caption" class="mb-5">
+    <h3 class="lead text-info">Caption</h3>
+    <p>Caption.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Caption { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">CharacterLength</p>
-<p>The maximum length of a character column.</p>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.TableColumn.CharacterLength" class="mb-5">
+    <h3 class="lead text-info">CharacterLength</h3>
+    <p>The maximum length of a character column.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.Int32}">Nullable&lt;Int32&gt;</span> CharacterLength { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Constraints</p>
-<p>A collection of constraints for this column.</p>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.TableColumn.Constraints" class="mb-5">
+    <h3 class="lead text-info">Constraints</h3>
+    <p>A collection of constraints for this column.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraintcollection.html">ColumnConstraintCollection</a> Constraints { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">DataType</p>
-<p>Data type of the column.</p>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.TableColumn.DataType" class="mb-5">
+    <h3 class="lead text-info">DataType</h3>
+    <p>Data type of the column.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-dbtype.html">DbType</a> DataType { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">IsAutonumeric</p>
-<p>Indicates if the column is autonumeric.</p>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.TableColumn.IsAutonumeric" class="mb-5">
+    <h3 class="lead text-info">IsAutonumeric</h3>
+    <p>Indicates if the column is autonumeric.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsAutonumeric { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">IsNullable</p>
-<p>Indicates if the column is nullable.</p>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.TableColumn.IsNullable" class="mb-5">
+    <h3 class="lead text-info">IsNullable</h3>
+    <p>Indicates if the column is nullable.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsNullable { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Name</p>
-<p>Name of the column.</p>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.TableColumn.Name" class="mb-5">
+    <h3 class="lead text-info">Name</h3>
+    <p>Name of the column.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Position</p>
-<p>Position of the column in the table.</p>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.TableColumn.Position" class="mb-5">
+    <h3 class="lead text-info">Position</h3>
+    <p>Position of the column in the table.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Position { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Precision</p>
-<p>Numeric precision.</p>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.TableColumn.Precision" class="mb-5">
+    <h3 class="lead text-info">Precision</h3>
+    <p>Numeric precision.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.Int32}">Nullable&lt;Int32&gt;</span> Precision { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">ResourceType</p>
-<p>Gets or sets the <span class="text-info" title="System.Type">Type</span> of the resource used for localization.</p>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.TableColumn.ResourceType" class="mb-5">
+    <h3 class="lead text-info">ResourceType</h3>
+    <p>Gets or sets the <span class="text-info" title="System.Type">Type</span> of the resource used for localization.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Type">Type</span> ResourceType { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Scale</p>
-<p>Numeric scale.</p>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.TableColumn.Scale" class="mb-5">
+    <h3 class="lead text-info">Scale</h3>
+    <p>Numeric scale.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.Int32}">Nullable&lt;Int32&gt;</span> Scale { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Table</p>
-<p><span class="text-info" title="Inetdev.Data.DatabaseSchema.TableColumn.Table">Table</span> to which the <strong>TableColumn</strong> belongs to.</p>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.TableColumn.Table" class="mb-5">
+    <h3 class="lead text-info">Table</h3>
+    <p><span class="text-info" title="Inetdev.Data.DatabaseSchema.TableColumn.Table">Table</span> to which the <strong>TableColumn</strong> belongs to.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a> Table { get; set; }</code></dd>
 </dl>
+</div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<hr/>
-<p class="lead text-info">ToString</p>
-<p>Returns a textual representation of the <strong>TableColumn</strong>.</p>
+<div id="M:Inetdev.Data.DatabaseSchema.TableColumn.ToString" class="mb-5">
+    <h3 class="lead text-info">ToString</h3>
+    <p>Returns a textual representation of the <strong>TableColumn</strong>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
 </dl>
+</div>
             </div>
-            <div class="col-2 d-none d-lg-block">
-                <div class="position-fixed">
+            <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#top">Top</a></li>
 <li><a href="#constructors">Constructors</a></li>
 <li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableColumn.Caption">Caption</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableColumn.CharacterLength">CharacterLength</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableColumn.Constraints">Constraints</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableColumn.DataType">DataType</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableColumn.IsAutonumeric">IsAutonumeric</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableColumn.IsNullable">IsNullable</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableColumn.Name">Name</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableColumn.Position">Position</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableColumn.Precision">Precision</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableColumn.ResourceType">ResourceType</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableColumn.Scale">Scale</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableColumn.Table">Table</a></li>
+    </ul>
+</li>
 <li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Data.DatabaseSchema.TableColumn.ToString">ToString</a></li>
+    </ul>
+</li>
 </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
-        </div>
-    </div>
+
 </body>
 </html>

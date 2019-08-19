@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="navbar navbar-light bg-secondary">
             <a class="navbar-brand" href="#">Inetdev Framework Std</a>
         </div>
@@ -22,406 +22,553 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
 <h1>LanguageExtensions</h1>
 <p class="lead">Provides for commons language types.</p>
-<h5><small>Namespace</small>: Inetdev</h5>
-<h5><small>Type</small>: Class</h5>
-<dl class="mt-4 row">
-    <dt class="col-3">Public:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Protected:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Sealed:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">Yes</dd>
-<dt class="col-sm-3">Inherits from:</dt>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
-<hr/>
-<p class="lead text-info">Ellipse</p>
-<p>Cut the string if it is larger than 20 characters adding an ellipse at the end.</p>
+<div id="M:Inetdev.LanguageExtensions.Ellipse(System.String)" class="mb-5">
+    <h3 class="lead text-info">Ellipse</h3>
+    <p>Cut the string if it is larger than 20 characters adding an ellipse at the end.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Ellipse(text)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>text</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>String text.</td>
-</tr>
+    <tr>
+        <td>text</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>String text.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">Ellipse</p>
-<p>Cut the string if it is larger than the <strong class="text-info">maxLength</strong>
+</div>
+<div id="M:Inetdev.LanguageExtensions.Ellipse(System.String,System.Int32)" class="mb-5">
+    <h3 class="lead text-info">Ellipse</h3>
+    <p>Cut the string if it is larger than the <strong class="text-info">maxLength</strong>
             adding an ellipse at the end.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Ellipse(text, maxLength)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>text</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
-</tr>
-<tr>
-<td>maxLength</td>
-<td><span class="text-info" title="System.Int32">Int32</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>text</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>maxLength</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">EnsureTrailingSlash</p>
-<p>Ensures that the text ends with a slash.</p>
+</div>
+<div id="M:Inetdev.LanguageExtensions.EnsureTrailingSlash(System.String)" class="mb-5">
+    <h3 class="lead text-info">EnsureTrailingSlash</h3>
+    <p>Ensures that the text ends with a slash.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> EnsureTrailingSlash(text)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>text</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>text</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetPropertiesWithAttribute</p>
-<p>Returns a collection of properties that have the specified attribute.</p>
+</div>
+<div id="M:Inetdev.LanguageExtensions.GetPropertiesWithAttribute``1(System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetPropertiesWithAttribute</h3>
+    <p>Returns a collection of properties that have the specified attribute.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}">IEnumerable&lt;PropertyInfo&gt;</span> GetPropertiesWithAttribute&lt;T&gt;(type)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>type</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>type</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetPropertyWithAttribute</p>
-<p>Returns the first property that has the specified custom attribute.</p>
+</div>
+<div id="M:Inetdev.LanguageExtensions.GetPropertyWithAttribute``1(System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetPropertyWithAttribute</h3>
+    <p>Returns the first property that has the specified custom attribute.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Reflection.PropertyInfo">PropertyInfo</span> GetPropertyWithAttribute&lt;T&gt;(type)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>type</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>type</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetPropertyWithAttributeAssignableFrom</p>
-<p>Returns the first property that has the specified custom attribute if
+</div>
+<div id="M:Inetdev.LanguageExtensions.GetPropertyWithAttributeAssignableFrom``1(System.Type,System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetPropertyWithAttributeAssignableFrom</h3>
+    <p>Returns the first property that has the specified custom attribute if
             it is assignable from the specified type.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Reflection.PropertyInfo">PropertyInfo</span> GetPropertyWithAttributeAssignableFrom&lt;T&gt;(type, assignableFrom)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>type</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td></td>
-</tr>
-<tr>
-<td>assignableFrom</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>type</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>assignableFrom</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetSchemeHostAndPath</p>
-<p>Gets the scheme host and path of the Uri.</p>
+</div>
+<div id="M:Inetdev.LanguageExtensions.GetSchemeHostAndPath(System.Uri)" class="mb-5">
+    <h3 class="lead text-info">GetSchemeHostAndPath</h3>
+    <p>Gets the scheme host and path of the Uri.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetSchemeHostAndPath(uri)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>uri</td>
-<td><span class="text-info" title="System.Uri">Uri</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>uri</td>
+        <td><span class="text-info" title="System.Uri">Uri</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">RemoveAccent</p>
-<p>Remove accents from the <strong class="text-info">phrase</strong>.</p>
+</div>
+<div id="M:Inetdev.LanguageExtensions.RemoveAccent(System.String)" class="mb-5">
+    <h3 class="lead text-info">RemoveAccent</h3>
+    <p>Remove accents from the <strong class="text-info">phrase</strong>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> RemoveAccent(phrase)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>phrase</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>phrase</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">RemoveTrailingSlash</p>
-<p>Remove all trailing slashes from the text.</p>
+</div>
+<div id="M:Inetdev.LanguageExtensions.RemoveTrailingSlash(System.String)" class="mb-5">
+    <h3 class="lead text-info">RemoveTrailingSlash</h3>
+    <p>Remove all trailing slashes from the text.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> RemoveTrailingSlash(text)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>text</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>text</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">Replace</p>
-<p>Replaces curly braces placeholder within the string with
+</div>
+<div id="M:Inetdev.LanguageExtensions.Replace(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})" class="mb-5">
+    <h3 class="lead text-info">Replace</h3>
+    <p>Replaces curly braces placeholder within the string with
             the ToString() result from the values of the specified dictionary.
             Placeholder must by in the format: {Key}.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Replace(value, values)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>value</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
-</tr>
-<tr>
-<td>values</td>
-<td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,System.Object}">IDictionary&lt;String, Object&gt;</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>values</td>
+        <td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,System.Object}">IDictionary&lt;String, Object&gt;</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">Replace</p>
-<p>Replaces curly braces placeholder within the string with
+</div>
+<div id="M:Inetdev.LanguageExtensions.Replace(System.String,System.Object)" class="mb-5">
+    <h3 class="lead text-info">Replace</h3>
+    <p>Replaces curly braces placeholder within the string with
             the ToString() result from the values of the specified object.
             Placeholder must by in the format: {PropertyName}.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Replace(value, values)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>value</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
-</tr>
-<tr>
-<td>values</td>
-<td><span class="text-info" title="System.Object">Object</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>values</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">SplitAndTrim</p>
-<p>Split a comma separated string and trim each individual value,
+</div>
+<div id="M:Inetdev.LanguageExtensions.SplitAndTrim(System.String)" class="mb-5">
+    <h3 class="lead text-info">SplitAndTrim</h3>
+    <p>Split a comma separated string and trim each individual value,
             empty strings won't be added to the array.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String[]">String[]</span> SplitAndTrim(value)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>value</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">SplitAndTrim</p>
-<p>Split a comma separated string and trim each individual value,
+</div>
+<div id="M:Inetdev.LanguageExtensions.SplitAndTrim(System.String,System.Char[])" class="mb-5">
+    <h3 class="lead text-info">SplitAndTrim</h3>
+    <p>Split a comma separated string and trim each individual value,
             empty strings won't be added to the array.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String[]">String[]</span> SplitAndTrim(value, separator)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>value</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
-</tr>
-<tr>
-<td>separator</td>
-<td><span class="text-info" title="System.Char[]">Char[]</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>separator</td>
+        <td><span class="text-info" title="System.Char[]">Char[]</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ToDictionary</p>
-<p>Maps a generic object to a key/value dictionary.</p>
+</div>
+<div id="M:Inetdev.LanguageExtensions.ToDictionary(System.Object)" class="mb-5">
+    <h3 class="lead text-info">ToDictionary</h3>
+    <p>Maps a generic object to a key/value dictionary.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IDictionary{System.String,System.Object}">IDictionary&lt;String, Object&gt;</span> ToDictionary(values)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>values</td>
-<td><span class="text-info" title="System.Object">Object</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>values</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ToSlug</p>
-<p>Generate a slug from the <strong class="text-info">phrase</strong>.</p>
+</div>
+<div id="M:Inetdev.LanguageExtensions.ToSlug(System.String)" class="mb-5">
+    <h3 class="lead text-info">ToSlug</h3>
+    <p>Generate a slug from the <strong class="text-info">phrase</strong>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToSlug(phrase)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>phrase</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>phrase</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ToSpaceSeparatedString</p>
-<p>Converts the list to a space separated string.</p>
+</div>
+<div id="M:Inetdev.LanguageExtensions.ToSpaceSeparatedString(System.Collections.Generic.IEnumerable{System.String})" class="mb-5">
+    <h3 class="lead text-info">ToSpaceSeparatedString</h3>
+    <p>Converts the list to a space separated string.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToSpaceSeparatedString(list)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>list</td>
-<td><span class="text-info" title="System.Collections.Generic.IEnumerable{System.String}">IEnumerable&lt;String&gt;</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>list</td>
+        <td><span class="text-info" title="System.Collections.Generic.IEnumerable{System.String}">IEnumerable&lt;String&gt;</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ToStream</p>
-<p>Turns the string into a stream.</p>
+</div>
+<div id="M:Inetdev.LanguageExtensions.ToStream(System.String)" class="mb-5">
+    <h3 class="lead text-info">ToStream</h3>
+    <p>Turns the string into a stream.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.IO.Stream">Stream</span> ToStream(value)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>value</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">Truncate</p>
-<p>Truncates the milliseconds of a <span class="text-info" title="System.DateTime">DateTime</span>.</p>
+</div>
+<div id="M:Inetdev.LanguageExtensions.Truncate(System.DateTime)" class="mb-5">
+    <h3 class="lead text-info">Truncate</h3>
+    <p>Truncates the milliseconds of a <span class="text-info" title="System.DateTime">DateTime</span>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.DateTime">DateTime</span> Truncate(dateTime)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>dateTime</td>
-<td><span class="text-info" title="System.DateTime">DateTime</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>dateTime</td>
+        <td><span class="text-info" title="System.DateTime">DateTime</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">Truncate</p>
-<p>Trunctates a <span class="text-info" title="System.DateTime">DateTime</span> to a specified resolution.</p>
+</div>
+<div id="M:Inetdev.LanguageExtensions.Truncate(System.DateTime,System.Int64)" class="mb-5">
+    <h3 class="lead text-info">Truncate</h3>
+    <p>Trunctates a <span class="text-info" title="System.DateTime">DateTime</span> to a specified resolution.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.DateTime">DateTime</span> Truncate(dateTime, resolution)</code></dd>
 </dl>
-<h5 class="mt-3">Example</h5>
-<p>myDate.Truncate(TimeSpan.TicksPerSecond); // truncates the milliseconds
-            myDate.Truncate(TimeSpan.TicksPerMinute); // truncates the seconds</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Example</h6>
+<div class="mb-4">myDate.Truncate(TimeSpan.TicksPerSecond); // truncates the milliseconds
+            myDate.Truncate(TimeSpan.TicksPerMinute); // truncates the seconds</div>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>dateTime</td>
-<td><span class="text-info" title="System.DateTime">DateTime</span></td>
-<td></td>
-</tr>
-<tr>
-<td>resolution</td>
-<td><span class="text-info" title="System.Int64">Int64</span></td>
-<td></td>
-</tr>
+    <tr>
+        <td>dateTime</td>
+        <td><span class="text-info" title="System.DateTime">DateTime</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>resolution</td>
+        <td><span class="text-info" title="System.Int64">Int64</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
+</div>
             </div>
-            <div class="col-2 d-none d-lg-block">
-                <div class="position-fixed">
+            <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#top">Top</a></li>
 <li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.LanguageExtensions.Ellipse(System.String)">Ellipse</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.Ellipse(System.String,System.Int32)">Ellipse</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.EnsureTrailingSlash(System.String)">EnsureTrailingSlash</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.GetPropertiesWithAttribute``1(System.Type)">GetPropertiesWithAttribute</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.GetPropertyWithAttribute``1(System.Type)">GetPropertyWithAttribute</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.GetPropertyWithAttributeAssignableFrom``1(System.Type,System.Type)">GetPropertyWithAttributeAssignableFrom</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.GetSchemeHostAndPath(System.Uri)">GetSchemeHostAndPath</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.RemoveAccent(System.String)">RemoveAccent</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.RemoveTrailingSlash(System.String)">RemoveTrailingSlash</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.Replace(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})">Replace</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.Replace(System.String,System.Object)">Replace</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.SplitAndTrim(System.String)">SplitAndTrim</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.SplitAndTrim(System.String,System.Char[])">SplitAndTrim</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.ToDictionary(System.Object)">ToDictionary</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.ToSlug(System.String)">ToSlug</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.ToSpaceSeparatedString(System.Collections.Generic.IEnumerable{System.String})">ToSpaceSeparatedString</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.ToStream(System.String)">ToStream</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.Truncate(System.DateTime)">Truncate</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.Truncate(System.DateTime,System.Int64)">Truncate</a></li>
+    </ul>
+</li>
 </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
-        </div>
-    </div>
+
 </body>
 </html>

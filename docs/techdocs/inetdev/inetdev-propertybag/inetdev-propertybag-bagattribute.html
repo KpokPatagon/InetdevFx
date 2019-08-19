@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="navbar navbar-light bg-secondary">
             <a class="navbar-brand" href="#">Inetdev Framework Std</a>
         </div>
@@ -22,107 +22,122 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
 <h1>BagAttribute</h1>
 <p class="lead">Marks a class as a PropertyBag.</p>
-<h5><small>Namespace</small>: Inetdev.PropertyBag</h5>
-<h5><small>Type</small>: Class</h5>
-<dl class="mt-4 row">
-    <dt class="col-3">Public:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Protected:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Sealed:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">No</dd>
-<dt class="col-sm-3">Inherits from:</dt>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.PropertyBag</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">System.Attribute</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<hr/>
-<p class="lead text-info">BagAttribute</p>
-<p>Initializes a new instance of <strong>BagAttribute</strong>.</p>
+<div id="M:Inetdev.PropertyBag.BagAttribute.#ctor(System.String,System.String)" class="mb-5">
+    <h3 class="lead text-info">BagAttribute</h3>
+    <p>Initializes a new instance of <strong>BagAttribute</strong>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> BagAttribute(bagKey, caption)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>bagKey</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>Bag key that groups the properties on the store.</td>
-</tr>
-<tr>
-<td>caption</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>Caption of the property bag.</td>
-</tr>
+    <tr>
+        <td>bagKey</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Bag key that groups the properties on the store.</td>
+    </tr>
+    <tr>
+        <td>caption</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Caption of the property bag.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when <strong class="text-info">bagKey</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when <strong class="text-info">caption</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">bagKey</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">caption</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
 </tbody></table>
+</div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<hr/>
-<p class="lead text-info">BagKey</p>
-<p>Bag key that groups the properties on the store.</p>
+<div id="P:Inetdev.PropertyBag.BagAttribute.BagKey" class="mb-5">
+    <h3 class="lead text-info">BagKey</h3>
+    <p>Bag key that groups the properties on the store.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> BagKey { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Caption</p>
-<p>Caption of the property bag.</p>
+</div>
+<div id="P:Inetdev.PropertyBag.BagAttribute.Caption" class="mb-5">
+    <h3 class="lead text-info">Caption</h3>
+    <p>Caption of the property bag.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Caption { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Description</p>
-<p>Description of the property bag.</p>
+</div>
+<div id="P:Inetdev.PropertyBag.BagAttribute.Description" class="mb-5">
+    <h3 class="lead text-info">Description</h3>
+    <p>Description of the property bag.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Description { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">ResourceType</p>
-<p>Type for getting string resources.</p>
+</div>
+<div id="P:Inetdev.PropertyBag.BagAttribute.ResourceType" class="mb-5">
+    <h3 class="lead text-info">ResourceType</h3>
+    <p>Type for getting string resources.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Type">Type</span> ResourceType { get; set; }</code></dd>
 </dl>
+</div>
             </div>
-            <div class="col-2 d-none d-lg-block">
-                <div class="position-fixed">
+            <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#top">Top</a></li>
 <li><a href="#constructors">Constructors</a></li>
 <li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.PropertyBag.BagAttribute.BagKey">BagKey</a></li>
+        <li><a href="#P:Inetdev.PropertyBag.BagAttribute.Caption">Caption</a></li>
+        <li><a href="#P:Inetdev.PropertyBag.BagAttribute.Description">Description</a></li>
+        <li><a href="#P:Inetdev.PropertyBag.BagAttribute.ResourceType">ResourceType</a></li>
+    </ul>
+</li>
 </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
-        </div>
-    </div>
+
 </body>
 </html>

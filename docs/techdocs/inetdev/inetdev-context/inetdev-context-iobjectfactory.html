@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="navbar navbar-light bg-secondary">
             <a class="navbar-brand" href="#">Inetdev Framework Std</a>
         </div>
@@ -22,338 +22,447 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
 <h1>IObjectFactory</h1>
 <p class="lead">Allows the implementation of object factories used to create application context objects.</p>
-<h5><small>Namespace</small>: Inetdev.Context</h5>
-<h5><small>Type</small>: Interface</h5>
-<dl class="mt-4 row">
-    <dt class="col-3">Public:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Protected:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Sealed:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">Yes</dd>
-<dt class="col-sm-3">Implements:</dt>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Context</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Interface</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
+<dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">System.IDisposable</dd>
 </dl>
 <h2 id="properties" class="mt-5">Properties</h2>
-<hr/>
-<p class="lead text-info">Name</p>
-<p>Get or set the name of the <b>Object Factory</b>.</p>
+<div id="P:Inetdev.Context.IObjectFactory.Name" class="mb-5">
+    <h3 class="lead text-info">Name</h3>
+    <p>Get or set the name of the <b>Object Factory</b>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; }</code></dd>
 </dl>
+</div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<hr/>
-<p class="lead text-info">ContainsObject</p>
-<p>Finds out if the <b>Object Factory</b> contains a definition
+<div id="M:Inetdev.Context.IObjectFactory.ContainsObject(System.String)" class="mb-5">
+    <h3 class="lead text-info">ContainsObject</h3>
+    <p>Finds out if the <b>Object Factory</b> contains a definition
             for an object of the given name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ContainsObject(name)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the <b>Factory</b> contains the object.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to verify.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to verify.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ContainsObject</p>
-<p>Finds out if the <b>Object Factory</b> contains a definition
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.ContainsObject(System.Type)" class="mb-5">
+    <h3 class="lead text-info">ContainsObject</h3>
+    <p>Finds out if the <b>Object Factory</b> contains a definition
             for an object of the given <b>System.Type</b>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ContainsObject(objectType)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the <b>Factory</b> contains the object.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>objectType</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td>The <b>System.Type</b> of the object to verify.</td>
-</tr>
+    <tr>
+        <td>objectType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The <b>System.Type</b> of the object to verify.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the object for the given type <typeparamref name="T" />.</p>
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.GetObject``1" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the object for the given type <typeparamref name="T" />.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title=""></span> GetObject&lt;T&gt;()</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the object for the given type <typeparamref name="T" />.</p>
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.GetObject``1(System.Object[])" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the object for the given type <typeparamref name="T" />.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title=""></span> GetObject&lt;T&gt;(args)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>args</td>
-<td><span class="text-info" title="System.Object[]">Object[]</span></td>
-<td>Constructor arguments.</td>
-</tr>
+    <tr>
+        <td>args</td>
+        <td><span class="text-info" title="System.Object[]">Object[]</span></td>
+        <td>Constructor arguments.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the object for the given name.</p>
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.GetObject(System.String)" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the object for the given name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(name)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The context object.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to retrieve.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to retrieve.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the object for the given name.</p>
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.GetObject(System.String,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the object for the given name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(name, thrown)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The context object or <strong class="text-info">null</strong> if there was an error.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to retrive.</td>
-</tr>
-<tr>
-<td>thrown</td>
-<td><span class="text-info" title="System.Boolean">Boolean</span></td>
-<td><strong class="text-info">true</strong> if an exception should be thrown
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to retrive.</td>
+    </tr>
+    <tr>
+        <td>thrown</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td><strong class="text-info">true</strong> if an exception should be thrown
             or <strong class="text-info">false</strong> if <strong class="text-info">null</strong> should be returned
             when there is an error on creating the object.</td>
-</tr>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the object for the given name,
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.GetObject(System.String,System.Object[])" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the object for the given name,
             passing the arguments to the object constructor</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(name, args)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The context object.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to retrive.</td>
-</tr>
-<tr>
-<td>args</td>
-<td><span class="text-info" title="System.Object[]">Object[]</span></td>
-<td>The arguments to pass.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to retrive.</td>
+    </tr>
+    <tr>
+        <td>args</td>
+        <td><span class="text-info" title="System.Object[]">Object[]</span></td>
+        <td>The arguments to pass.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the object for the given name and type.</p>
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.GetObject(System.String,System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the object for the given name and type.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(name, requiredType)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The context object.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to retrieve.</td>
-</tr>
-<tr>
-<td>requiredType</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td>The required <span class="text-info" title="System.Type">Type</span> of the object.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to retrieve.</td>
+    </tr>
+    <tr>
+        <td>requiredType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The required <span class="text-info" title="System.Type">Type</span> of the object.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the first object of <strong class="text-info">objectType</strong> type.</p>
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.GetObject(System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the first object of <strong class="text-info">objectType</strong> type.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(objectType)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>objectType</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td>The exact type of the object to retrive.</td>
-</tr>
+    <tr>
+        <td>objectType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The exact type of the object to retrive.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the first object of <strong class="text-info">objectType</strong> type.</p>
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.GetObject(System.Type,System.Object[])" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the first object of <strong class="text-info">objectType</strong> type.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(objectType, args)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>objectType</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td>The exact type of the object to retrive.</td>
-</tr>
-<tr>
-<td>args</td>
-<td><span class="text-info" title="System.Object[]">Object[]</span></td>
-<td>Constructor arguments</td>
-</tr>
+    <tr>
+        <td>objectType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The exact type of the object to retrive.</td>
+    </tr>
+    <tr>
+        <td>args</td>
+        <td><span class="text-info" title="System.Object[]">Object[]</span></td>
+        <td>Constructor arguments</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObjectsOfContextAssignableFrom</p>
-<p>Retrieves a list of initialized context object that are assignable from type <typeparamref name="T" />.</p>
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.GetObjectsOfContextAssignableFrom``1" class="mb-5">
+    <h3 class="lead text-info">GetObjectsOfContextAssignableFrom</h3>
+    <p>Retrieves a list of initialized context object that are assignable from type <typeparamref name="T" />.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> GetObjectsOfContextAssignableFrom&lt;T&gt;()</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A list of objects assignable from type <typeparamref name="T" />.</p>
-<hr/>
-<p class="lead text-info">GetObjectsOfContextAssignableFrom</p>
-<p>Retrieves a list of initialized context object that are assignable from type <strong class="text-info">type</strong>.</p>
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.GetObjectsOfContextAssignableFrom(System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetObjectsOfContextAssignableFrom</h3>
+    <p>Retrieves a list of initialized context object that are assignable from type <strong class="text-info">type</strong>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{System.Object}">IEnumerable&lt;Object&gt;</span> GetObjectsOfContextAssignableFrom(type)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A list of objects assignable from <strong class="text-info">type</strong>.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>type</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td>The type that the objects are asignable from.</td>
-</tr>
+    <tr>
+        <td>type</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The type that the objects are asignable from.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetType</p>
-<p>Retrives the <span class="text-info" title="System.Type">Type</span> of the object for the given name.</p>
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.GetType(System.String)" class="mb-5">
+    <h3 class="lead text-info">GetType</h3>
+    <p>Retrives the <span class="text-info" title="System.Type">Type</span> of the object for the given name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Type">Type</span> GetType(name)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The <span class="text-info" title="System.Type">Type</span> of the object.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to get its <span class="text-info" title="System.Type">Type</span>.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to get its <span class="text-info" title="System.Type">Type</span>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">InjectDependencies</p>
-<p>Inject into the object <strong class="text-info">o</strong> the dependencies of an
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.InjectDependencies(System.String,System.Object)" class="mb-5">
+    <h3 class="lead text-info">InjectDependencies</h3>
+    <p>Inject into the object <strong class="text-info">o</strong> the dependencies of an
             object named <strong class="text-info">name</strong>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> InjectDependencies(name, o)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to get it's dependencies.</td>
-</tr>
-<tr>
-<td>o</td>
-<td><span class="text-info" title="System.Object">Object</span></td>
-<td>The object where to inject the dependencies.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to get it's dependencies.</td>
+    </tr>
+    <tr>
+        <td>o</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The object where to inject the dependencies.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">IsSingleton</p>
-<p>Finds out if the object of the given name is a singleton.</p>
+</div>
+<div id="M:Inetdev.Context.IObjectFactory.IsSingleton(System.String)" class="mb-5">
+    <h3 class="lead text-info">IsSingleton</h3>
+    <p>Finds out if the object of the given name is a singleton.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsSingleton(name)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> is the object is a singleton or 
             <strong class="text-info">false</strong> otherwise.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to verify.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to verify.</td>
+    </tr>
 </tbody></table>
+</div>
             </div>
-            <div class="col-2 d-none d-lg-block">
-                <div class="position-fixed">
+            <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#top">Top</a></li>
 <li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.Context.IObjectFactory.Name">Name</a></li>
+    </ul>
+</li>
 <li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Context.IObjectFactory.ContainsObject(System.String)">ContainsObject</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.ContainsObject(System.Type)">ContainsObject</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.GetObject``1">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.GetObject``1(System.Object[])">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.GetObject(System.String)">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.GetObject(System.String,System.Boolean)">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.GetObject(System.String,System.Object[])">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.GetObject(System.String,System.Type)">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.GetObject(System.Type)">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.GetObject(System.Type,System.Object[])">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.GetObjectsOfContextAssignableFrom``1">GetObjectsOfContextAssignableFrom</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.GetObjectsOfContextAssignableFrom(System.Type)">GetObjectsOfContextAssignableFrom</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.GetType(System.String)">GetType</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.InjectDependencies(System.String,System.Object)">InjectDependencies</a></li>
+        <li><a href="#M:Inetdev.Context.IObjectFactory.IsSingleton(System.String)">IsSingleton</a></li>
+    </ul>
+</li>
 </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
-        </div>
-    </div>
+
 </body>
 </html>

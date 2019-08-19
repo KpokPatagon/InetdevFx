@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="navbar navbar-light bg-secondary">
             <a class="navbar-brand" href="#">Inetdev Framework Std</a>
         </div>
@@ -22,75 +22,80 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
 <h1>IAttachment</h1>
 <p class="lead">Allows the implementation of wrappers for store files into database fields.</p>
-<h5><small>Namespace</small>: Inetdev.Data</h5>
-<h5><small>Type</small>: Interface</h5>
-<dl class="mt-4 row">
-    <dt class="col-3">Public:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Protected:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Sealed:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">Yes</dd>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Data</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Interface</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
 </dl>
 <h2 id="properties" class="mt-5">Properties</h2>
-<hr/>
-<p class="lead text-info">BinaryData</p>
-<p>The binary data to be stored into the database field.</p>
+<div id="P:Inetdev.Data.IAttachment.BinaryData" class="mb-5">
+    <h3 class="lead text-info">BinaryData</h3>
+    <p>The binary data to be stored into the database field.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> BinaryData { get; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">ContentLength</p>
-<p>Content length of the attached file.</p>
+</div>
+<div id="P:Inetdev.Data.IAttachment.ContentLength" class="mb-5">
+    <h3 class="lead text-info">ContentLength</h3>
+    <p>Content length of the attached file.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Int64">Int64</span> ContentLength { get; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">ContentType</p>
-<p>Content type of the file contained into this object.</p>
+</div>
+<div id="P:Inetdev.Data.IAttachment.ContentType" class="mb-5">
+    <h3 class="lead text-info">ContentType</h3>
+    <p>Content type of the file contained into this object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ContentType { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">FileContent</p>
-<p>File contents.</p>
+</div>
+<div id="P:Inetdev.Data.IAttachment.FileContent" class="mb-5">
+    <h3 class="lead text-info">FileContent</h3>
+    <p>File contents.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> FileContent { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">FileName</p>
-<p>File name.</p>
+</div>
+<div id="P:Inetdev.Data.IAttachment.FileName" class="mb-5">
+    <h3 class="lead text-info">FileName</h3>
+    <p>File name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> FileName { get; set; }</code></dd>
 </dl>
+</div>
             </div>
-            <div class="col-2 d-none d-lg-block">
-                <div class="position-fixed">
+            <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#top">Top</a></li>
 <li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.Data.IAttachment.BinaryData">BinaryData</a></li>
+        <li><a href="#P:Inetdev.Data.IAttachment.ContentLength">ContentLength</a></li>
+        <li><a href="#P:Inetdev.Data.IAttachment.ContentType">ContentType</a></li>
+        <li><a href="#P:Inetdev.Data.IAttachment.FileContent">FileContent</a></li>
+        <li><a href="#P:Inetdev.Data.IAttachment.FileName">FileName</a></li>
+    </ul>
+</li>
 </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
-        </div>
-    </div>
+
 </body>
 </html>

@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="navbar navbar-light bg-secondary">
             <a class="navbar-brand" href="#">Inetdev Framework Std</a>
         </div>
@@ -22,268 +22,350 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
 <h1>Util</h1>
 <p class="lead">Provides utility functions for the framework.</p>
-<h5><small>Namespace</small>: Inetdev</h5>
-<h5><small>Type</small>: Class</h5>
-<dl class="mt-4 row">
-    <dt class="col-3">Public:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Protected:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Sealed:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">Yes</dd>
-<dt class="col-sm-3">Inherits from:</dt>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
-<hr/>
-<p class="lead text-info">CopyStream</p>
-<p>Copy the source stream into the target stream.</p>
+<div id="M:Inetdev.Util.CopyStream(System.IO.Stream,System.IO.Stream)" class="mb-5">
+    <h3 class="lead text-info">CopyStream</h3>
+    <p>Copy the source stream into the target stream.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CopyStream(source, target)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>source</td>
-<td><span class="text-info" title="System.IO.Stream">Stream</span></td>
-<td>Source stream to copy from.</td>
-</tr>
-<tr>
-<td>target</td>
-<td><span class="text-info" title="System.IO.Stream">Stream</span></td>
-<td>Target stream to copy to.</td>
-</tr>
+    <tr>
+        <td>source</td>
+        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td>Source stream to copy from.</td>
+    </tr>
+    <tr>
+        <td>target</td>
+        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td>Target stream to copy to.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">DateTimeToJavascriptTimespan</p>
-<p>Converts a <b>DateTime</b> into a Javascript timespan.</p>
+</div>
+<div id="M:Inetdev.Util.DateTimeToJavascriptTimespan(System.DateTime)" class="mb-5">
+    <h3 class="lead text-info">DateTimeToJavascriptTimespan</h3>
+    <p>Converts a <b>DateTime</b> into a Javascript timespan.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Double">Double</span> DateTimeToJavascriptTimespan(datetime)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A <b>Javascript</b> timespan.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>datetime</td>
-<td><span class="text-info" title="System.DateTime">DateTime</span></td>
-<td>A <b>DateTime</b> to convert.</td>
-</tr>
+    <tr>
+        <td>datetime</td>
+        <td><span class="text-info" title="System.DateTime">DateTime</span></td>
+        <td>A <b>DateTime</b> to convert.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">DateTimeToUnixTimespan</p>
-<p>Converts a <b>DateTime</b> into a Unix timespan.</p>
+</div>
+<div id="M:Inetdev.Util.DateTimeToUnixTimespan(System.DateTime)" class="mb-5">
+    <h3 class="lead text-info">DateTimeToUnixTimespan</h3>
+    <p>Converts a <b>DateTime</b> into a Unix timespan.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Double">Double</span> DateTimeToUnixTimespan(datetime)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A <b>Unix</b> timespan.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>datetime</td>
-<td><span class="text-info" title="System.DateTime">DateTime</span></td>
-<td>A <b>DateTime</b> to convert.</td>
-</tr>
+    <tr>
+        <td>datetime</td>
+        <td><span class="text-info" title="System.DateTime">DateTime</span></td>
+        <td>A <b>DateTime</b> to convert.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetFQDN</p>
-<p>Gets the full qualified domain name of the machine.</p>
+</div>
+<div id="M:Inetdev.Util.GetFQDN" class="mb-5">
+    <h3 class="lead text-info">GetFQDN</h3>
+    <p>Gets the full qualified domain name of the machine.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetFQDN()</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">GetType</p>
-<p>Returns the <span class="text-info" title="System.Type">Type</span> for the specified full qualified type name.</p>
+</div>
+<div id="M:Inetdev.Util.GetType(System.String)" class="mb-5">
+    <h3 class="lead text-info">GetType</h3>
+    <p>Returns the <span class="text-info" title="System.Type">Type</span> for the specified full qualified type name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Type">Type</span> GetType(fullQualifiedTypeName)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A <b>Type</b> corresponding to the received argument.</p>
-<h5 class="mt-3">Remarks</h5>
+<h6 class="mt-1">Remarks</h6>
 <p>This method uses reflection to load the type assembly for getting it's type.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>fullQualifiedTypeName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>Full qualified type name string.</td>
-</tr>
+    <tr>
+        <td>fullQualifiedTypeName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Full qualified type name string.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.FrameworkException"><a href="../../inetdev/inetdev/inetdev-frameworkexception.html">FrameworkException</a></span></td>
-<td>Thrown when the type could not be retrived.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.FrameworkException"><a href="../../inetdev/inetdev/inetdev-frameworkexception.html">FrameworkException</a></span></td>
+        <td>Thrown when the type could not be retrived.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">JavascriptTimespanToDateTime</p>
-<p>Converts a Javascript timespan to a <b>DateTime</b>.</p>
+</div>
+<div id="M:Inetdev.Util.JavascriptTimespanToDateTime(System.Double)" class="mb-5">
+    <h3 class="lead text-info">JavascriptTimespanToDateTime</h3>
+    <p>Converts a Javascript timespan to a <b>DateTime</b>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.DateTime">DateTime</span> JavascriptTimespanToDateTime(timespan)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A <span class="text-info" title="System.DateTime">DateTime</span> for the timespan.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>timespan</td>
-<td><span class="text-info" title="System.Double">Double</span></td>
-<td>A <b>Javascript</b> timespan.</td>
-</tr>
+    <tr>
+        <td>timespan</td>
+        <td><span class="text-info" title="System.Double">Double</span></td>
+        <td>A <b>Javascript</b> timespan.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ToBoolean</p>
-<p>Convert into boolean a string boolean representation.</p>
+</div>
+<div id="M:Inetdev.Util.ToBoolean(System.String)" class="mb-5">
+    <h3 class="lead text-info">ToBoolean</h3>
+    <p>Convert into boolean a string boolean representation.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ToBoolean(boolean)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A <b>boolean</b> for the received string.</p>
-<h5 class="mt-3">Remarks</h5>
+<h6 class="mt-1">Remarks</h6>
 <p>This method accounts for empty or null, <b>false</b>, <b>f</b> or <b>0</b> as <b>false</b> everything else is <b>true</b>.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>boolean</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>String to convert to <b>Boolean</b>.</td>
-</tr>
+    <tr>
+        <td>boolean</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>String to convert to <b>Boolean</b>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">TryGetType</p>
-<p>Tries to get the specified <span class="text-info" title="System.Type">Type</span>.</p>
+</div>
+<div id="M:Inetdev.Util.TryGetType(System.String)" class="mb-5">
+    <h3 class="lead text-info">TryGetType</h3>
+    <p>Tries to get the specified <span class="text-info" title="System.Type">Type</span>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Type">Type</span> TryGetType(fullQualifiedTypeName)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A <b>Type</b> corresponding to the received argument or <strong class="text-info">null</strong> if the type could not be loaded.</p>
-<h5 class="mt-3">Remarks</h5>
+<h6 class="mt-1">Remarks</h6>
 <p>This method uses reflection to load the type assembly for getting it's type.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>fullQualifiedTypeName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>Full qualified type name string.</td>
-</tr>
+    <tr>
+        <td>fullQualifiedTypeName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Full qualified type name string.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">TryGetType</p>
-<p>Try to get the type specified on <strong class="text-info">fullQualifiedTypeName</strong>
+</div>
+<div id="M:Inetdev.Util.TryGetType``1(System.String)" class="mb-5">
+    <h3 class="lead text-info">TryGetType</h3>
+    <p>Try to get the type specified on <strong class="text-info">fullQualifiedTypeName</strong>
             only if it is assignable from type <typeparamref name="T" />.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Type">Type</span> TryGetType&lt;T&gt;(fullQualifiedTypeName)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A <b>Type</b> for the specified <strong class="text-info">fullQualifiedTypeName</strong>.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>fullQualifiedTypeName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>Full qualified type name.</td>
-</tr>
+    <tr>
+        <td>fullQualifiedTypeName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Full qualified type name.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">TryGetTypeAndAssemblyNames</p>
-<p>Parses a full qualified type name and assign the values of the type and assembly names to the specified variables.</p>
+</div>
+<div id="M:Inetdev.Util.TryGetTypeAndAssemblyNames(System.String,System.String@,System.String@)" class="mb-5">
+    <h3 class="lead text-info">TryGetTypeAndAssemblyNames</h3>
+    <p>Parses a full qualified type name and assign the values of the type and assembly names to the specified variables.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> TryGetTypeAndAssemblyNames(fullQualifiedTypeName, typeName, assemblyName)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the name could be parsed correctly, otherwise <strong class="text-info">false</strong>.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>fullQualifiedTypeName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>Full qualified type name.</td>
-</tr>
-<tr>
-<td>typeName</td>
-<td><span class="text-info" title="System.String@">String@</span></td>
-<td>Type name extracted from <strong class="text-info">fullQualifiedTypeName</strong>.</td>
-</tr>
-<tr>
-<td>assemblyName</td>
-<td><span class="text-info" title="System.String@">String@</span></td>
-<td>Assembly name extracted from <strong class="text-info">fullQualifiedTypeName</strong>.</td>
-</tr>
+    <tr>
+        <td>fullQualifiedTypeName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Full qualified type name.</td>
+    </tr>
+    <tr>
+        <td>typeName</td>
+        <td><span class="text-info" title="System.String@">String@</span></td>
+        <td>Type name extracted from <strong class="text-info">fullQualifiedTypeName</strong>.</td>
+    </tr>
+    <tr>
+        <td>assemblyName</td>
+        <td><span class="text-info" title="System.String@">String@</span></td>
+        <td>Assembly name extracted from <strong class="text-info">fullQualifiedTypeName</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">UnixTimespanToDateTime</p>
-<p>Converts the unix timespan to a <b>DateTime</b>.</p>
+</div>
+<div id="M:Inetdev.Util.UnixTimespanToDateTime(System.Double)" class="mb-5">
+    <h3 class="lead text-info">UnixTimespanToDateTime</h3>
+    <p>Converts the unix timespan to a <b>DateTime</b>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.DateTime">DateTime</span> UnixTimespanToDateTime(timespan)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A <b>DateTime</b> for the received timespan.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>timespan</td>
-<td><span class="text-info" title="System.Double">Double</span></td>
-<td>A <b>Unix</b> timespan.</td>
-</tr>
+    <tr>
+        <td>timespan</td>
+        <td><span class="text-info" title="System.Double">Double</span></td>
+        <td>A <b>Unix</b> timespan.</td>
+    </tr>
 </tbody></table>
+</div>
             </div>
-            <div class="col-2 d-none d-lg-block">
-                <div class="position-fixed">
+            <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#top">Top</a></li>
 <li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Util.CopyStream(System.IO.Stream,System.IO.Stream)">CopyStream</a></li>
+        <li><a href="#M:Inetdev.Util.DateTimeToJavascriptTimespan(System.DateTime)">DateTimeToJavascriptTimespan</a></li>
+        <li><a href="#M:Inetdev.Util.DateTimeToUnixTimespan(System.DateTime)">DateTimeToUnixTimespan</a></li>
+        <li><a href="#M:Inetdev.Util.GetFQDN">GetFQDN</a></li>
+        <li><a href="#M:Inetdev.Util.GetType(System.String)">GetType</a></li>
+        <li><a href="#M:Inetdev.Util.JavascriptTimespanToDateTime(System.Double)">JavascriptTimespanToDateTime</a></li>
+        <li><a href="#M:Inetdev.Util.ToBoolean(System.String)">ToBoolean</a></li>
+        <li><a href="#M:Inetdev.Util.TryGetType(System.String)">TryGetType</a></li>
+        <li><a href="#M:Inetdev.Util.TryGetType``1(System.String)">TryGetType</a></li>
+        <li><a href="#M:Inetdev.Util.TryGetTypeAndAssemblyNames(System.String,System.String@,System.String@)">TryGetTypeAndAssemblyNames</a></li>
+        <li><a href="#M:Inetdev.Util.UnixTimespanToDateTime(System.Double)">UnixTimespanToDateTime</a></li>
+    </ul>
+</li>
 </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
-        </div>
-    </div>
+
 </body>
 </html>

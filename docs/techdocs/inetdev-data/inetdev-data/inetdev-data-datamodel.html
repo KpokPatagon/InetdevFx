@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="navbar navbar-light bg-secondary">
             <a class="navbar-brand" href="#">Inetdev Framework Std</a>
         </div>
@@ -22,37 +22,44 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
 <h1>DataModel</h1>
 <p class="lead"><strong>DataModel</strong> is an abstract base class for data model objects.</p>
-<h5><small>Namespace</small>: Inetdev.Data</h5>
-<h5><small>Type</small>: Class</h5>
-<dl class="mt-4 row">
-    <dt class="col-3">Public:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Protected:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Sealed:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">Yes</dd>
-<dt class="col-sm-3">Inherits from:</dt>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Data</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">System.Object</dd>
-<dt class="col-sm-3">Implements:</dt>
+<dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">Inetdev.Data.IDataModel, System.ComponentModel.INotifyPropertyChanged</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<hr/>
-<p class="lead text-info">DataModel</p>
-<p>Default constructor</p>
+<div id="" class="mb-5">
+    <h3 class="lead text-info">DataModel</h3>
+    <p>Default constructor</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> DataModel()</code></dd>
 </dl>
+</div>
 <h2 id="events" class="mt-5">Events</h2>
-<table class="table"><tbody>
+<table class="table">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Summary</th>
+    <tr>
+</thead>
+<tbody>
 <tr>
     <td><a href="../../inetdev-data/inetdev-data/inetdev-data-aftereraseeventhandler.html">AfterEraseEventHandler</a></td>
     <td><strong>AfterErase</strong></td>
@@ -80,683 +87,907 @@
 </tr>
 </tbody></table>
 <h2 id="properties" class="mt-5">Properties</h2>
-<hr/>
-<p class="lead text-info">ColumnPropertyMappings</p>
-<p>Get or set the data column mapping collection.</p>
+<div id="P:Inetdev.Data.DataModel.ColumnPropertyMappings" class="mb-5">
+    <h3 class="lead text-info">ColumnPropertyMappings</h3>
+    <p>Get or set the data column mapping collection.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-columnpropertymappings.html">ColumnPropertyMappings</a> ColumnPropertyMappings { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">CurrentAction</p>
-<p>Gets the <a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a> that is currently performed on this object.</p>
+</div>
+<div id="P:Inetdev.Data.DataModel.CurrentAction" class="mb-5">
+    <h3 class="lead text-info">CurrentAction</h3>
+    <p>Gets the <a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a> that is currently performed on this object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a> CurrentAction { get; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">DataProperties</p>
-<p>Get the collection of data properties definitions.</p>
+</div>
+<div id="P:Inetdev.Data.DataModel.DataProperties" class="mb-5">
+    <h3 class="lead text-info">DataProperties</h3>
+    <p>Get the collection of data properties definitions.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IDictionary{System.String,Inetdev.Data.IDataProperty}">IDictionary&lt;String, <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>&gt;</span> DataProperties { get; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">DataServices</p>
-<p>Get or set the data services object.</p>
+</div>
+<div id="P:Inetdev.Data.DataModel.DataServices" class="mb-5">
+    <h3 class="lead text-info">DataServices</h3>
+    <p>Get or set the data services object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idataservices.html">IDataServices</a> DataServices { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">EnforceModelValidation</p>
-<p>Get whether the validation of the object must be enforced
+</div>
+<div id="P:Inetdev.Data.DataModel.EnforceModelValidation" class="mb-5">
+    <h3 class="lead text-info">EnforceModelValidation</h3>
+    <p>Get whether the validation of the object must be enforced
             through a <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodelvalidator.html">IDataModelValidator</a>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> EnforceModelValidation { get; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Identity</p>
-<p>Get or set an object that manages the generation of identity fields values.</p>
+</div>
+<div id="P:Inetdev.Data.DataModel.Identity" class="mb-5">
+    <h3 class="lead text-info">Identity</h3>
+    <p>Get or set an object that manages the generation of identity fields values.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-iidentity.html">IIdentity</a> Identity { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Item</p>
-<p>Get or set data properties.</p>
+</div>
+<div id="P:Inetdev.Data.DataModel.Item(System.String)" class="mb-5">
+    <h3 class="lead text-info">Item</h3>
+    <p>Get or set data properties.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> Item { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Modified</p>
-<p>Gets whether the object has been modified.</p>
+</div>
+<div id="P:Inetdev.Data.DataModel.Modified" class="mb-5">
+    <h3 class="lead text-info">Modified</h3>
+    <p>Gets whether the object has been modified.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Modified { get; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Numerator</p>
-<p>Get or set an object that manages the generation of numerator fields values.</p>
+</div>
+<div id="P:Inetdev.Data.DataModel.Numerator" class="mb-5">
+    <h3 class="lead text-info">Numerator</h3>
+    <p>Get or set an object that manages the generation of numerator fields values.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-inumerator.html">INumerator</a> Numerator { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Sequencer</p>
-<p>Get or set an object that manages the generation of sequence fields values.</p>
+</div>
+<div id="P:Inetdev.Data.DataModel.Sequencer" class="mb-5">
+    <h3 class="lead text-info">Sequencer</h3>
+    <p>Get or set an object that manages the generation of sequence fields values.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-isequencer.html">ISequencer</a> Sequencer { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Validator</p>
-<p>Get or set the data validator object.</p>
+</div>
+<div id="P:Inetdev.Data.DataModel.Validator" class="mb-5">
+    <h3 class="lead text-info">Validator</h3>
+    <p>Get or set the data validator object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodelvalidator.html">IDataModelValidator</a> Validator { get; set; }</code></dd>
 </dl>
+</div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<hr/>
-<p class="lead text-info">Clear</p>
-<p>Clears the contents of the object.</p>
+<div id="M:Inetdev.Data.DataModel.Clear" class="mb-5">
+    <h3 class="lead text-info">Clear</h3>
+    <p>Clears the contents of the object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Clear()</code></dd>
 </dl>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
-<td>Thrown when a data property is not supported.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
+        <td>Thrown when a data property is not supported.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">CopyDataProperties</p>
-<p>Copies the data properties from the source model to this object.
+</div>
+<div id="M:Inetdev.Data.DataModel.CopyDataProperties(Inetdev.Data.IDataModel)" class="mb-5">
+    <h3 class="lead text-info">CopyDataProperties</h3>
+    <p>Copies the data properties from the source model to this object.
             It is a helper method to create copy constructors.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> CopyDataProperties(source)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>source</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
-<td>The source object with the data.</td>
-</tr>
+    <tr>
+        <td>source</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+        <td>The source object with the data.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.InvalidCastException">InvalidCastException</span></td>
-<td>Thrown when the <span class="text-info" title="System.Type">Type</span> of <strong class="text-info">source</strong> is different of the <span class="text-info" title="System.Type">Type</span> of this object.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
-<td>Thrown when a data property is not supported.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.InvalidCastException">InvalidCastException</span></td>
+        <td>Thrown when the <span class="text-info" title="System.Type">Type</span> of <strong class="text-info">source</strong> is different of the <span class="text-info" title="System.Type">Type</span> of this object.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
+        <td>Thrown when a data property is not supported.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">EnsureObjectState</p>
-<p>Check if the domain object has its required properties initialized.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.EnsureObjectState" class="mb-5">
+    <h3 class="lead text-info">EnsureObjectState</h3>
+    <p>Check if the domain object has its required properties initialized.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> EnsureObjectState()</code></dd>
 </dl>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property is not initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property is not initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">Erase</p>
-<p>Erases an object by issuing a delete command to the underlaying data source.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.Erase" class="mb-5">
+    <h3 class="lead text-info">Erase</h3>
+    <p>Erases an object by issuing a delete command to the underlaying data source.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Erase()</code></dd>
 </dl>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
-<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the domain object is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
-<td>Thrown when concurrency is applied and no record was affected.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown wher the <b>Validator</b> property is not initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+        <td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the domain object is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
+        <td>Thrown when concurrency is applied and no record was affected.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown wher the <b>Validator</b> property is not initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">Erase</p>
-<p>Erases an object by issuing a delete command to the underlaying data source.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.Erase(Inetdev.Data.ConcurrencyMode)" class="mb-5">
+    <h3 class="lead text-info">Erase</h3>
+    <p>Erases an object by issuing a delete command to the underlaying data source.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Erase(concurrency)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>concurrency</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
-<td>Concurrency mode to apply.</td>
-</tr>
+    <tr>
+        <td>concurrency</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
+        <td>Concurrency mode to apply.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
-<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the domain object is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
-<td>Thrown when concurrency is applied and no record was affected.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown wher the <b>Validator</b> property is not initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+        <td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the domain object is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
+        <td>Thrown when concurrency is applied and no record was affected.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown wher the <b>Validator</b> property is not initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">EraseAsync</p>
-<p>Erases an object by issuing a delete command to the underlaying data source.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.EraseAsync" class="mb-5">
+    <h3 class="lead text-info">EraseAsync</h3>
+    <p>Erases an object by issuing a delete command to the underlaying data source.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> EraseAsync()</code></dd>
 </dl>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
-<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the domain object is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
-<td>Thrown when concurrency is applied and no record was affected.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown wher the <b>Validator</b> property is not initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+        <td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the domain object is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
+        <td>Thrown when concurrency is applied and no record was affected.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown wher the <b>Validator</b> property is not initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">EraseAsync</p>
-<p>Erases an object by issuing a delete command to the underlaying data source.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.EraseAsync(Inetdev.Data.ConcurrencyMode)" class="mb-5">
+    <h3 class="lead text-info">EraseAsync</h3>
+    <p>Erases an object by issuing a delete command to the underlaying data source.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> EraseAsync(concurrency)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>concurrency</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
-<td>Concurrency mode to apply.</td>
-</tr>
+    <tr>
+        <td>concurrency</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
+        <td>Concurrency mode to apply.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
-<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the domain object is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
-<td>Thrown when concurrency is applied and no record was affected.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown wher the <b>Validator</b> property is not initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+        <td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the domain object is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
+        <td>Thrown when concurrency is applied and no record was affected.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown wher the <b>Validator</b> property is not initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">Fill</p>
-<p>Fill this object with the contents of the specified DataRow object.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.Fill(System.Data.DataRow)" class="mb-5">
+    <h3 class="lead text-info">Fill</h3>
+    <p>Fill this object with the contents of the specified DataRow object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Fill(row)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>row</td>
-<td><span class="text-info" title="System.Data.DataRow">DataRow</span></td>
-<td>The DataRow object.</td>
-</tr>
+    <tr>
+        <td>row</td>
+        <td><span class="text-info" title="System.Data.DataRow">DataRow</span></td>
+        <td>The DataRow object.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when the argument <strong class="text-info">row</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
-<td>Thrown when the property to assign is not supported.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when the argument <strong class="text-info">row</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
+        <td>Thrown when the property to assign is not supported.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetDataPropertyValue</p>
-<p>Returns the value of the internal property field.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.GetDataPropertyValue(System.String)" class="mb-5">
+    <h3 class="lead text-info">GetDataPropertyValue</h3>
+    <p>Returns the value of the internal property field.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetDataPropertyValue(property)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The value of the property field.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>property</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The property to get it internal value.</td>
-</tr>
+    <tr>
+        <td>property</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The property to get it internal value.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when the argument <strong class="text-info">property</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
-<td>Thrown wher the specified property is not supported.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when the argument <strong class="text-info">property</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
+        <td>Thrown wher the specified property is not supported.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">HasData</p>
-<p>Test if a data property has data.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.HasData(System.String)" class="mb-5">
+    <h3 class="lead text-info">HasData</h3>
+    <p>Test if a data property has data.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> HasData(property)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the property contains data.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>property</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the property to test.</td>
-</tr>
+    <tr>
+        <td>property</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the property to test.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when the argument <strong class="text-info">property</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
-<td>Thrown wher the specified property is not supported.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when the argument <strong class="text-info">property</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
+        <td>Thrown wher the specified property is not supported.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">IsModified</p>
-<p>Test if a data property has been modified.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.IsModified(System.String)" class="mb-5">
+    <h3 class="lead text-info">IsModified</h3>
+    <p>Test if a data property has been modified.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsModified(property)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the property has been modified.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>property</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the property.</td>
-</tr>
+    <tr>
+        <td>property</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the property.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when the argument <strong class="text-info">property</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
-<td>Thrown when the specified data property is not supported.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when the argument <strong class="text-info">property</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
+        <td>Thrown when the specified data property is not supported.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">NotifyPropertyChanged</p>
-<p>Set property information and lauches the PropertyChanged event if assigned.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.NotifyPropertyChanged(System.Object,System.String)" class="mb-5">
+    <h3 class="lead text-info">NotifyPropertyChanged</h3>
+    <p>Set property information and lauches the PropertyChanged event if assigned.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> NotifyPropertyChanged(value, propertyName)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>value</td>
-<td><span class="text-info" title="System.Object">Object</span></td>
-<td>The current value assigned to the property.</td>
-</tr>
-<tr>
-<td>propertyName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the property.</td>
-</tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The current value assigned to the property.</td>
+    </tr>
+    <tr>
+        <td>propertyName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the property.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">Save</p>
-<p>Saves the object by issuing an insert or update command based on the specified action.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.Save(Inetdev.Data.DataAction)" class="mb-5">
+    <h3 class="lead text-info">Save</h3>
+    <p>Saves the object by issuing an insert or update command based on the specified action.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Save(action)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>action</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
-<td>The action to execute.</td>
-</tr>
+    <tr>
+        <td>action</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
+        <td>The action to execute.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
-<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the domain object is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
-<td>Thrown when concurrency is applied and no record was affected.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.InvalidDataActionException"><a href="../../inetdev-data/inetdev-data/inetdev-data-invaliddataactionexception.html">InvalidDataActionException</a></span></td>
-<td>Thrown when <strong class="text-info">action</strong> is not a valid DataAction.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+        <td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the domain object is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
+        <td>Thrown when concurrency is applied and no record was affected.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.InvalidDataActionException"><a href="../../inetdev-data/inetdev-data/inetdev-data-invaliddataactionexception.html">InvalidDataActionException</a></span></td>
+        <td>Thrown when <strong class="text-info">action</strong> is not a valid DataAction.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">Save</p>
-<p>Saves the object by issuing an insert or update command based on the specified action.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.Save(Inetdev.Data.DataAction,Inetdev.Data.ConcurrencyMode)" class="mb-5">
+    <h3 class="lead text-info">Save</h3>
+    <p>Saves the object by issuing an insert or update command based on the specified action.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Save(action, concurrency)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>action</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
-<td>The action to execute.</td>
-</tr>
-<tr>
-<td>concurrency</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
-<td>Concurrency mode to apply.</td>
-</tr>
+    <tr>
+        <td>action</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
+        <td>The action to execute.</td>
+    </tr>
+    <tr>
+        <td>concurrency</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
+        <td>Concurrency mode to apply.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
-<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the domain object is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
-<td>Thrown when concurrency is applied and no record was affected.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.InvalidDataActionException"><a href="../../inetdev-data/inetdev-data/inetdev-data-invaliddataactionexception.html">InvalidDataActionException</a></span></td>
-<td>Thrown when <strong class="text-info">action</strong> is not a valid DataAction.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+        <td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the domain object is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
+        <td>Thrown when concurrency is applied and no record was affected.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.InvalidDataActionException"><a href="../../inetdev-data/inetdev-data/inetdev-data-invaliddataactionexception.html">InvalidDataActionException</a></span></td>
+        <td>Thrown when <strong class="text-info">action</strong> is not a valid DataAction.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">SaveAsync</p>
-<p>Saves the object by issuing an insert or update command based on the specified action.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.SaveAsync(Inetdev.Data.DataAction)" class="mb-5">
+    <h3 class="lead text-info">SaveAsync</h3>
+    <p>Saves the object by issuing an insert or update command based on the specified action.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> SaveAsync(action)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>action</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
-<td>The action to execute.</td>
-</tr>
+    <tr>
+        <td>action</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
+        <td>The action to execute.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
-<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the domain object is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
-<td>Thrown when concurrency is applied and no record was affected.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.InvalidDataActionException"><a href="../../inetdev-data/inetdev-data/inetdev-data-invaliddataactionexception.html">InvalidDataActionException</a></span></td>
-<td>Thrown when <strong class="text-info">action</strong> is not a valid DataAction.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+        <td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the domain object is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
+        <td>Thrown when concurrency is applied and no record was affected.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.InvalidDataActionException"><a href="../../inetdev-data/inetdev-data/inetdev-data-invaliddataactionexception.html">InvalidDataActionException</a></span></td>
+        <td>Thrown when <strong class="text-info">action</strong> is not a valid DataAction.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">SaveAsync</p>
-<p>Saves the object by issuing an insert or update command based on the specified action.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.SaveAsync(Inetdev.Data.DataAction,Inetdev.Data.ConcurrencyMode)" class="mb-5">
+    <h3 class="lead text-info">SaveAsync</h3>
+    <p>Saves the object by issuing an insert or update command based on the specified action.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> SaveAsync(action, concurrency)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>action</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
-<td>The action to execute.</td>
-</tr>
-<tr>
-<td>concurrency</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
-<td>Concurrency mode to apply.</td>
-</tr>
+    <tr>
+        <td>action</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-dataaction.html">DataAction</a></td>
+        <td>The action to execute.</td>
+    </tr>
+    <tr>
+        <td>concurrency</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrencymode.html">ConcurrencyMode</a></td>
+        <td>Concurrency mode to apply.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
-<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the domain object is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
-<td>Thrown when concurrency is applied and no record was affected.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.InvalidDataActionException"><a href="../../inetdev-data/inetdev-data/inetdev-data-invaliddataactionexception.html">InvalidDataActionException</a></span></td>
-<td>Thrown when <strong class="text-info">action</strong> is not a valid DataAction.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.AuditingException"><a href="../../inetdev-data/inetdev-data/inetdev-data-auditingexception.html">AuditingException</a></span></td>
+        <td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the domain object is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ConcurrectActionMissedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></span></td>
+        <td>Thrown when concurrency is applied and no record was affected.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.InvalidDataActionException"><a href="../../inetdev-data/inetdev-data/inetdev-data-invaliddataactionexception.html">InvalidDataActionException</a></span></td>
+        <td>Thrown when <strong class="text-info">action</strong> is not a valid DataAction.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">SetDataPropertyValue</p>
-<p>Sets the value od the internal property field.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.SetDataPropertyValue(System.String,System.Object)" class="mb-5">
+    <h3 class="lead text-info">SetDataPropertyValue</h3>
+    <p>Sets the value od the internal property field.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SetDataPropertyValue(property, value)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>property</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The property to set it's internal value.</td>
-</tr>
-<tr>
-<td>value</td>
-<td><span class="text-info" title="System.Object">Object</span></td>
-<td>The new value for the property.</td>
-</tr>
+    <tr>
+        <td>property</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The property to set it's internal value.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The new value for the property.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when the argument <strong class="text-info">property</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
-<td>Thrown when the specified property is not supported.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.PropertyFieldNotFoundException"><a href="../../inetdev-data/inetdev-data/inetdev-data-propertyfieldnotfoundexception.html">PropertyFieldNotFoundException</a></span></td>
-<td>Thrown when the backing field is not found.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.UnableToSetDataPropertyValueException"><a href="../../inetdev-data/inetdev-data/inetdev-data-unabletosetdatapropertyvalueexception.html">UnableToSetDataPropertyValueException</a></span></td>
-<td>Thrown when the value cannot be setted.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when the argument <strong class="text-info">property</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
+        <td>Thrown when the specified property is not supported.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.PropertyFieldNotFoundException"><a href="../../inetdev-data/inetdev-data/inetdev-data-propertyfieldnotfoundexception.html">PropertyFieldNotFoundException</a></span></td>
+        <td>Thrown when the backing field is not found.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.UnableToSetDataPropertyValueException"><a href="../../inetdev-data/inetdev-data/inetdev-data-unabletosetdatapropertyvalueexception.html">UnableToSetDataPropertyValueException</a></span></td>
+        <td>Thrown when the value cannot be setted.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">SetDefaultsIfRequired</p>
-<p>Sets properties default values if required.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.SetDefaultsIfRequired" class="mb-5">
+    <h3 class="lead text-info">SetDefaultsIfRequired</h3>
+    <p>Sets properties default values if required.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> SetDefaultsIfRequired()</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Validate</p>
-<p>Validates this object.</p>
+</div>
+<div id="M:Inetdev.Data.DataModel.Validate" class="mb-5">
+    <h3 class="lead text-info">Validate</h3>
+    <p>Validates this object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Validate()</code></dd>
 </dl>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the domain object is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown wher the <b>Validator</b> property is not initialized.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
-<td>Thrown when a data property is not supported.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the domain object is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown wher the <b>Validator</b> property is not initialized.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.PropertyNotSupportedException"><a href="../../inetdev/inetdev/inetdev-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
+        <td>Thrown when a data property is not supported.</td>
+    </tr>
 </tbody></table>
+</div>
             </div>
-            <div class="col-2 d-none d-lg-block">
-                <div class="position-fixed">
+            <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#top">Top</a></li>
 <li><a href="#constructors">Constructors</a></li>
 <li><a href="#events">Events</a></li>
 <li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.Data.DataModel.ColumnPropertyMappings">ColumnPropertyMappings</a></li>
+        <li><a href="#P:Inetdev.Data.DataModel.CurrentAction">CurrentAction</a></li>
+        <li><a href="#P:Inetdev.Data.DataModel.DataProperties">DataProperties</a></li>
+        <li><a href="#P:Inetdev.Data.DataModel.DataServices">DataServices</a></li>
+        <li><a href="#P:Inetdev.Data.DataModel.EnforceModelValidation">EnforceModelValidation</a></li>
+        <li><a href="#P:Inetdev.Data.DataModel.Identity">Identity</a></li>
+        <li><a href="#P:Inetdev.Data.DataModel.Item(System.String)">Item</a></li>
+        <li><a href="#P:Inetdev.Data.DataModel.Modified">Modified</a></li>
+        <li><a href="#P:Inetdev.Data.DataModel.Numerator">Numerator</a></li>
+        <li><a href="#P:Inetdev.Data.DataModel.Sequencer">Sequencer</a></li>
+        <li><a href="#P:Inetdev.Data.DataModel.Validator">Validator</a></li>
+    </ul>
+</li>
 <li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Data.DataModel.Clear">Clear</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.CopyDataProperties(Inetdev.Data.IDataModel)">CopyDataProperties</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.EnsureObjectState">EnsureObjectState</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.Erase">Erase</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.Erase(Inetdev.Data.ConcurrencyMode)">Erase</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.EraseAsync">EraseAsync</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.EraseAsync(Inetdev.Data.ConcurrencyMode)">EraseAsync</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.Fill(System.Data.DataRow)">Fill</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.GetDataPropertyValue(System.String)">GetDataPropertyValue</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.HasData(System.String)">HasData</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.IsModified(System.String)">IsModified</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.NotifyPropertyChanged(System.Object,System.String)">NotifyPropertyChanged</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.Save(Inetdev.Data.DataAction)">Save</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.Save(Inetdev.Data.DataAction,Inetdev.Data.ConcurrencyMode)">Save</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.SaveAsync(Inetdev.Data.DataAction)">SaveAsync</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.SaveAsync(Inetdev.Data.DataAction,Inetdev.Data.ConcurrencyMode)">SaveAsync</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.SetDataPropertyValue(System.String,System.Object)">SetDataPropertyValue</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.SetDefaultsIfRequired">SetDefaultsIfRequired</a></li>
+        <li><a href="#M:Inetdev.Data.DataModel.Validate">Validate</a></li>
+    </ul>
+</li>
 </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
-        </div>
-    </div>
+
 </body>
 </html>

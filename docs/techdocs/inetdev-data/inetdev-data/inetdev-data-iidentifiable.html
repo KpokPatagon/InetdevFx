@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="navbar navbar-light bg-secondary">
             <a class="navbar-brand" href="#">Inetdev Framework Std</a>
         </div>
@@ -22,97 +22,118 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
 <h1>IIdentifiable</h1>
 <p class="lead">Allows the implementation of classes that can be identified in a consistent manner from other classes.</p>
-<h5><small>Namespace</small>: Inetdev.Data</h5>
-<h5><small>Type</small>: Interface</h5>
-<dl class="mt-4 row">
-    <dt class="col-3">Public:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Protected:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Sealed:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">Yes</dd>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Data</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Interface</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
 </dl>
 <h2 id="properties" class="mt-5">Properties</h2>
-<hr/>
-<p class="lead text-info">Identification</p>
-<p>The identification of the object.</p>
+<div id="P:Inetdev.Data.IIdentifiable.Identification" class="mb-5">
+    <h3 class="lead text-info">Identification</h3>
+    <p>The identification of the object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-identification.html">Identification</a> Identification { get; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Protocol</p>
-<p>The protocol that identifies the object.</p>
+</div>
+<div id="P:Inetdev.Data.IIdentifiable.Protocol" class="mb-5">
+    <h3 class="lead text-info">Protocol</h3>
+    <p>The protocol that identifies the object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Protocol { get; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">ProtocolCaption</p>
-<p>Localized caption for the <strong>IIdentifiable</strong> object.</p>
+</div>
+<div id="P:Inetdev.Data.IIdentifiable.ProtocolCaption" class="mb-5">
+    <h3 class="lead text-info">ProtocolCaption</h3>
+    <p>Localized caption for the <strong>IIdentifiable</strong> object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ProtocolCaption { get; }</code></dd>
 </dl>
+</div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Gets an instance of the identifiable object.</p>
+<div id="M:Inetdev.Data.IIdentifiable.GetObject(Inetdev.Data.Identification)" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Gets an instance of the identifiable object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(identification)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>identification</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-identification.html">Identification</a></td>
-<td>Object identification.</td>
-</tr>
+    <tr>
+        <td>identification</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-identification.html">Identification</a></td>
+        <td>Object identification.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObjectAsync</p>
-<p>Gets an instance of the identifiable object asyncronously.</p>
+</div>
+<div id="M:Inetdev.Data.IIdentifiable.GetObjectAsync(Inetdev.Data.Identification)" class="mb-5">
+    <h3 class="lead text-info">GetObjectAsync</h3>
+    <p>Gets an instance of the identifiable object asyncronously.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Object}">Task&lt;Object&gt;</span> GetObjectAsync(identification)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>identification</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-identification.html">Identification</a></td>
-<td>Object identification.</td>
-</tr>
+    <tr>
+        <td>identification</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-identification.html">Identification</a></td>
+        <td>Object identification.</td>
+    </tr>
 </tbody></table>
+</div>
             </div>
-            <div class="col-2 d-none d-lg-block">
-                <div class="position-fixed">
+            <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#top">Top</a></li>
 <li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.Data.IIdentifiable.Identification">Identification</a></li>
+        <li><a href="#P:Inetdev.Data.IIdentifiable.Protocol">Protocol</a></li>
+        <li><a href="#P:Inetdev.Data.IIdentifiable.ProtocolCaption">ProtocolCaption</a></li>
+    </ul>
+</li>
 <li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Data.IIdentifiable.GetObject(Inetdev.Data.Identification)">GetObject</a></li>
+        <li><a href="#M:Inetdev.Data.IIdentifiable.GetObjectAsync(Inetdev.Data.Identification)">GetObjectAsync</a></li>
+    </ul>
+</li>
 </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
-        </div>
-    </div>
+
 </body>
 </html>

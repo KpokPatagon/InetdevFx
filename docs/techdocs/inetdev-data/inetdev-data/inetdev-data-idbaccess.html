@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="navbar navbar-light bg-secondary">
             <a class="navbar-brand" href="#">Inetdev Framework Std</a>
         </div>
@@ -22,27 +22,33 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
 <h1>IDbAccess</h1>
 <p class="lead">Allows the implementation of database access.</p>
-<h5><small>Namespace</small>: Inetdev.Data</h5>
-<h5><small>Type</small>: Interface</h5>
-<dl class="mt-4 row">
-    <dt class="col-3">Public:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Protected:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Sealed:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">Yes</dd>
-<dt class="col-sm-3">Implements:</dt>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Data</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Interface</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
+<dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">System.IDisposable</dd>
 </dl>
 <h2 id="events" class="mt-5">Events</h2>
-<table class="table"><tbody>
+<table class="table">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Summary</th>
+    <tr>
+</thead>
+<tbody>
 <tr>
     <td><a href="../../inetdev-data/inetdev-data/inetdev-data-infomessageeventhandler.html">InfoMessageEventHandler</a></td>
     <td><strong>InfoMessage</strong></td>
@@ -50,492 +56,639 @@
 </tr>
 </tbody></table>
 <h2 id="properties" class="mt-5">Properties</h2>
-<hr/>
-<p class="lead text-info">ApplicationName</p>
-<p>Application name (optional).</p>
+<div id="P:Inetdev.Data.IDbAccess.ApplicationName" class="mb-5">
+    <h3 class="lead text-info">ApplicationName</h3>
+    <p>Application name (optional).</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ApplicationName { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Catalog</p>
-<p>Catalog (database name).</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.Catalog" class="mb-5">
+    <h3 class="lead text-info">Catalog</h3>
+    <p>Catalog (database name).</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Catalog { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">ConnectionTimeout</p>
-<p>Connection time-out.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.ConnectionTimeout" class="mb-5">
+    <h3 class="lead text-info">ConnectionTimeout</h3>
+    <p>Connection time-out.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.Int32}">Nullable&lt;Int32&gt;</span> ConnectionTimeout { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">DefaultSchema</p>
-<p>Default schema for database objects.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.DefaultSchema" class="mb-5">
+    <h3 class="lead text-info">DefaultSchema</h3>
+    <p>Default schema for database objects.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> DefaultSchema { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">ExtendedConnectionString</p>
-<p>Allows to extend the connection string builded from the object.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.ExtendedConnectionString" class="mb-5">
+    <h3 class="lead text-info">ExtendedConnectionString</h3>
+    <p>Allows to extend the connection string builded from the object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ExtendedConnectionString { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">IsConnectionOpen</p>
-<p>Indicates whether the connection is opened.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.IsConnectionOpen" class="mb-5">
+    <h3 class="lead text-info">IsConnectionOpen</h3>
+    <p>Indicates whether the connection is opened.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsConnectionOpen { get; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">IsInTransaction</p>
-<p>Indicates whether an opened connection is in a transaction.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.IsInTransaction" class="mb-5">
+    <h3 class="lead text-info">IsInTransaction</h3>
+    <p>Indicates whether an opened connection is in a transaction.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsInTransaction { get; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">MaxPoolSize</p>
-<p>Maximum number of elements of the connection pool.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.MaxPoolSize" class="mb-5">
+    <h3 class="lead text-info">MaxPoolSize</h3>
+    <p>Maximum number of elements of the connection pool.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.Int32}">Nullable&lt;Int32&gt;</span> MaxPoolSize { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Name</p>
-<p>Name of the object.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.Name" class="mb-5">
+    <h3 class="lead text-info">Name</h3>
+    <p>Name of the object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Password</p>
-<p>Sets the password of the user used to connect to the database.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.Password" class="mb-5">
+    <h3 class="lead text-info">Password</h3>
+    <p>Sets the password of the user used to connect to the database.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Password { set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Pooling</p>
-<p>Whether connection pooling is enabled or not.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.Pooling" class="mb-5">
+    <h3 class="lead text-info">Pooling</h3>
+    <p>Whether connection pooling is enabled or not.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.Boolean}">Nullable&lt;Boolean&gt;</span> Pooling { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Port</p>
-<p>Port where the database server is listening.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.Port" class="mb-5">
+    <h3 class="lead text-info">Port</h3>
+    <p>Port where the database server is listening.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Port { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Retries</p>
-<p>Specify how many times a failed operation will be retried.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.Retries" class="mb-5">
+    <h3 class="lead text-info">Retries</h3>
+    <p>Specify how many times a failed operation will be retried.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Retries { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">ServerName</p>
-<p>Server name or it's IP address.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.ServerName" class="mb-5">
+    <h3 class="lead text-info">ServerName</h3>
+    <p>Server name or it's IP address.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ServerName { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">UseConnectionStringBuilder</p>
-<p>Name of the connection string builder to use.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.UseConnectionStringBuilder" class="mb-5">
+    <h3 class="lead text-info">UseConnectionStringBuilder</h3>
+    <p>Name of the connection string builder to use.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UseConnectionStringBuilder { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">UseIntegratedSecurity</p>
-<p>Gets or sets if integrated database security must be used.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.UseIntegratedSecurity" class="mb-5">
+    <h3 class="lead text-info">UseIntegratedSecurity</h3>
+    <p>Gets or sets if integrated database security must be used.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> UseIntegratedSecurity { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">UserName</p>
-<p>Sets the user name used to connect to the database.</p>
+</div>
+<div id="P:Inetdev.Data.IDbAccess.UserName" class="mb-5">
+    <h3 class="lead text-info">UserName</h3>
+    <p>Sets the user name used to connect to the database.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UserName { set; }</code></dd>
 </dl>
+</div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<hr/>
-<p class="lead text-info">AddParameter</p>
-<p>Adds a new parameter to the command passed as parameter</p>
+<div id="M:Inetdev.Data.IDbAccess.AddParameter(System.Data.IDbCommand,System.String,Inetdev.Data.DbType,System.Data.ParameterDirection,System.Object)" class="mb-5">
+    <h3 class="lead text-info">AddParameter</h3>
+    <p>Adds a new parameter to the command passed as parameter</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddParameter(command, name, type, direction, value)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>command</td>
-<td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
-<td>The command where the parameter will be added</td>
-</tr>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The quoted parameter name</td>
-</tr>
-<tr>
-<td>type</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-dbtype.html">DbType</a></td>
-<td>The parameter data type</td>
-</tr>
-<tr>
-<td>direction</td>
-<td><span class="text-info" title="System.Data.ParameterDirection">ParameterDirection</span></td>
-<td>The parameter direction</td>
-</tr>
-<tr>
-<td>value</td>
-<td><span class="text-info" title="System.Object">Object</span></td>
-<td>The value of the parameter</td>
-</tr>
+    <tr>
+        <td>command</td>
+        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td>The command where the parameter will be added</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The quoted parameter name</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-dbtype.html">DbType</a></td>
+        <td>The parameter data type</td>
+    </tr>
+    <tr>
+        <td>direction</td>
+        <td><span class="text-info" title="System.Data.ParameterDirection">ParameterDirection</span></td>
+        <td>The parameter direction</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The value of the parameter</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">AddParameter</p>
-<p>Adds a new parameter to the command passed as parameter</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.AddParameter(System.Data.IDbCommand,System.String,Inetdev.Data.DbType,System.Data.ParameterDirection,System.Int32,System.Object)" class="mb-5">
+    <h3 class="lead text-info">AddParameter</h3>
+    <p>Adds a new parameter to the command passed as parameter</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddParameter(command, name, type, direction, size, value)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>command</td>
-<td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
-<td>The command where the parameter will be added</td>
-</tr>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The quoted parameter name</td>
-</tr>
-<tr>
-<td>type</td>
-<td><a href="../../inetdev-data/inetdev-data/inetdev-data-dbtype.html">DbType</a></td>
-<td>The parameter data type</td>
-</tr>
-<tr>
-<td>direction</td>
-<td><span class="text-info" title="System.Data.ParameterDirection">ParameterDirection</span></td>
-<td>The parameter direction</td>
-</tr>
-<tr>
-<td>size</td>
-<td><span class="text-info" title="System.Int32">Int32</span></td>
-<td>The size of the data in the <strong class="text-info">value</strong>parameter</td>
-</tr>
-<tr>
-<td>value</td>
-<td><span class="text-info" title="System.Object">Object</span></td>
-<td>The value of the parameter</td>
-</tr>
+    <tr>
+        <td>command</td>
+        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td>The command where the parameter will be added</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The quoted parameter name</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-dbtype.html">DbType</a></td>
+        <td>The parameter data type</td>
+    </tr>
+    <tr>
+        <td>direction</td>
+        <td><span class="text-info" title="System.Data.ParameterDirection">ParameterDirection</span></td>
+        <td>The parameter direction</td>
+    </tr>
+    <tr>
+        <td>size</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td>The size of the data in the <strong class="text-info">value</strong>parameter</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The value of the parameter</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">BeginTransaction</p>
-<p>Initiates a database transaction</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.BeginTransaction" class="mb-5">
+    <h3 class="lead text-info">BeginTransaction</h3>
+    <p>Initiates a database transaction</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbTransaction">IDbTransaction</span> BeginTransaction()</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>An object representing the new transaction</p>
-<hr/>
-<p class="lead text-info">BeginTransaction</p>
-<p>Initiates a database transaction with the specified isolation level</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.BeginTransaction(System.Data.IsolationLevel)" class="mb-5">
+    <h3 class="lead text-info">BeginTransaction</h3>
+    <p>Initiates a database transaction with the specified isolation level</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbTransaction">IDbTransaction</span> BeginTransaction(iso)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>Ann object representing the new transaction</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>iso</td>
-<td><span class="text-info" title="System.Data.IsolationLevel">IsolationLevel</span></td>
-<td>Isolation level for the transaction</td>
-</tr>
+    <tr>
+        <td>iso</td>
+        <td><span class="text-info" title="System.Data.IsolationLevel">IsolationLevel</span></td>
+        <td>Isolation level for the transaction</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">CloseConnection</p>
-<p>Closes the database connection if it is opened</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.CloseConnection" class="mb-5">
+    <h3 class="lead text-info">CloseConnection</h3>
+    <p>Closes the database connection if it is opened</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CloseConnection()</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">CommitTransaction</p>
-<p>Commits the running database transaction</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.CommitTransaction" class="mb-5">
+    <h3 class="lead text-info">CommitTransaction</h3>
+    <p>Commits the running database transaction</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CommitTransaction()</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">CreateCommand</p>
-<p>Creates a new database command</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.CreateCommand(System.Data.CommandType)" class="mb-5">
+    <h3 class="lead text-info">CreateCommand</h3>
+    <p>Creates a new database command</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> CreateCommand(commandType)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>An object representing the newly created command</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>commandType</td>
-<td><span class="text-info" title="System.Data.CommandType">CommandType</span></td>
-<td>Type of the command to create</td>
-</tr>
+    <tr>
+        <td>commandType</td>
+        <td><span class="text-info" title="System.Data.CommandType">CommandType</span></td>
+        <td>Type of the command to create</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ExecuteCommand</p>
-<p>Executes the specified command against the database.</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.ExecuteCommand(System.Data.IDbCommand,System.Data.DataTable)" class="mb-5">
+    <h3 class="lead text-info">ExecuteCommand</h3>
+    <p>Executes the specified command against the database.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> ExecuteCommand(command, dataTable)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>Amount of records affected by the command.</p>
-<h5 class="mt-3">Remarks</h5>
+<h6 class="mt-1">Remarks</h6>
 <p>If the command returns a set of records, the <strong class="text-info">dataTable</strong> parameter
             must contain an initialized DataTable, otherwise it must be null.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>command</td>
-<td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
-<td>Command to execute</td>
-</tr>
-<tr>
-<td>dataTable</td>
-<td><span class="text-info" title="System.Data.DataTable">DataTable</span></td>
-<td>An initialized DataTable object or null.</td>
-</tr>
+    <tr>
+        <td>command</td>
+        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td>Command to execute</td>
+    </tr>
+    <tr>
+        <td>dataTable</td>
+        <td><span class="text-info" title="System.Data.DataTable">DataTable</span></td>
+        <td>An initialized DataTable object or null.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ExecuteCommandAsync</p>
-<p>Executes the specified command asyncronously againt the database.</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.ExecuteCommandAsync(System.Data.IDbCommand,System.Data.DataTable)" class="mb-5">
+    <h3 class="lead text-info">ExecuteCommandAsync</h3>
+    <p>Executes the specified command asyncronously againt the database.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Int32}">Task&lt;Int32&gt;</span> ExecuteCommandAsync(command, dataTable)</code></dd>
 </dl>
-<h5 class="mt-3">Remarks</h5>
+<h6 class="mt-1">Remarks</h6>
 <p>If the command returns a set of records, the <strong class="text-info">dataTable</strong> parameter
             must contain an initialized DataTable, otherwise it must be null.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>command</td>
-<td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
-<td>Command to execute</td>
-</tr>
-<tr>
-<td>dataTable</td>
-<td><span class="text-info" title="System.Data.DataTable">DataTable</span></td>
-<td>An initialized DataTable object or null.</td>
-</tr>
+    <tr>
+        <td>command</td>
+        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td>Command to execute</td>
+    </tr>
+    <tr>
+        <td>dataTable</td>
+        <td><span class="text-info" title="System.Data.DataTable">DataTable</span></td>
+        <td>An initialized DataTable object or null.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ExecuteReader</p>
-<p>Executes the specified command against the database and returns an IDataReader.</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.ExecuteReader(System.Data.IDbCommand)" class="mb-5">
+    <h3 class="lead text-info">ExecuteReader</h3>
+    <p>Executes the specified command against the database and returns an IDataReader.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDataReader">IDataReader</span> ExecuteReader(command)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A read only forward only <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the database data.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>command</td>
-<td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
-<td>Command to execute.</td>
-</tr>
+    <tr>
+        <td>command</td>
+        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td>Command to execute.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ExecuteReaderAsync</p>
-<p>Executes the specified command against the database asyncronously and returns an IDataReader.</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.ExecuteReaderAsync(System.Data.IDbCommand)" class="mb-5">
+    <h3 class="lead text-info">ExecuteReaderAsync</h3>
+    <p>Executes the specified command against the database asyncronously and returns an IDataReader.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Data.IDataReader}">Task&lt;IDataReader&gt;</span> ExecuteReaderAsync(command)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>command</td>
-<td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
-<td>Command to execute.</td>
-</tr>
+    <tr>
+        <td>command</td>
+        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td>Command to execute.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ExecuteScalar</p>
-<p>Executes the specified command against the database and returns the
+</div>
+<div id="M:Inetdev.Data.IDbAccess.ExecuteScalar(System.Data.IDbCommand)" class="mb-5">
+    <h3 class="lead text-info">ExecuteScalar</h3>
+    <p>Executes the specified command against the database and returns the
             first field of the first record retrieved</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> ExecuteScalar(command)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>Value of the first field of the first record</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>command</td>
-<td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
-<td>Command to excecute</td>
-</tr>
+    <tr>
+        <td>command</td>
+        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td>Command to excecute</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ExecuteScalarAsync</p>
-<p>Executes the specified command againts the database asyncronously and
+</div>
+<div id="M:Inetdev.Data.IDbAccess.ExecuteScalarAsync(System.Data.IDbCommand)" class="mb-5">
+    <h3 class="lead text-info">ExecuteScalarAsync</h3>
+    <p>Executes the specified command againts the database asyncronously and
             returns the first field of the first record retrieved.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Object}">Task&lt;Object&gt;</span> ExecuteScalarAsync(command)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>command</td>
-<td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
-<td>Command to execute.</td>
-</tr>
+    <tr>
+        <td>command</td>
+        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td>Command to execute.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetSchema</p>
-<p>Ejecutes the underlaying connection GetSchema() method.</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.GetSchema" class="mb-5">
+    <h3 class="lead text-info">GetSchema</h3>
+    <p>Ejecutes the underlaying connection GetSchema() method.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.DataTable">DataTable</span> GetSchema()</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A <span class="text-info" title="System.Data.DataTable">DataTable</span> as obtained from the GetSchema() method.</p>
-<hr/>
-<p class="lead text-info">GetSchema</p>
-<p>Ejecutes the underlaying connection GetSchema() method.</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.GetSchema(System.String)" class="mb-5">
+    <h3 class="lead text-info">GetSchema</h3>
+    <p>Ejecutes the underlaying connection GetSchema() method.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.DataTable">DataTable</span> GetSchema(collectionName)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A <span class="text-info" title="System.Data.DataTable">DataTable</span> as obtained from the GetSchema() method.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>collectionName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the collection to retrieve.</td>
-</tr>
+    <tr>
+        <td>collectionName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the collection to retrieve.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetSchema</p>
-<p>Ejecutes the underlaying connection GetSchema() method.</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.GetSchema(System.String,System.String[])" class="mb-5">
+    <h3 class="lead text-info">GetSchema</h3>
+    <p>Ejecutes the underlaying connection GetSchema() method.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Data.DataTable">DataTable</span> GetSchema(collectionName, restrictionValues)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A <span class="text-info" title="System.Data.DataTable">DataTable</span> as obtained from the GetSchema() method.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>collectionName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the collection to retrieve.</td>
-</tr>
-<tr>
-<td>restrictionValues</td>
-<td><span class="text-info" title="System.String[]">String[]</span></td>
-<td>A set of restriction values.</td>
-</tr>
+    <tr>
+        <td>collectionName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the collection to retrieve.</td>
+    </tr>
+    <tr>
+        <td>restrictionValues</td>
+        <td><span class="text-info" title="System.String[]">String[]</span></td>
+        <td>A set of restriction values.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetServerVersion</p>
-<p>Gets the server version.</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.GetServerVersion" class="mb-5">
+    <h3 class="lead text-info">GetServerVersion</h3>
+    <p>Gets the server version.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetServerVersion()</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The server version.</p>
-<hr/>
-<p class="lead text-info">OpenConnection</p>
-<p>Opens a connection with the database server</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.OpenConnection" class="mb-5">
+    <h3 class="lead text-info">OpenConnection</h3>
+    <p>Opens a connection with the database server</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> OpenConnection()</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">OpenConnectionAsync</p>
-<p>Opens a connection with the database server asyncronously.</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.OpenConnectionAsync" class="mb-5">
+    <h3 class="lead text-info">OpenConnectionAsync</h3>
+    <p>Opens a connection with the database server asyncronously.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> OpenConnectionAsync()</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">RollbackTransaction</p>
-<p>Aborts the current transaction</p>
+</div>
+<div id="M:Inetdev.Data.IDbAccess.RollbackTransaction" class="mb-5">
+    <h3 class="lead text-info">RollbackTransaction</h3>
+    <p>Aborts the current transaction</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> RollbackTransaction()</code></dd>
 </dl>
+</div>
             </div>
-            <div class="col-2 d-none d-lg-block">
-                <div class="position-fixed">
+            <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#top">Top</a></li>
 <li><a href="#events">Events</a></li>
 <li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.Data.IDbAccess.ApplicationName">ApplicationName</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.Catalog">Catalog</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.ConnectionTimeout">ConnectionTimeout</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.DefaultSchema">DefaultSchema</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.ExtendedConnectionString">ExtendedConnectionString</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.IsConnectionOpen">IsConnectionOpen</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.IsInTransaction">IsInTransaction</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.MaxPoolSize">MaxPoolSize</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.Name">Name</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.Password">Password</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.Pooling">Pooling</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.Port">Port</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.Retries">Retries</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.ServerName">ServerName</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.UseConnectionStringBuilder">UseConnectionStringBuilder</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.UseIntegratedSecurity">UseIntegratedSecurity</a></li>
+        <li><a href="#P:Inetdev.Data.IDbAccess.UserName">UserName</a></li>
+    </ul>
+</li>
 <li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Data.IDbAccess.AddParameter(System.Data.IDbCommand,System.String,Inetdev.Data.DbType,System.Data.ParameterDirection,System.Object)">AddParameter</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.AddParameter(System.Data.IDbCommand,System.String,Inetdev.Data.DbType,System.Data.ParameterDirection,System.Int32,System.Object)">AddParameter</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.BeginTransaction">BeginTransaction</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.BeginTransaction(System.Data.IsolationLevel)">BeginTransaction</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.CloseConnection">CloseConnection</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.CommitTransaction">CommitTransaction</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.CreateCommand(System.Data.CommandType)">CreateCommand</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.ExecuteCommand(System.Data.IDbCommand,System.Data.DataTable)">ExecuteCommand</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.ExecuteCommandAsync(System.Data.IDbCommand,System.Data.DataTable)">ExecuteCommandAsync</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.ExecuteReader(System.Data.IDbCommand)">ExecuteReader</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.ExecuteReaderAsync(System.Data.IDbCommand)">ExecuteReaderAsync</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.ExecuteScalar(System.Data.IDbCommand)">ExecuteScalar</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.ExecuteScalarAsync(System.Data.IDbCommand)">ExecuteScalarAsync</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.GetSchema">GetSchema</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.GetSchema(System.String)">GetSchema</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.GetSchema(System.String,System.String[])">GetSchema</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.GetServerVersion">GetServerVersion</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.OpenConnection">OpenConnection</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.OpenConnectionAsync">OpenConnectionAsync</a></li>
+        <li><a href="#M:Inetdev.Data.IDbAccess.RollbackTransaction">RollbackTransaction</a></li>
+    </ul>
+</li>
 </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
-        </div>
-    </div>
+
 </body>
 </html>

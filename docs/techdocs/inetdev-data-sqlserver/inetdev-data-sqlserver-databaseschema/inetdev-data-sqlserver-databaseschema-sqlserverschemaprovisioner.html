@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="navbar navbar-light bg-secondary">
             <a class="navbar-brand" href="#">Inetdev Framework Std</a>
         </div>
@@ -22,1095 +22,1508 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
 <h1>SqlServerSchemaProvisioner</h1>
 <p class="lead">Implements an <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-ischemaprovisioner.html">ISchemaProvisioner</a> for Microsoft SQL server.</p>
-<h5><small>Namespace</small>: Inetdev.Data.SqlServer.DatabaseSchema</h5>
-<h5><small>Type</small>: Class</h5>
-<dl class="mt-4 row">
-    <dt class="col-3">Public:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Protected:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Sealed:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">No</dd>
-<dt class="col-sm-3">Inherits from:</dt>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Data.SqlServer.DatabaseSchema</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">System.Object</dd>
-<dt class="col-sm-3">Implements:</dt>
+<dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">Inetdev.Data.DatabaseSchema.ISchemaProvisioner</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<hr/>
-<p class="lead text-info">SqlServerSchemaProvisioner</p>
-<p>Default constructor</p>
+<div id="" class="mb-5">
+    <h3 class="lead text-info">SqlServerSchemaProvisioner</h3>
+    <p>Default constructor</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SqlServerSchemaProvisioner()</code></dd>
 </dl>
+</div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<hr/>
-<p class="lead text-info">CommandBuilder</p>
-<p>Database command builder.</p>
+<div id="P:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CommandBuilder" class="mb-5">
+    <h3 class="lead text-info">CommandBuilder</h3>
+    <p>Database command builder.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idbcmdbuilder.html">IDbCmdBuilder</a> CommandBuilder { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">DataAccessAPI</p>
-<p>Database access.</p>
+</div>
+<div id="P:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DataAccessAPI" class="mb-5">
+    <h3 class="lead text-info">DataAccessAPI</h3>
+    <p>Database access.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a> DataAccessAPI { get; set; }</code></dd>
 </dl>
+</div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<hr/>
-<p class="lead text-info">AddColumnAsync</p>
-<p>Adds a column to a table.</p>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.AddColumnAsync(Inetdev.Data.DatabaseSchema.TableColumn)" class="mb-5">
+    <h3 class="lead text-info">AddColumnAsync</h3>
+    <p>Adds a column to a table.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> AddColumnAsync(column)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>column</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
-<td>Column to be added.</td>
-</tr>
+    <tr>
+        <td>column</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td>Column to be added.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">AddColumnConstraintAsync</p>
-<p>Add a column contraint.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.AddColumnConstraintAsync(Inetdev.Data.DatabaseSchema.ColumnConstraint)" class="mb-5">
+    <h3 class="lead text-info">AddColumnConstraintAsync</h3>
+    <p>Add a column contraint.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> AddColumnConstraintAsync(constraint)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>constraint</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
-<td>Contraint to be added.</td>
-</tr>
+    <tr>
+        <td>constraint</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
+        <td>Contraint to be added.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">constraint</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">constraint</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">AddForeignKeyAsync</p>
-<p>Adds a foreign key to the specified table.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.AddForeignKeyAsync(Inetdev.Data.DatabaseSchema.ForeignKey)" class="mb-5">
+    <h3 class="lead text-info">AddForeignKeyAsync</h3>
+    <p>Adds a foreign key to the specified table.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> AddForeignKeyAsync(foreignKey)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>foreignKey</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a></td>
-<td>Foreign key configuration to add.</td>
-</tr>
+    <tr>
+        <td>foreignKey</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a></td>
+        <td>Foreign key configuration to add.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the foreign key configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">foreignKey</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the foreign key configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">foreignKey</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">AlterColumnAsync</p>
-<p>Alters a column of a table.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.AlterColumnAsync(Inetdev.Data.DatabaseSchema.TableColumn,Inetdev.Data.DatabaseSchema.TableColumn)" class="mb-5">
+    <h3 class="lead text-info">AlterColumnAsync</h3>
+    <p>Alters a column of a table.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> AlterColumnAsync(from, to)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>from</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
-<td>The actual configuration of the column.</td>
-</tr>
-<tr>
-<td>to</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
-<td>The desired configuration of the column.</td>
-</tr>
+    <tr>
+        <td>from</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td>The actual configuration of the column.</td>
+    </tr>
+    <tr>
+        <td>to</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td>The desired configuration of the column.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">from</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">to</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">from</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">to</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">CreateIndexAsync</p>
-<p>Creates an index.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CreateIndexAsync(Inetdev.Data.DatabaseSchema.Index)" class="mb-5">
+    <h3 class="lead text-info">CreateIndexAsync</h3>
+    <p>Creates an index.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> CreateIndexAsync(index)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>index</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
-<td>Index configuration.</td>
-</tr>
+    <tr>
+        <td>index</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
+        <td>Index configuration.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the index configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">index</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the index configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">index</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">CreatePrimaryKeyAsync</p>
-<p>Creates a primary key.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CreatePrimaryKeyAsync(Inetdev.Data.DatabaseSchema.Index)" class="mb-5">
+    <h3 class="lead text-info">CreatePrimaryKeyAsync</h3>
+    <p>Creates a primary key.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> CreatePrimaryKeyAsync(primaryKey)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>primaryKey</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
-<td>Primary key configuration.</td>
-</tr>
+    <tr>
+        <td>primaryKey</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
+        <td>Primary key configuration.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">primaryKey</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">primaryKey</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">CreateSequenceIfNotExistsAsync</p>
-<p>Creates a sequence if it does not exists.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CreateSequenceIfNotExistsAsync(Inetdev.Data.DatabaseSchema.Sequence)" class="mb-5">
+    <h3 class="lead text-info">CreateSequenceIfNotExistsAsync</h3>
+    <p>Creates a sequence if it does not exists.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> CreateSequenceIfNotExistsAsync(sequence)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>sequence</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-sequence.html">Sequence</a></td>
-<td>A <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-sequence.html">Sequence</a>.</td>
-</tr>
+    <tr>
+        <td>sequence</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-sequence.html">Sequence</a></td>
+        <td>A <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-sequence.html">Sequence</a>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">CreateTableAsync</p>
-<p>Creates a table.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CreateTableAsync(Inetdev.Data.DatabaseSchema.Table)" class="mb-5">
+    <h3 class="lead text-info">CreateTableAsync</h3>
+    <p>Creates a table.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> CreateTableAsync(table)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>table</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a></td>
-<td>Table configuration.</td>
-</tr>
+    <tr>
+        <td>table</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a></td>
+        <td>Table configuration.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the table configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the table configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">CreateViewAsync</p>
-<p>Creates a view.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CreateViewAsync(Inetdev.Data.DatabaseSchema.View)" class="mb-5">
+    <h3 class="lead text-info">CreateViewAsync</h3>
+    <p>Creates a view.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> CreateViewAsync(view)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>view</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a></td>
-<td>View configuration.</td>
-</tr>
+    <tr>
+        <td>view</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a></td>
+        <td>View configuration.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">DropColumnAsync</p>
-<p>Drops a column from the table it belongs to.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropColumnAsync(Inetdev.Data.DatabaseSchema.TableColumn)" class="mb-5">
+    <h3 class="lead text-info">DropColumnAsync</h3>
+    <p>Drops a column from the table it belongs to.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> DropColumnAsync(column)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>column</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
-<td>Column to be dropped.</td>
-</tr>
+    <tr>
+        <td>column</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td>Column to be dropped.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">DropColumnConstraintAsync</p>
-<p>Drops a column constraint.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropColumnConstraintAsync(Inetdev.Data.DatabaseSchema.ColumnConstraint)" class="mb-5">
+    <h3 class="lead text-info">DropColumnConstraintAsync</h3>
+    <p>Drops a column constraint.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> DropColumnConstraintAsync(constraint)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>constraint</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
-<td>The contraint to be dropped.</td>
-</tr>
+    <tr>
+        <td>constraint</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
+        <td>The contraint to be dropped.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">constraint</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">constraint</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">DropForeignKeyAsync</p>
-<p>Drops a foreign key.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropForeignKeyAsync(Inetdev.Data.DatabaseSchema.ForeignKey)" class="mb-5">
+    <h3 class="lead text-info">DropForeignKeyAsync</h3>
+    <p>Drops a foreign key.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> DropForeignKeyAsync(foreignKey)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>foreignKey</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a></td>
-<td>Foreign key to drop.</td>
-</tr>
+    <tr>
+        <td>foreignKey</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a></td>
+        <td>Foreign key to drop.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the foreign key configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">foreignKey</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the foreign key configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">foreignKey</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">DropIndexAsync</p>
-<p>Drops an index.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropIndexAsync(Inetdev.Data.DatabaseSchema.Index)" class="mb-5">
+    <h3 class="lead text-info">DropIndexAsync</h3>
+    <p>Drops an index.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> DropIndexAsync(index)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>index</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
-<td>Index to drop.</td>
-</tr>
+    <tr>
+        <td>index</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
+        <td>Index to drop.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the index configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">index</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the index configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">index</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">DropPrimaryKeyAsync</p>
-<p>Drops a primary key index.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropPrimaryKeyAsync(Inetdev.Data.DatabaseSchema.Index)" class="mb-5">
+    <h3 class="lead text-info">DropPrimaryKeyAsync</h3>
+    <p>Drops a primary key index.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> DropPrimaryKeyAsync(primaryKey)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>primaryKey</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
-<td>The primary key to be dropped.</td>
-</tr>
+    <tr>
+        <td>primaryKey</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
+        <td>The primary key to be dropped.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">primaryKey</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">primaryKey</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">DropTableAsync</p>
-<p>Drops a table or view.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropTableAsync(Inetdev.Data.DatabaseSchema.Table)" class="mb-5">
+    <h3 class="lead text-info">DropTableAsync</h3>
+    <p>Drops a table or view.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> DropTableAsync(table)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>table</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a></td>
-<td>Table or view to drop.</td>
-</tr>
+    <tr>
+        <td>table</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a></td>
+        <td>Table or view to drop.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the table configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the table configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">DropViewAsync</p>
-<p>Drops a view.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropViewAsync(Inetdev.Data.DatabaseSchema.View)" class="mb-5">
+    <h3 class="lead text-info">DropViewAsync</h3>
+    <p>Drops a view.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> DropViewAsync(view)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>view</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a></td>
-<td>View to drop.</td>
-</tr>
+    <tr>
+        <td>view</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a></td>
+        <td>View to drop.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the view configuration is not valid for schema manipulation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the view configuration is not valid for schema manipulation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GrantPermissionsAsync</p>
-<p>Grants permission to a grantee to access a database object</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.GrantPermissionsAsync(Inetdev.Data.DatabaseSchema.Grant)" class="mb-5">
+    <h3 class="lead text-info">GrantPermissionsAsync</h3>
+    <p>Grants permission to a grantee to access a database object</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> GrantPermissionsAsync(grant)</code></dd>
 </dl>
-<h5 class="mt-3">Remarks</h5>
+<h6 class="mt-1">Remarks</h6>
 <p>This method does nothing.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>grant</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-grant.html">Grant</a></td>
-<td>Grant configuration.</td>
-</tr>
+    <tr>
+        <td>grant</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-grant.html">Grant</a></td>
+        <td>Grant configuration.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">RenameTableAsync</p>
-<p>Renames a table within a schema.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.RenameTableAsync(Inetdev.Data.DatabaseSchema.TableName,System.String)" class="mb-5">
+    <h3 class="lead text-info">RenameTableAsync</h3>
+    <p>Renames a table within a schema.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> RenameTableAsync(tableName, newTableName)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>tableName</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablename.html">TableName</a></td>
-<td>A <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablename.html">TableName</a> for the table to be renamed.</td>
-</tr>
-<tr>
-<td>newTableName</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The new name for the table without the schema.</td>
-</tr>
+    <tr>
+        <td>tableName</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablename.html">TableName</a></td>
+        <td>A <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablename.html">TableName</a> for the table to be renamed.</td>
+    </tr>
+    <tr>
+        <td>newTableName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The new name for the table without the schema.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">tableName</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when <strong class="text-info">newTableName</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when <strong class="text-info">tableName</strong> is not valid for the rename operation.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when a required property was not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">tableName</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">newTableName</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when <strong class="text-info">tableName</strong> is not valid for the rename operation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateColumnConstraintForAdd</p>
-<p>Checks if <strong class="text-info">constraint</strong> is valid for add.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateColumnConstraintForAdd(Inetdev.Data.DatabaseSchema.ColumnConstraint)" class="mb-5">
+    <h3 class="lead text-info">ValidateColumnConstraintForAdd</h3>
+    <p>Checks if <strong class="text-info">constraint</strong> is valid for add.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateColumnConstraintForAdd(constraint)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>constraint</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a> to validate.</td>
-</tr>
+    <tr>
+        <td>constraint</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a> to validate.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">constraint</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">constraint</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateColumnConstraintForDrop</p>
-<p>Checks if the <strong class="text-info">constraint</strong> is valid for drop.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateColumnConstraintForDrop(Inetdev.Data.DatabaseSchema.ColumnConstraint)" class="mb-5">
+    <h3 class="lead text-info">ValidateColumnConstraintForDrop</h3>
+    <p>Checks if the <strong class="text-info">constraint</strong> is valid for drop.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateColumnConstraintForDrop(constraint)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>constraint</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a> to validate.</td>
-</tr>
+    <tr>
+        <td>constraint</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a> to validate.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">constraint</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">constraint</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateForeignKeyForAdd</p>
-<p>Checks if <strong class="text-info">foreignKey</strong> is valid for add.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateForeignKeyForAdd(Inetdev.Data.DatabaseSchema.ForeignKey)" class="mb-5">
+    <h3 class="lead text-info">ValidateForeignKeyForAdd</h3>
+    <p>Checks if <strong class="text-info">foreignKey</strong> is valid for add.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateForeignKeyForAdd(foreignKey)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>foreignKey</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a> to validate.</td>
-</tr>
+    <tr>
+        <td>foreignKey</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a> to validate.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">foreignKey</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">foreignKey</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateForeignKeyForDrop</p>
-<p>Checks if <strong class="text-info">foreignKey</strong> is valid for drop.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateForeignKeyForDrop(Inetdev.Data.DatabaseSchema.ForeignKey)" class="mb-5">
+    <h3 class="lead text-info">ValidateForeignKeyForDrop</h3>
+    <p>Checks if <strong class="text-info">foreignKey</strong> is valid for drop.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateForeignKeyForDrop(foreignKey)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>foreignKey</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a> to validate.</td>
-</tr>
+    <tr>
+        <td>foreignKey</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-foreignkey.html">ForeignKey</a> to validate.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">foreignKey</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">foreignKey</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateGrantForGrant</p>
-<p>Checks if <strong class="text-info">grant</strong> is valid for grant.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateGrantForGrant(Inetdev.Data.DatabaseSchema.Grant)" class="mb-5">
+    <h3 class="lead text-info">ValidateGrantForGrant</h3>
+    <p>Checks if <strong class="text-info">grant</strong> is valid for grant.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateGrantForGrant(grant)</code></dd>
 </dl>
-<h5 class="mt-3">Remarks</h5>
+<h6 class="mt-1">Remarks</h6>
 <p>This method does nothing.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>grant</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-grant.html">Grant</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-grant.html">Grant</a> to validate.</td>
-</tr>
+    <tr>
+        <td>grant</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-grant.html">Grant</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-grant.html">Grant</a> to validate.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateIndexForCreate</p>
-<p>Checks if <strong class="text-info">index</strong> is valid for creation.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateIndexForCreate(Inetdev.Data.DatabaseSchema.Index)" class="mb-5">
+    <h3 class="lead text-info">ValidateIndexForCreate</h3>
+    <p>Checks if <strong class="text-info">index</strong> is valid for creation.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateIndexForCreate(index)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>index</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a> to validate.</td>
-</tr>
+    <tr>
+        <td>index</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a> to validate.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thown when <strong class="text-info">index</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thown when <strong class="text-info">index</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateIndexForDrop</p>
-<p>Checks if <strong class="text-info">index</strong> is valid for drop.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateIndexForDrop(Inetdev.Data.DatabaseSchema.Index)" class="mb-5">
+    <h3 class="lead text-info">ValidateIndexForDrop</h3>
+    <p>Checks if <strong class="text-info">index</strong> is valid for drop.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateIndexForDrop(index)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>index</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a> to validate.</td>
-</tr>
+    <tr>
+        <td>index</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-index.html">Index</a> to validate.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">index</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">index</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateSequenceForCreate</p>
-<p>Check if the sequence is valid for create.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateSequenceForCreate(Inetdev.Data.DatabaseSchema.Sequence)" class="mb-5">
+    <h3 class="lead text-info">ValidateSequenceForCreate</h3>
+    <p>Check if the sequence is valid for create.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateSequenceForCreate(sequence)</code></dd>
 </dl>
-<h5 class="mt-3">Remarks</h5>
+<h6 class="mt-1">Remarks</h6>
 <p>This method does nothing.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>sequence</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-sequence.html">Sequence</a></td>
-<td>A <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-sequence.html">Sequence</a>.</td>
-</tr>
+    <tr>
+        <td>sequence</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-sequence.html">Sequence</a></td>
+        <td>A <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-sequence.html">Sequence</a>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateTableColumnForAdd</p>
-<p>Checks if a <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> is valid for an add column command.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateTableColumnForAdd(Inetdev.Data.DatabaseSchema.TableColumn)" class="mb-5">
+    <h3 class="lead text-info">ValidateTableColumnForAdd</h3>
+    <p>Checks if a <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> is valid for an add column command.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateTableColumnForAdd(column)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>column</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> to verify.</td>
-</tr>
+    <tr>
+        <td>column</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> to verify.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is invalid.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is invalid.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateTableColumnForAlter</p>
-<p>Checks if a <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> is valid for a modify column command.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateTableColumnForAlter(Inetdev.Data.DatabaseSchema.TableColumn)" class="mb-5">
+    <h3 class="lead text-info">ValidateTableColumnForAlter</h3>
+    <p>Checks if a <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> is valid for a modify column command.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateTableColumnForAlter(column)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>column</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> to verify.</td>
-</tr>
+    <tr>
+        <td>column</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> to verify.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is invalid.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is invalid.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateTableColumnForDrop</p>
-<p>Checks if a <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> is valid for a drop column command.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateTableColumnForDrop(Inetdev.Data.DatabaseSchema.TableColumn)" class="mb-5">
+    <h3 class="lead text-info">ValidateTableColumnForDrop</h3>
+    <p>Checks if a <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> is valid for a drop column command.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateTableColumnForDrop(column)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>column</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> to verify.</td>
-</tr>
+    <tr>
+        <td>column</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecolumn.html">TableColumn</a> to verify.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is invalid.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is invalid.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateTableForCreate</p>
-<p>Checks if <strong class="text-info">table</strong> is valid for creation.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateTableForCreate(Inetdev.Data.DatabaseSchema.Table)" class="mb-5">
+    <h3 class="lead text-info">ValidateTableForCreate</h3>
+    <p>Checks if <strong class="text-info">table</strong> is valid for creation.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateTableForCreate(table)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>table</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a> to validate.</td>
-</tr>
+    <tr>
+        <td>table</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a> to validate.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateTableForDrop</p>
-<p>Checks if <strong class="text-info">table</strong> is valid for drop.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateTableForDrop(Inetdev.Data.DatabaseSchema.Table)" class="mb-5">
+    <h3 class="lead text-info">ValidateTableForDrop</h3>
+    <p>Checks if <strong class="text-info">table</strong> is valid for drop.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateTableForDrop(table)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>table</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a> to validate.</td>
-</tr>
+    <tr>
+        <td>table</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a> to validate.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateViewForCreate</p>
-<p>Checks is <strong class="text-info">view</strong> is valid for creation.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateViewForCreate(Inetdev.Data.DatabaseSchema.View)" class="mb-5">
+    <h3 class="lead text-info">ValidateViewForCreate</h3>
+    <p>Checks is <strong class="text-info">view</strong> is valid for creation.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateViewForCreate(view)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>view</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a> to validate.</td>
-</tr>
+    <tr>
+        <td>view</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a> to validate.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ValidateViewForDrop</p>
-<p>Checks if <strong class="text-info">view</strong> is valid for drop.</p>
+</div>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateViewForDrop(Inetdev.Data.DatabaseSchema.View)" class="mb-5">
+    <h3 class="lead text-info">ValidateViewForDrop</h3>
+    <p>Checks if <strong class="text-info">view</strong> is valid for drop.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ValidateViewForDrop(view)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>view</td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a></td>
-<td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a> to validate.</td>
-</tr>
+    <tr>
+        <td>view</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a></td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-view.html">View</a> to validate.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
-<td>Thrown when the configuration is not valid.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong></td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.ValidationException"><a href="../../inetdev-data/inetdev-data/inetdev-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong></td>
+    </tr>
 </tbody></table>
+</div>
             </div>
-            <div class="col-2 d-none d-lg-block">
-                <div class="position-fixed">
+            <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#top">Top</a></li>
 <li><a href="#constructors">Constructors</a></li>
 <li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CommandBuilder">CommandBuilder</a></li>
+        <li><a href="#P:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DataAccessAPI">DataAccessAPI</a></li>
+    </ul>
+</li>
 <li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.AddColumnAsync(Inetdev.Data.DatabaseSchema.TableColumn)">AddColumnAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.AddColumnConstraintAsync(Inetdev.Data.DatabaseSchema.ColumnConstraint)">AddColumnConstraintAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.AddForeignKeyAsync(Inetdev.Data.DatabaseSchema.ForeignKey)">AddForeignKeyAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.AlterColumnAsync(Inetdev.Data.DatabaseSchema.TableColumn,Inetdev.Data.DatabaseSchema.TableColumn)">AlterColumnAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CreateIndexAsync(Inetdev.Data.DatabaseSchema.Index)">CreateIndexAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CreatePrimaryKeyAsync(Inetdev.Data.DatabaseSchema.Index)">CreatePrimaryKeyAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CreateSequenceIfNotExistsAsync(Inetdev.Data.DatabaseSchema.Sequence)">CreateSequenceIfNotExistsAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CreateTableAsync(Inetdev.Data.DatabaseSchema.Table)">CreateTableAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.CreateViewAsync(Inetdev.Data.DatabaseSchema.View)">CreateViewAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropColumnAsync(Inetdev.Data.DatabaseSchema.TableColumn)">DropColumnAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropColumnConstraintAsync(Inetdev.Data.DatabaseSchema.ColumnConstraint)">DropColumnConstraintAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropForeignKeyAsync(Inetdev.Data.DatabaseSchema.ForeignKey)">DropForeignKeyAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropIndexAsync(Inetdev.Data.DatabaseSchema.Index)">DropIndexAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropPrimaryKeyAsync(Inetdev.Data.DatabaseSchema.Index)">DropPrimaryKeyAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropTableAsync(Inetdev.Data.DatabaseSchema.Table)">DropTableAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.DropViewAsync(Inetdev.Data.DatabaseSchema.View)">DropViewAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.GrantPermissionsAsync(Inetdev.Data.DatabaseSchema.Grant)">GrantPermissionsAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.RenameTableAsync(Inetdev.Data.DatabaseSchema.TableName,System.String)">RenameTableAsync</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateColumnConstraintForAdd(Inetdev.Data.DatabaseSchema.ColumnConstraint)">ValidateColumnConstraintForAdd</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateColumnConstraintForDrop(Inetdev.Data.DatabaseSchema.ColumnConstraint)">ValidateColumnConstraintForDrop</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateForeignKeyForAdd(Inetdev.Data.DatabaseSchema.ForeignKey)">ValidateForeignKeyForAdd</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateForeignKeyForDrop(Inetdev.Data.DatabaseSchema.ForeignKey)">ValidateForeignKeyForDrop</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateGrantForGrant(Inetdev.Data.DatabaseSchema.Grant)">ValidateGrantForGrant</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateIndexForCreate(Inetdev.Data.DatabaseSchema.Index)">ValidateIndexForCreate</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateIndexForDrop(Inetdev.Data.DatabaseSchema.Index)">ValidateIndexForDrop</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateSequenceForCreate(Inetdev.Data.DatabaseSchema.Sequence)">ValidateSequenceForCreate</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateTableColumnForAdd(Inetdev.Data.DatabaseSchema.TableColumn)">ValidateTableColumnForAdd</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateTableColumnForAlter(Inetdev.Data.DatabaseSchema.TableColumn)">ValidateTableColumnForAlter</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateTableColumnForDrop(Inetdev.Data.DatabaseSchema.TableColumn)">ValidateTableColumnForDrop</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateTableForCreate(Inetdev.Data.DatabaseSchema.Table)">ValidateTableForCreate</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateTableForDrop(Inetdev.Data.DatabaseSchema.Table)">ValidateTableForDrop</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateViewForCreate(Inetdev.Data.DatabaseSchema.View)">ValidateViewForCreate</a></li>
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerSchemaProvisioner.ValidateViewForDrop(Inetdev.Data.DatabaseSchema.View)">ValidateViewForDrop</a></li>
+    </ul>
+</li>
 </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
-        </div>
-    </div>
+
 </body>
 </html>

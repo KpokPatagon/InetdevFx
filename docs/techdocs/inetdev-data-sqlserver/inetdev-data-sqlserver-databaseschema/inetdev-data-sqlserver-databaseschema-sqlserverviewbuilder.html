@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="navbar navbar-light bg-secondary">
             <a class="navbar-brand" href="#">Inetdev Framework Std</a>
         </div>
@@ -22,83 +22,92 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
 <h1>SqlServerViewBuilder</h1>
 <p class="lead">Implements an <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-iviewbuilder.html">IViewBuilder</a> for Microsoft Sql Server.</p>
-<h5><small>Namespace</small>: Inetdev.Data.SqlServer.DatabaseSchema</h5>
-<h5><small>Type</small>: Class</h5>
-<dl class="mt-4 row">
-    <dt class="col-3">Public:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Protected:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Sealed:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">No</dd>
-<dt class="col-sm-3">Inherits from:</dt>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Data.SqlServer.DatabaseSchema</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">Inetdev.Data.DatabaseSchema.AbstractViewBuilder</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<hr/>
-<p class="lead text-info">SqlServerViewBuilder</p>
-<p>Default constructor</p>
+<div id="" class="mb-5">
+    <h3 class="lead text-info">SqlServerViewBuilder</h3>
+    <p>Default constructor</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SqlServerViewBuilder()</code></dd>
 </dl>
+</div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<hr/>
-<p class="lead text-info">BuildViewText</p>
-<p>Build the sentence that conforms the view.</p>
+<div id="M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerViewBuilder.BuildViewText(Inetdev.Data.Query.SelectStatement)" class="mb-5">
+    <h3 class="lead text-info">BuildViewText</h3>
+    <p>Build the sentence that conforms the view.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> BuildViewText(statement)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The text to be use to create the view.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>statement</td>
-<td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a></td>
-<td>A <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a>.</td>
-</tr>
+    <tr>
+        <td>statement</td>
+        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a></td>
+        <td>A <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a>.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-<td>Thrown when the object is not properly initialized.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when the object is not properly initialized.</td>
+    </tr>
 </tbody></table>
+</div>
             </div>
-            <div class="col-2 d-none d-lg-block">
-                <div class="position-fixed">
+            <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#top">Top</a></li>
 <li><a href="#constructors">Constructors</a></li>
 <li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Data.SqlServer.DatabaseSchema.SqlServerViewBuilder.BuildViewText(Inetdev.Data.Query.SelectStatement)">BuildViewText</a></li>
+    </ul>
+</li>
 </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
-        </div>
-    </div>
+
 </body>
 </html>

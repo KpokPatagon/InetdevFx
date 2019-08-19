@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="navbar navbar-light bg-secondary">
             <a class="navbar-brand" href="#">Inetdev Framework Std</a>
         </div>
@@ -22,774 +22,1056 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
 <h1>ApplicationContext</h1>
 <p class="lead">Interface for the application context.</p>
-<h5><small>Namespace</small>: Inetdev.Context</h5>
-<h5><small>Type</small>: Class</h5>
-<dl class="mt-4 row">
-    <dt class="col-3">Public:</dt>
-    <dd class="col-9">Yes</dd>
-    <dt class="col-3">Protected:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Sealed:</dt>
-    <dd class="col-9">No</dd>
-    <dt class="col-3">Abstract:</dt>
-    <dd class="col-9">No</dd>
-<dt class="col-sm-3">Inherits from:</dt>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Context</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">System.Object</dd>
-<dt class="col-sm-3">Implements:</dt>
+<dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">System.IDisposable</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<hr/>
-<p class="lead text-info">ApplicationContext</p>
-<p>Default constructor</p>
+<div id="M:Inetdev.Context.ApplicationContext.#ctor" class="mb-5">
+    <h3 class="lead text-info">ApplicationContext</h3>
+    <p>Default constructor</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ApplicationContext()</code></dd>
 </dl>
+</div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<hr/>
-<p class="lead text-info">ActivityId</p>
-<p>An id for the currently on-going activity. Can be use to log
+<div id="P:Inetdev.Context.ApplicationContext.ActivityId" class="mb-5">
+    <h3 class="lead text-info">ActivityId</h3>
+    <p>An id for the currently on-going activity. Can be use to log
             in order to trace an activity path within logs.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ActivityId { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Configuration</p>
-<p>Provides access to configuration.</p>
+</div>
+<div id="P:Inetdev.Context.ApplicationContext.Configuration" class="mb-5">
+    <h3 class="lead text-info">Configuration</h3>
+    <p>Provides access to configuration.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="Microsoft.Extensions.Configuration.IConfiguration">IConfiguration</span> Configuration { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Current</p>
-<p>The application context.</p>
+</div>
+<div id="P:Inetdev.Context.ApplicationContext.Current" class="mb-5">
+    <h3 class="lead text-info">Current</h3>
+    <p>The application context.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <strong>ApplicationContext</strong> Current { get; set; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Factories</p>
-<p>Collection of factories contained in this application context.</p>
+</div>
+<div id="P:Inetdev.Context.ApplicationContext.Factories" class="mb-5">
+    <h3 class="lead text-info">Factories</h3>
+    <p>Collection of factories contained in this application context.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.ICollection{Inetdev.Context.IObjectFactory}">ICollection&lt;<a href="../../inetdev/inetdev-context/inetdev-context-iobjectfactory.html">IObjectFactory</a>&gt;</span> Factories { get; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Items</p>
-<p>A dictionary that holds objects of any kind.</p>
+</div>
+<div id="P:Inetdev.Context.ApplicationContext.Items" class="mb-5">
+    <h3 class="lead text-info">Items</h3>
+    <p>A dictionary that holds objects of any kind.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IDictionary{System.String,System.Object}">IDictionary&lt;String, Object&gt;</span> Items { get; }</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">Packages</p>
-<p>Collection of packages contained in this application context.</p>
+</div>
+<div id="P:Inetdev.Context.ApplicationContext.Packages" class="mb-5">
+    <h3 class="lead text-info">Packages</h3>
+    <p>Collection of packages contained in this application context.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.ICollection{Inetdev.Context.IPackage}">ICollection&lt;<a href="../../inetdev/inetdev-context/inetdev-context-ipackage.html">IPackage</a>&gt;</span> Packages { get; }</code></dd>
 </dl>
+</div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<hr/>
-<p class="lead text-info">ContainsFactory</p>
-<p>Finds out if the application context contains a factory of the given name.</p>
+<div id="M:Inetdev.Context.ApplicationContext.ContainsFactory(System.String)" class="mb-5">
+    <h3 class="lead text-info">ContainsFactory</h3>
+    <p>Finds out if the application context contains a factory of the given name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ContainsFactory(name)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the object factory exists or <strong class="text-info">false</strong> otherwise.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object factory to verify.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object factory to verify.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when the <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when the <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ContainsObject</p>
-<p>Finds out if the application context contains an object of the given name.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.ContainsObject(System.String)" class="mb-5">
+    <h3 class="lead text-info">ContainsObject</h3>
+    <p>Finds out if the application context contains an object of the given name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ContainsObject(name)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the application context contains the object or <strong class="text-info">false</strong> if not.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to verify.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to verify.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when the <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when the <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ContainsObject</p>
-<p>Finds out if the application context contains an object of the given <span class="text-info" title="System.Type">Type</span>.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.ContainsObject(System.Type)" class="mb-5">
+    <h3 class="lead text-info">ContainsObject</h3>
+    <p>Finds out if the application context contains an object of the given <span class="text-info" title="System.Type">Type</span>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ContainsObject(objectType)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the application context contains the object or <strong class="text-info">false</strong> if not.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>objectType</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td>The <b>Type</b> of the object to verify.</td>
-</tr>
+    <tr>
+        <td>objectType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The <b>Type</b> of the object to verify.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">objectType</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">objectType</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ContainsPackage</p>
-<p>Find out if the application context contains a package of the given name.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.ContainsPackage(System.String)" class="mb-5">
+    <h3 class="lead text-info">ContainsPackage</h3>
+    <p>Find out if the application context contains a package of the given name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ContainsPackage(name)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the application context contains the software package or <strong class="text-info">false</strong> if not.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the package to verify.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the package to verify.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when the <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when the <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">Dispose</p>
-<p>Performs application specific clean up.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.Dispose" class="mb-5">
+    <h3 class="lead text-info">Dispose</h3>
+    <p>Performs application specific clean up.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Dispose()</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">GetFactory</p>
-<p>Retrieves the object factory of the given name.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetFactory(System.String)" class="mb-5">
+    <h3 class="lead text-info">GetFactory</h3>
+    <p>Retrieves the object factory of the given name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev/inetdev-context/inetdev-context-iobjectfactory.html">IObjectFactory</a> GetFactory(name)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The <a href="../../inetdev/inetdev-context/inetdev-context-iobjectfactory.html">IObjectFactory</a> of the given name.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object factory to retrive.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object factory to retrive.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when the <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.NoSuchFactoryException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchfactoryexception.html">NoSuchFactoryException</a></span></td>
-<td>Thown when the specify object factory does not exists.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when the <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.NoSuchFactoryException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchfactoryexception.html">NoSuchFactoryException</a></span></td>
+        <td>Thown when the specify object factory does not exists.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the object for the given type <typeparamref name="T" />.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetObject``1" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the object for the given type <typeparamref name="T" />.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title=""></span> GetObject&lt;T&gt;()</code></dd>
 </dl>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the object for the given type <typeparamref name="T" />.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetObject``1(System.Object[])" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the object for the given type <typeparamref name="T" />.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title=""></span> GetObject&lt;T&gt;(args)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>args</td>
-<td><span class="text-info" title="System.Object[]">Object[]</span></td>
-<td>Constructor arguments.</td>
-</tr>
+    <tr>
+        <td>args</td>
+        <td><span class="text-info" title="System.Object[]">Object[]</span></td>
+        <td>Constructor arguments.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
-<td>Thrown when the <b>Factory</b> does not contains the required object.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
+        <td>Thrown when the <b>Factory</b> does not contains the required object.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the object of the given name.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetObject(System.String)" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the object of the given name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(name)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The object of the given name.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to retrieve.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to retrieve.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
-<td>Thrown when there is not object of the given name.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
+        <td>Thrown when there is not object of the given name.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the object of the given name 
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetObject(System.String,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the object of the given name 
             throwing an exception only id specified.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(name, thrown)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The object of the given name.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to retrieve.</td>
-</tr>
-<tr>
-<td>thrown</td>
-<td><span class="text-info" title="System.Boolean">Boolean</span></td>
-<td><strong class="text-info">true</strong> if an exception should be thrown or <strong class="text-info">false</strong> if <strong class="text-info">null</strong> should be returned.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to retrieve.</td>
+    </tr>
+    <tr>
+        <td>thrown</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td><strong class="text-info">true</strong> if an exception should be thrown or <strong class="text-info">false</strong> if <strong class="text-info">null</strong> should be returned.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
-<td>Thrown when there is not object of the given name.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
+        <td>Thrown when there is not object of the given name.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the object for the given name,
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetObject(System.String,System.Object[])" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the object for the given name,
             passing the arguments to the object constructor.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(name, args)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The context object.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to retrive.</td>
-</tr>
-<tr>
-<td>args</td>
-<td><span class="text-info" title="System.Object[]">Object[]</span></td>
-<td>The arguments to pass to the constructor.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to retrive.</td>
+    </tr>
+    <tr>
+        <td>args</td>
+        <td><span class="text-info" title="System.Object[]">Object[]</span></td>
+        <td>The arguments to pass to the constructor.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
-<td>Thrown when there is not object of the given name.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
+        <td>Thrown when there is not object of the given name.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrives an initialized instance of the object of the given name 
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetObject(System.String,System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrives an initialized instance of the object of the given name 
             only if it is of the given <span class="text-info" title="System.Type">Type</span>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(name, requiredType)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The object of the given name.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to retrive.</td>
-</tr>
-<tr>
-<td>requiredType</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td>The required <span class="text-info" title="System.Type">Type</span> of the object.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to retrive.</td>
+    </tr>
+    <tr>
+        <td>requiredType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The required <span class="text-info" title="System.Type">Type</span> of the object.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
-<td>Thrown when there is not object of the given name.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.ObjectNotOfRequiredTypeException"><a href="../../inetdev/inetdev-context/inetdev-context-objectnotofrequiredtypeexception.html">ObjectNotOfRequiredTypeException</a></span></td>
-<td>Thrown the the object is not of the required type.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
+        <td>Thrown when there is not object of the given name.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.ObjectNotOfRequiredTypeException"><a href="../../inetdev/inetdev-context/inetdev-context-objectnotofrequiredtypeexception.html">ObjectNotOfRequiredTypeException</a></span></td>
+        <td>Thrown the the object is not of the required type.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the first object of <strong class="text-info">objectType</strong> type.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetObject(System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the first object of <strong class="text-info">objectType</strong> type.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(objectType)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>objectType</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td>The exact type of the object to retrive.</td>
-</tr>
+    <tr>
+        <td>objectType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The exact type of the object to retrive.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">objectType</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
-<td>Thrown when there is no objects of the required object.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">objectType</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
+        <td>Thrown when there is no objects of the required object.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObject</p>
-<p>Retrieves an initialized instance of the first object of <strong class="text-info">objectType</strong> type.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetObject(System.Type,System.Object[])" class="mb-5">
+    <h3 class="lead text-info">GetObject</h3>
+    <p>Retrieves an initialized instance of the first object of <strong class="text-info">objectType</strong> type.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetObject(objectType, args)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>objectType</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td>The exact type of the object to retrive.</td>
-</tr>
-<tr>
-<td>args</td>
-<td><span class="text-info" title="System.Object[]">Object[]</span></td>
-<td>Constructor arguments.</td>
-</tr>
+    <tr>
+        <td>objectType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The exact type of the object to retrive.</td>
+    </tr>
+    <tr>
+        <td>args</td>
+        <td><span class="text-info" title="System.Object[]">Object[]</span></td>
+        <td>Constructor arguments.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">objectType</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
-<td>Thrown when there is no objects of the required object.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">objectType</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
+        <td>Thrown when there is no objects of the required object.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObjectsAssignableFrom</p>
-<p>Get a list of objects that are assignable from type <typeparamref name="T" />.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetObjectsAssignableFrom``1" class="mb-5">
+    <h3 class="lead text-info">GetObjectsAssignableFrom</h3>
+    <p>Get a list of objects that are assignable from type <typeparamref name="T" />.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> GetObjectsAssignableFrom&lt;T&gt;()</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A list of objects assignable from type <typeparamref name="T" />.</p>
-<hr/>
-<p class="lead text-info">GetObjectsAssignableFrom</p>
-<p>Get a list of objects that are assignable from <strong class="text-info">type</strong>.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetObjectsAssignableFrom(System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetObjectsAssignableFrom</h3>
+    <p>Get a list of objects that are assignable from <strong class="text-info">type</strong>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{System.Object}">IEnumerable&lt;Object&gt;</span> GetObjectsAssignableFrom(type)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A list of objects assignable from type <strong class="text-info">type</strong>.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>type</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td>The type that the objects are assignable from.</td>
-</tr>
+    <tr>
+        <td>type</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The type that the objects are assignable from.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">type</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">type</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObjectsOfContextAssignableFrom</p>
-<p>Retrieves a list of initialized context object that are assignable from type <strong class="text-info">type</strong>.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetObjectsOfContextAssignableFrom(System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetObjectsOfContextAssignableFrom</h3>
+    <p>Retrieves a list of initialized context object that are assignable from type <strong class="text-info">type</strong>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{System.Object}">IEnumerable&lt;Object&gt;</span> GetObjectsOfContextAssignableFrom(type)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A list of objects assignable from <strong class="text-info">type</strong>.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>type</td>
-<td><span class="text-info" title="System.Type">Type</span></td>
-<td>The type that the objects are asignable from.</td>
-</tr>
+    <tr>
+        <td>type</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The type that the objects are asignable from.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">type</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">type</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetObjectsOfContextAssignableFrom</p>
-<p>Retrieves a list of initialized context object that are assignable from type <typeparamref name="T" />.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetObjectsOfContextAssignableFrom``1" class="mb-5">
+    <h3 class="lead text-info">GetObjectsOfContextAssignableFrom</h3>
+    <p>Retrieves a list of initialized context object that are assignable from type <typeparamref name="T" />.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> GetObjectsOfContextAssignableFrom&lt;T&gt;()</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>A list of objects assignable from type <typeparamref name="T" />.</p>
-<hr/>
-<p class="lead text-info">GetPackage</p>
-<p>Retrieves the software package of the given name.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetPackage(System.String)" class="mb-5">
+    <h3 class="lead text-info">GetPackage</h3>
+    <p>Retrieves the software package of the given name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev/inetdev-context/inetdev-context-ipackage.html">IPackage</a> GetPackage(name)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The software package of the given name.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the package to retrives.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the package to retrives.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.NoSuchPackageException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchpackageexception.html">NoSuchPackageException</a></span></td>
-<td>Thown the the required package does not exists.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.NoSuchPackageException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchpackageexception.html">NoSuchPackageException</a></span></td>
+        <td>Thown the the required package does not exists.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">GetType</p>
-<p>Retrives the <span class="text-info" title="System.Type">Type</span> of the object of the given name.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.GetType(System.String)" class="mb-5">
+    <h3 class="lead text-info">GetType</h3>
+    <p>Retrives the <span class="text-info" title="System.Type">Type</span> of the object of the given name.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Type">Type</span> GetType(name)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p>The <span class="text-info" title="System.Type">Type</span> of the context object.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to retrive it's type.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to retrive it's type.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
-<td>Thrown when there is not object of the given name.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
+        <td>Thrown when there is not object of the given name.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">InjectDependencies</p>
-<p>Inject into the object <strong class="text-info">o</strong> the dependencies of an
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.InjectDependencies(System.String,System.Object)" class="mb-5">
+    <h3 class="lead text-info">InjectDependencies</h3>
+    <p>Inject into the object <strong class="text-info">o</strong> the dependencies of an
             object named <strong class="text-info">name</strong>.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> InjectDependencies(name, o)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to get it's dependencies.</td>
-</tr>
-<tr>
-<td>o</td>
-<td><span class="text-info" title="System.Object">Object</span></td>
-<td>The object where to inject the dependencies.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to get it's dependencies.</td>
+    </tr>
+    <tr>
+        <td>o</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The object where to inject the dependencies.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thrown when <strong class="text-info">o</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
-<td>Thrown when there is not object of the given name.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">o</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
+        <td>Thrown when there is not object of the given name.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">IsSingleton</p>
-<p>Finds out if the object of the given name is a singleton.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.IsSingleton(System.String)" class="mb-5">
+    <h3 class="lead text-info">IsSingleton</h3>
+    <p>Finds out if the object of the given name is a singleton.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsSingleton(name)</code></dd>
 </dl>
-<h5 class="mt-3">Returns</h5>
+<h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the object is a singleton or <strong class="text-info">false</strong> if not.</p>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>name</td>
-<td><span class="text-info" title="System.String">String</span></td>
-<td>The name of the object to verify.</td>
-</tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the object to verify.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-<td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
-<td>Thrown when there is not object of the given name.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.NoSuchObjectException"><a href="../../inetdev/inetdev-context/inetdev-context-nosuchobjectexception.html">NoSuchObjectException</a></span></td>
+        <td>Thrown when there is not object of the given name.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">RegisterFactory</p>
-<p>Adds the specified <a href="../../inetdev/inetdev-context/inetdev-context-iobjectfactory.html">IObjectFactory</a> to the factory list.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.RegisterFactory(Inetdev.Context.IObjectFactory)" class="mb-5">
+    <h3 class="lead text-info">RegisterFactory</h3>
+    <p>Adds the specified <a href="../../inetdev/inetdev-context/inetdev-context-iobjectfactory.html">IObjectFactory</a> to the factory list.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> RegisterFactory(factory)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>factory</td>
-<td><a href="../../inetdev/inetdev-context/inetdev-context-iobjectfactory.html">IObjectFactory</a></td>
-<td>The factory to add to the application context.</td>
-</tr>
+    <tr>
+        <td>factory</td>
+        <td><a href="../../inetdev/inetdev-context/inetdev-context-iobjectfactory.html">IObjectFactory</a></td>
+        <td>The factory to add to the application context.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thown when <strong class="text-info">factory</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.ContextConfigurationException"><a href="../../inetdev/inetdev-context/inetdev-context-contextconfigurationexception.html">ContextConfigurationException</a></span></td>
-<td>Thown when a factory with the same name already exists.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thown when <strong class="text-info">factory</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.ContextConfigurationException"><a href="../../inetdev/inetdev-context/inetdev-context-contextconfigurationexception.html">ContextConfigurationException</a></span></td>
+        <td>Thown when a factory with the same name already exists.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">RegisterPackage</p>
-<p>Adds the specified software package to the packages list.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.RegisterPackage(Inetdev.Context.IPackage)" class="mb-5">
+    <h3 class="lead text-info">RegisterPackage</h3>
+    <p>Adds the specified software package to the packages list.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> RegisterPackage(package)</code></dd>
 </dl>
-<h5 class="mt-5">Parameters</h5>
+<h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Name</th><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td>package</td>
-<td><a href="../../inetdev/inetdev-context/inetdev-context-ipackage.html">IPackage</a></td>
-<td>The package to add to the application context.</td>
-</tr>
+    <tr>
+        <td>package</td>
+        <td><a href="../../inetdev/inetdev-context/inetdev-context-ipackage.html">IPackage</a></td>
+        <td>The package to add to the application context.</td>
+    </tr>
 </tbody></table>
-<h5 class="mt-5">Exceptions</h5>
+<h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
 <tbody>
-<tr>
-<td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-<td>Thown when the argument <strong class="text-info">package</strong> is <strong class="text-info">null</strong>.</td>
-</tr>
-<tr>
-<td><span class="text-info" title="Inetdev.Context.ContextConfigurationException"><a href="../../inetdev/inetdev-context/inetdev-context-contextconfigurationexception.html">ContextConfigurationException</a></span></td>
-<td>Thrown when package configuration is invalid.</td>
-</tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thown when the argument <strong class="text-info">package</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Context.ContextConfigurationException"><a href="../../inetdev/inetdev-context/inetdev-context-contextconfigurationexception.html">ContextConfigurationException</a></span></td>
+        <td>Thrown when package configuration is invalid.</td>
+    </tr>
 </tbody></table>
-<hr/>
-<p class="lead text-info">ToString</p>
-<p>Returns a textual representation of the object.</p>
+</div>
+<div id="M:Inetdev.Context.ApplicationContext.ToString" class="mb-5">
+    <h3 class="lead text-info">ToString</h3>
+    <p>Returns a textual representation of the object.</p>
 <dl class="row">
-    <dt class="col-2">Signature:</dt>
+    <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
 </dl>
+</div>
             </div>
-            <div class="col-2 d-none d-lg-block">
-                <div class="position-fixed">
+            <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#top">Top</a></li>
 <li><a href="#constructors">Constructors</a></li>
 <li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.Context.ApplicationContext.ActivityId">ActivityId</a></li>
+        <li><a href="#P:Inetdev.Context.ApplicationContext.Configuration">Configuration</a></li>
+        <li><a href="#P:Inetdev.Context.ApplicationContext.Current">Current</a></li>
+        <li><a href="#P:Inetdev.Context.ApplicationContext.Factories">Factories</a></li>
+        <li><a href="#P:Inetdev.Context.ApplicationContext.Items">Items</a></li>
+        <li><a href="#P:Inetdev.Context.ApplicationContext.Packages">Packages</a></li>
+    </ul>
+</li>
 <li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Context.ApplicationContext.ContainsFactory(System.String)">ContainsFactory</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.ContainsObject(System.String)">ContainsObject</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.ContainsObject(System.Type)">ContainsObject</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.ContainsPackage(System.String)">ContainsPackage</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.Dispose">Dispose</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetFactory(System.String)">GetFactory</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetObject``1">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetObject``1(System.Object[])">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetObject(System.String)">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetObject(System.String,System.Boolean)">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetObject(System.String,System.Object[])">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetObject(System.String,System.Type)">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetObject(System.Type)">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetObject(System.Type,System.Object[])">GetObject</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetObjectsAssignableFrom``1">GetObjectsAssignableFrom</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetObjectsAssignableFrom(System.Type)">GetObjectsAssignableFrom</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetObjectsOfContextAssignableFrom(System.Type)">GetObjectsOfContextAssignableFrom</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetObjectsOfContextAssignableFrom``1">GetObjectsOfContextAssignableFrom</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetPackage(System.String)">GetPackage</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.GetType(System.String)">GetType</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.InjectDependencies(System.String,System.Object)">InjectDependencies</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.IsSingleton(System.String)">IsSingleton</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.RegisterFactory(Inetdev.Context.IObjectFactory)">RegisterFactory</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.RegisterPackage(Inetdev.Context.IPackage)">RegisterPackage</a></li>
+        <li><a href="#M:Inetdev.Context.ApplicationContext.ToString">ToString</a></li>
+    </ul>
+</li>
 </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
-        </div>
-    </div>
+
 </body>
 </html>
