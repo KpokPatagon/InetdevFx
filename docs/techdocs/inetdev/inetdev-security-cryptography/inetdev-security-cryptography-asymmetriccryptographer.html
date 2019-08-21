@@ -96,12 +96,12 @@
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:Inetdev.Security.Cryptography.AsymmetricCryptographer.DecryptPackage(System.IO.Stream,System.IO.Stream,System.Boolean)" class="mb-5">
+<div id="M:Inetdev.Security.Cryptography.AsymmetricCryptographer.DecryptPackage(System.IO.Stream,System.IO.Stream)" class="mb-5">
     <h3 class="lead text-info">DecryptPackage</h3>
     <p>Decrypts the information contained within the <strong class="text-info">ciphered</strong> package.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DecryptPackage(ciphered, plaintext, closeCryptoStream)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DecryptPackage(ciphered, plaintext)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -123,12 +123,6 @@
         <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
         <td>Decrypted data from the ciphered package.</td>
     </tr>
-    <tr>
-        <td>closeCryptoStream</td>
-        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
-        <td><strong class="text-info">true</strong> is the internal stream must be closed (default) closing
-                the internal stream will also close the <strong class="text-info">ciphered</strong> stream.</td>
-    </tr>
 </tbody></table>
 <h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
@@ -144,6 +138,10 @@
         <td><p>Thrown when <strong class="text-info">ciphered</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">plaintext</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
+        <td><span class="text-info" title="Inetdev.Security.Cryptography.CryptographyException"><a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td>Thrown when an error occurs while decrypting the data.</td>
+    </tr>
+    <tr>
         <td><span class="text-info" title="Inetdev.Security.Cryptography.AsymmetricKeyNotFoundException"><a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-asymmetrickeynotfoundexception.html">AsymmetricKeyNotFoundException</a></span></td>
         <td>Thrown when the key could not be found.</td>
     </tr>
@@ -153,12 +151,12 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:Inetdev.Security.Cryptography.AsymmetricCryptographer.EncryptPackage(System.IO.Stream,System.IO.Stream,System.Boolean)" class="mb-5">
+<div id="M:Inetdev.Security.Cryptography.AsymmetricCryptographer.EncryptPackage(System.IO.Stream,System.IO.Stream)" class="mb-5">
     <h3 class="lead text-info">EncryptPackage</h3>
     <p>Encrypts <strong class="text-info">plaintext</strong> into a <strong class="text-info">ciphered</strong> package.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> EncryptPackage(plaintext, ciphered, closeCryptoStream)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> EncryptPackage(plaintext, ciphered)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -180,12 +178,6 @@
         <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
         <td>Ciphered information</td>
     </tr>
-    <tr>
-        <td>closeCryptoStream</td>
-        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
-        <td><strong class="text-info">true</strong> is the internal stream must be closed (default) closing
-                the internal stream will also close the <strong class="text-info">ciphered</strong> stream.</td>
-    </tr>
 </tbody></table>
 <h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
@@ -199,6 +191,10 @@
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
         <td><p>Thrown when <strong class="text-info">ciphered</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">plaintext</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Security.Cryptography.CryptographyException"><a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td>Thrown when an error occurs while encrypting the data.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Security.Cryptography.AsymmetricKeyNotFoundException"><a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-asymmetrickeynotfoundexception.html">AsymmetricKeyNotFoundException</a></span></td>
@@ -224,8 +220,8 @@
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#M:Inetdev.Security.Cryptography.AsymmetricCryptographer.DecryptPackage(System.IO.Stream,System.IO.Stream,System.Boolean)">DecryptPackage</a></li>
-        <li><a href="#M:Inetdev.Security.Cryptography.AsymmetricCryptographer.EncryptPackage(System.IO.Stream,System.IO.Stream,System.Boolean)">EncryptPackage</a></li>
+        <li><a href="#M:Inetdev.Security.Cryptography.AsymmetricCryptographer.DecryptPackage(System.IO.Stream,System.IO.Stream)">DecryptPackage</a></li>
+        <li><a href="#M:Inetdev.Security.Cryptography.AsymmetricCryptographer.EncryptPackage(System.IO.Stream,System.IO.Stream)">EncryptPackage</a></li>
     </ul>
 </li>
 </ul>

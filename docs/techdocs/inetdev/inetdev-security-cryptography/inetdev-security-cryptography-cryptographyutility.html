@@ -283,15 +283,18 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when the buffer is <strong class="text-info">null</strong>.</td>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><p>Thrown when the <strong class="text-info">buffer</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">buffer</strong>.Length is zero.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Security.Cryptography.CryptographyException"><a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td>Thrown when an error occurs while transforming the data.</td>
     </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Security.Cryptography.CryptographyUtility.TransformStream(System.Security.Cryptography.ICryptoTransform,System.IO.Stream,System.IO.Stream)" class="mb-5">
     <h3 class="lead text-info">TransformStream</h3>
-    <p>Transforms the source stream into the destination stream 
-            using the given cryptographic transform.</p>
+    <p>Transforms the source stream into the destination stream using the given cryptographic transform.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TransformStream(transform, source, destination)</code></dd>
@@ -333,7 +336,11 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when any os the argument is <strong class="text-info">null</strong>.</td>
+        <td><p>Thrown when <strong class="text-info">transform</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">source</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">destination</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Security.Cryptography.CryptographyException"><a href="../../inetdev/inetdev-security-cryptography/inetdev-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td>Thrown when an error occurs while transforming the data.</td>
     </tr>
 </tbody></table>
 </div>
