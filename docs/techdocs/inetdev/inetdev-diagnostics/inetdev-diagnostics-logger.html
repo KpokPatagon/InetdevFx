@@ -64,7 +64,7 @@
     <p>Gets the instance of the <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a> used by this facade.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a> Writer { get; }</code></dd>
+    <dd class="col-10"><code>public <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a> Writer { get; set; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -88,7 +88,7 @@
     <tr>
         <td>entry</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a></td>
-        <td></td>
+        <td>A <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a> to be written.</td>
     </tr>
 </tbody></table>
 </div>
@@ -112,22 +112,22 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
     <tr>
         <td>level</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-loglevel.html">LogLevel</a></td>
-        <td></td>
+        <td>Message level.</td>
     </tr>
     <tr>
         <td>category</td>
         <td><span class="text-info" title="System.String">String</span></td>
-        <td></td>
+        <td>Message category.</td>
     </tr>
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td></td>
+        <td>Message event id.</td>
     </tr>
 </tbody></table>
 </div>
@@ -151,7 +151,7 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
 </tbody></table>
 </div>
@@ -175,12 +175,12 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td></td>
+        <td>message event id.</td>
     </tr>
 </tbody></table>
 </div>
@@ -204,7 +204,7 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
 </tbody></table>
 </div>
@@ -228,12 +228,12 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td></td>
+        <td>message event id.</td>
     </tr>
 </tbody></table>
 </div>
@@ -257,7 +257,7 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
 </tbody></table>
 </div>
@@ -281,12 +281,12 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td></td>
+        <td>message event id.</td>
     </tr>
 </tbody></table>
 </div>
@@ -310,7 +310,7 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
 </tbody></table>
 </div>
@@ -334,12 +334,12 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td></td>
+        <td>message event id.</td>
     </tr>
 </tbody></table>
 </div>
@@ -363,7 +363,7 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
 </tbody></table>
 </div>
@@ -387,12 +387,12 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td></td>
+        <td>message event id.</td>
     </tr>
 </tbody></table>
 </div>
@@ -416,7 +416,7 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
 </tbody></table>
 </div>
@@ -440,12 +440,12 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Message to be written.</td>
     </tr>
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td></td>
+        <td>message event id.</td>
     </tr>
 </tbody></table>
 </div>
