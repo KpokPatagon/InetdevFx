@@ -222,6 +222,46 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:Inetdev.LanguageExtensions.HexStringToByteArray(System.String)" class="mb-5">
+    <h3 class="lead text-info">HexStringToByteArray</h3>
+    <p>Converts a string in hexadecimal format into a byte array.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> HexStringToByteArray(input)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A byte array for the specified input.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>input</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>A hexadeciamal text to process.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown then the length of the <strong class="text-info">input</strong> is not multiple of 2.</td>
+    </tr>
+</tbody></table>
+</div>
 <div id="M:Inetdev.LanguageExtensions.RemoveAccent(System.String)" class="mb-5">
     <h3 class="lead text-info">RemoveAccent</h3>
     <p>Remove accents from the <strong class="text-info">phrase</strong>.</p>
@@ -571,6 +611,7 @@
         <li><a href="#M:Inetdev.LanguageExtensions.GetPropertyWithAttribute``1(System.Type)">GetPropertyWithAttribute</a></li>
         <li><a href="#M:Inetdev.LanguageExtensions.GetPropertyWithAttributeAssignableFrom``1(System.Type,System.Type)">GetPropertyWithAttributeAssignableFrom</a></li>
         <li><a href="#M:Inetdev.LanguageExtensions.GetSchemeHostAndPath(System.Uri)">GetSchemeHostAndPath</a></li>
+        <li><a href="#M:Inetdev.LanguageExtensions.HexStringToByteArray(System.String)">HexStringToByteArray</a></li>
         <li><a href="#M:Inetdev.LanguageExtensions.RemoveAccent(System.String)">RemoveAccent</a></li>
         <li><a href="#M:Inetdev.LanguageExtensions.RemoveTrailingSlash(System.String)">RemoveTrailingSlash</a></li>
         <li><a href="#M:Inetdev.LanguageExtensions.Replace(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})">Replace</a></li>
