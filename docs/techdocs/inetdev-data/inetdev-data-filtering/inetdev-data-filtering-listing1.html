@@ -37,7 +37,7 @@
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
 <dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
+<dd class="col-sm-9">Inetdev.Data.Filtering.Listing</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="" class="mb-5">
@@ -49,46 +49,6 @@
 </dl>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:Inetdev.Data.Filtering.Listing`1.Clear" class="mb-5">
-    <h3 class="lead text-info">Clear</h3>
-    <p><strong class="text-info">true</strong> if the user filter must be clean.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Clear { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.HasFilterForm" class="mb-5">
-    <h3 class="lead text-info">HasFilterForm</h3>
-    <p>Whether there is a filter form configured (<strong class="text-info">true</strong> if it has <b>Terms</b>).</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> HasFilterForm { get; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.HasFilterSet" class="mb-5">
-    <h3 class="lead text-info">HasFilterSet</h3>
-    <p>Whether there are terms that must be applied.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> HasFilterSet { get; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.HasStaticTerms" class="mb-5">
-    <h3 class="lead text-info">HasStaticTerms</h3>
-    <p>Whether there are static terms.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> HasStaticTerms { get; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.IsPaged" class="mb-5">
-    <h3 class="lead text-info">IsPaged</h3>
-    <p>Whether the listing is paged.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsPaged { get; }</code></dd>
-</dl>
-</div>
 <div id="P:Inetdev.Data.Filtering.Listing`1.Items" class="mb-5">
     <h3 class="lead text-info">Items</h3>
     <p>Items.</p>
@@ -97,98 +57,10 @@
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{T}">IEnumerable&lt;T&gt;</span> Items { get; set; }</code></dd>
 </dl>
 </div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.MaxFilteredItemsCount" class="mb-5">
-    <h3 class="lead text-info">MaxFilteredItemsCount</h3>
-    <p>Maximum items to be returned when a filter is applied.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> MaxFilteredItemsCount { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.MaxItemsCount" class="mb-5">
-    <h3 class="lead text-info">MaxItemsCount</h3>
-    <p>Maximum items to be returned.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> MaxItemsCount { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.Order" class="mb-5">
-    <h3 class="lead text-info">Order</h3>
-    <p>Sort order.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a> Order { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.Page" class="mb-5">
-    <h3 class="lead text-info">Page</h3>
-    <p>Number of the page to list or beeing listed.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Page { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.PageLength" class="mb-5">
-    <h3 class="lead text-info">PageLength</h3>
-    <p>Maximum items on each page.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> PageLength { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.SelectedId" class="mb-5">
-    <h3 class="lead text-info">SelectedId</h3>
-    <p>Currently selected model ID.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SelectedId { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.StaticTerms" class="mb-5">
-    <h3 class="lead text-info">StaticTerms</h3>
-    <p>List of static terms that must me applied to the data.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.Filtering.StaticTerm}">List&lt;<a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-staticterm.html">StaticTerm</a>&gt;</span> StaticTerms { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.Terms" class="mb-5">
-    <h3 class="lead text-info">Terms</h3>
-    <p>List of user filter terms.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.Filtering.Term}">List&lt;<a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-term.html">Term</a>&gt;</span> Terms { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.TermsMatching" class="mb-5">
-    <h3 class="lead text-info">TermsMatching</h3>
-    <p>How the different terms are matched.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-matchkind.html">MatchKind</a> TermsMatching { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.TotalItems" class="mb-5">
-    <h3 class="lead text-info">TotalItems</h3>
-    <p>Total number of ítems with the static filter (if any) applied.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> TotalItems { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.Filtering.Listing`1.TotalItemsFiltered" class="mb-5">
-    <h3 class="lead text-info">TotalItemsFiltered</h3>
-    <p>Total number of items with user filter (if any) applied.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> TotalItemsFiltered { get; set; }</code></dd>
-</dl>
-</div>
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:Inetdev.Data.Filtering.Listing`1.GetPageInfo" class="mb-5">
     <h3 class="lead text-info">GetPageInfo</h3>
-    <p>Returns a <a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-pageinfo.html">PageInfo</a> model or <strong class="text-info">null</strong> if the listing is not paged.</p>
+    <p>Returns a <a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-pageinfo.html">PageInfo</a> model from this model current data.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-pageinfo.html">PageInfo</a> GetPageInfo()</code></dd>
@@ -215,7 +87,7 @@
 <tbody>
     <tr>
         <td>source</td>
-        <td><span class="text-info" title="Inetdev.Data.Filtering.Listing{T}">Listing&lt;T&gt;</span></td>
+        <td><span class="text-info" title="Inetdev.Data.Filtering.Listing{T}"><a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-listing.html">Listing</a>&lt;T&gt;</span></td>
         <td>A <strong>Listing</strong> to merge with this object.</td>
     </tr>
 </tbody></table>
@@ -242,23 +114,7 @@
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.Clear">Clear</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.HasFilterForm">HasFilterForm</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.HasFilterSet">HasFilterSet</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.HasStaticTerms">HasStaticTerms</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.IsPaged">IsPaged</a></li>
         <li><a href="#P:Inetdev.Data.Filtering.Listing`1.Items">Items</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.MaxFilteredItemsCount">MaxFilteredItemsCount</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.MaxItemsCount">MaxItemsCount</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.Order">Order</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.Page">Page</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.PageLength">PageLength</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.SelectedId">SelectedId</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.StaticTerms">StaticTerms</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.Terms">Terms</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.TermsMatching">TermsMatching</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.TotalItems">TotalItems</a></li>
-        <li><a href="#P:Inetdev.Data.Filtering.Listing`1.TotalItemsFiltered">TotalItemsFiltered</a></li>
     </ul>
 </li>
 <li><a href="#methods">Methods</a></li>
