@@ -98,6 +98,30 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:Inetdev.Multitenancy.UserFilterStore`1.GetPartitionKey" class="mb-5">
+    <h3 class="lead text-info">GetPartitionKey</h3>
+    <p>Gets partition key from context.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Int32">Int32</span> GetPartitionKey()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>Current partition key.</p>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Multitenancy.NoTenantInContextException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-notenantincontextexception.html">NoTenantInContextException</a></span></td>
+        <td>Thrown when the key is not within the context.</td>
+    </tr>
+</tbody></table>
+</div>
 <div id="M:Inetdev.Multitenancy.UserFilterStore`1.LoadAndMergeFilterAsync(System.String,System.String,Inetdev.Data.Filtering.Listing{`0})" class="mb-5">
     <h3 class="lead text-info">LoadAndMergeFilterAsync</h3>
     <p>Loads a stored filter and merge it data into <strong class="text-info">listing</strong>.</p>
@@ -219,6 +243,7 @@
 <li>
     <ul style="font-size:0.8em;">
         <li><a href="#M:Inetdev.Multitenancy.UserFilterStore`1.ClearFilterAsync(System.String,System.String)">ClearFilterAsync</a></li>
+        <li><a href="#M:Inetdev.Multitenancy.UserFilterStore`1.GetPartitionKey">GetPartitionKey</a></li>
         <li><a href="#M:Inetdev.Multitenancy.UserFilterStore`1.LoadAndMergeFilterAsync(System.String,System.String,Inetdev.Data.Filtering.Listing{`0})">LoadAndMergeFilterAsync</a></li>
         <li><a href="#M:Inetdev.Multitenancy.UserFilterStore`1.SaveFilterAsync(System.String,System.String,System.Object)">SaveFilterAsync</a></li>
     </ul>
