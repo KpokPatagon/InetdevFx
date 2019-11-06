@@ -1,0 +1,221 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>ViewMissResult - Inetdev Framework Std</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Inetdev Framework Std</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../inetdev-data/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>ViewMissResult</h1>
+<p class="lead">Models a miss DSC result for views.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Data.DatabaseSchema.DSC</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.#ctor(System.String,System.String,System.Byte[],System.String,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">ViewMissResult</h3>
+    <p>Initializes a new instance of <strong>ViewMissResult</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ViewMissResult(schema, name, hash, text, exists)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>schema</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Schema to which the view belongs to.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name of the view.</td>
+    </tr>
+    <tr>
+        <td>hash</td>
+        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td>A hash for the statement.</td>
+    </tr>
+    <tr>
+        <td>text</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>View statement.</td>
+    </tr>
+    <tr>
+        <td>exists</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td>Whether the view exists or not.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><p>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</p><p>-or- <strong class="text-info">hash</strong> is <strong class="text-info">null</strong> or empty.</p><p>-or- <strong class="text-info">text</strong> is <strong class="text-info">null</strong> or empty.</p></td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.Exists" class="mb-5">
+    <h3 class="lead text-info">Exists</h3>
+    <p>Whether the view exists or not.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Exists { get; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.Hash" class="mb-5">
+    <h3 class="lead text-info">Hash</h3>
+    <p>A hash for the statement.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> Hash { get; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.Name" class="mb-5">
+    <h3 class="lead text-info">Name</h3>
+    <p>Name of the view.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.Schema" class="mb-5">
+    <h3 class="lead text-info">Schema</h3>
+    <p>Schema to which the view belongs to.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Schema { get; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.Text" class="mb-5">
+    <h3 class="lead text-info">Text</h3>
+    <p>View statement.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Text { get; }</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.Create(Inetdev.Data.DatabaseSchema.IViewConfiguration,Inetdev.Data.DatabaseSchema.IViewBuilder,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">Create</h3>
+    <p>Creates a <strong>ViewMissResult</strong> for the specified <strong class="text-info">configuration</strong>
+            using the specified <strong class="text-info">builder</strong>´.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <strong>ViewMissResult</strong> Create(configuration, builder, exists)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A <strong>ViewMissResult</strong>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>configuration</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-iviewconfiguration.html">IViewConfiguration</a></td>
+        <td>View configuration.</td>
+    </tr>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-iviewbuilder.html">IViewBuilder</a></td>
+        <td>A <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-iviewbuilder.html">IViewBuilder</a> used to create the statement.</td>
+    </tr>
+    <tr>
+        <td>exists</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td>Whether the view exists or not.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">configuration</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">builder</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.Exists">Exists</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.Hash">Hash</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.Name">Name</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.Schema">Schema</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.Text">Text</a></li>
+    </ul>
+</li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Data.DatabaseSchema.DSC.ViewMissResult.Create(Inetdev.Data.DatabaseSchema.IViewConfiguration,Inetdev.Data.DatabaseSchema.IViewBuilder,System.Boolean)">Create</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

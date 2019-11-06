@@ -1,0 +1,189 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>ViewProcessor - Inetdev Framework Std</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Inetdev Framework Std</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../inetdev-data/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>ViewProcessor</h1>
+<p class="lead">Process DSC for views.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Data.DatabaseSchema.DSC</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="" class="mb-5">
+    <h3 class="lead text-info">ViewProcessor</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ViewProcessor()</code></dd>
+</dl>
+</div>
+<h2 id="events" class="mt-5">Events</h2>
+<table class="table">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Summary</th>
+    <tr>
+</thead>
+<tbody>
+<tr>
+    <td><a href="../../inetdev-data/inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-aftercreateorreplacevieweventhandler.html">AfterCreateOrReplaceViewEventHandler</a></td>
+    <td><strong>AfterCreateOrReplace</strong></td>
+    <td>Raised after the create or replace process is executed.</td>
+</tr>
+<tr>
+    <td><a href="../../inetdev-data/inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-beforecreateorreplacevieweventhandler.html">BeforeCreateOrReplaceViewEventHandler</a></td>
+    <td><strong>BeforeCreateOrReplace</strong></td>
+    <td>Raised before the create or replace process is executed.</td>
+</tr>
+<tr>
+    <td><a href="../../inetdev/inetdev/inetdev-percentageprogresseventhandler.html">PercentageProgressEventHandler</a></td>
+    <td><strong>FixingProgress</strong></td>
+    <td>Raised to report the progress of the fixing process.</td>
+</tr>
+<tr>
+    <td><a href="../../inetdev/inetdev/inetdev-percentageprogresseventhandler.html">PercentageProgressEventHandler</a></td>
+    <td><strong>OrchestrationProgress</strong></td>
+    <td>Raised to report the progress of the orchestration process.</td>
+</tr>
+</tbody></table>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:Inetdev.Data.DatabaseSchema.DSC.ViewProcessor.Discoverer" class="mb-5">
+    <h3 class="lead text-info">Discoverer</h3>
+    <p>Schema discoverer.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-ischemadiscoverer.html">ISchemaDiscoverer</a> Discoverer { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.DSC.ViewProcessor.Logger" class="mb-5">
+    <h3 class="lead text-info">Logger</h3>
+    <p>An <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-ilogger.html">ILogger</a> for diagnostics.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-ilogger.html">ILogger</a> Logger { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.DSC.ViewProcessor.Provisioner" class="mb-5">
+    <h3 class="lead text-info">Provisioner</h3>
+    <p>Schema provisioner.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-ischemaprovisioner.html">ISchemaProvisioner</a> Provisioner { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.DSC.ViewProcessor.ViewBuilder" class="mb-5">
+    <h3 class="lead text-info">ViewBuilder</h3>
+    <p>View builder.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-iviewbuilder.html">IViewBuilder</a> ViewBuilder { get; set; }</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:Inetdev.Data.DatabaseSchema.DSC.ViewProcessor.ExecuteDSCAsync(System.Collections.Generic.List{Inetdev.ItemProcessFlag{Inetdev.Data.DatabaseSchema.IViewConfiguration}})" class="mb-5">
+    <h3 class="lead text-info">ExecuteDSCAsync</h3>
+    <p>Executes the DSC process.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> ExecuteDSCAsync(views)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>views</td>
+        <td><span class="text-info" title="System.Collections.Generic.List{Inetdev.ItemProcessFlag{Inetdev.Data.DatabaseSchema.IViewConfiguration}}">List</span></td>
+        <td>A collection of <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-iviewconfiguration.html">IViewConfiguration</a>s to process.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.DatabaseSchema.DSC.DSCException"><a href="../../inetdev-data/inetdev-data-databaseschema-dsc/inetdev-data-databaseschema-dsc-dscexception.html">DSCException</a></span></td>
+        <td>Thrown when an error occurs while executing the process.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">views</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td>Thrown when the object is not properly initialized.</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.DSC.ViewProcessor.Discoverer">Discoverer</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.DSC.ViewProcessor.Logger">Logger</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.DSC.ViewProcessor.Provisioner">Provisioner</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.DSC.ViewProcessor.ViewBuilder">ViewBuilder</a></li>
+    </ul>
+</li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Data.DatabaseSchema.DSC.ViewProcessor.ExecuteDSCAsync(System.Collections.Generic.List{Inetdev.ItemProcessFlag{Inetdev.Data.DatabaseSchema.IViewConfiguration}})">ExecuteDSCAsync</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -120,11 +120,11 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
         <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
+        <td><span class="text-info" title="Inetdev.CLI.CommandException"><a href="../../inetdev-cli/inetdev-cli/inetdev-cli-commandexception.html">CommandException</a></span></td>
         <td>Thrown when there already are a switch with the specified <strong class="text-info">name</strong>.</td>
     </tr>
 </tbody></table>
@@ -137,7 +137,7 @@
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetSwitchValue(name)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>The value os the switch, that might be <strong class="text-info">null</strong> or
+<p>The value of the switch, that might be <strong class="text-info">null</strong> or
                 <strong class="text-info">null</strong> if the switch does not exists.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -153,6 +153,100 @@
         <td>name</td>
         <td><span class="text-info" title="System.String">String</span></td>
         <td>Switch name.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.CLI.CommandArgs.GetSwitchValueAsInt(System.String)" class="mb-5">
+    <h3 class="lead text-info">GetSwitchValueAsInt</h3>
+    <p>Gets the value of the specified switch as an integer.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.Int32}">Nullable&lt;Int32&gt;</span> GetSwitchValueAsInt(name)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>The value of the switch as a <span class="text-info" title="System.Nullable">Nullable</span> integer.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Switch name.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.CLI.CommandArgs.HasNotNullSwitch(System.String)" class="mb-5">
+    <h3 class="lead text-info">HasNotNullSwitch</h3>
+    <p>Checks whether the specified switch exists and has a non null value.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> HasNotNullSwitch(name)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if the switch exists and has a non null value, otherwise <strong class="text-info">false</strong>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name of the switch to check.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
 </tbody></table>
 </div>
@@ -191,7 +285,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
         <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
 </tbody></table>
@@ -215,6 +309,8 @@
     <ul style="font-size:0.8em;">
         <li><a href="#M:Inetdev.CLI.CommandArgs.AddSwitch(System.String,System.String)">AddSwitch</a></li>
         <li><a href="#M:Inetdev.CLI.CommandArgs.GetSwitchValue(System.String)">GetSwitchValue</a></li>
+        <li><a href="#M:Inetdev.CLI.CommandArgs.GetSwitchValueAsInt(System.String)">GetSwitchValueAsInt</a></li>
+        <li><a href="#M:Inetdev.CLI.CommandArgs.HasNotNullSwitch(System.String)">HasNotNullSwitch</a></li>
         <li><a href="#M:Inetdev.CLI.CommandArgs.HasSwitch(System.String)">HasSwitch</a></li>
     </ul>
 </li>
