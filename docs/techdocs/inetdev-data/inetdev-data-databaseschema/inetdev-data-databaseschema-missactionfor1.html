@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <title>View - Inetdev Framework Std</title>
+    <title>MissActionFor - Inetdev Framework Std</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,8 +25,8 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-9">
-<h1>View</h1>
-<p class="lead">Models a database view.</p>
+<h1>MissActionFor</h1>
+<p class="lead">Models the action to be executed when a configuration item is missed.</p>
 <dl class="row mt-4">
 <dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Data.DatabaseSchema</dd>
 <dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
@@ -40,46 +40,63 @@
 <dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="" class="mb-5">
-    <h3 class="lead text-info">View</h3>
-    <p>Default constructor</p>
+<div id="M:Inetdev.Data.DatabaseSchema.MissActionFor`1.#ctor(Inetdev.Data.DatabaseSchema.MissActionType,`0,`0)" class="mb-5">
+    <h3 class="lead text-info">MissActionFor</h3>
+    <p>Initializes a new instance of <strong>MissActionFor</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> View()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> MissActionFor(action, desired, actual)</code></dd>
 </dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>action</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-missactiontype.html">MissActionType</a></td>
+        <td>Action type required to correct the item configuration.</td>
+    </tr>
+    <tr>
+        <td>desired</td>
+        <td><span class="text-info" title="T">T</span></td>
+        <td>The miss-configured item as it must be (can be <strong class="text-info">null</strong>).</td>
+    </tr>
+    <tr>
+        <td>actual</td>
+        <td><span class="text-info" title="T">T</span></td>
+        <td>The miss-configured item as it is (can be <strong class="text-info">null</strong>).</td>
+    </tr>
+</tbody></table>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:Inetdev.Data.DatabaseSchema.View.Name" class="mb-5">
-    <h3 class="lead text-info">Name</h3>
-    <p>The name of the view object.</p>
+<div id="P:Inetdev.Data.DatabaseSchema.MissActionFor`1.Action" class="mb-5">
+    <h3 class="lead text-info">Action</h3>
+    <p>Action type required to correct the item configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; set; }</code></dd>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-missactiontype.html">MissActionType</a> Action { get; }</code></dd>
 </dl>
 </div>
-<div id="P:Inetdev.Data.DatabaseSchema.View.Schema" class="mb-5">
-    <h3 class="lead text-info">Schema</h3>
-    <p>Schema to which the view blongs to.</p>
+<div id="P:Inetdev.Data.DatabaseSchema.MissActionFor`1.Actual" class="mb-5">
+    <h3 class="lead text-info">Actual</h3>
+    <p>The miss-configured item as it is.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Schema { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="T">T</span> Actual { get; }</code></dd>
 </dl>
 </div>
-<div id="P:Inetdev.Data.DatabaseSchema.View.Text" class="mb-5">
-    <h3 class="lead text-info">Text</h3>
-    <p>Text that defines this view.</p>
+<div id="P:Inetdev.Data.DatabaseSchema.MissActionFor`1.Desired" class="mb-5">
+    <h3 class="lead text-info">Desired</h3>
+    <p>The miss-configured item as it must be.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Text { get; set; }</code></dd>
-</dl>
-</div>
-<h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:Inetdev.Data.DatabaseSchema.View.ToString" class="mb-5">
-    <h3 class="lead text-info">ToString</h3>
-    <p>Returns a textual representation of this view.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="T">T</span> Desired { get; }</code></dd>
 </dl>
 </div>
             </div>
@@ -90,15 +107,9 @@
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#P:Inetdev.Data.DatabaseSchema.View.Name">Name</a></li>
-        <li><a href="#P:Inetdev.Data.DatabaseSchema.View.Schema">Schema</a></li>
-        <li><a href="#P:Inetdev.Data.DatabaseSchema.View.Text">Text</a></li>
-    </ul>
-</li>
-<li><a href="#methods">Methods</a></li>
-<li>
-    <ul style="font-size:0.8em;">
-        <li><a href="#M:Inetdev.Data.DatabaseSchema.View.ToString">ToString</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.MissActionFor`1.Action">Action</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.MissActionFor`1.Actual">Actual</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.MissActionFor`1.Desired">Desired</a></li>
     </ul>
 </li>
 </ul>
