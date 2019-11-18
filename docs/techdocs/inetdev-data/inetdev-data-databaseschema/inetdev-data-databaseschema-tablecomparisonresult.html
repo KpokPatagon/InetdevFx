@@ -89,7 +89,7 @@
     <p>Actions to correct column constraint(s) miss-configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.DatabaseSchema.MissActionFor{Inetdev.Data.DatabaseSchema.ColumnConstraint}}">List</span> ColumnConstraints { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.DatabaseSchema.MissActionForColumnConstraint}">List&lt;<a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-missactionforcolumnconstraint.html">MissActionForColumnConstraint</a>&gt;</span> ColumnConstraints { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:Inetdev.Data.DatabaseSchema.TableComparisonResult.Columns" class="mb-5">
@@ -97,15 +97,7 @@
     <p>Actions to correct column(s) miss-configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.DatabaseSchema.MissActionFor{Inetdev.Data.DatabaseSchema.TableColumn}}">List</span> Columns { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Data.DatabaseSchema.TableComparisonResult.Desired" class="mb-5">
-    <h3 class="lead text-info">Desired</h3>
-    <p>Desired <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a> configuration.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a> Desired { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.DatabaseSchema.MissActionForTableColumn}">List&lt;<a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-missactionfortablecolumn.html">MissActionForTableColumn</a>&gt;</span> Columns { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:Inetdev.Data.DatabaseSchema.TableComparisonResult.ForeignKeys" class="mb-5">
@@ -113,7 +105,7 @@
     <p>Actions to correct foreign key(s) miss-configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.DatabaseSchema.MissActionFor{Inetdev.Data.DatabaseSchema.ForeignKey}}">List</span> ForeignKeys { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.DatabaseSchema.MissActionForForeignKey}">List&lt;<a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-missactionforforeignkey.html">MissActionForForeignKey</a>&gt;</span> ForeignKeys { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:Inetdev.Data.DatabaseSchema.TableComparisonResult.Indexes" class="mb-5">
@@ -121,7 +113,7 @@
     <p>Actions to correct index(es) miss-configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.DatabaseSchema.MissActionFor{Inetdev.Data.DatabaseSchema.Index}}">List</span> Indexes { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.DatabaseSchema.MissActionForIndex}">List&lt;<a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-missactionforindex.html">MissActionForIndex</a>&gt;</span> Indexes { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:Inetdev.Data.DatabaseSchema.TableComparisonResult.Miss" class="mb-5">
@@ -137,7 +129,15 @@
     <p>Actions to correct primary key miss-configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.DatabaseSchema.MissActionFor{Inetdev.Data.DatabaseSchema.Index}}">List</span> PrimaryKey { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.DatabaseSchema.MissActionForIndex}">List&lt;<a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-missactionforindex.html">MissActionForIndex</a>&gt;</span> PrimaryKey { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Data.DatabaseSchema.TableComparisonResult.Table" class="mb-5">
+    <h3 class="lead text-info">Table</h3>
+    <p>Desired <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a> configuration.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a> Table { get; }</code></dd>
 </dl>
 </div>
 <div id="P:Inetdev.Data.DatabaseSchema.TableComparisonResult.Type" class="mb-5">
@@ -229,11 +229,11 @@
     <ul style="font-size:0.8em;">
         <li><a href="#P:Inetdev.Data.DatabaseSchema.TableComparisonResult.ColumnConstraints">ColumnConstraints</a></li>
         <li><a href="#P:Inetdev.Data.DatabaseSchema.TableComparisonResult.Columns">Columns</a></li>
-        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableComparisonResult.Desired">Desired</a></li>
         <li><a href="#P:Inetdev.Data.DatabaseSchema.TableComparisonResult.ForeignKeys">ForeignKeys</a></li>
         <li><a href="#P:Inetdev.Data.DatabaseSchema.TableComparisonResult.Indexes">Indexes</a></li>
         <li><a href="#P:Inetdev.Data.DatabaseSchema.TableComparisonResult.Miss">Miss</a></li>
         <li><a href="#P:Inetdev.Data.DatabaseSchema.TableComparisonResult.PrimaryKey">PrimaryKey</a></li>
+        <li><a href="#P:Inetdev.Data.DatabaseSchema.TableComparisonResult.Table">Table</a></li>
         <li><a href="#P:Inetdev.Data.DatabaseSchema.TableComparisonResult.Type">Type</a></li>
     </ul>
 </li>

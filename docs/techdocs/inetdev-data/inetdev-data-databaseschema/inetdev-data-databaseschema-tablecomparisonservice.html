@@ -100,55 +100,6 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:Inetdev.Data.DatabaseSchema.TableComparisonService.AreEquals(Inetdev.Data.DatabaseSchema.ColumnConstraint,Inetdev.Data.DatabaseSchema.ColumnConstraint)" class="mb-5">
-    <h3 class="lead text-info">AreEquals</h3>
-    <p>Checks whether the constraints are equals.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> AreEquals(desired, actual)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p><strong class="text-info">true</strong> if the constraints are equals, otherwise <strong class="text-info">false</strong>.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>desired</td>
-        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
-        <td>Desired configuration of a <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a>.</td>
-    </tr>
-    <tr>
-        <td>actual</td>
-        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
-        <td>Actual configuration of a <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a>.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">desired</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">actual</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-</tbody></table>
-</div>
 <div id="M:Inetdev.Data.DatabaseSchema.TableComparisonService.AreEquals(Inetdev.Data.DatabaseSchema.ForeignKey,Inetdev.Data.DatabaseSchema.ForeignKey)" class="mb-5">
     <h3 class="lead text-info">AreEquals</h3>
     <p>Checks whether the foreign keys are equals.</p>
@@ -296,6 +247,35 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:Inetdev.Data.DatabaseSchema.TableComparisonService.FindConstraint(Inetdev.Data.DatabaseSchema.ColumnConstraint,Inetdev.Data.DatabaseSchema.ColumnConstraintCollection)" class="mb-5">
+    <h3 class="lead text-info">FindConstraint</h3>
+    <p>Looks within <strong class="text-info">constraints</strong> is there is a constraint that marches <strong class="text-info">cc</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a> FindConstraint(cc, constraints)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>cc</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>constraints</td>
+        <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-columnconstraintcollection.html">ColumnConstraintCollection</a></td>
+        <td></td>
+    </tr>
+</tbody></table>
+</div>
             </div>
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
@@ -305,10 +285,10 @@
 <li>
     <ul style="font-size:0.8em;">
         <li><a href="#M:Inetdev.Data.DatabaseSchema.TableComparisonService.AreDataTypeEquals(Inetdev.Data.DatabaseSchema.TableColumn,Inetdev.Data.DatabaseSchema.TableColumn)">AreDataTypeEquals</a></li>
-        <li><a href="#M:Inetdev.Data.DatabaseSchema.TableComparisonService.AreEquals(Inetdev.Data.DatabaseSchema.ColumnConstraint,Inetdev.Data.DatabaseSchema.ColumnConstraint)">AreEquals</a></li>
         <li><a href="#M:Inetdev.Data.DatabaseSchema.TableComparisonService.AreEquals(Inetdev.Data.DatabaseSchema.ForeignKey,Inetdev.Data.DatabaseSchema.ForeignKey)">AreEquals</a></li>
         <li><a href="#M:Inetdev.Data.DatabaseSchema.TableComparisonService.AreEquals(Inetdev.Data.DatabaseSchema.Index,Inetdev.Data.DatabaseSchema.Index)">AreEquals</a></li>
         <li><a href="#M:Inetdev.Data.DatabaseSchema.TableComparisonService.Compare(Inetdev.Data.DatabaseSchema.Table,Inetdev.Data.DatabaseSchema.Table)">Compare</a></li>
+        <li><a href="#M:Inetdev.Data.DatabaseSchema.TableComparisonService.FindConstraint(Inetdev.Data.DatabaseSchema.ColumnConstraint,Inetdev.Data.DatabaseSchema.ColumnConstraintCollection)">FindConstraint</a></li>
     </ul>
 </li>
 </ul>
