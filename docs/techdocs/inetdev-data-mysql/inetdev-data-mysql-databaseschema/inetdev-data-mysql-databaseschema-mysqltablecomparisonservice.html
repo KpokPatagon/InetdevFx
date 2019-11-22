@@ -37,7 +37,9 @@
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
 <dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">Inetdev.Data.DatabaseSchema.TableComparisonService</dd>
+<dd class="col-sm-9">System.Object</dd>
+<dt class="text-truncate col-sm-3">Implements:</dt>
+<dd class="col-sm-9">Inetdev.Data.DatabaseSchema.ITableComparisonService</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="" class="mb-5">
@@ -51,8 +53,7 @@
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:Inetdev.Data.MySql.DatabaseSchema.MySqlTableComparisonService.Compare(Inetdev.Data.DatabaseSchema.Table,Inetdev.Data.DatabaseSchema.Table)" class="mb-5">
     <h3 class="lead text-info">Compare</h3>
-    <p>Checks if <strong class="text-info">desired</strong> is equals to <strong class="text-info">actual</strong> using
-            a MySql tailored algorithm.</p>
+    <p>Checks if <strong class="text-info">desired</strong> is equals to <strong class="text-info">actual</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-tablecomparisonresult.html">TableComparisonResult</a> Compare(desired, actual)</code></dd>
@@ -78,6 +79,20 @@
         <td>actual</td>
         <td><a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a></td>
         <td>Actual configuration of a <a href="../../inetdev-data/inetdev-data-databaseschema/inetdev-data-databaseschema-table.html">Table</a>.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">desired</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">actual</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
 </tbody></table>
 </div>
