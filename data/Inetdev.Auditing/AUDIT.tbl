@@ -1,0 +1,370 @@
+﻿{
+  "Schema": "Auditing",
+  "Name": "AUDIT",
+  "IsView": false,
+  "Release": null,
+  "Caption": "Auditoría",
+  "Description": "The AUDIT table contains data modification audit records.",
+  "FileGroup": null,
+  "Kindom": "Application",
+  "PrimaryKey": {
+    "Name": "PK_AUDIT",
+    "Type": "NonClustered",
+    "IsUnique": true,
+    "Description": "An audit record is identified by it's Id. The TENANT_ID is included as this table is always filtered by it.",
+    "FileGroup": null,
+    "Columns": [
+      {
+        "Name": "ID",
+        "Position": 1,
+        "Direction": "Ascending"
+      },
+      {
+        "Name": "TENANT_ID",
+        "Position": 2,
+        "Direction": "Ascending"
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "Name": "ID",
+      "DataType": "Text",
+      "Caption": "Id de auditoría",
+      "Description": null,
+      "Position": 1,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "50",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "TENANT_ID",
+      "DataType": "Integer",
+      "Caption": "Suscriptor",
+      "Description": null,
+      "Position": 2,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": "",
+      "CheckConstraintExpression": ""
+    },
+    {
+      "Name": "KIND",
+      "DataType": "Integer",
+      "Caption": "Tipo",
+      "Description": null,
+      "Position": 3,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "CREATED_ON_UTC",
+      "DataType": "DateTime",
+      "Caption": "Fecha creación",
+      "Description": null,
+      "Position": 4,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "USER_ID",
+      "DataType": "NText",
+      "Caption": "Id de usuario",
+      "Description": null,
+      "Position": 5,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "USER_NAME",
+      "DataType": "NText",
+      "Caption": "Usuario",
+      "Description": null,
+      "Position": 6,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "260",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "USER_DISPLAY_NAME",
+      "DataType": "NText",
+      "Caption": "Nombre de usuario",
+      "Description": null,
+      "Position": 7,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "260",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "USER_AUTHORITY",
+      "DataType": "NText",
+      "Caption": "Autoridad",
+      "Description": null,
+      "Position": 8,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "SOURCE_ID",
+      "DataType": "Text",
+      "Caption": "Id de origen",
+      "Description": null,
+      "Position": 9,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "256",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "SOURCE_PROTOCOL",
+      "DataType": "Text",
+      "Caption": "Protocolo de origen",
+      "Description": null,
+      "Position": 10,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "256",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "SOURCE_PROTOCOL_CAPTION",
+      "DataType": "NText",
+      "Caption": "Título del protocolo",
+      "Description": null,
+      "Position": 11,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "PREVIOUS_ID",
+      "DataType": "Text",
+      "Caption": "Id anterior",
+      "Description": null,
+      "Position": 12,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "50",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "NEXT_ID",
+      "DataType": "Text",
+      "Caption": "Id siguiente",
+      "Description": null,
+      "Position": 13,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "50",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "SECURITY_INCIDENT_ID",
+      "DataType": "Text",
+      "Caption": "Incidente de seguridad",
+      "Description": null,
+      "Position": 14,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "50",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "DATA",
+      "DataType": "Blob",
+      "Caption": "Datos",
+      "Description": null,
+      "Position": 15,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    }
+  ],
+  "Indexes": [
+    {
+      "Name": "IX_AUDIT_1",
+      "Type": "NonClustered",
+      "IsUnique": false,
+      "Description": "Audit records will be searched by user Id.",
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "USER_ID",
+          "Position": 1,
+          "Direction": "Ascending"
+        },
+        {
+          "Name": "TENANT_ID",
+          "Position": 2,
+          "Direction": "Ascending"
+        }
+      ]
+    },
+    {
+      "Name": "IX_AUDIT_2",
+      "Type": "NonClustered",
+      "IsUnique": false,
+      "Description": "Audit records will be searched by user name.",
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "USER_NAME",
+          "Position": 1,
+          "Direction": "Ascending"
+        },
+        {
+          "Name": "TENANT_ID",
+          "Position": 2,
+          "Direction": "Ascending"
+        }
+      ]
+    },
+    {
+      "Name": "IX_AUDIT_3",
+      "Type": "NonClustered",
+      "IsUnique": false,
+      "Description": "Audit records will be searched by source item.",
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "SOURCE_ID",
+          "Position": 1,
+          "Direction": "Ascending"
+        },
+        {
+          "Name": "SOURCE_PROTOCOL",
+          "Position": 2,
+          "Direction": "Ascending"
+        },
+        {
+          "Name": "TENANT_ID",
+          "Position": 3,
+          "Direction": "Ascending"
+        }
+      ]
+    },
+    {
+      "Name": "IX_AUDIT_4",
+      "Type": "NonClustered",
+      "IsUnique": false,
+      "Description": "UI for viewing audit record will be filtering by source protocol caption",
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "SOURCE_PROTOCOL_CAPTION",
+          "Position": 1,
+          "Direction": "Ascending"
+        },
+        {
+          "Name": "TENANT_ID",
+          "Position": 2,
+          "Direction": "Ascending"
+        }
+      ]
+    }
+  ],
+  "ForeignKeys": [],
+  "DesignerTemplate": "",
+  "ResourceFileName": "$(SolutionFolder)\\Jasbis.Security.Data\\DataLabels.resx",
+  "ResourceTypeName": "Jasbis.Security.Data.DataLabels, Jasbis.Security.Data",
+  "Summary": "",
+  "Namespace": "",
+  "ClassName": "",
+  "Access": "Public",
+  "SequenceName": null,
+  "Order": null,
+  "ExtendedProperties": [
+    {
+      "Key": "ConnectionName",
+      "Value": "AuditingConnection"
+    }
+  ]
+}
