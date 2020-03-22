@@ -1,0 +1,425 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Audit - Inetdev Framework Std</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Inetdev Framework Std</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../inetdev-auditing/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>Audit</h1>
+<p class="lead">Information of a data modification audit.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Auditing</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">Inetdev.Data.DataModel</dd>
+<dt class="text-truncate col-sm-3">Implements:</dt>
+<dd class="col-sm-9">System.IEquatable{Inetdev.Auditing.Audit}</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:Inetdev.Auditing.Audit.#ctor" class="mb-5">
+    <h3 class="lead text-info">Audit</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Audit()</code></dd>
+</dl>
+</div>
+<div id="M:Inetdev.Auditing.Audit.#ctor(System.String)" class="mb-5">
+    <h3 class="lead text-info">Audit</h3>
+    <p>Initializes a new instance of <strong>Audit</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Audit(id)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>id</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Audit record Id</td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:Inetdev.Auditing.Audit.CreatedOnUtc" class="mb-5">
+    <h3 class="lead text-info">CreatedOnUtc</h3>
+    <p>Creation date and time on UTC.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.DateTime">DateTime</span> CreatedOnUtc { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.Data" class="mb-5">
+    <h3 class="lead text-info">Data</h3>
+    <p>Audit record data</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-binaryattachment.html">BinaryAttachment</a> Data { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.EnforceModelValidation" class="mb-5">
+    <h3 class="lead text-info">EnforceModelValidation</h3>
+    <p>Whether model validation must be enforced.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> EnforceModelValidation { get; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.Id" class="mb-5">
+    <h3 class="lead text-info">Id</h3>
+    <p>Audit record Id</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Id { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.Kind" class="mb-5">
+    <h3 class="lead text-info">Kind</h3>
+    <p>Audit record kind</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-auditkind.html">AuditKind</a> Kind { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.Next" class="mb-5">
+    <h3 class="lead text-info">Next</h3>
+    <p>Next <strong>Audit</strong> item for this source.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <strong>Audit</strong> Next { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.NextId" class="mb-5">
+    <h3 class="lead text-info">NextId</h3>
+    <p>Id of the next audit record</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> NextId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.Previous" class="mb-5">
+    <h3 class="lead text-info">Previous</h3>
+    <p>Previous <strong>Audit</strong> item for this source.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <strong>Audit</strong> Previous { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.PreviousId" class="mb-5">
+    <h3 class="lead text-info">PreviousId</h3>
+    <p>Id of the previous audit record</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> PreviousId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.SecurityIncidentId" class="mb-5">
+    <h3 class="lead text-info">SecurityIncidentId</h3>
+    <p>Security incident Id</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SecurityIncidentId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.SourceId" class="mb-5">
+    <h3 class="lead text-info">SourceId</h3>
+    <p>Id of the object that sources the audit record.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SourceId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.SourceProtocol" class="mb-5">
+    <h3 class="lead text-info">SourceProtocol</h3>
+    <p>Protocol of the object that sources the audit record.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SourceProtocol { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.SourceProtocolCaption" class="mb-5">
+    <h3 class="lead text-info">SourceProtocolCaption</h3>
+    <p>Caption for the source protocol</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SourceProtocolCaption { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.TenantId" class="mb-5">
+    <h3 class="lead text-info">TenantId</h3>
+    <p>Multi-tenant partition key.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> TenantId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.UserAuthority" class="mb-5">
+    <h3 class="lead text-info">UserAuthority</h3>
+    <p>User authority.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UserAuthority { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.UserDisplayName" class="mb-5">
+    <h3 class="lead text-info">UserDisplayName</h3>
+    <p>User display name</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UserDisplayName { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.UserId" class="mb-5">
+    <h3 class="lead text-info">UserId</h3>
+    <p>User Id</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UserId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.Audit.UserName" class="mb-5">
+    <h3 class="lead text-info">UserName</h3>
+    <p>User name</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UserName { get; set; }</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:Inetdev.Auditing.Audit.Equals(Inetdev.Auditing.Audit)" class="mb-5">
+    <h3 class="lead text-info">Equals</h3>
+    <p>Checks if <strong class="text-info">other</strong> is equals to this object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(other)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>other</td>
+        <td><strong>Audit</strong></td>
+        <td></td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Auditing.Audit.Equals(System.Object)" class="mb-5">
+    <h3 class="lead text-info">Equals</h3>
+    <p>Checks if <strong class="text-info">obj</strong> is equals to this object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(obj)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>obj</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>An object to compare with this object.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Auditing.Audit.GetAuditInfo" class="mb-5">
+    <h3 class="lead text-info">GetAuditInfo</h3>
+    <p>Gets audit internal data.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-auditinfo.html">AuditInfo</a> GetAuditInfo()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>An <a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-auditinfo.html">AuditInfo</a> or <strong class="text-info">null</strong> if the data is empty.</p>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Auditing.AuditInfoDeserializationException"><a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-auditinfodeserializationexception.html">AuditInfoDeserializationException</a></span></td>
+        <td>Thrown when problems decrypting or de-serializing the internal data.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Auditing.Audit.GetHashCode" class="mb-5">
+    <h3 class="lead text-info">GetHashCode</h3>
+    <p>Not required, implemented to avoid warnings, returns base.GetHasCode().</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> GetHashCode()</code></dd>
+</dl>
+</div>
+<div id="M:Inetdev.Auditing.Audit.GetSecurityIncidentAsync" class="mb-5">
+    <h3 class="lead text-info">GetSecurityIncidentAsync</h3>
+    <p>Gets the <a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-securityincident.html">SecurityIncident</a> related to this audit record if any.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Auditing.SecurityIncident}">Task&lt;<a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-securityincident.html">SecurityIncident</a>&gt;</span> GetSecurityIncidentAsync()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A <a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-securityincident.html">SecurityIncident</a> or <strong class="text-info">null</strong> if any.</p>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Auditing.AuditInfoDeserializationException"><a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-auditinfodeserializationexception.html">AuditInfoDeserializationException</a></span></td>
+        <td>Thrown when problems decrypting or de-serializing the internal data.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Auditing.SecurityIncidentNotFoundException"><a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-securityincidentnotfoundexception.html">SecurityIncidentNotFoundException</a></span></td>
+        <td>Thrown when the security incident could not be found and an Id is registered within the audit record.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Auditing.Audit.Load(System.String)" class="mb-5">
+    <h3 class="lead text-info">Load</h3>
+    <p>Initializes a new instance of <strong>Audit</strong> by loading the data from the underlaying repository.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <strong>Audit</strong> Load(id)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>id</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Audit record Id</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Auditing.Audit.LoadAsync(System.String)" class="mb-5">
+    <h3 class="lead text-info">LoadAsync</h3>
+    <p>Initializes a new instance of <strong>Audit</strong> by loading the data from the underlaying repository.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Auditing.Audit}">Task&lt;<strong>Audit</strong>&gt;</span> LoadAsync(id)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>id</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Audit record Id</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.Auditing.Audit.CreatedOnUtc">CreatedOnUtc</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.Data">Data</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.EnforceModelValidation">EnforceModelValidation</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.Id">Id</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.Kind">Kind</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.Next">Next</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.NextId">NextId</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.Previous">Previous</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.PreviousId">PreviousId</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.SecurityIncidentId">SecurityIncidentId</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.SourceId">SourceId</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.SourceProtocol">SourceProtocol</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.SourceProtocolCaption">SourceProtocolCaption</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.TenantId">TenantId</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.UserAuthority">UserAuthority</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.UserDisplayName">UserDisplayName</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.UserId">UserId</a></li>
+        <li><a href="#P:Inetdev.Auditing.Audit.UserName">UserName</a></li>
+    </ul>
+</li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Auditing.Audit.Equals(Inetdev.Auditing.Audit)">Equals</a></li>
+        <li><a href="#M:Inetdev.Auditing.Audit.Equals(System.Object)">Equals</a></li>
+        <li><a href="#M:Inetdev.Auditing.Audit.GetAuditInfo">GetAuditInfo</a></li>
+        <li><a href="#M:Inetdev.Auditing.Audit.GetHashCode">GetHashCode</a></li>
+        <li><a href="#M:Inetdev.Auditing.Audit.GetSecurityIncidentAsync">GetSecurityIncidentAsync</a></li>
+        <li><a href="#M:Inetdev.Auditing.Audit.Load(System.String)">Load</a></li>
+        <li><a href="#M:Inetdev.Auditing.Audit.LoadAsync(System.String)">LoadAsync</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
