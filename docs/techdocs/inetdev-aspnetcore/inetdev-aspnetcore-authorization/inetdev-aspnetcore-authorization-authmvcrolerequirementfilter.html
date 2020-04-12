@@ -75,22 +75,16 @@
         <td>An <a href="../../inetdev/inetdev-security/inetdev-security-iroleprovider.html">IRoleProvider</a> that provides application <a href="../../inetdev/inetdev-security/inetdev-security-role.html">Role</a>s.</td>
     </tr>
 </tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">roleProvider</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-</tbody></table>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:Inetdev.AspNetCore.Authorization.AuthMvcRoleRequirementFilter.AuthMvc" class="mb-5">
+    <h3 class="lead text-info">AuthMvc</h3>
+    <p>The <a href="../../inetdev-aspnetcore/inetdev-aspnetcore-authorization/inetdev-aspnetcore-authorization-authmvcattribute.html">AuthMvcAttribute</a> that initializes this filter.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-aspnetcore/inetdev-aspnetcore-authorization/inetdev-aspnetcore-authorization-authmvcattribute.html">AuthMvcAttribute</a> AuthMvc { get; }</code></dd>
+</dl>
+</div>
 <div id="P:Inetdev.AspNetCore.Authorization.AuthMvcRoleRequirementFilter.ForbiddenViewName" class="mb-5">
     <h3 class="lead text-info">ForbiddenViewName</h3>
     <p>The name of the view to return if the user is not authorized.</p>
@@ -148,6 +142,7 @@
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.AspNetCore.Authorization.AuthMvcRoleRequirementFilter.AuthMvc">AuthMvc</a></li>
         <li><a href="#P:Inetdev.AspNetCore.Authorization.AuthMvcRoleRequirementFilter.ForbiddenViewName">ForbiddenViewName</a></li>
         <li><a href="#P:Inetdev.AspNetCore.Authorization.AuthMvcRoleRequirementFilter.RequiredRoles">RequiredRoles</a></li>
         <li><a href="#P:Inetdev.AspNetCore.Authorization.AuthMvcRoleRequirementFilter.RoleProvider">RoleProvider</a></li>
