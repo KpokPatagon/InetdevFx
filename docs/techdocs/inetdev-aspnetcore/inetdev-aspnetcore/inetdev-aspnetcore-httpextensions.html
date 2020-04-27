@@ -40,6 +40,58 @@
 <dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:Inetdev.AspNetCore.HttpExtensions.BinaryAttachment(Microsoft.AspNetCore.Http.IFormFile)" class="mb-5">
+    <h3 class="lead text-info">BinaryAttachment</h3>
+    <p>Converts the <span class="text-info" title="Microsoft.AspNetCore.Http.IFormFile">IFormFile</span> into a <a href="../../inetdev-data/inetdev-data/inetdev-data-binaryattachment.html">BinaryAttachment</a>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-binaryattachment.html">BinaryAttachment</a> BinaryAttachment(file)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A <a href="../../inetdev-data/inetdev-data/inetdev-data-binaryattachment.html">BinaryAttachment</a> to store the <span class="text-info" title="Microsoft.AspNetCore.Http.IFormFile">IFormFile</span>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>file</td>
+        <td><span class="text-info" title="Microsoft.AspNetCore.Http.IFormFile">IFormFile</span></td>
+        <td>The <span class="text-info" title="Microsoft.AspNetCore.Http.IFormFile">IFormFile</span> to convert.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.AspNetCore.HttpExtensions.IsImage(Microsoft.AspNetCore.Http.IFormFile)" class="mb-5">
+    <h3 class="lead text-info">IsImage</h3>
+    <p>Check an <span class="text-info" title="Microsoft.AspNetCore.Http.IFormFile">IFormFile</span> is actually an image.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsImage(file)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if it's an image, otherwise <strong class="text-info">false</strong>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>file</td>
+        <td><span class="text-info" title="Microsoft.AspNetCore.Http.IFormFile">IFormFile</span></td>
+        <td>An <span class="text-info" title="Microsoft.AspNetCore.Http.IFormFile">IFormFile</span>.</td>
+    </tr>
+</tbody></table>
+</div>
 <div id="M:Inetdev.AspNetCore.HttpExtensions.IsXHR(Microsoft.AspNetCore.Http.HttpRequest)" class="mb-5">
     <h3 class="lead text-info">IsXHR</h3>
     <p>Checks whether the request is has the X-Requested-With header setted to XMLHttpRequest.</p>
@@ -73,6 +125,8 @@
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.AspNetCore.HttpExtensions.BinaryAttachment(Microsoft.AspNetCore.Http.IFormFile)">BinaryAttachment</a></li>
+        <li><a href="#M:Inetdev.AspNetCore.HttpExtensions.IsImage(Microsoft.AspNetCore.Http.IFormFile)">IsImage</a></li>
         <li><a href="#M:Inetdev.AspNetCore.HttpExtensions.IsXHR(Microsoft.AspNetCore.Http.HttpRequest)">IsXHR</a></li>
     </ul>
 </li>
