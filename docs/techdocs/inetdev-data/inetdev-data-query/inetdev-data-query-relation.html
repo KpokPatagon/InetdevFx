@@ -40,14 +40,6 @@
 <dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:Inetdev.Data.Query.Relation.#ctor" class="mb-5">
-    <h3 class="lead text-info">Relation</h3>
-    <p>Default constructor</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Relation()</code></dd>
-</dl>
-</div>
 <div id="M:Inetdev.Data.Query.Relation.#ctor(Inetdev.Data.Query.RelationType,Inetdev.Data.Query.Repository)" class="mb-5">
     <h3 class="lead text-info">Relation</h3>
     <p>Creates a new instance of <strong>Relation</strong> and initializes it.</p>
@@ -128,6 +120,14 @@
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-repository.html">Repository</a> Repository { get; set; }</code></dd>
 </dl>
 </div>
+<div id="P:Inetdev.Data.Query.Relation.SelectStatement" class="mb-5">
+    <h3 class="lead text-info">SelectStatement</h3>
+    <p>A <span class="text-info" title="Inetdev.Data.Query.Relation.SelectStatement">SelectStatement</span> to be used as a relationed repository.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> SelectStatement { get; set; }</code></dd>
+</dl>
+</div>
 <div id="P:Inetdev.Data.Query.Relation.Type" class="mb-5">
     <h3 class="lead text-info">Type</h3>
     <p>Type of relation.</p>
@@ -146,6 +146,7 @@
     <ul style="font-size:0.8em;">
         <li><a href="#P:Inetdev.Data.Query.Relation.Predicates">Predicates</a></li>
         <li><a href="#P:Inetdev.Data.Query.Relation.Repository">Repository</a></li>
+        <li><a href="#P:Inetdev.Data.Query.Relation.SelectStatement">SelectStatement</a></li>
         <li><a href="#P:Inetdev.Data.Query.Relation.Type">Type</a></li>
     </ul>
 </li>
