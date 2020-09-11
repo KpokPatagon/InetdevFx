@@ -193,7 +193,7 @@
     <p>Builds a list of domain model objects of <strong class="text-info">dataModelType</strong> from the specified reader.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{Inetdev.Data.IDataModel}">IEnumerable&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> BuildModelList(dataModelType, reader)</code></dd>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IEnumerable{Inetdev.Data.IDataModel}">IEnumerable&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> BuildModelList(dataModelType, reader)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A list of domain model objects.</p>
@@ -242,7 +242,7 @@
     <p>Builds a list of domain model objects of <strong class="text-info">dataModelType</strong> from the specified reader.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{Inetdev.Data.IDataModel}">IEnumerable&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> BuildModelList(dataModelType, reader, parent)</code></dd>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IEnumerable{Inetdev.Data.IDataModel}">IEnumerable&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> BuildModelList(dataModelType, reader, parent)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A list of domain model objects.</p>
@@ -285,148 +285,6 @@
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
         <td>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Data.DataServices.BuildModelList``1(System.Data.DataTable)" class="mb-5">
-    <h3 class="lead text-info">BuildModelList</h3>
-    <p>Builds a list of domain model objects of <typeparamref name="T" /> from the specified <span class="text-info" title="System.Data.DataTable">DataTable</span>.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> BuildModelList&lt;T&gt;(t)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A list of domain model objects.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>t</td>
-        <td><span class="text-info" title="System.Data.DataTable">DataTable</span></td>
-        <td>A <span class="text-info" title="System.Data.DataTable">DataTable</span> containing the data.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Data.DataServices.BuildModelList``1(System.Data.DataTable,Inetdev.Data.IDataModel)" class="mb-5">
-    <h3 class="lead text-info">BuildModelList</h3>
-    <p>Builds a list of domain model objects of <typeparamref name="T" /> from the specified <span class="text-info" title="System.Data.DataTable">DataTable</span>.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> BuildModelList&lt;T&gt;(t, parent)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A list of domain model objects.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>t</td>
-        <td><span class="text-info" title="System.Data.DataTable">DataTable</span></td>
-        <td>A <span class="text-info" title="System.Data.DataTable">DataTable</span> containing the data.</td>
-    </tr>
-    <tr>
-        <td>parent</td>
-        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
-        <td>The parent object of the models being constructed.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Data.DataServices.BuildModelList``1(System.Data.IDataReader)" class="mb-5">
-    <h3 class="lead text-info">BuildModelList</h3>
-    <p>Builds a list of domain model objects of <typeparamref name="T" /> from the specified reader.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> BuildModelList&lt;T&gt;(reader)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A list of domain model objects.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>reader</td>
-        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
-        <td>The data reader containing the database data.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Data.DataServices.BuildModelList``1(System.Data.IDataReader,Inetdev.Data.IDataModel)" class="mb-5">
-    <h3 class="lead text-info">BuildModelList</h3>
-    <p>Builds a list of domain model objects of <typeparamref name="T" /> from the specified reader.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> BuildModelList&lt;T&gt;(reader, parent)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A list of domain model objects.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>reader</td>
-        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
-        <td>The data reader containing the database data.</td>
-    </tr>
-    <tr>
-        <td>parent</td>
-        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
-        <td>Parent object of the model being constructed.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
         <td>Thrown when <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</td>
@@ -736,6 +594,91 @@
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
         <td>Thrown when a required property is not initialized.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Data.DataServices.EnumerateModel``1(System.Data.IDataReader)" class="mb-5">
+    <h3 class="lead text-info">EnumerateModel</h3>
+    <p>Enumerates an <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> of <typeparamref name="T" /> from the specified <strong class="text-info">reader</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> EnumerateModel&lt;T&gt;(reader)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>An enumeration of <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> of <typeparamref name="T" />.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>reader</td>
+        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
+        <td>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the database data.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Data.DataServices.EnumerateModel``1(System.Data.IDataReader,Inetdev.Data.IDataModel)" class="mb-5">
+    <h3 class="lead text-info">EnumerateModel</h3>
+    <p>Enumerates an <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> of <typeparamref name="T" /> from the specified <strong class="text-info">reader</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> EnumerateModel&lt;T&gt;(reader, parent)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>An enumeration of <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> of <typeparamref name="T" />.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>reader</td>
+        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
+        <td>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the database data.</td>
+    </tr>
+    <tr>
+        <td>parent</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+        <td>Parent object of the model beeing constructed.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
 </tbody></table>
 </div>
@@ -1713,10 +1656,6 @@
         <li><a href="#M:Inetdev.Data.DataServices.AppendFilterTerms(Inetdev.Data.Query.Statement,System.Collections.Generic.List{Inetdev.Data.Filtering.Term},Inetdev.Data.Filtering.MatchKind)">AppendFilterTerms</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.BuildModelList(System.Type,System.Data.IDataReader)">BuildModelList</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.BuildModelList(System.Type,System.Data.IDataReader,Inetdev.Data.IDataModel)">BuildModelList</a></li>
-        <li><a href="#M:Inetdev.Data.DataServices.BuildModelList``1(System.Data.DataTable)">BuildModelList</a></li>
-        <li><a href="#M:Inetdev.Data.DataServices.BuildModelList``1(System.Data.DataTable,Inetdev.Data.IDataModel)">BuildModelList</a></li>
-        <li><a href="#M:Inetdev.Data.DataServices.BuildModelList``1(System.Data.IDataReader)">BuildModelList</a></li>
-        <li><a href="#M:Inetdev.Data.DataServices.BuildModelList``1(System.Data.IDataReader,Inetdev.Data.IDataModel)">BuildModelList</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.BuildModelList``1(Inetdev.Data.Query.SelectStatement)">BuildModelList</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.BuildModelList``1(Inetdev.Data.Query.SelectStatement,Inetdev.Data.IDataModel)">BuildModelList</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.BuildModelListAsync``1(Inetdev.Data.Query.SelectStatement)">BuildModelListAsync</a></li>
@@ -1724,6 +1663,8 @@
         <li><a href="#M:Inetdev.Data.DataServices.Delete(Inetdev.Data.IDataModel,Inetdev.Data.TimestampKind,System.DateTime)">Delete</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.DeleteAsync(Inetdev.Data.IDataModel,Inetdev.Data.TimestampKind,System.DateTime)">DeleteAsync</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.EnsureObjectState">EnsureObjectState</a></li>
+        <li><a href="#M:Inetdev.Data.DataServices.EnumerateModel``1(System.Data.IDataReader)">EnumerateModel</a></li>
+        <li><a href="#M:Inetdev.Data.DataServices.EnumerateModel``1(System.Data.IDataReader,Inetdev.Data.IDataModel)">EnumerateModel</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.GetModel(System.Type,Inetdev.Data.IDataModel)">GetModel</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.GetModel``1(``0)">GetModel</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.GetModelAsync(System.Type,Inetdev.Data.IDataModel)">GetModelAsync</a></li>

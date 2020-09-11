@@ -358,6 +358,109 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelList(System.Type,System.Data.IDataReader)" class="mb-5">
+    <h3 class="lead text-info">BuildModelList</h3>
+    <p>Builds a list of domain model objects of <strong class="text-info">dataModelType</strong> from the specified reader.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IEnumerable{Inetdev.Data.IDataModel}">IEnumerable&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> BuildModelList(dataModelType, reader)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A list of domain model objects.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>dataModelType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>Type of the domain model object to retrieve.</td>
+    </tr>
+    <tr>
+        <td>reader</td>
+        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
+        <td>The data reader containing the database data.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelList(System.Type,System.Data.IDataReader,Inetdev.Data.IDataModel)" class="mb-5">
+    <h3 class="lead text-info">BuildModelList</h3>
+    <p>Builds a list of domain model objects of <strong class="text-info">dataModelType</strong> from the specified reader.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IEnumerable{Inetdev.Data.IDataModel}">IEnumerable&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> BuildModelList(dataModelType, reader, parent)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A list of domain model objects.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>dataModelType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>Type of the domain model object to retrieve.</td>
+    </tr>
+    <tr>
+        <td>reader</td>
+        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
+        <td>The data reader containing the database data.</td>
+    </tr>
+    <tr>
+        <td>parent</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+        <td>Parent object of the model being constructed.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
 <div id="M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelList``1(Inetdev.Data.Query.SelectStatement)" class="mb-5">
     <h3 class="lead text-info">BuildModelList</h3>
     <p>Builds a list of domain model objects of <typeparamref name="T" /> from the specified <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a>.</p>
@@ -725,6 +828,91 @@
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
         <td>Thrown when a required property is not initialized.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Multitenancy.MultitenantDataServices.EnumerateModel``1(System.Data.IDataReader)" class="mb-5">
+    <h3 class="lead text-info">EnumerateModel</h3>
+    <p>Enumerates an <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> of <typeparamref name="T" /> from the specified <strong class="text-info">reader</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> EnumerateModel&lt;T&gt;(reader)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>An enumeration of <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> of <typeparamref name="T" />.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>reader</td>
+        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
+        <td>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the database data.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Multitenancy.MultitenantDataServices.EnumerateModel``1(System.Data.IDataReader,Inetdev.Data.IDataModel)" class="mb-5">
+    <h3 class="lead text-info">EnumerateModel</h3>
+    <p>Enumerates an <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> of <typeparamref name="T" /> from the specified <strong class="text-info">reader</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> EnumerateModel&lt;T&gt;(reader, parent)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>An enumeration of <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> of <typeparamref name="T" />.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>reader</td>
+        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
+        <td>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the database data.</td>
+    </tr>
+    <tr>
+        <td>parent</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+        <td>Parent object of the model beeing constructed.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
 </tbody></table>
 </div>
@@ -1908,6 +2096,8 @@
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.AppendPartitionKeyPredicate(Inetdev.Data.Query.Statement,Inetdev.Data.Field)">AppendPartitionKeyPredicate</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.AppendPartitionKeyPredicate(Inetdev.Data.Query.Statement,Inetdev.Data.Field,System.Object)">AppendPartitionKeyPredicate</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.AppendPartitionKeyPredicate(Inetdev.Data.Query.Statement,Inetdev.Data.IDataModel)">AppendPartitionKeyPredicate</a></li>
+        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelList(System.Type,System.Data.IDataReader)">BuildModelList</a></li>
+        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelList(System.Type,System.Data.IDataReader,Inetdev.Data.IDataModel)">BuildModelList</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelList``1(Inetdev.Data.Query.SelectStatement)">BuildModelList</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelList``1(Inetdev.Data.Query.SelectStatement,Inetdev.Data.IDataModel)">BuildModelList</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelListAsync``1(Inetdev.Data.Query.SelectStatement)">BuildModelListAsync</a></li>
@@ -1916,6 +2106,8 @@
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.DeleteAsync(Inetdev.Data.IDataModel,Inetdev.Data.TimestampKind,System.DateTime)">DeleteAsync</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.EnsureModelConfiguration(Inetdev.Data.IDataModel)">EnsureModelConfiguration</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.EnsureObjectState">EnsureObjectState</a></li>
+        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.EnumerateModel``1(System.Data.IDataReader)">EnumerateModel</a></li>
+        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.EnumerateModel``1(System.Data.IDataReader,Inetdev.Data.IDataModel)">EnumerateModel</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModel(System.Type,Inetdev.Data.IDataModel)">GetModel</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModel``1(``0)">GetModel</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModelAsync(System.Type,Inetdev.Data.IDataModel)">GetModelAsync</a></li>
