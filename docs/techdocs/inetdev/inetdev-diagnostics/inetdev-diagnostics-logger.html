@@ -131,9 +131,53 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:Inetdev.Diagnostics.Logger.Write(System.Object,Inetdev.Diagnostics.LogLevel,System.String,Inetdev.Diagnostics.EventId,System.String)" class="mb-5">
+    <h3 class="lead text-info">Write</h3>
+    <p>Writes a new log entry.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Write(message, level, category, eventid, activityid)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>message</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>Message to be written.</td>
+    </tr>
+    <tr>
+        <td>level</td>
+        <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-loglevel.html">LogLevel</a></td>
+        <td>Message level.</td>
+    </tr>
+    <tr>
+        <td>category</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Message category.</td>
+    </tr>
+    <tr>
+        <td>eventid</td>
+        <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
+        <td>Message event id.</td>
+    </tr>
+    <tr>
+        <td>activityid</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Message activity id.</td>
+    </tr>
+</tbody></table>
+</div>
 <div id="M:Inetdev.Diagnostics.Logger.WriteCritical(System.Object)" class="mb-5">
     <h3 class="lead text-info">WriteCritical</h3>
-    <p>Writes a critical level message to the error trace.</p>
+    <p>Writes a critial message with basic category.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteCritical(message)</code></dd>
@@ -157,7 +201,7 @@
 </div>
 <div id="M:Inetdev.Diagnostics.Logger.WriteCritical(System.Object,Inetdev.Diagnostics.EventId)" class="mb-5">
     <h3 class="lead text-info">WriteCritical</h3>
-    <p>Writes a critical level message to the error trace.</p>
+    <p>Writes a critial message with basic category.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteCritical(message, eventid)</code></dd>
@@ -180,13 +224,42 @@
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td>message event id.</td>
+        <td>Message event id.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Diagnostics.Logger.WriteCritical(System.Object,System.String)" class="mb-5">
+    <h3 class="lead text-info">WriteCritical</h3>
+    <p>Writes a critial message with basic category.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteCritical(message, activityid)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>message</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>Message to be written.</td>
+    </tr>
+    <tr>
+        <td>activityid</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Message activity id.</td>
     </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Diagnostics.Logger.WriteDebug(System.Object)" class="mb-5">
     <h3 class="lead text-info">WriteDebug</h3>
-    <p>Writes a debug level message to the debug trace.</p>
+    <p>Writes a debug message with basic category.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteDebug(message)</code></dd>
@@ -210,7 +283,7 @@
 </div>
 <div id="M:Inetdev.Diagnostics.Logger.WriteDebug(System.Object,Inetdev.Diagnostics.EventId)" class="mb-5">
     <h3 class="lead text-info">WriteDebug</h3>
-    <p>Writes a debug level message to the debug trace.</p>
+    <p>Writes a debug message with basic category.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteDebug(message, eventid)</code></dd>
@@ -233,13 +306,42 @@
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td>message event id.</td>
+        <td>Message event id.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Diagnostics.Logger.WriteDebug(System.Object,System.String)" class="mb-5">
+    <h3 class="lead text-info">WriteDebug</h3>
+    <p>Writes a debug message with basic category.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteDebug(message, activityid)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>message</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>Message to be written.</td>
+    </tr>
+    <tr>
+        <td>activityid</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Message activity id.</td>
     </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Diagnostics.Logger.WriteError(System.Object)" class="mb-5">
     <h3 class="lead text-info">WriteError</h3>
-    <p>Writes an error level message to the error trace.</p>
+    <p>Writes an error message with basic category.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteError(message)</code></dd>
@@ -263,7 +365,7 @@
 </div>
 <div id="M:Inetdev.Diagnostics.Logger.WriteError(System.Object,Inetdev.Diagnostics.EventId)" class="mb-5">
     <h3 class="lead text-info">WriteError</h3>
-    <p>Writes an error level message to the error trace.</p>
+    <p>Writes an error message with basic category.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteError(message, eventid)</code></dd>
@@ -286,13 +388,42 @@
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td>message event id.</td>
+        <td>Message event id.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Diagnostics.Logger.WriteError(System.Object,System.String)" class="mb-5">
+    <h3 class="lead text-info">WriteError</h3>
+    <p>Writes an error message with basic category.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteError(message, activityid)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>message</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>Message to be written.</td>
+    </tr>
+    <tr>
+        <td>activityid</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Message activity id.</td>
     </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Diagnostics.Logger.WriteInformation(System.Object)" class="mb-5">
     <h3 class="lead text-info">WriteInformation</h3>
-    <p>Writes an information level message to the basic trace.</p>
+    <p>Writes an informational message with basic category.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteInformation(message)</code></dd>
@@ -316,7 +447,7 @@
 </div>
 <div id="M:Inetdev.Diagnostics.Logger.WriteInformation(System.Object,Inetdev.Diagnostics.EventId)" class="mb-5">
     <h3 class="lead text-info">WriteInformation</h3>
-    <p>Writes an information level message to the basic trace.</p>
+    <p>Writes an informational message with basic category.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteInformation(message, eventid)</code></dd>
@@ -339,13 +470,42 @@
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td>message event id.</td>
+        <td>Message event id.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Diagnostics.Logger.WriteInformation(System.Object,System.String)" class="mb-5">
+    <h3 class="lead text-info">WriteInformation</h3>
+    <p>Writes an informational message with basic category.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteInformation(message, activityid)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>message</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>Message to be written.</td>
+    </tr>
+    <tr>
+        <td>activityid</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Message activity id.</td>
     </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Diagnostics.Logger.WriteVerbose(System.Object)" class="mb-5">
     <h3 class="lead text-info">WriteVerbose</h3>
-    <p>Writes a verbose level message to the process trace.</p>
+    <p>Writes a verbose message with basic category.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteVerbose(message)</code></dd>
@@ -369,7 +529,7 @@
 </div>
 <div id="M:Inetdev.Diagnostics.Logger.WriteVerbose(System.Object,Inetdev.Diagnostics.EventId)" class="mb-5">
     <h3 class="lead text-info">WriteVerbose</h3>
-    <p>Writes a verbose level message to the process trace.</p>
+    <p>Writes a verbose message with basic category.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteVerbose(message, eventid)</code></dd>
@@ -392,13 +552,42 @@
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td>message event id.</td>
+        <td>Message event id.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Diagnostics.Logger.WriteVerbose(System.Object,System.String)" class="mb-5">
+    <h3 class="lead text-info">WriteVerbose</h3>
+    <p>Writes a verbose message with basic category.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteVerbose(message, activityid)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>message</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>Message to be written.</td>
+    </tr>
+    <tr>
+        <td>activityid</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Message activity id.</td>
     </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Diagnostics.Logger.WriteWarning(System.Object)" class="mb-5">
     <h3 class="lead text-info">WriteWarning</h3>
-    <p>Writes a warning level message to the warning trace.</p>
+    <p>Writes a warning message with basic category.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteWarning(message)</code></dd>
@@ -422,7 +611,7 @@
 </div>
 <div id="M:Inetdev.Diagnostics.Logger.WriteWarning(System.Object,Inetdev.Diagnostics.EventId)" class="mb-5">
     <h3 class="lead text-info">WriteWarning</h3>
-    <p>Writes a warning level message to the warning trace.</p>
+    <p>Writes a warning message with basic category.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteWarning(message, eventid)</code></dd>
@@ -445,7 +634,36 @@
     <tr>
         <td>eventid</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-eventid.html">EventId</a></td>
-        <td>message event id.</td>
+        <td>Message event id.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:Inetdev.Diagnostics.Logger.WriteWarning(System.Object,System.String)" class="mb-5">
+    <h3 class="lead text-info">WriteWarning</h3>
+    <p>Writes a warning message with basic category.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WriteWarning(message, activityid)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>message</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>Message to be written.</td>
+    </tr>
+    <tr>
+        <td>activityid</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Message activity id.</td>
     </tr>
 </tbody></table>
 </div>
@@ -466,18 +684,25 @@
     <ul style="font-size:0.8em;">
         <li><a href="#M:Inetdev.Diagnostics.Logger.Write(Inetdev.Diagnostics.LogEntry)">Write</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.Write(System.Object,Inetdev.Diagnostics.LogLevel,System.String,Inetdev.Diagnostics.EventId)">Write</a></li>
+        <li><a href="#M:Inetdev.Diagnostics.Logger.Write(System.Object,Inetdev.Diagnostics.LogLevel,System.String,Inetdev.Diagnostics.EventId,System.String)">Write</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.WriteCritical(System.Object)">WriteCritical</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.WriteCritical(System.Object,Inetdev.Diagnostics.EventId)">WriteCritical</a></li>
+        <li><a href="#M:Inetdev.Diagnostics.Logger.WriteCritical(System.Object,System.String)">WriteCritical</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.WriteDebug(System.Object)">WriteDebug</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.WriteDebug(System.Object,Inetdev.Diagnostics.EventId)">WriteDebug</a></li>
+        <li><a href="#M:Inetdev.Diagnostics.Logger.WriteDebug(System.Object,System.String)">WriteDebug</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.WriteError(System.Object)">WriteError</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.WriteError(System.Object,Inetdev.Diagnostics.EventId)">WriteError</a></li>
+        <li><a href="#M:Inetdev.Diagnostics.Logger.WriteError(System.Object,System.String)">WriteError</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.WriteInformation(System.Object)">WriteInformation</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.WriteInformation(System.Object,Inetdev.Diagnostics.EventId)">WriteInformation</a></li>
+        <li><a href="#M:Inetdev.Diagnostics.Logger.WriteInformation(System.Object,System.String)">WriteInformation</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.WriteVerbose(System.Object)">WriteVerbose</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.WriteVerbose(System.Object,Inetdev.Diagnostics.EventId)">WriteVerbose</a></li>
+        <li><a href="#M:Inetdev.Diagnostics.Logger.WriteVerbose(System.Object,System.String)">WriteVerbose</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.WriteWarning(System.Object)">WriteWarning</a></li>
         <li><a href="#M:Inetdev.Diagnostics.Logger.WriteWarning(System.Object,Inetdev.Diagnostics.EventId)">WriteWarning</a></li>
+        <li><a href="#M:Inetdev.Diagnostics.Logger.WriteWarning(System.Object,System.String)">WriteWarning</a></li>
     </ul>
 </li>
 </ul>

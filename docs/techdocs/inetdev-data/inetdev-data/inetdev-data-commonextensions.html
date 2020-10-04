@@ -206,6 +206,47 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:Inetdev.Data.CommonExtensions.GetPartitionKeyPropertyName(Inetdev.Data.IDataModel)" class="mb-5">
+    <h3 class="lead text-info">GetPartitionKeyPropertyName</h3>
+    <p>Gets the name of the partition key data property or <strong class="text-info">null</strong> 
+            if <strong class="text-info">model</strong> does not has a partition key property.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetPartitionKeyPropertyName(model)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>The name of the partition key property or <strong class="text-info">null</strong>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>model</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
+        <td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
 <div id="M:Inetdev.Data.CommonExtensions.HasPrimaryKeys(System.Collections.Generic.ICollection{Inetdev.Data.Field})" class="mb-5">
     <h3 class="lead text-info">HasPrimaryKeys</h3>
     <p>Finds if the <strong class="text-info">fields</strong> collection has primary key fields.</p>
@@ -297,6 +338,7 @@
         <li><a href="#M:Inetdev.Data.CommonExtensions.GetAutomaticDataProperty(System.Collections.Generic.ICollection{Inetdev.Data.IDataProperty},Inetdev.Data.AutomaticType)">GetAutomaticDataProperty</a></li>
         <li><a href="#M:Inetdev.Data.CommonExtensions.GetAutomaticField(System.Collections.Generic.ICollection{Inetdev.Data.Field},Inetdev.Data.AutomaticType)">GetAutomaticField</a></li>
         <li><a href="#M:Inetdev.Data.CommonExtensions.GetField(System.Collections.Generic.ICollection{Inetdev.Data.Field},System.String)">GetField</a></li>
+        <li><a href="#M:Inetdev.Data.CommonExtensions.GetPartitionKeyPropertyName(Inetdev.Data.IDataModel)">GetPartitionKeyPropertyName</a></li>
         <li><a href="#M:Inetdev.Data.CommonExtensions.HasPrimaryKeys(System.Collections.Generic.ICollection{Inetdev.Data.Field})">HasPrimaryKeys</a></li>
         <li><a href="#M:Inetdev.Data.CommonExtensions.IsDataProperty(System.Reflection.PropertyInfo)">IsDataProperty</a></li>
     </ul>

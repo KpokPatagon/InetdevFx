@@ -715,7 +715,7 @@
 </div>
 <div id="M:Inetdev.Data.AbstractDbAccess.WriteMessageToDebugTrace(System.String)" class="mb-5">
     <h3 class="lead text-info">WriteMessageToDebugTrace</h3>
-    <p>Writes the specified message to the debug trace with <span class="text-info" title="Inetdev.Diagnostics.LogLevel.Verbose">Verbose</span> level.</p>
+    <p>Writes the specified message to the debug trace with <span class="text-info" title="Inetdev.Diagnostics.LogLevel.Debug">Debug</span> level.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> WriteMessageToDebugTrace(message)</code></dd>
@@ -733,16 +733,16 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.String">String</span></td>
-        <td>The message to write.</td>
+        <td>Message to write.</td>
     </tr>
 </tbody></table>
 </div>
-<div id="M:Inetdev.Data.AbstractDbAccess.WriteMessageToDebugTrace(System.String,Inetdev.Diagnostics.LogLevel,System.Diagnostics.Stopwatch)" class="mb-5">
+<div id="M:Inetdev.Data.AbstractDbAccess.WriteMessageToDebugTrace(System.String,System.Diagnostics.Stopwatch)" class="mb-5">
     <h3 class="lead text-info">WriteMessageToDebugTrace</h3>
-    <p>Writes the specified message to the debug trace with with the specified level.</p>
+    <p>Writes the specified message to the debug trace with <span class="text-info" title="Inetdev.Diagnostics.LogLevel.Debug">Debug</span> level.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> WriteMessageToDebugTrace(message, level, stopwatch)</code></dd>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> WriteMessageToDebugTrace(message, stopwatch)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -757,17 +757,12 @@
     <tr>
         <td>message</td>
         <td><span class="text-info" title="System.String">String</span></td>
-        <td>The message to write.</td>
-    </tr>
-    <tr>
-        <td>level</td>
-        <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-loglevel.html">LogLevel</a></td>
-        <td>The message level.</td>
+        <td>Message to write.</td>
     </tr>
     <tr>
         <td>stopwatch</td>
         <td><span class="text-info" title="System.Diagnostics.Stopwatch">Stopwatch</span></td>
-        <td>A <span class="text-info" title="System.Diagnostics.Stopwatch">Stopwatch</span>.</td>
+        <td>An optional <span class="text-info" title="System.Diagnostics.Stopwatch">Stopwatch</span>.</td>
     </tr>
 </tbody></table>
 </div>
@@ -827,7 +822,7 @@
         <li><a href="#M:Inetdev.Data.AbstractDbAccess.RollbackTransaction">RollbackTransaction</a></li>
         <li><a href="#M:Inetdev.Data.AbstractDbAccess.WriteCommandToDebugTrace(System.Data.IDbCommand)">WriteCommandToDebugTrace</a></li>
         <li><a href="#M:Inetdev.Data.AbstractDbAccess.WriteMessageToDebugTrace(System.String)">WriteMessageToDebugTrace</a></li>
-        <li><a href="#M:Inetdev.Data.AbstractDbAccess.WriteMessageToDebugTrace(System.String,Inetdev.Diagnostics.LogLevel,System.Diagnostics.Stopwatch)">WriteMessageToDebugTrace</a></li>
+        <li><a href="#M:Inetdev.Data.AbstractDbAccess.WriteMessageToDebugTrace(System.String,System.Diagnostics.Stopwatch)">WriteMessageToDebugTrace</a></li>
     </ul>
 </li>
 </ul>

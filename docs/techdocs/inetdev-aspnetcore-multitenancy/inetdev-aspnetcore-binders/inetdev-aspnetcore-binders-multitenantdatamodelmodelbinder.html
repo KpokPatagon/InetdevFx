@@ -68,7 +68,7 @@
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:Inetdev.AspNetCore.Binders.MultitenantDataModelModelBinder.CreateModel(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext)" class="mb-5">
     <h3 class="lead text-info">CreateModel</h3>
-    <p>Creates the object model from the application context and sets the partition key property.</p>
+    <p>Creates the object model from the application context and sets the partition key property if the model has one.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>protected <span class="text-info" title="System.Object">Object</span> CreateModel(bindingContext)</code></dd>
@@ -105,12 +105,8 @@
         <td>Thrown when <strong class="text-info">bindingContext</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
-        <td>Thrown when the context does not have the tenant information.</td>
-    </tr>
-    <tr>
         <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thown when the model does not have a <b>PartitionKey</b> property.</td>
+        <td>Thrown when the <code>HttpContext</code> does not has tenant data.</td>
     </tr>
 </tbody></table>
 </div>

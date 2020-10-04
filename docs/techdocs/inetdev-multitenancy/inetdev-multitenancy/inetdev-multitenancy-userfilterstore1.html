@@ -40,7 +40,7 @@
 <dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:Inetdev.Multitenancy.UserFilterStore`1.#ctor" class="mb-5">
+<div id="" class="mb-5">
     <h3 class="lead text-info">UserFilterStore</h3>
     <p>Default constructor</p>
 <dl class="row">
@@ -49,12 +49,12 @@
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:Inetdev.Multitenancy.UserFilterStore`1.ClearFilterAsync(System.String,System.String)" class="mb-5">
+<div id="M:Inetdev.Multitenancy.UserFilterStore`1.ClearFilterAsync(System.Int32,System.String,System.String)" class="mb-5">
     <h3 class="lead text-info">ClearFilterAsync</h3>
     <p>Clears a filter for a page and a user.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Int32}">Task&lt;Int32&gt;</span> ClearFilterAsync(pageId, userId)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Int32}">Task&lt;Int32&gt;</span> ClearFilterAsync(currentTenantId, pageId, userId)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Quantity of record effectively deleted.</p>
@@ -68,6 +68,11 @@
     </tr>
 </thead>
 <tbody>
+    <tr>
+        <td>currentTenantId</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td>Identification of the current <b>Tenant</b>.</td>
+    </tr>
     <tr>
         <td>pageId</td>
         <td><span class="text-info" title="System.String">String</span></td>
@@ -90,44 +95,16 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-        <td><p>Thrown when <strong class="text-info">pageId</strong> is <strong class="text-info">null</strong> or empty.</p><p>-or- <strong class="text-info">userId</strong> is <strong class="text-info">null</strong> or empty.</p></td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.NoTenantInContextException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-notenantincontextexception.html">NoTenantInContextException</a></span></td>
-        <td>Thrown when the tenant cannot be found within the application context.</td>
+        <td><p>Thrown when <strong class="text-info">pageId</strong> is <strong class="text-info">null</strong> or empty.</p><p>-or-</p><p>When <strong class="text-info">userId</strong> is <strong class="text-info">null</strong> or empty.</p></td>
     </tr>
 </tbody></table>
 </div>
-<div id="M:Inetdev.Multitenancy.UserFilterStore`1.GetPartitionKey" class="mb-5">
-    <h3 class="lead text-info">GetPartitionKey</h3>
-    <p>Gets partition key from context.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.Int32">Int32</span> GetPartitionKey()</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>Current partition key.</p>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.NoTenantInContextException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-notenantincontextexception.html">NoTenantInContextException</a></span></td>
-        <td>Thrown when the key is not within the context.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Multitenancy.UserFilterStore`1.LoadAndMergeFilterAsync(System.String,System.String,Inetdev.Data.Filtering.Listing{`0})" class="mb-5">
+<div id="M:Inetdev.Multitenancy.UserFilterStore`1.LoadAndMergeFilterAsync(System.Int32,System.String,System.String,Inetdev.Data.Filtering.Listing{`0})" class="mb-5">
     <h3 class="lead text-info">LoadAndMergeFilterAsync</h3>
     <p>Loads a stored filter and merge it data into <strong class="text-info">listing</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> LoadAndMergeFilterAsync(pageId, userId, listing)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> LoadAndMergeFilterAsync(currentTenantId, pageId, userId, listing)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -139,6 +116,11 @@
     </tr>
 </thead>
 <tbody>
+    <tr>
+        <td>currentTenantId</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td>Identification of the current <b>Tenant</b>.</td>
+    </tr>
     <tr>
         <td>pageId</td>
         <td><span class="text-info" title="System.String">String</span></td>
@@ -165,25 +147,21 @@
 </thead>
 <tbody>
     <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><p>Thrown when <strong class="text-info">pageId</strong> is <strong class="text-info">null</strong> or empty.</p><p>-or-</p><p>When <strong class="text-info">userId</strong> is <strong class="text-info">null</strong> or empty.</p></td>
+    </tr>
+    <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
         <td>Thrown when <strong class="text-info">listing</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-        <td><p>Thrown when <strong class="text-info">pageId</strong> is <strong class="text-info">null</strong> or empty.</p><p>-or- <strong class="text-info">userId</strong> is <strong class="text-info">null</strong> or empty.</p></td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.NoTenantInContextException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-notenantincontextexception.html">NoTenantInContextException</a></span></td>
-        <td>Thrown when the tenant cannot be found within the application context.</td>
-    </tr>
 </tbody></table>
 </div>
-<div id="M:Inetdev.Multitenancy.UserFilterStore`1.SaveFilterAsync(System.String,System.String,System.Object)" class="mb-5">
+<div id="M:Inetdev.Multitenancy.UserFilterStore`1.SaveFilterAsync(System.Int32,System.String,System.String,System.Object)" class="mb-5">
     <h3 class="lead text-info">SaveFilterAsync</h3>
     <p>Store filter data.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> SaveFilterAsync(pageId, userId, data)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> SaveFilterAsync(currentTenantId, pageId, userId, data)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -195,6 +173,11 @@
     </tr>
 </thead>
 <tbody>
+    <tr>
+        <td>currentTenantId</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td>Identification of the current <b>Tenant</b>.</td>
+    </tr>
     <tr>
         <td>pageId</td>
         <td><span class="text-info" title="System.String">String</span></td>
@@ -221,16 +204,12 @@
 </thead>
 <tbody>
     <tr>
+        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><p>Thrown when <strong class="text-info">pageId</strong> is <strong class="text-info">null</strong> or empty.</p><p>-or-</p><p>When <strong class="text-info">userId</strong> is <strong class="text-info">null</strong> or empty.</p></td>
+    </tr>
+    <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
         <td>Thrown when <strong class="text-info">data</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-        <td><p>Thrown when <strong class="text-info">pageId</strong> is <strong class="text-info">null</strong> or empty.</p><p>-or- <strong class="text-info">userId</strong> is <strong class="text-info">null</strong> or empty.</p></td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.NoTenantInContextException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-notenantincontextexception.html">NoTenantInContextException</a></span></td>
-        <td>Thrown when the tenant cannot be found within the application context.</td>
     </tr>
 </tbody></table>
 </div>
@@ -242,10 +221,9 @@
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#M:Inetdev.Multitenancy.UserFilterStore`1.ClearFilterAsync(System.String,System.String)">ClearFilterAsync</a></li>
-        <li><a href="#M:Inetdev.Multitenancy.UserFilterStore`1.GetPartitionKey">GetPartitionKey</a></li>
-        <li><a href="#M:Inetdev.Multitenancy.UserFilterStore`1.LoadAndMergeFilterAsync(System.String,System.String,Inetdev.Data.Filtering.Listing{`0})">LoadAndMergeFilterAsync</a></li>
-        <li><a href="#M:Inetdev.Multitenancy.UserFilterStore`1.SaveFilterAsync(System.String,System.String,System.Object)">SaveFilterAsync</a></li>
+        <li><a href="#M:Inetdev.Multitenancy.UserFilterStore`1.ClearFilterAsync(System.Int32,System.String,System.String)">ClearFilterAsync</a></li>
+        <li><a href="#M:Inetdev.Multitenancy.UserFilterStore`1.LoadAndMergeFilterAsync(System.Int32,System.String,System.String,Inetdev.Data.Filtering.Listing{`0})">LoadAndMergeFilterAsync</a></li>
+        <li><a href="#M:Inetdev.Multitenancy.UserFilterStore`1.SaveFilterAsync(System.Int32,System.String,System.String,System.Object)">SaveFilterAsync</a></li>
     </ul>
 </li>
 </ul>

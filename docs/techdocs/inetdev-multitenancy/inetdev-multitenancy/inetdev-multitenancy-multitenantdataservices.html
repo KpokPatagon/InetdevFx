@@ -188,60 +188,6 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:Inetdev.Multitenancy.MultitenantDataServices.AppendPartitionKeyPredicate(Inetdev.Data.Query.Statement,Inetdev.Data.Field)" class="mb-5">
-    <h3 class="lead text-info">AppendPartitionKeyPredicate</h3>
-    <p>Appends to <strong class="text-info">statement</strong> a predicate that equals <strong class="text-info">field</strong> to
-            the tenant Id obtained from the application context.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> AppendPartitionKeyPredicate(statement, field)</code></dd>
-</dl>
-<h6 class="mt-1">Remarks</h6>
-<p>The predicate is appended only if it does not exists.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>statement</td>
-        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a></td>
-        <td>The <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a> to append the predicate to.</td>
-    </tr>
-    <tr>
-        <td>field</td>
-        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a></td>
-        <td>A <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> to filter by.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">field</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when the partition key value is not found within the application context..</td>
-    </tr>
-</tbody></table>
-</div>
 <div id="M:Inetdev.Multitenancy.MultitenantDataServices.AppendPartitionKeyPredicate(Inetdev.Data.Query.Statement,Inetdev.Data.Field,System.Object)" class="mb-5">
     <h3 class="lead text-info">AppendPartitionKeyPredicate</h3>
     <p>Appends to <strong class="text-info">statement</strong> a predicate that equals <strong class="text-info">field</strong>
@@ -303,9 +249,8 @@
 </div>
 <div id="M:Inetdev.Multitenancy.MultitenantDataServices.AppendPartitionKeyPredicate(Inetdev.Data.Query.Statement,Inetdev.Data.IDataModel)" class="mb-5">
     <h3 class="lead text-info">AppendPartitionKeyPredicate</h3>
-    <p>Appends to <strong class="text-info">statement</strong> a predicate that equals the partition key field
-            to the partition key property of the model or to the partition key within the application
-            context if the the model property is <strong class="text-info">null</strong>.</p>
+    <p>Appends to <strong class="text-info">statement</strong> a predicate that equals the 
+            partition key field to the partition key property of the model.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> AppendPartitionKeyPredicate(statement, model)</code></dd>
@@ -342,19 +287,15 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when the partition key is missing.</td>
+        <td><p>Thrown when <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyPropertyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeypropertyexception.html">MissingPartitionKeyPropertyException</a></span></td>
-        <td>Thrown when the partition key is missing within the model.</td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has a partition key property.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has it's the partition key property set.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
@@ -774,10 +715,6 @@
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> EnsureModelConfiguration(model)</code></dd>
 </dl>
-<h6 class="mt-1">Remarks</h6>
-<p>This method checks if the model has a partition key property and if it
-                was modified, if not a partition key from the application context is 
-                assigned to the partition key property.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -791,7 +728,7 @@
     <tr>
         <td>model</td>
         <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
-        <td>A <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> to validate.</td>
+        <td>A, <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> to validate.</td>
     </tr>
 </tbody></table>
 <h6 class="mt-1">Exceptions</h6>
@@ -809,7 +746,11 @@
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyPropertyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeypropertyexception.html">MissingPartitionKeyPropertyException</a></span></td>
-        <td>Thrown when the partition key is missing.</td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has a partition key property.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has the partition key property set.</td>
     </tr>
 </tbody></table>
 </div>
@@ -1504,74 +1445,6 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetPartitionKey" class="mb-5">
-    <h3 class="lead text-info">GetPartitionKey</h3>
-    <p>Gets the current tenant Id from the application context.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.Int32">Int32</span> GetPartitionKey()</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>The current tenant Id.</p>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.NoTenantInContextException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-notenantincontextexception.html">NoTenantInContextException</a></span></td>
-        <td>Thrown when no tenant is found within the application context.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetPartitionKeyPropertyName(Inetdev.Data.IDataModel)" class="mb-5">
-    <h3 class="lead text-info">GetPartitionKeyPropertyName</h3>
-    <p>Gets the name of the <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a> of <strong class="text-info">model</strong> that is marked with <a href="../../inetdev-data/inetdev-data/inetdev-data-partitionkeyattribute.html">PartitionKeyAttribute</a>.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.String">String</span> GetPartitionKeyPropertyName(model)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>The name of the <b>PartitionKey</b><a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>model</td>
-        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
-        <td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyPropertyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeypropertyexception.html">MissingPartitionKeyPropertyException</a></span></td>
-        <td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
-    </tr>
-</tbody></table>
-</div>
 <div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetRowByIdentityStatement(Inetdev.Data.IDataModel)" class="mb-5">
     <h3 class="lead text-info">GetRowByIdentityStatement</h3>
     <p>Builds a <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> that retrives a record looking by identity
@@ -2097,7 +1970,6 @@
 <li>
     <ul style="font-size:0.8em;">
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.AppendFilterTerms(Inetdev.Data.Query.Statement,System.Collections.Generic.List{Inetdev.Data.Filtering.Term},Inetdev.Data.Filtering.MatchKind)">AppendFilterTerms</a></li>
-        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.AppendPartitionKeyPredicate(Inetdev.Data.Query.Statement,Inetdev.Data.Field)">AppendPartitionKeyPredicate</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.AppendPartitionKeyPredicate(Inetdev.Data.Query.Statement,Inetdev.Data.Field,System.Object)">AppendPartitionKeyPredicate</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.AppendPartitionKeyPredicate(Inetdev.Data.Query.Statement,Inetdev.Data.IDataModel)">AppendPartitionKeyPredicate</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelList(System.Type,System.Data.IDataReader)">BuildModelList</a></li>
@@ -2124,8 +1996,6 @@
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModels``1(Inetdev.Data.Query.Order)">GetModels</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModelsAsync``1">GetModelsAsync</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModelsAsync``1(Inetdev.Data.Query.Order)">GetModelsAsync</a></li>
-        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetPartitionKey">GetPartitionKey</a></li>
-        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetPartitionKeyPropertyName(Inetdev.Data.IDataModel)">GetPartitionKeyPropertyName</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetRowByIdentityStatement(Inetdev.Data.IDataModel)">GetRowByIdentityStatement</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetRowByPrimaryKeyStatement(Inetdev.Data.IDataModel)">GetRowByPrimaryKeyStatement</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetTableStatement(Inetdev.Data.IDataModel,Inetdev.Data.Query.Order)">GetTableStatement</a></li>

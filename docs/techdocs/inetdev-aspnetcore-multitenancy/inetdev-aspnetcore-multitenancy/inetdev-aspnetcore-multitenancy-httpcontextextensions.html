@@ -40,16 +40,15 @@
 <dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:Inetdev.AspNetCore.Multitenancy.HttpContextExtensions.GetTenantName(Microsoft.AspNetCore.Http.HttpContext)" class="mb-5">
-    <h3 class="lead text-info">GetTenantName</h3>
-    <p>Gets the tenant name stored within the http context. If the tenant name
-            was not stored, this method returns an empty string.</p>
+<div id="M:Inetdev.AspNetCore.Multitenancy.HttpContextExtensions.GetCurrentTenant``1(Microsoft.AspNetCore.Http.HttpContext)" class="mb-5">
+    <h3 class="lead text-info">GetCurrentTenant</h3>
+    <p>Gets the current <a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-itenant.html">ITenant</a> stored within the <span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span> or <strong class="text-info">null</strong> if no tenant is found.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetTenantName(context)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title=""></span> GetCurrentTenant&lt;TTenant&gt;(context)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>The stored tenant name of an empty string.</p>
+<p>The <a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-itenant.html">ITenant</a> stored within <strong class="text-info">context</strong> or <strong class="text-info">null</strong>.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -81,12 +80,13 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:Inetdev.AspNetCore.Multitenancy.HttpContextExtensions.SetTenantName(Microsoft.AspNetCore.Http.HttpContext,System.String)" class="mb-5">
-    <h3 class="lead text-info">SetTenantName</h3>
-    <p>Stores the tenant name into the http context.</p>
+<div id="M:Inetdev.AspNetCore.Multitenancy.HttpContextExtensions.SetCurrentTenant``1(Microsoft.AspNetCore.Http.HttpContext,``0)" class="mb-5">
+    <h3 class="lead text-info">SetCurrentTenant</h3>
+    <p>Stores the current <a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-itenant.html">ITenant</a> in the <span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span>. If <strong class="text-info">tenant</strong>
+            is <strong class="text-info">null</strong> a stored tenant is removed from the context.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SetTenantName(context, tenantName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SetCurrentTenant&lt;TTenant&gt;(context, tenant)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -104,27 +104,9 @@
         <td>The <span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span>.</td>
     </tr>
     <tr>
-        <td>tenantName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
-        <td>The name of the tenant to be setted.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">context</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
-        <td>Thrown when <strong class="text-info">tenantName</strong> is <strong class="text-info">null</strong> or empty.</td>
+        <td>tenant</td>
+        <td><span class="text-info" title="TTenant">TTenant</span></td>
+        <td>An <a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-itenant.html">ITenant</a> to be stored or <strong class="text-info">null</strong> to remove an existing one.</td>
     </tr>
 </tbody></table>
 </div>
@@ -135,8 +117,8 @@
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#M:Inetdev.AspNetCore.Multitenancy.HttpContextExtensions.GetTenantName(Microsoft.AspNetCore.Http.HttpContext)">GetTenantName</a></li>
-        <li><a href="#M:Inetdev.AspNetCore.Multitenancy.HttpContextExtensions.SetTenantName(Microsoft.AspNetCore.Http.HttpContext,System.String)">SetTenantName</a></li>
+        <li><a href="#M:Inetdev.AspNetCore.Multitenancy.HttpContextExtensions.GetCurrentTenant``1(Microsoft.AspNetCore.Http.HttpContext)">GetCurrentTenant</a></li>
+        <li><a href="#M:Inetdev.AspNetCore.Multitenancy.HttpContextExtensions.SetCurrentTenant``1(Microsoft.AspNetCore.Http.HttpContext,``0)">SetCurrentTenant</a></li>
     </ul>
 </li>
 </ul>
