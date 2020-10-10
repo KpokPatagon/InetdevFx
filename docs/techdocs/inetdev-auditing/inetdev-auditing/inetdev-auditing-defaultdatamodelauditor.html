@@ -47,34 +47,92 @@
                 </p><p>
                     Is the object implements ISecuredDataModel this implementation verfy audit records
                     and generated security incidents if data tampering is detected.
-                </p><p>
-                    The <b>TenantId</b> property must be set before using this class otherwhise 
-                    a <a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a> will be thrown.
                 </p></p>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:Inetdev.Auditing.DefaultDataModelAuditor.#ctor" class="mb-5">
+<div id="M:Inetdev.Auditing.DefaultDataModelAuditor.#ctor(Inetdev.Data.IDbAccess,Inetdev.Diagnostics.ILogger,System.Security.Claims.ClaimsPrincipal,System.Int32)" class="mb-5">
     <h3 class="lead text-info">DefaultDataModelAuditor</h3>
-    <p>Default constructor</p>
+    <p>Initializes a new instance of <strong>DefaultDataModelAuditor</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DefaultDataModelAuditor()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DefaultDataModelAuditor(auditingConnection, logger, currentPrincipal, currentTenantId)</code></dd>
 </dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>auditingConnection</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a></td>
+        <td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a> interface for <b>Auditing</b>.</td>
+    </tr>
+    <tr>
+        <td>logger</td>
+        <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-ilogger.html">ILogger</a></td>
+        <td>Diagnostics sub-system interface.</td>
+    </tr>
+    <tr>
+        <td>currentPrincipal</td>
+        <td><span class="text-info" title="System.Security.Claims.ClaimsPrincipal">ClaimsPrincipal</span></td>
+        <td>A <span class="text-info" title="System.Security.Claims.ClaimsPrincipal">ClaimsPrincipal</span> representing the user beeing audited.</td>
+    </tr>
+    <tr>
+        <td>currentTenantId</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td>Identification of the current <b>Tenant</b>.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">auditingConnection</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">logger</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">currentPrincipal</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+</tbody></table>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:Inetdev.Auditing.DefaultDataModelAuditor.DataAccessAPI" class="mb-5">
-    <h3 class="lead text-info">DataAccessAPI</h3>
-    <p>Database access interface.</p>
+<div id="P:Inetdev.Auditing.DefaultDataModelAuditor.AuditingConnection" class="mb-5">
+    <h3 class="lead text-info">AuditingConnection</h3>
+    <p>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a> interface for <b>Auditing</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a> DataAccessAPI { get; set; }</code></dd>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a> AuditingConnection { get; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.DefaultDataModelAuditor.CurrentPrincipal" class="mb-5">
+    <h3 class="lead text-info">CurrentPrincipal</h3>
+    <p>A <span class="text-info" title="System.Security.Claims.ClaimsPrincipal">ClaimsPrincipal</span> representing the user beeing audited.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Security.Claims.ClaimsPrincipal">ClaimsPrincipal</span> CurrentPrincipal { get; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.DefaultDataModelAuditor.CurrentTenantId" class="mb-5">
+    <h3 class="lead text-info">CurrentTenantId</h3>
+    <p>Identification of the current <b>Tenant</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> CurrentTenantId { get; }</code></dd>
 </dl>
 </div>
 <div id="P:Inetdev.Auditing.DefaultDataModelAuditor.Logger" class="mb-5">
     <h3 class="lead text-info">Logger</h3>
-    <p>Diagnostics logger.</p>
+    <p>Diagnostics sub-system interface.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-ilogger.html">ILogger</a> Logger { get; set; }</code></dd>
+    <dd class="col-10"><code>public <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-ilogger.html">ILogger</a> Logger { get; }</code></dd>
 </dl>
 </div>
 <div id="P:Inetdev.Auditing.DefaultDataModelAuditor.RequiresTransaction" class="mb-5">
@@ -83,14 +141,6 @@
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> RequiresTransaction { get; }</code></dd>
-</dl>
-</div>
-<div id="P:Inetdev.Auditing.DefaultDataModelAuditor.TenantId" class="mb-5">
-    <h3 class="lead text-info">TenantId</h3>
-    <p>Current Tenant Id.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> TenantId { get; set; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -132,19 +182,7 @@
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Security.SecurityException"><a href="../../inetdev/inetdev-security/inetdev-security-securityexception.html">SecurityException</a></span></td>
-        <td>Thrown when the current user cannot be found.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Security.SecurityException"><a href="../../inetdev/inetdev-security/inetdev-security-securityexception.html">SecurityException</a></span></td>
         <td>Thrown when there are error while generating audit data.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
-        <td>Thrown when the partition key was not found within the application context.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when the object has not been initialized.</td>
     </tr>
 </tbody></table>
 </div>
@@ -188,10 +226,6 @@
         <td><span class="text-info" title="Inetdev.Auditing.SecurityIncidentException"><a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-securityincidentexception.html">SecurityIncidentException</a></span></td>
         <td>Thrown when a security incident is created.</td>
     </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when the object has not been initialized.</td>
-    </tr>
 </tbody></table>
 </div>
             </div>
@@ -203,10 +237,11 @@
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#P:Inetdev.Auditing.DefaultDataModelAuditor.DataAccessAPI">DataAccessAPI</a></li>
+        <li><a href="#P:Inetdev.Auditing.DefaultDataModelAuditor.AuditingConnection">AuditingConnection</a></li>
+        <li><a href="#P:Inetdev.Auditing.DefaultDataModelAuditor.CurrentPrincipal">CurrentPrincipal</a></li>
+        <li><a href="#P:Inetdev.Auditing.DefaultDataModelAuditor.CurrentTenantId">CurrentTenantId</a></li>
         <li><a href="#P:Inetdev.Auditing.DefaultDataModelAuditor.Logger">Logger</a></li>
         <li><a href="#P:Inetdev.Auditing.DefaultDataModelAuditor.RequiresTransaction">RequiresTransaction</a></li>
-        <li><a href="#P:Inetdev.Auditing.DefaultDataModelAuditor.TenantId">TenantId</a></li>
     </ul>
 </li>
 <li><a href="#methods">Methods</a></li>

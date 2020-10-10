@@ -39,33 +39,78 @@
 <dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">System.Object</dd>
 </dl>
-<h2 id="remarks" class="mt-5">Remarks</h2>
-<p>The <b>TenantId</b> property must be set before using this class otherwhise 
-                a <a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a> will be thrown.</p>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:Inetdev.Auditing.SecurityIncidentManager.#ctor" class="mb-5">
+<div id="M:Inetdev.Auditing.SecurityIncidentManager.#ctor(Inetdev.Data.IDbAccess,System.Security.Claims.ClaimsPrincipal,System.Int32)" class="mb-5">
     <h3 class="lead text-info">SecurityIncidentManager</h3>
-    <p>Default constructor</p>
+    <p>Creates a new instance of <strong>SecurityIncidentManager</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SecurityIncidentManager()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SecurityIncidentManager(auditingConnection, currentPrincipal, currentTenantId)</code></dd>
 </dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>auditingConnection</td>
+        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a></td>
+        <td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a> interface for <b>Auditing</b>.</td>
+    </tr>
+    <tr>
+        <td>currentPrincipal</td>
+        <td><span class="text-info" title="System.Security.Claims.ClaimsPrincipal">ClaimsPrincipal</span></td>
+        <td>A <span class="text-info" title="System.Security.Claims.ClaimsPrincipal">ClaimsPrincipal</span> representing the current user.</td>
+    </tr>
+    <tr>
+        <td>currentTenantId</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td>Identification of the current <b>Tenant</b>.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">auditingConnection</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">currentPrincipal</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+</tbody></table>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:Inetdev.Auditing.SecurityIncidentManager.DataAccessAPI" class="mb-5">
-    <h3 class="lead text-info">DataAccessAPI</h3>
-    <p>Database comunication API.</p>
+<div id="P:Inetdev.Auditing.SecurityIncidentManager.AuditingConnection" class="mb-5">
+    <h3 class="lead text-info">AuditingConnection</h3>
+    <p>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a> interface for <b>Auditing</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a> DataAccessAPI { get; set; }</code></dd>
+    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idbaccess.html">IDbAccess</a> AuditingConnection { get; }</code></dd>
 </dl>
 </div>
-<div id="P:Inetdev.Auditing.SecurityIncidentManager.TenantId" class="mb-5">
-    <h3 class="lead text-info">TenantId</h3>
-    <p>Tenant Id.</p>
+<div id="P:Inetdev.Auditing.SecurityIncidentManager.CurrentPrincipal" class="mb-5">
+    <h3 class="lead text-info">CurrentPrincipal</h3>
+    <p>A <span class="text-info" title="System.Security.Claims.ClaimsPrincipal">ClaimsPrincipal</span> representing the current user.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> TenantId { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Security.Claims.ClaimsPrincipal">ClaimsPrincipal</span> CurrentPrincipal { get; }</code></dd>
+</dl>
+</div>
+<div id="P:Inetdev.Auditing.SecurityIncidentManager.CurrentTenantId" class="mb-5">
+    <h3 class="lead text-info">CurrentTenantId</h3>
+    <p>Identification of the current <b>Tenant</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> CurrentTenantId { get; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -114,10 +159,6 @@
         <td>Thrown when the security incident is not found.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when the object has not been initialized properly.</td>
-    </tr>
-    <tr>
         <td><span class="text-info" title="Inetdev.Auditing.AuditNotFoundException"><a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-auditnotfoundexception.html">AuditNotFoundException</a></span></td>
         <td>Thrown when a related audit record couldn't be found.</td>
     </tr>
@@ -127,13 +168,13 @@
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#remarks">Remarks</a></li>
 <li><a href="#constructors">Constructors</a></li>
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#P:Inetdev.Auditing.SecurityIncidentManager.DataAccessAPI">DataAccessAPI</a></li>
-        <li><a href="#P:Inetdev.Auditing.SecurityIncidentManager.TenantId">TenantId</a></li>
+        <li><a href="#P:Inetdev.Auditing.SecurityIncidentManager.AuditingConnection">AuditingConnection</a></li>
+        <li><a href="#P:Inetdev.Auditing.SecurityIncidentManager.CurrentPrincipal">CurrentPrincipal</a></li>
+        <li><a href="#P:Inetdev.Auditing.SecurityIncidentManager.CurrentTenantId">CurrentTenantId</a></li>
     </ul>
 </li>
 <li><a href="#methods">Methods</a></li>
