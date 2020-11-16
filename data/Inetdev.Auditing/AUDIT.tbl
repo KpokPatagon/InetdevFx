@@ -204,11 +204,27 @@
       "CheckConstraintExpression": null
     },
     {
+      "Name": "ELEMENT_STRING",
+      "DataType": "NText",
+      "Caption": "Información",
+      "Description": null,
+      "Position": 12,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "400",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
       "Name": "PREVIOUS_ID",
       "DataType": "Text",
       "Caption": "Id anterior",
       "Description": null,
-      "Position": 12,
+      "Position": 13,
       "IsAutonumeric": false,
       "IsNullable": true,
       "CharacterLength": "50",
@@ -224,7 +240,7 @@
       "DataType": "Text",
       "Caption": "Id siguiente",
       "Description": null,
-      "Position": 13,
+      "Position": 14,
       "IsAutonumeric": false,
       "IsNullable": true,
       "CharacterLength": "50",
@@ -240,7 +256,7 @@
       "DataType": "Text",
       "Caption": "Incidente de seguridad",
       "Description": null,
-      "Position": 14,
+      "Position": 15,
       "IsAutonumeric": false,
       "IsNullable": true,
       "CharacterLength": "50",
@@ -256,7 +272,7 @@
       "DataType": "Blob",
       "Caption": "Datos",
       "Description": null,
-      "Position": 15,
+      "Position": 16,
       "IsAutonumeric": false,
       "IsNullable": false,
       "CharacterLength": null,
@@ -349,18 +365,38 @@
           "Direction": "Ascending"
         }
       ]
+    },
+    {
+      "Name": "IX_AUDIT_5",
+      "Type": "NonClustered",
+      "IsUnique": false,
+      "Description": "UI for viewing audit record will be filtering by element string.",
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "ELEMENT_STRING",
+          "Position": 1,
+          "Direction": "Ascending"
+        },
+        {
+          "Name": "TENANT_ID",
+          "Position": 2,
+          "Direction": "Ascending"
+        }
+      ]
     }
   ],
   "ForeignKeys": [],
   "DesignerTemplate": "",
-  "ResourceFileName": "$(SolutionFolder)\\Jasbis.Security.Data\\DataLabels.resx",
-  "ResourceTypeName": "Jasbis.Security.Data.DataLabels, Jasbis.Security.Data",
+  "ResourceFileName": "",
+  "ResourceTypeName": "",
   "Summary": "",
   "Namespace": "",
   "ClassName": "",
   "Access": "Public",
   "SequenceName": null,
   "Order": null,
+  "ConnectionName": null,
   "ExtendedProperties": [
     {
       "Key": "ConnectionName",

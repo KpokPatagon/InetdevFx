@@ -368,14 +368,15 @@
   ],
   "ForeignKeys": [],
   "DesignerTemplate": "",
-  "ResourceFileName": "$(SolutionFolder)\\Jasbis.Security.Data\\DataLabels.resx",
-  "ResourceTypeName": "Jasbis.Security.Data.DataLabels, Jasbis.Security.Data",
+  "ResourceFileName": "",
+  "ResourceTypeName": "",
   "Summary": "",
   "Namespace": "",
   "ClassName": "",
   "Access": "Public",
   "SequenceName": null,
   "Order": null,
+  "ConnectionName": null,
   "ExtendedProperties": [
     {
       "Key": "ConnectionName",
