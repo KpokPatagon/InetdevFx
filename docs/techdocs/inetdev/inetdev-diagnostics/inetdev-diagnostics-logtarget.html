@@ -75,6 +75,8 @@
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(other)</code></dd>
 </dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if the objects are equals, otherwise <strong class="text-info">false</strong>.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -88,7 +90,7 @@
     <tr>
         <td>other</td>
         <td><strong>LogTarget</strong></td>
-        <td></td>
+        <td>Another <strong>LogTarget</strong> to check.</td>
     </tr>
 </tbody></table>
 </div>
@@ -99,6 +101,8 @@
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(obj)</code></dd>
 </dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if the objects are equals, otherwise <strong class="text-info">false</strong>.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -112,7 +116,7 @@
     <tr>
         <td>obj</td>
         <td><span class="text-info" title="System.Object">Object</span></td>
-        <td></td>
+        <td>Another <span class="text-info" title="System.Object">Object</span> to check.</td>
     </tr>
 </tbody></table>
 </div>
@@ -124,12 +128,12 @@
     <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> GetHashCode()</code></dd>
 </dl>
 </div>
-<div id="M:Inetdev.Diagnostics.LogTarget.TraceData(Inetdev.Diagnostics.LogEntry)" class="mb-5">
+<div id="M:Inetdev.Diagnostics.LogTarget.TraceData(Inetdev.Diagnostics.LogWriter,Inetdev.Diagnostics.LogEntry)" class="mb-5">
     <h3 class="lead text-info">TraceData</h3>
     <p>Writes trace data to the trace listeners in the <span class="text-info" title="Inetdev.Diagnostics.LogTarget.TraceTargets">TraceTargets</span> collection.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TraceData(entry)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TraceData(writer, entry)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -142,9 +146,14 @@
 </thead>
 <tbody>
     <tr>
+        <td>writer</td>
+        <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a></td>
+        <td>The <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a> that calls this <strong>LogTarget</strong>.</td>
+    </tr>
+    <tr>
         <td>entry</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a></td>
-        <td></td>
+        <td>A <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a> to write.</td>
     </tr>
 </tbody></table>
 </div>
@@ -166,7 +175,7 @@
         <li><a href="#M:Inetdev.Diagnostics.LogTarget.Equals(Inetdev.Diagnostics.LogTarget)">Equals</a></li>
         <li><a href="#M:Inetdev.Diagnostics.LogTarget.Equals(System.Object)">Equals</a></li>
         <li><a href="#M:Inetdev.Diagnostics.LogTarget.GetHashCode">GetHashCode</a></li>
-        <li><a href="#M:Inetdev.Diagnostics.LogTarget.TraceData(Inetdev.Diagnostics.LogEntry)">TraceData</a></li>
+        <li><a href="#M:Inetdev.Diagnostics.LogTarget.TraceData(Inetdev.Diagnostics.LogWriter,Inetdev.Diagnostics.LogEntry)">TraceData</a></li>
     </ul>
 </li>
 </ul>

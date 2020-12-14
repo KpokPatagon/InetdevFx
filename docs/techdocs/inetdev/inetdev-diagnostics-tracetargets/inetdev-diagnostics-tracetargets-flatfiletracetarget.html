@@ -68,7 +68,7 @@
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:Inetdev.Diagnostics.TraceTargets.FlatFileTraceTarget.EnsureConfiguration" class="mb-5">
     <h3 class="lead text-info">EnsureConfiguration</h3>
-    <p>Check object configuration and prepares the environment if necessary</p>
+    <p>Check object configuration and prepares the environment if necessary.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> EnsureConfiguration()</code></dd>
@@ -84,12 +84,12 @@
 <h6 class="mt-1">Returns</h6>
 <p>Textual representarion of this object.</p>
 </div>
-<div id="M:Inetdev.Diagnostics.TraceTargets.FlatFileTraceTarget.Write(Inetdev.Diagnostics.LogEntry)" class="mb-5">
+<div id="M:Inetdev.Diagnostics.TraceTargets.FlatFileTraceTarget.Write(Inetdev.Diagnostics.LogWriter,Inetdev.Diagnostics.LogEntry)" class="mb-5">
     <h3 class="lead text-info">Write</h3>
-    <p>Writes <strong class="text-info">entry</strong> to this trace target.</p>
+    <p>Writes the <strong class="text-info">entry</strong> to this trace target.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Write(entry)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Write(writer, entry)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -102,9 +102,14 @@
 </thead>
 <tbody>
     <tr>
+        <td>writer</td>
+        <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a></td>
+        <td>The <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a> that calls this <a href="../../inetdev/inetdev-diagnostics-tracetargets/inetdev-diagnostics-tracetargets-itracetarget.html">ITraceTarget</a>.</td>
+    </tr>
+    <tr>
         <td>entry</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a></td>
-        <td>The <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a> to write.</td>
+        <td>A <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a> to write.</td>
     </tr>
 </tbody></table>
 </div>
@@ -125,7 +130,7 @@
     <ul style="font-size:0.8em;">
         <li><a href="#M:Inetdev.Diagnostics.TraceTargets.FlatFileTraceTarget.EnsureConfiguration">EnsureConfiguration</a></li>
         <li><a href="#M:Inetdev.Diagnostics.TraceTargets.FlatFileTraceTarget.ToString">ToString</a></li>
-        <li><a href="#M:Inetdev.Diagnostics.TraceTargets.FlatFileTraceTarget.Write(Inetdev.Diagnostics.LogEntry)">Write</a></li>
+        <li><a href="#M:Inetdev.Diagnostics.TraceTargets.FlatFileTraceTarget.Write(Inetdev.Diagnostics.LogWriter,Inetdev.Diagnostics.LogEntry)">Write</a></li>
     </ul>
 </li>
 </ul>

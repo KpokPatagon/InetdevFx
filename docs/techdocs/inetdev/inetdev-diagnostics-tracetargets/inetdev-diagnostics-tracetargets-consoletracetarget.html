@@ -49,12 +49,12 @@
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:Inetdev.Diagnostics.TraceTargets.ConsoleTraceTarget.Write(Inetdev.Diagnostics.LogEntry)" class="mb-5">
+<div id="M:Inetdev.Diagnostics.TraceTargets.ConsoleTraceTarget.Write(Inetdev.Diagnostics.LogWriter,Inetdev.Diagnostics.LogEntry)" class="mb-5">
     <h3 class="lead text-info">Write</h3>
-    <p>Writes the <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a> to <span class="text-info" title="System.Console">Console</span>.</p>
+    <p>Writes the <strong class="text-info">entry</strong> to this trace target.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Write(entry)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Write(writer, entry)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -67,9 +67,14 @@
 </thead>
 <tbody>
     <tr>
+        <td>writer</td>
+        <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a></td>
+        <td>The <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a> that calls this <a href="../../inetdev/inetdev-diagnostics-tracetargets/inetdev-diagnostics-tracetargets-itracetarget.html">ITraceTarget</a>.</td>
+    </tr>
+    <tr>
         <td>entry</td>
         <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a></td>
-        <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a> to write.</td>
+        <td>A <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a> to write.</td>
     </tr>
 </tbody></table>
 </div>
@@ -81,7 +86,7 @@
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#M:Inetdev.Diagnostics.TraceTargets.ConsoleTraceTarget.Write(Inetdev.Diagnostics.LogEntry)">Write</a></li>
+        <li><a href="#M:Inetdev.Diagnostics.TraceTargets.ConsoleTraceTarget.Write(Inetdev.Diagnostics.LogWriter,Inetdev.Diagnostics.LogEntry)">Write</a></li>
     </ul>
 </li>
 </ul>
