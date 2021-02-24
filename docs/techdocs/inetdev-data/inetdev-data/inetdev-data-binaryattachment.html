@@ -73,6 +73,35 @@
         <td>The serialized data.</td>
     </tr>
 </tbody></table>
+</div>
+<div id="M:Inetdev.Data.BinaryAttachment.#ctor(System.Byte[],System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">BinaryAttachment</h3>
+    <p>Initializes a new instance of <strong>BinaryAttachment</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> BinaryAttachment(serialized, throwIfError)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>serialized</td>
+        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td>The serialized data.</td>
+    </tr>
+    <tr>
+        <td>throwIfError</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td><strong class="text-info">true</strong> is an exception must be thrown if deserialization fails, otherwise <strong class="text-info">false</strong>.</td>
+    </tr>
+</tbody></table>
 <h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -84,7 +113,7 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="Inetdev.Data.BinaryAttachmentFormatException"><a href="../../inetdev-data/inetdev-data/inetdev-data-binaryattachmentformatexception.html">BinaryAttachmentFormatException</a></span></td>
-        <td>Thrown when the data cannot be deserialized.</td>
+        <td>Thrown when <strong class="text-info">throwIfError</strong> is <strong class="text-info">true</strong> and <strong class="text-info">serialized</strong> could not be deserialized.</td>
     </tr>
 </tbody></table>
 </div>
@@ -125,7 +154,7 @@
 <h2 id="properties" class="mt-5">Properties</h2>
 <div id="P:Inetdev.Data.BinaryAttachment.BinaryData" class="mb-5">
     <h3 class="lead text-info">BinaryData</h3>
-    <p>The binary data to be stored into the database field</p>
+    <p>The binary data to be stored into the database field.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> BinaryData { get; }</code></dd>
@@ -166,7 +195,7 @@
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:Inetdev.Data.BinaryAttachment.ToString" class="mb-5">
     <h3 class="lead text-info">ToString</h3>
-    <p>Returns a textual repredentation of the BinaryAttachment.</p>
+    <p>Returns a textual repredentation of this <strong>BinaryAttachment</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
