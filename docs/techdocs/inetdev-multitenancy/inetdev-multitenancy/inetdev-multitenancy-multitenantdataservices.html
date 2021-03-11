@@ -869,7 +869,7 @@
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> GetModel(dataModelType, model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -902,28 +902,35 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">dataModelType</strong> or <strong class="text-info">model</strong> are <strong class="text-info">null</strong>.</td>
+        <td><p>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyPropertyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeypropertyexception.html">MissingPartitionKeyPropertyException</a></span></td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has a partition key property.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has the partition key property set.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
         <td>Thrown when the this data service object was not properly initialized.</td>
     </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+        <td>Thrown when the repository does not have a primary key column.</td>
+    </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetModel``1(``0)" class="mb-5">
     <h3 class="lead text-info">GetModel</h3>
-    <p>Gets an <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> object of type <typeparamref name="T" /> looking
-            for it's primary key in the underlaying repository.</p>
+    <p>Gets a model object of type <typeparamref name="T" /> looking for it primary key in the underlying repository.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title=""></span> GetModel&lt;T&gt;(model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>An model of <typeparamref name="T" /> or <strong class="text-info">null</strong> if not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -954,12 +961,16 @@
         <td>Thown the <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
+        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyPropertyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeypropertyexception.html">MissingPartitionKeyPropertyException</a></span></td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has a partition key property.</td>
+    </tr>
+    <tr>
         <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has the partition key property set.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when a required property is not initialized.</td>
+        <td>Thrown when the this data service object was not properly initialized.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
@@ -975,7 +986,7 @@
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Data.IDataModel}">Task&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> GetModelAsync(dataModelType, model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -1008,28 +1019,35 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">dataModelType</strong> or <strong class="text-info">model</strong> are <strong class="text-info">null</strong>.</td>
+        <td><p>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyPropertyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeypropertyexception.html">MissingPartitionKeyPropertyException</a></span></td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has a partition key property.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has the partition key property set.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
         <td>Thrown when the this data service object was not properly initialized.</td>
     </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+        <td>Thrown when the repository does not have a primary key column.</td>
+    </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetModelAsync``1(``0)" class="mb-5">
     <h3 class="lead text-info">GetModelAsync</h3>
-    <p>Gets an <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> object of type <typeparamref name="T" /> looking
-            for it's primary key in the underlaying repository.</p>
+    <p>Gets a model object of type <typeparamref name="T" /> looking for it primary key in the underlying repository.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{}">Task</span> GetModelAsync&lt;T&gt;(model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>An model of <typeparamref name="T" /> or <strong class="text-info">null</strong> if not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -1060,12 +1078,16 @@
         <td>Thown the <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
+        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyPropertyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeypropertyexception.html">MissingPartitionKeyPropertyException</a></span></td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has a partition key property.</td>
+    </tr>
+    <tr>
         <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has the partition key property set.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when a required property is not initialized.</td>
+        <td>Thrown when the this data service object was not properly initialized.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
@@ -1081,7 +1103,7 @@
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> GetModelByIdentity(dataModelType, model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -1114,28 +1136,35 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">dataModelType</strong> or <strong class="text-info">model</strong> are <strong class="text-info">null</strong>.</td>
+        <td><p>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyPropertyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeypropertyexception.html">MissingPartitionKeyPropertyException</a></span></td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has a partition key property.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has the partition key property set.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
         <td>Thrown when the this data service object was not properly initialized.</td>
     </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+        <td>Thrown when the repository does not have a primary key column.</td>
+    </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetModelByIdentity``1(``0)" class="mb-5">
     <h3 class="lead text-info">GetModelByIdentity</h3>
-    <p>Gets an <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> object of type <typeparamref name="T" /> looking
-            for it's identity in the underlaying repository.</p>
+    <p>Gets a model object of type <typeparamref name="T" /> looking for the identity field in the underlying table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title=""></span> GetModelByIdentity&lt;T&gt;(model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>An model of <typeparamref name="T" /> or <strong class="text-info">null</strong> if not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -1149,7 +1178,7 @@
     <tr>
         <td>model</td>
         <td><span class="text-info" title="T">T</span></td>
-        <td>An instance of the model with the identity to look for.</td>
+        <td>An instance of the model object with the identity data.</td>
     </tr>
 </tbody></table>
 <h6 class="mt-1">Exceptions</h6>
@@ -1163,11 +1192,15 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thown the <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+        <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyPropertyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeypropertyexception.html">MissingPartitionKeyPropertyException</a></span></td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has a partition key property.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has the partition key property set.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
@@ -1175,19 +1208,19 @@
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
-        <td>Thrown when the repository does not have an Identity column.</td>
+        <td>Thrown when the repository does not have a primary key column.</td>
     </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetModelByIdentityAsync(System.Type,Inetdev.Data.IDataModel)" class="mb-5">
     <h3 class="lead text-info">GetModelByIdentityAsync</h3>
-    <p>Gets a domain model object of <strong class="text-info">dataModelType</strong> looking for it's primary key.</p>
+    <p>Gets a domain model object of <strong class="text-info">dataModelType</strong> looking for it's identity property.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Data.IDataModel}">Task&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> GetModelByIdentityAsync(dataModelType, model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -1206,7 +1239,7 @@
     <tr>
         <td>model</td>
         <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
-        <td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> holding the primary key to look for.</td>
+        <td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> holding the identity to look for.</td>
     </tr>
 </tbody></table>
 <h6 class="mt-1">Exceptions</h6>
@@ -1220,28 +1253,35 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">dataModelType</strong> or <strong class="text-info">model</strong> are <strong class="text-info">null</strong>.</td>
+        <td><p>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyPropertyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeypropertyexception.html">MissingPartitionKeyPropertyException</a></span></td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has a partition key property.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has the partition key property set.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
         <td>Thrown when the this data service object was not properly initialized.</td>
     </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+        <td>Thrown when the repository does not have a primary key column.</td>
+    </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetModelByIdentityAsync``1(``0)" class="mb-5">
     <h3 class="lead text-info">GetModelByIdentityAsync</h3>
-    <p>Gets an <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> object of type <typeparamref name="T" /> looking
-            for it's identity in the underlaying repository.</p>
+    <p>Gets a model object of type <typeparamref name="T" /> looking for the identity field in the underlying table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{}">Task</span> GetModelByIdentityAsync&lt;T&gt;(model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>An model of <typeparamref name="T" /> or <strong class="text-info">null</strong> if not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -1255,7 +1295,7 @@
     <tr>
         <td>model</td>
         <td><span class="text-info" title="T">T</span></td>
-        <td>An instance of the model with the identity to look for.</td>
+        <td>An instance of the model object with the identity data.</td>
     </tr>
 </tbody></table>
 <h6 class="mt-1">Exceptions</h6>
@@ -1269,11 +1309,15 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thown the <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+        <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyPropertyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeypropertyexception.html">MissingPartitionKeyPropertyException</a></span></td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has a partition key property.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
+        <td>Thrown when <strong class="text-info">model</strong> does not has the partition key property set.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
@@ -1281,167 +1325,7 @@
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
-        <td>Thrown when the repository does not have an Identity column.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetModels``1" class="mb-5">
-    <h3 class="lead text-info">GetModels</h3>
-    <p>Gets a collection of all objects from the underlaying repository.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> GetModels&lt;T&gt;()</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A collection of models of <typeparamref name="T" />.</p>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
-        <td>Thown when the partition key <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> cannot be found.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when the <b>PartitionKey</b> cannot be found.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when a required property is not initialized.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetModels``1(Inetdev.Data.Query.Order)" class="mb-5">
-    <h3 class="lead text-info">GetModels</h3>
-    <p>Gets a collection of all objects from the underlaying repository.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> GetModels&lt;T&gt;(order)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A collection of models of <typeparamref name="T" />.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>order</td>
-        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a></td>
-        <td>Specify how to order the records.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
-        <td>Thown when the partition key <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> cannot be found.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when the <b>PartitionKey</b> cannot be found.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when a required property is not initialized.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetModelsAsync``1" class="mb-5">
-    <h3 class="lead text-info">GetModelsAsync</h3>
-    <p>Gets a collection of all objects from the underlaying repository.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{}}">Task&lt;IEnumerable&gt;</span> GetModelsAsync&lt;T&gt;()</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A collection of models of <typeparamref name="T" />.</p>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
-        <td>Thown when the partition key <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> cannot be found.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when the <b>PartitionKey</b> cannot be found.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when a required property is not initialized.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetModelsAsync``1(Inetdev.Data.Query.Order)" class="mb-5">
-    <h3 class="lead text-info">GetModelsAsync</h3>
-    <p>Gets a collection of all objects from the underlaying repository.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{}}">Task&lt;IEnumerable&gt;</span> GetModelsAsync&lt;T&gt;(order)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A collection of models of <typeparamref name="T" />.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>order</td>
-        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a></td>
-        <td>Specify how to order the records.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
-        <td>Thown when the partition key <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> cannot be found.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when the <b>PartitionKey</b> cannot be found.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when a required property is not initialized.</td>
+        <td>Thrown when the repository does not have a primary key column.</td>
     </tr>
 </tbody></table>
 </div>
@@ -1540,60 +1424,6 @@
     <tr>
         <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
         <td>Thrown when the repository does not have a primary key column.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Multitenancy.MultitenantDataServices.GetTableStatement(Inetdev.Data.IDataModel,Inetdev.Data.Query.Order)" class="mb-5">
-    <h3 class="lead text-info">GetTableStatement</h3>
-    <p>Builds a <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> that retrieves all records from the underlaying table.
-            Records are filtered for the multi-tenant partition key.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> GetTableStatement(model, order)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a>.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>model</td>
-        <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
-        <td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> with the partition key to filter the record.</td>
-    </tr>
-    <tr>
-        <td>order</td>
-        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a></td>
-        <td>Specify how to order the records.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
-        <td>Thown when the partition key <a href="../../inetdev-data/inetdev-data/inetdev-data-field.html">Field</a> cannot be found.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.Multitenancy.MissingPartitionKeyException"><a href="../../inetdev-multitenancy/inetdev-multitenancy/inetdev-multitenancy-missingpartitionkeyexception.html">MissingPartitionKeyException</a></span></td>
-        <td>Thrown when <strong class="text-info">model</strong> does not have a <b>PartitionKey</b> property or the property is not an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a>.</td>
     </tr>
 </tbody></table>
 </div>
@@ -1992,13 +1822,8 @@
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModelByIdentity``1(``0)">GetModelByIdentity</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModelByIdentityAsync(System.Type,Inetdev.Data.IDataModel)">GetModelByIdentityAsync</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModelByIdentityAsync``1(``0)">GetModelByIdentityAsync</a></li>
-        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModels``1">GetModels</a></li>
-        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModels``1(Inetdev.Data.Query.Order)">GetModels</a></li>
-        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModelsAsync``1">GetModelsAsync</a></li>
-        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetModelsAsync``1(Inetdev.Data.Query.Order)">GetModelsAsync</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetRowByIdentityStatement(Inetdev.Data.IDataModel)">GetRowByIdentityStatement</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetRowByPrimaryKeyStatement(Inetdev.Data.IDataModel)">GetRowByPrimaryKeyStatement</a></li>
-        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.GetTableStatement(Inetdev.Data.IDataModel,Inetdev.Data.Query.Order)">GetTableStatement</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.Insert(Inetdev.Data.IDataModel)">Insert</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.InsertAsync(Inetdev.Data.IDataModel)">InsertAsync</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.RunCountStatement(Inetdev.Data.Query.SelectStatement)">RunCountStatement</a></li>
