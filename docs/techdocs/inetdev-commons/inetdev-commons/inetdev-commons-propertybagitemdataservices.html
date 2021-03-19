@@ -75,12 +75,12 @@
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:Inetdev.Commons.PropertyBagItemDataServices.DeletePropertiesAsync(System.String)" class="mb-5">
-    <h3 class="lead text-info">DeletePropertiesAsync</h3>
+<div id="M:Inetdev.Commons.PropertyBagItemDataServices.DeleteProperties(System.String)" class="mb-5">
+    <h3 class="lead text-info">DeleteProperties</h3>
     <p>Deletes all properties for the specified <strong class="text-info">bagKey</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Int32}">Task&lt;Int32&gt;</span> DeletePropertiesAsync(bagKey)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> DeleteProperties(bagKey)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The quantity of records deleted.</p>
@@ -97,7 +97,7 @@
     <tr>
         <td>bagKey</td>
         <td><span class="text-info" title="System.String">String</span></td>
-        <td>The partition key to delete.</td>
+        <td>The bag key to delete.</td>
     </tr>
 </tbody></table>
 <h6 class="mt-1">Exceptions</h6>
@@ -112,10 +112,6 @@
     <tr>
         <td><span class="text-info" title="Inetdev.ArgumentNullOrEmptyException"><a href="../../inetdev/inetdev/inetdev-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
         <td>Thown when <strong class="text-info">bagKey</strong> is <strong class="text-info">null</strong> or empty.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when a required property was not properly initialized.</td>
     </tr>
 </tbody></table>
 </div>
@@ -179,7 +175,7 @@
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#M:Inetdev.Commons.PropertyBagItemDataServices.DeletePropertiesAsync(System.String)">DeletePropertiesAsync</a></li>
+        <li><a href="#M:Inetdev.Commons.PropertyBagItemDataServices.DeleteProperties(System.String)">DeleteProperties</a></li>
         <li><a href="#M:Inetdev.Commons.PropertyBagItemDataServices.GetPropertiesAsync(System.String)">GetPropertiesAsync</a></li>
     </ul>
 </li>

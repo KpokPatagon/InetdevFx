@@ -41,8 +41,10 @@
 <dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">Inetdev.PropertyBag.IPropertyBag, Inetdev.Messaging.IMessageService</dd>
 </dl>
+<h2 id="remarks" class="mt-5">Remarks</h2>
+<p>This class implements a property bag for easyly store configuration.</p>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:Inetdev.Messaging.SmtpMessageService.#ctor" class="mb-5">
+<div id="" class="mb-5">
     <h3 class="lead text-info">SmtpMessageService</h3>
     <p>Default constructor</p>
 <dl class="row">
@@ -108,6 +110,22 @@
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:Inetdev.Messaging.SmtpMessageService.IsEnabled" class="mb-5">
+    <h3 class="lead text-info">IsEnabled</h3>
+    <p>Checks whether this services is considered enabled.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsEnabled()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if this service is consedered enabled, otherwise <strong class="text-info">false</strong>.</p>
+<h6 class="mt-1">Remarks</h6>
+<p><p>
+                    This service is considered <b>enabled</b> when the properties <code>From</code> and <code>Server</code>
+                    has been configured and the <code>From</code> property is a valid email address, otherwise this service 
+                    is <b>disabled</b>.
+                </p></p>
+</div>
 <div id="M:Inetdev.Messaging.SmtpMessageService.SendAsync(Inetdev.Messaging.Message)" class="mb-5">
     <h3 class="lead text-info">SendAsync</h3>
     <p>Sends the <strong class="text-info">message</strong> through e-mail.</p>
@@ -115,6 +133,8 @@
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> SendAsync(message)</code></dd>
 </dl>
+<h6 class="mt-1">Remarks</h6>
+<p><p>This method attempts to send the message only if it is consedered <b>enabled</b> otherwise it does nothing.</p><p>Se documentation on the <code>IsEnabled</code> method.</p></p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -128,7 +148,7 @@
     <tr>
         <td>message</td>
         <td><a href="../../inetdev/inetdev-messaging/inetdev-messaging-message.html">Message</a></td>
-        <td>A <a href="../../inetdev/inetdev-messaging/inetdev-messaging-message.html">Message</a> to send by e-mail.</td>
+        <td>A <a href="../../inetdev/inetdev-messaging/inetdev-messaging-message.html">Message</a> to be send by e-mail.</td>
     </tr>
 </tbody></table>
 <h6 class="mt-1">Exceptions</h6>
@@ -154,6 +174,7 @@
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
+<li><a href="#remarks">Remarks</a></li>
 <li><a href="#constructors">Constructors</a></li>
 <li><a href="#properties">Properties</a></li>
 <li>
@@ -170,6 +191,7 @@
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
+        <li><a href="#M:Inetdev.Messaging.SmtpMessageService.IsEnabled">IsEnabled</a></li>
         <li><a href="#M:Inetdev.Messaging.SmtpMessageService.SendAsync(Inetdev.Messaging.Message)">SendAsync</a></li>
     </ul>
 </li>
