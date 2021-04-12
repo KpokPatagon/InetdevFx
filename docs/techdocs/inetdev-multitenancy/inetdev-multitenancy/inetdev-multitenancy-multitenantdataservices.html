@@ -303,6 +303,57 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:Inetdev.Multitenancy.MultitenantDataServices.AppendStaticTerms(Inetdev.Data.Query.Statement,System.Collections.Generic.List{Inetdev.Data.Filtering.StaticTerm})" class="mb-5">
+    <h3 class="lead text-info">AppendStaticTerms</h3>
+    <p>Appends to the where clause all set static terms.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AppendStaticTerms(statement, terms)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>statement</td>
+        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a></td>
+        <td>Statement to add terms.</td>
+    </tr>
+    <tr>
+        <td>terms</td>
+        <td><span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.Filtering.StaticTerm}">List&lt;<a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-staticterm.html">StaticTerm</a>&gt;</span></td>
+        <td>A collections of terms.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">terms</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.Filtering.InvalidTermColumnNameException"><a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-invalidtermcolumnnameexception.html">InvalidTermColumnNameException</a></span></td>
+        <td>Thrown when a term.Column name does not exists within the fields collection.</td>
+    </tr>
+</tbody></table>
+</div>
 <div id="M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelList(System.Type,System.Data.IDataReader)" class="mb-5">
     <h3 class="lead text-info">BuildModelList</h3>
     <p>Builds a list of domain model objects of <strong class="text-info">dataModelType</strong> from the specified reader.</p>
@@ -1802,6 +1853,7 @@
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.AppendFilterTerms(Inetdev.Data.Query.Statement,System.Collections.Generic.List{Inetdev.Data.Filtering.Term},Inetdev.Data.Filtering.MatchKind)">AppendFilterTerms</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.AppendPartitionKeyPredicate(Inetdev.Data.Query.Statement,Inetdev.Data.Field,System.Object)">AppendPartitionKeyPredicate</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.AppendPartitionKeyPredicate(Inetdev.Data.Query.Statement,Inetdev.Data.IDataModel)">AppendPartitionKeyPredicate</a></li>
+        <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.AppendStaticTerms(Inetdev.Data.Query.Statement,System.Collections.Generic.List{Inetdev.Data.Filtering.StaticTerm})">AppendStaticTerms</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelList(System.Type,System.Data.IDataReader)">BuildModelList</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelList(System.Type,System.Data.IDataReader,Inetdev.Data.IDataModel)">BuildModelList</a></li>
         <li><a href="#M:Inetdev.Multitenancy.MultitenantDataServices.BuildModelList``1(Inetdev.Data.Query.SelectStatement)">BuildModelList</a></li>
