@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <title>ConsoleTraceTarget - Inetdev Framework Std</title>
+    <title>MainMenuActiveItemAttribute - Inetdev Framework Std</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -18,17 +18,17 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
-                <li class="nav-item"><a class="nav-link" href="../../inetdev/toc.html">Table of Contents</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../inetdev-aspnetcore/toc.html">Table of Contents</a></li>
             </ul>
         </div>
     </div>
     <div class="container mb-5">
         <div class="row">
             <div class="col-9">
-<h1>ConsoleTraceTarget</h1>
-<p class="lead">A <a href="../../inetdev/inetdev-diagnostics-tracetargets/inetdev-diagnostics-tracetargets-itracetarget.html">ITraceTarget</a> that writes <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a>s to <span class="text-info" title="System.Console">Console</span>.</p>
+<h1>MainMenuActiveItemAttribute</h1>
+<p class="lead">Stores the Id of the active main menu item with in a ViewData key.</p>
 <dl class="row mt-4">
-<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.Diagnostics.TraceTargets</dd>
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">Inetdev.AspNetCore</dd>
 <dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
 </dl>
 <dl class="row mt-4">
@@ -37,24 +37,15 @@
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
 <dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">Inetdev.Diagnostics.TraceTargets.TraceTarget</dd>
+<dd class="col-sm-9">Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="" class="mb-5">
-    <h3 class="lead text-info">ConsoleTraceTarget</h3>
-    <p>Default constructor</p>
+<div id="M:Inetdev.AspNetCore.MainMenuActiveItemAttribute.#ctor(System.String)" class="mb-5">
+    <h3 class="lead text-info">MainMenuActiveItemAttribute</h3>
+    <p>Initializes a new instance of <strong>MainMenuActiveItemAttribute</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ConsoleTraceTarget()</code></dd>
-</dl>
-</div>
-<h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:Inetdev.Diagnostics.TraceTargets.ConsoleTraceTarget.Write(Inetdev.Diagnostics.LogWriter,Inetdev.Diagnostics.LogEntry)" class="mb-5">
-    <h3 class="lead text-info">Write</h3>
-    <p>Writes the <strong class="text-info">entry</strong> to this trace target.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Write(writer, entry)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> MainMenuActiveItemAttribute(activeItemId)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -67,14 +58,43 @@
 </thead>
 <tbody>
     <tr>
-        <td>writer</td>
-        <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a></td>
-        <td>The <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logwriter.html">LogWriter</a> that calls this <a href="../../inetdev/inetdev-diagnostics-tracetargets/inetdev-diagnostics-tracetargets-itracetarget.html">ITraceTarget</a>.</td>
+        <td>activeItemId</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Active item Id.</td>
     </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:Inetdev.AspNetCore.MainMenuActiveItemAttribute.ActiveItemId" class="mb-5">
+    <h3 class="lead text-info">ActiveItemId</h3>
+    <p>Active item Id.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ActiveItemId { get; }</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:Inetdev.AspNetCore.MainMenuActiveItemAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)" class="mb-5">
+    <h3 class="lead text-info">OnActionExecuting</h3>
+    <p>OnActionExecuting.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> OnActionExecuting(context)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
     <tr>
-        <td>entry</td>
-        <td><a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a></td>
-        <td>A <a href="../../inetdev/inetdev-diagnostics/inetdev-diagnostics-logentry.html">LogEntry</a> to write.</td>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>context</td>
+        <td><span class="text-info" title="Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext">ActionExecutingContext</span></td>
+        <td></td>
     </tr>
 </tbody></table>
 </div>
@@ -83,10 +103,16 @@
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
 <li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:Inetdev.AspNetCore.MainMenuActiveItemAttribute.ActiveItemId">ActiveItemId</a></li>
+    </ul>
+</li>
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#M:Inetdev.Diagnostics.TraceTargets.ConsoleTraceTarget.Write(Inetdev.Diagnostics.LogWriter,Inetdev.Diagnostics.LogEntry)">Write</a></li>
+        <li><a href="#M:Inetdev.AspNetCore.MainMenuActiveItemAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">OnActionExecuting</a></li>
     </ul>
 </li>
 </ul>

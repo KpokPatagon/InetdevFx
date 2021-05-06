@@ -88,7 +88,7 @@
     <p>Audit record data</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-binaryattachment.html">BinaryAttachment</a> Data { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> Data { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:Inetdev.Auditing.Audit.ElementString" class="mb-5">
@@ -284,7 +284,7 @@
     <dd class="col-10"><code>public <a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-auditinfo.html">AuditInfo</a> GetAuditInfo()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>An <a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-auditinfo.html">AuditInfo</a> or <strong class="text-info">null</strong> if the data is empty.</p>
+<p>An <a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-auditinfo.html">AuditInfo</a> or <strong class="text-info">null</strong> if thre is no data.</p>
 <h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -316,7 +316,7 @@
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Auditing.SecurityIncident}">Task&lt;<a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-securityincident.html">SecurityIncident</a>&gt;</span> GetSecurityIncidentAsync()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A <a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-securityincident.html">SecurityIncident</a> or <strong class="text-info">null</strong> if any.</p>
+<p>A <a href="../../inetdev-auditing/inetdev-auditing/inetdev-auditing-securityincident.html">SecurityIncident</a> or <strong class="text-info">null</strong> if there is no related incident.</p>
 <h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
 <thead>

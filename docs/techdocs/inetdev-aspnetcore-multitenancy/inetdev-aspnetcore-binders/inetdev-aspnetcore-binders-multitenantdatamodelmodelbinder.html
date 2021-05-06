@@ -40,6 +40,11 @@
 <dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">Inetdev.AspNetCore.Binders.DataModelModelBinder</dd>
 </dl>
+<h2 id="remarks" class="mt-5">Remarks</h2>
+<p><p>
+                    When an <a href="../../inetdev-data/inetdev-data/inetdev-data-idataproperty.html">IDataProperty</a> has protection set, this binder protects the data using:
+                </p><p>If protection is <code>Encripted</code> the <code>Cryptographer.EncryptToBase64String</code> method is used.</p><p>If protection is <code>Hash</code> or <code>Password</code> the <code>Cryptographer.ComputeHash</code> is used and
+                the result is then converted to a Base64 string.</p></p>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:Inetdev.AspNetCore.Binders.MultitenantDataModelModelBinder.#ctor(System.Collections.Generic.Dictionary{Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder})" class="mb-5">
     <h3 class="lead text-info">MultitenantDataModelModelBinder</h3>
@@ -114,6 +119,7 @@
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
+<li><a href="#remarks">Remarks</a></li>
 <li><a href="#constructors">Constructors</a></li>
 <li><a href="#methods">Methods</a></li>
 <li>

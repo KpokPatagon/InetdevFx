@@ -188,6 +188,57 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:Inetdev.Data.DataServices.AppendStaticTerms(Inetdev.Data.Query.Statement,System.Collections.Generic.List{Inetdev.Data.Filtering.StaticTerm})" class="mb-5">
+    <h3 class="lead text-info">AppendStaticTerms</h3>
+    <p>Appends to the where clause all set static terms.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AppendStaticTerms(statement, terms)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>statement</td>
+        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a></td>
+        <td>Statement to add terms.</td>
+    </tr>
+    <tr>
+        <td>terms</td>
+        <td><span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.Filtering.StaticTerm}">List&lt;<a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-staticterm.html">StaticTerm</a>&gt;</span></td>
+        <td>A collections of terms.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">terms</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.Filtering.InvalidTermColumnNameException"><a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-invalidtermcolumnnameexception.html">InvalidTermColumnNameException</a></span></td>
+        <td>Thrown when a term.Column name does not exists within the fields collection.</td>
+    </tr>
+</tbody></table>
+</div>
 <div id="M:Inetdev.Data.DataServices.BuildModelList(System.Type,System.Data.IDataReader)" class="mb-5">
     <h3 class="lead text-info">BuildModelList</h3>
     <p>Builds a list of domain model objects of <strong class="text-info">dataModelType</strong> from the specified reader.</p>
@@ -690,7 +741,7 @@
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> GetModel(dataModelType, model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -723,17 +774,21 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">dataModelType</strong> or <strong class="text-info">model</strong> are <strong class="text-info">null</strong>.</td>
+        <td><p>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
         <td>Thrown when the this data service object was not properly initialized.</td>
     </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+        <td>Thrown when the repository does not have a primary key column.</td>
+    </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Data.DataServices.GetModel``1(``0)" class="mb-5">
     <h3 class="lead text-info">GetModel</h3>
-    <p>Gets a model object of type <b>T</b> looking for it primary key in the underlying repository.</p>
+    <p>Gets a model object of type <typeparamref name="T" /> looking for it primary key in the underlying repository.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title=""></span> GetModel&lt;T&gt;(model)</code></dd>
@@ -787,7 +842,7 @@
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Data.IDataModel}">Task&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> GetModelAsync(dataModelType, model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -820,18 +875,21 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">dataModelType</strong> or <strong class="text-info">model</strong> are <strong class="text-info">null</strong>.</td>
+        <td><p>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
         <td>Thrown when the this data service object was not properly initialized.</td>
     </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+        <td>Thrown when the repository does not have a primary key column.</td>
+    </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Data.DataServices.GetModelAsync``1(``0)" class="mb-5">
     <h3 class="lead text-info">GetModelAsync</h3>
-    <p>Gets a model object of type <b>T</b> looking for it primary key
-            in the underlying repository.</p>
+    <p>Gets a model object of type <typeparamref name="T" /> looking for it primary key in the underlying repository.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{}">Task</span> GetModelAsync&lt;T&gt;(model)</code></dd>
@@ -885,7 +943,7 @@
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> GetModelByIdentity(dataModelType, model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -918,17 +976,21 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">dataModelType</strong> or <strong class="text-info">model</strong> are <strong class="text-info">null</strong>.</td>
+        <td><p>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
         <td>Thrown when the this data service object was not properly initialized.</td>
     </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+        <td>Thrown when the repository does not have a primary key column.</td>
+    </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Data.DataServices.GetModelByIdentity``1(``0)" class="mb-5">
     <h3 class="lead text-info">GetModelByIdentity</h3>
-    <p>Gets a model object of type <b>T</b> looking for the identity field in the underlying table.</p>
+    <p>Gets a model object of type <typeparamref name="T" /> looking for the identity field in the underlying table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title=""></span> GetModelByIdentity&lt;T&gt;(model)</code></dd>
@@ -970,19 +1032,19 @@
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
-        <td>Thrown when the repository does not have an Identity column.</td>
+        <td>Thrown when the repository does not have a primary key column.</td>
     </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Data.DataServices.GetModelByIdentityAsync(System.Type,Inetdev.Data.IDataModel)" class="mb-5">
     <h3 class="lead text-info">GetModelByIdentityAsync</h3>
-    <p>Gets a domain model object of <strong class="text-info">dataModelType</strong> looking for it's primary key.</p>
+    <p>Gets a domain model object of <strong class="text-info">dataModelType</strong> looking for it's identity property.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Data.IDataModel}">Task&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> GetModelByIdentityAsync(dataModelType, model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -1001,7 +1063,7 @@
     <tr>
         <td>model</td>
         <td><a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a></td>
-        <td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> holding the primary key to look for.</td>
+        <td>An <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> holding the identity to look for.</td>
     </tr>
 </tbody></table>
 <h6 class="mt-1">Exceptions</h6>
@@ -1015,17 +1077,21 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">dataModelType</strong> or <strong class="text-info">model</strong> are <strong class="text-info">null</strong>.</td>
+        <td><p>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
         <td>Thrown when the this data service object was not properly initialized.</td>
     </tr>
+    <tr>
+        <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
+        <td>Thrown when the repository does not have a primary key column.</td>
+    </tr>
 </tbody></table>
 </div>
 <div id="M:Inetdev.Data.DataServices.GetModelByIdentityAsync``1(``0)" class="mb-5">
     <h3 class="lead text-info">GetModelByIdentityAsync</h3>
-    <p>Gets a model object of type <b>T</b> looking for the identity field in the underlying table.</p>
+    <p>Gets a model object of type <typeparamref name="T" /> looking for the identity field in the underlying table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{}">Task</span> GetModelByIdentityAsync&lt;T&gt;(model)</code></dd>
@@ -1067,137 +1133,7 @@
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
-        <td>Thrown when the repository does not have an Identity column.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Data.DataServices.GetModels``1" class="mb-5">
-    <h3 class="lead text-info">GetModels</h3>
-    <p>Gets a collection of all objects from the underlaying table.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> GetModels&lt;T&gt;()</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A data model collection of objects of type <b>T</b>.</p>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when a required property is not initialized.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Data.DataServices.GetModels``1(Inetdev.Data.Query.Order)" class="mb-5">
-    <h3 class="lead text-info">GetModels</h3>
-    <p>Gets a collection of all objects from the underlaying table,
-            ordered by the spacify order.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> GetModels&lt;T&gt;(order)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A data model collection of objects of type <b>T</b>.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>order</td>
-        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a></td>
-        <td>The <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a> to apply.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when a required property is not initialized.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Data.DataServices.GetModelsAsync``1" class="mb-5">
-    <h3 class="lead text-info">GetModelsAsync</h3>
-    <p>Gets a collection of all objects from the underlaying table.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{}}">Task&lt;IEnumerable&gt;</span> GetModelsAsync&lt;T&gt;()</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A data model collection of objects of type <b>T</b>.</p>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when a required property is not initialized.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Data.DataServices.GetModelsAsync``1(Inetdev.Data.Query.Order)" class="mb-5">
-    <h3 class="lead text-info">GetModelsAsync</h3>
-    <p>Gets a collection of all objects from the underlaying table,
-            ordered by the spacify order.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{}}">Task&lt;IEnumerable&gt;</span> GetModelsAsync&lt;T&gt;(order)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A data model collection of objects of type <b>T</b>.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>order</td>
-        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a></td>
-        <td>The <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a> to apply.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when a required property is not initialized.</td>
+        <td>Thrown when the repository does not have a primary key column.</td>
     </tr>
 </tbody></table>
 </div>
@@ -1286,32 +1222,6 @@
     <tr>
         <td><span class="text-info" title="Inetdev.Data.DataServiceOperationNotSupportedException"><a href="../../inetdev-data/inetdev-data/inetdev-data-dataserviceoperationnotsupportedexception.html">DataServiceOperationNotSupportedException</a></span></td>
         <td>Thrown when the repository does not have a primary key column.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Data.DataServices.GetTableStatement(Inetdev.Data.Query.Order)" class="mb-5">
-    <h3 class="lead text-info">GetTableStatement</h3>
-    <p>Builds a <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> that retrieves all records from the underlaying table.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a> GetTableStatement(order)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-selectstatement.html">SelectStatement</a>.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>order</td>
-        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a></td>
-        <td>Specify how to order the records.</td>
     </tr>
 </tbody></table>
 </div>
@@ -1654,6 +1564,7 @@
 <li>
     <ul style="font-size:0.8em;">
         <li><a href="#M:Inetdev.Data.DataServices.AppendFilterTerms(Inetdev.Data.Query.Statement,System.Collections.Generic.List{Inetdev.Data.Filtering.Term},Inetdev.Data.Filtering.MatchKind)">AppendFilterTerms</a></li>
+        <li><a href="#M:Inetdev.Data.DataServices.AppendStaticTerms(Inetdev.Data.Query.Statement,System.Collections.Generic.List{Inetdev.Data.Filtering.StaticTerm})">AppendStaticTerms</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.BuildModelList(System.Type,System.Data.IDataReader)">BuildModelList</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.BuildModelList(System.Type,System.Data.IDataReader,Inetdev.Data.IDataModel)">BuildModelList</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.BuildModelList``1(Inetdev.Data.Query.SelectStatement)">BuildModelList</a></li>
@@ -1673,13 +1584,8 @@
         <li><a href="#M:Inetdev.Data.DataServices.GetModelByIdentity``1(``0)">GetModelByIdentity</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.GetModelByIdentityAsync(System.Type,Inetdev.Data.IDataModel)">GetModelByIdentityAsync</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.GetModelByIdentityAsync``1(``0)">GetModelByIdentityAsync</a></li>
-        <li><a href="#M:Inetdev.Data.DataServices.GetModels``1">GetModels</a></li>
-        <li><a href="#M:Inetdev.Data.DataServices.GetModels``1(Inetdev.Data.Query.Order)">GetModels</a></li>
-        <li><a href="#M:Inetdev.Data.DataServices.GetModelsAsync``1">GetModelsAsync</a></li>
-        <li><a href="#M:Inetdev.Data.DataServices.GetModelsAsync``1(Inetdev.Data.Query.Order)">GetModelsAsync</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.GetRowByIdentityStatement(Inetdev.Data.IDataModel)">GetRowByIdentityStatement</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.GetRowByPrimaryKeyStatement(Inetdev.Data.IDataModel)">GetRowByPrimaryKeyStatement</a></li>
-        <li><a href="#M:Inetdev.Data.DataServices.GetTableStatement(Inetdev.Data.Query.Order)">GetTableStatement</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.Insert(Inetdev.Data.IDataModel)">Insert</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.InsertAsync(Inetdev.Data.IDataModel)">InsertAsync</a></li>
         <li><a href="#M:Inetdev.Data.DataServices.RunCountStatement(Inetdev.Data.Query.SelectStatement)">RunCountStatement</a></li>

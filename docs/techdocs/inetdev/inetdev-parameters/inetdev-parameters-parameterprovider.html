@@ -51,12 +51,12 @@
 </dl>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:Inetdev.Parameters.ParameterProvider.ParameterStoreName" class="mb-5">
-    <h3 class="lead text-info">ParameterStoreName</h3>
+<div id="P:Inetdev.Parameters.ParameterProvider.ParameterStore" class="mb-5">
+    <h3 class="lead text-info">ParameterStore</h3>
     <p>The name of the parameter store object.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ParameterStoreName { get; set; }</code></dd>
+    <dd class="col-10"><code>public <a href="../../inetdev/inetdev-parameters/inetdev-parameters-iparameterstore.html">IParameterStore</a> ParameterStore { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:Inetdev.Parameters.ParameterProvider.ParameterTree" class="mb-5">
@@ -76,7 +76,7 @@
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Exists(parameterName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p><strong class="text-info">true</strong> if the parameter exists.</p>
+<p><strong class="text-info">true</strong> if the parameter exists, otherwise <strong class="text-info">false</strong>.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -148,7 +148,7 @@
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.MissingRequiredPropertyException"><a href="../../inetdev/inetdev/inetdev-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
-        <td>Thrown when the <b>ParameterStoreName</b> property is not set.</td>
+        <td>Thrown when the <code>ParameterStore</code> property is not set.</td>
     </tr>
     <tr>
         <td><span class="text-info" title="Inetdev.Parameters.ParameterDoesNotExistException"><a href="../../inetdev/inetdev-parameters/inetdev-parameters-parameterdoesnotexistexception.html">ParameterDoesNotExistException</a></span></td>
@@ -172,7 +172,7 @@
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#P:Inetdev.Parameters.ParameterProvider.ParameterStoreName">ParameterStoreName</a></li>
+        <li><a href="#P:Inetdev.Parameters.ParameterProvider.ParameterStore">ParameterStore</a></li>
         <li><a href="#P:Inetdev.Parameters.ParameterProvider.ParameterTree">ParameterTree</a></li>
     </ul>
 </li>

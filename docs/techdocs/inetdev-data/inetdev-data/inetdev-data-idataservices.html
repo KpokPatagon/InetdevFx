@@ -153,6 +153,35 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:Inetdev.Data.IDataServices.AppendStaticTerms(Inetdev.Data.Query.Statement,System.Collections.Generic.List{Inetdev.Data.Filtering.StaticTerm})" class="mb-5">
+    <h3 class="lead text-info">AppendStaticTerms</h3>
+    <p>Appends to the where clause all set static terms.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AppendStaticTerms(statement, terms)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>statement</td>
+        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-statement.html">Statement</a></td>
+        <td>Statement to add terms.</td>
+    </tr>
+    <tr>
+        <td>terms</td>
+        <td><span class="text-info" title="System.Collections.Generic.List{Inetdev.Data.Filtering.StaticTerm}">List&lt;<a href="../../inetdev-data/inetdev-data-filtering/inetdev-data-filtering-staticterm.html">StaticTerm</a>&gt;</span></td>
+        <td>A collections of terms.</td>
+    </tr>
+</tbody></table>
+</div>
 <div id="M:Inetdev.Data.IDataServices.Delete(Inetdev.Data.IDataModel,Inetdev.Data.TimestampKind,System.DateTime)" class="mb-5">
     <h3 class="lead text-info">Delete</h3>
     <p>Deletes a record from the underlaying data source.</p>
@@ -233,7 +262,7 @@
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> GetModel(dataModelType, model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -258,7 +287,7 @@
 </div>
 <div id="M:Inetdev.Data.IDataServices.GetModel``1(``0)" class="mb-5">
     <h3 class="lead text-info">GetModel</h3>
-    <p>Gets a model object of type <b>T</b> looking for it primary key in the underlying repository.</p>
+    <p>Gets a model object of type <typeparamref name="T" /> looking for it primary key in the underlying repository.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title=""></span> GetModel&lt;T&gt;(model)</code></dd>
@@ -290,7 +319,7 @@
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Data.IDataModel}">Task&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> GetModelAsync(dataModelType, model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -315,7 +344,7 @@
 </div>
 <div id="M:Inetdev.Data.IDataServices.GetModelAsync``1(``0)" class="mb-5">
     <h3 class="lead text-info">GetModelAsync</h3>
-    <p>Gets a model object of type <b>T</b> looking for it primary key in the underlying repository.</p>
+    <p>Gets a model object of type <typeparamref name="T" /> looking for it primary key in the underlying repository.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{}">Task</span> GetModelAsync&lt;T&gt;(model)</code></dd>
@@ -347,7 +376,7 @@
     <dd class="col-10"><code>public <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> GetModelByIdentity(dataModelType, model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -372,7 +401,7 @@
 </div>
 <div id="M:Inetdev.Data.IDataServices.GetModelByIdentity``1(``0)" class="mb-5">
     <h3 class="lead text-info">GetModelByIdentity</h3>
-    <p>Gets a model object of type <b>T</b> looking for the identity field in the underlying table.</p>
+    <p>Gets a model object of type <typeparamref name="T" /> looking for the identity field in the underlying table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title=""></span> GetModelByIdentity&lt;T&gt;(model)</code></dd>
@@ -404,7 +433,7 @@
     <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{Inetdev.Data.IDataModel}">Task&lt;<a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>&gt;</span> GetModelByIdentityAsync(dataModelType, model)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A new initializes instance of a domain model object of <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if the data is not found.</p>
+<p>An initialized data model object.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -450,80 +479,6 @@
         <td>model</td>
         <td><span class="text-info" title="T">T</span></td>
         <td>An instance of the model object with the identity data.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Data.IDataServices.GetModels``1" class="mb-5">
-    <h3 class="lead text-info">GetModels</h3>
-    <p>Gets a collection of all objects from the underlaying table.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> GetModels&lt;T&gt;()</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A data model collection of objects of type <b>T</b>.</p>
-</div>
-<div id="M:Inetdev.Data.IDataServices.GetModels``1(Inetdev.Data.Query.Order)" class="mb-5">
-    <h3 class="lead text-info">GetModels</h3>
-    <p>Gets a collection of all objects from the underlaying table,
-            ordered by the spacify order.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> GetModels&lt;T&gt;(order)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A data model collection of objects of type <b>T</b>.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>order</td>
-        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a></td>
-        <td>The <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a> to apply.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:Inetdev.Data.IDataServices.GetModelsAsync``1" class="mb-5">
-    <h3 class="lead text-info">GetModelsAsync</h3>
-    <p>Gets a collection of all objects from the underlaying table.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{}}">Task&lt;IEnumerable&gt;</span> GetModelsAsync&lt;T&gt;()</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A data model collection of objects of type <b>T</b>.</p>
-</div>
-<div id="M:Inetdev.Data.IDataServices.GetModelsAsync``1(Inetdev.Data.Query.Order)" class="mb-5">
-    <h3 class="lead text-info">GetModelsAsync</h3>
-    <p>Gets a collection of all objects from the underlaying table,
-            ordered by the spacify order.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{}}">Task&lt;IEnumerable&gt;</span> GetModelsAsync&lt;T&gt;(order)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>A data model collection of objects of type <b>T</b>.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>order</td>
-        <td><a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a></td>
-        <td>The <a href="../../inetdev-data/inetdev-data-query/inetdev-data-query-order.html">Order</a> to apply.</td>
     </tr>
 </tbody></table>
 </div>
@@ -674,6 +629,7 @@
 <li>
     <ul style="font-size:0.8em;">
         <li><a href="#M:Inetdev.Data.IDataServices.AppendFilterTerms(Inetdev.Data.Query.Statement,System.Collections.Generic.List{Inetdev.Data.Filtering.Term},Inetdev.Data.Filtering.MatchKind)">AppendFilterTerms</a></li>
+        <li><a href="#M:Inetdev.Data.IDataServices.AppendStaticTerms(Inetdev.Data.Query.Statement,System.Collections.Generic.List{Inetdev.Data.Filtering.StaticTerm})">AppendStaticTerms</a></li>
         <li><a href="#M:Inetdev.Data.IDataServices.Delete(Inetdev.Data.IDataModel,Inetdev.Data.TimestampKind,System.DateTime)">Delete</a></li>
         <li><a href="#M:Inetdev.Data.IDataServices.DeleteAsync(Inetdev.Data.IDataModel,Inetdev.Data.TimestampKind,System.DateTime)">DeleteAsync</a></li>
         <li><a href="#M:Inetdev.Data.IDataServices.GetModel(System.Type,Inetdev.Data.IDataModel)">GetModel</a></li>
@@ -684,10 +640,6 @@
         <li><a href="#M:Inetdev.Data.IDataServices.GetModelByIdentity``1(``0)">GetModelByIdentity</a></li>
         <li><a href="#M:Inetdev.Data.IDataServices.GetModelByIdentityAsync(System.Type,Inetdev.Data.IDataModel)">GetModelByIdentityAsync</a></li>
         <li><a href="#M:Inetdev.Data.IDataServices.GetModelByIdentityAsync``1(``0)">GetModelByIdentityAsync</a></li>
-        <li><a href="#M:Inetdev.Data.IDataServices.GetModels``1">GetModels</a></li>
-        <li><a href="#M:Inetdev.Data.IDataServices.GetModels``1(Inetdev.Data.Query.Order)">GetModels</a></li>
-        <li><a href="#M:Inetdev.Data.IDataServices.GetModelsAsync``1">GetModelsAsync</a></li>
-        <li><a href="#M:Inetdev.Data.IDataServices.GetModelsAsync``1(Inetdev.Data.Query.Order)">GetModelsAsync</a></li>
         <li><a href="#M:Inetdev.Data.IDataServices.Insert(Inetdev.Data.IDataModel)">Insert</a></li>
         <li><a href="#M:Inetdev.Data.IDataServices.InsertAsync(Inetdev.Data.IDataModel)">InsertAsync</a></li>
         <li><a href="#M:Inetdev.Data.IDataServices.Update(Inetdev.Data.IDataModel,Inetdev.Data.TimestampKind,System.DateTime)">Update</a></li>
