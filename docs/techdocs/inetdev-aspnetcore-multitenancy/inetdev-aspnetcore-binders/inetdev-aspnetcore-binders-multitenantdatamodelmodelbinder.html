@@ -46,12 +46,12 @@
                 </p><p>If protection is <code>Encripted</code> the <code>Cryptographer.EncryptToBase64String</code> method is used.</p><p>If protection is <code>Hash</code> or <code>Password</code> the <code>Cryptographer.ComputeHash</code> is used and
                 the result is then converted to a Base64 string.</p></p>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:Inetdev.AspNetCore.Binders.MultitenantDataModelModelBinder.#ctor(System.Collections.Generic.Dictionary{Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder})" class="mb-5">
+<div id="M:Inetdev.AspNetCore.Binders.MultitenantDataModelModelBinder.#ctor(System.Collections.Generic.Dictionary{Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder},Microsoft.Extensions.Logging.ILoggerFactory)" class="mb-5">
     <h3 class="lead text-info">MultitenantDataModelModelBinder</h3>
     <p>Initializes a new instance of <strong>MultitenantDataModelModelBinder</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> MultitenantDataModelModelBinder(propertyBinders)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> MultitenantDataModelModelBinder(propertyBinders, loggerFactory)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -67,6 +67,11 @@
         <td>propertyBinders</td>
         <td><span class="text-info" title="System.Collections.Generic.Dictionary{Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder}">Dictionary&lt;ModelMetadata, IModelBinder&gt;</span></td>
         <td>The <span class="text-info" title="System.Collections.Generic.IDictionary`2">IDictionary`2</span> of binders to use for binding properties.</td>
+    </tr>
+    <tr>
+        <td>loggerFactory</td>
+        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILoggerFactory">ILoggerFactory</span></td>
+        <td>A <span class="text-info" title="Microsoft.Extensions.Logging.ILoggerFactory">ILoggerFactory</span>.</td>
     </tr>
 </tbody></table>
 </div>
