@@ -68,7 +68,9 @@
 </div>
 <div id="M:Inetdev.AspNetCore.Multitenancy.TenantResolverMiddlewareExtensions.UseTenantResolver``1(Microsoft.AspNetCore.Builder.IApplicationBuilder,Inetdev.AspNetCore.Multitenancy.TenantResolverOptions{``0})" class="mb-5">
     <h3 class="lead text-info">UseTenantResolver</h3>
-    <p>Adds a tenant resolver middleware to the pipeline.</p>
+    <p><p>Adds a tenant resolver middleware that looks the current tenant from the Uri.</p><p>It handle the requet with a StatusCode = 400 if not tenant is found unless that 
+                a tenant not found notification handles the request.</p><p>The default tenant provider does not filter un-provisioned tenants it is up to
+                the application to verify this if required.</p></p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="Microsoft.AspNetCore.Builder.IApplicationBuilder">IApplicationBuilder</span> UseTenantResolver&lt;TTenant&gt;(builder, options)</code></dd>
