@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Inetdev.AspNet.Multitenancy - Inetdev Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Inetdev Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/InetdevFx/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html">Index</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>Inetdev.AspNet.Multitenancy</h1>
+<hr />
+<p class="lead">Assembly</p>
+<dl class="mt-4 row">
+    <dt class="text-truncate col-3">Version:</dt>
+    <dd class="col-9">4.0.22282.2</dd>
+    <dt class="text-truncate col-3">Product version:</dt>
+    <dd class="col-9">InetdevFx-CI_master_20221009.2</dd>
+    <dt class="text-truncate col-3">Product:</dt>
+    <dd class="col-9">Inetdev Framework</dd>
+    <dt class="text-truncate col-3">Culture:</dt>
+    <dd class="col-9">neutral</dd>
+    <dt class="text-truncate col-3">Public key token:</dt>
+    <dd class="col-9">856a2402e38a9992</dd>
+</dl>
+<h2 class="mt-5">Namespaces (3)</h2>
+<h3 id="inetdev-aspnetcore-binders" class="mt-5">Inetdev.AspNetCore.Binders</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-aspnetcore-binders/inetdev-aspnetcore-binders-multitenantdatamodelmodelbinder.html">MultitenantDataModelModelBinder</a></td>
+<td>Binds a complex model and initializes the properties configured within the application context.
+            Then sets the partition key property of the <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-aspnetcore-binders/inetdev-aspnetcore-binders-multitenantdatamodelmodelbinderprovider.html">MultitenantDataModelModelBinderProvider</a></td>
+<td>An <span class="text-info" title="Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinderProvider">IModelBinderProvider</span> that provides a model binder for <a href="../../inetdev-data/inetdev-data/inetdev-data-idatamodel.html">IDataModel</a> objects
+            with multi-tenant capacity.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-aspnetcore-multitenancy" class="mt-5">Inetdev.AspNetCore.Multitenancy</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-aspnetcore-multitenancy/inetdev-aspnetcore-multitenancy-httpcontextextensions.html">HttpContextExtensions</a></td>
+<td>Extensions for <span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span> class.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-aspnetcore-multitenancy/inetdev-aspnetcore-multitenancy-tenantnamelocation.html">TenantNameLocation</a></td>
+<td>Specifies where the tenant name is located.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-aspnetcore-multitenancy/inetdev-aspnetcore-multitenancy-tenantnameurlrewriterrule1.html">TenantNameUrlRewriterRule</a></td>
+<td>Rewrite the Url by removing the tenant name from the begining of the path.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-aspnetcore-multitenancy/inetdev-aspnetcore-multitenancy-tenantresolvermiddleware1.html">TenantResolverMiddleware</a></td>
+<td>A middleaware that resolves tenant of <typeparamref name="TTenant" /> base on the request.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-aspnetcore-multitenancy/inetdev-aspnetcore-multitenancy-tenantresolvermiddlewareextensions.html">TenantResolverMiddlewareExtensions</a></td>
+<td>Extensions related to <a href="../../inetdev-aspnet-multitenancy/inetdev-aspnetcore-multitenancy/inetdev-aspnetcore-multitenancy-tenantresolvermiddleware1.html">TenantResolverMiddleware</a>.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-aspnetcore-multitenancy/inetdev-aspnetcore-multitenancy-tenantresolvernotifications1.html">TenantResolverNotifications</a></td>
+<td>Specifies events which <a href="../../inetdev-aspnet-multitenancy/inetdev-aspnetcore-multitenancy/inetdev-aspnetcore-multitenancy-tenantresolvermiddleware1.html">TenantResolverMiddleware</a> invokes to enable
+            developers control over tenant resolving.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-aspnetcore-multitenancy/inetdev-aspnetcore-multitenancy-tenantresolveroptions1.html">TenantResolverOptions</a></td>
+<td>Options for a tenant resolver middleware.</td>
+</tr>
+</tbody></table>
+<h3 id="inetdev-aspnetcore-multitenancy-notifications" class="mt-5">Inetdev.AspNetCore.Multitenancy.Notifications</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./inetdev-aspnetcore-multitenancy-notifications/inetdev-aspnetcore-multitenancy-notifications-tenantnotfoundnotification1.html">TenantNotFoundNotification</a></td>
+<td>Notification raised when the tenant is not found.</td>
+</tr>
+<tr>
+<td><a href="./inetdev-aspnetcore-multitenancy-notifications/inetdev-aspnetcore-multitenancy-notifications-tenantresolvednotification1.html">TenantResolvedNotification</a></td>
+<td>Notification raised when a tenant was resolved.</td>
+</tr>
+</tbody></table>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#inetdev-aspnetcore-binders">Inetdev.AspNetCore.Binders</a></li>
+<li><a href="#inetdev-aspnetcore-multitenancy">Inetdev.AspNetCore.Multitenancy</a></li>
+<li><a href="#inetdev-aspnetcore-multitenancy-notifications">Inetdev.AspNetCore.Multitenancy.Notifications</a></li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
